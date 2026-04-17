@@ -1,0 +1,181 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="AI/ML/DL — Polymath.Sys" activeNav="courses">
+
+    <div class="track-header">
+      <div class="track-badge badge-ai">Complete AI Pipeline &middot; 18-24 months</div>
+      <div class="track-title">AI / ML / DL &mdash; from classical ML to the frontier</div>
+      <div class="track-sub">The complete artificial intelligence curriculum: classical ML, deep learning, transformers, diffusion models, multimodal systems, and the path toward AGI architectures. This is not a survey &mdash; each stage builds directly on the previous one. You will understand not just how to use these systems, but how to build them from scratch.</div>
+    </div>
+
+    <!-- AI Step 1: Classical ML -->
+    <div class="step" id="ai0">
+      <div class="step-head" onclick="tog('ai0')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Classical ML &mdash; the foundation that still runs 80% of production</div><div class="step-meta">Months 1-4 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-ai0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" class="res-link">Andrew Ng &mdash; ML Specialization (Coursera, audit free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The gold standard introduction. 3 courses: supervised learning (regression, classification), advanced algorithms (trees, ensembles, neural nets), unsupervised + recommenders. Ng's gradient descent and cost function explanations are unmatched. Audit free &mdash; all videos and quizzes available without payment.</div>
+              <div class="res-tags"><span class="rtag free">Free to audit</span><span class="rtag must">Gold standard</span><span class="rtag vid">Coursera</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.statlearning.com/" target="_blank" class="res-link">An Introduction to Statistical Learning (ISLR, free PDF) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at statlearning.com. The best stats-grounded ML textbook. Covers regression, classification, resampling, regularization, tree methods, SVMs, unsupervised learning, and deep learning. Each chapter has R and Python labs. The bias-variance tradeoff chapter alone is worth reading three times.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Stats foundation</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.kaggle.com/competitions" target="_blank" class="res-link">Kaggle &mdash; Competitions + Learn tracks <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free micro-courses for Python, Pandas, ML intro, intermediate ML, and feature engineering. Then compete: Titanic (beginner), House Prices (regression), Tabular Playground (ongoing). Kaggle forces end-to-end practice: EDA, feature engineering, model selection, cross-validation, and submission.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Practice here</span><span class="rtag tool">Platform</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The model you must understand deeply:</b> XGBoost/LightGBM. These gradient-boosted tree models win most tabular data competitions and run in most production ML systems. Understand how they work mathematically (gradient boosting on custom loss functions), how to tune them (learning rate, max depth, regularization), and when they beat deep learning (hint: almost always on tabular data).</div>
+      </div>
+    </div>
+
+    <!-- AI Step 2: Deep Learning -->
+    <div class="step" id="ai1">
+      <div class="step-head" onclick="tog('ai1')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Deep Learning &mdash; neural networks to transformers</div><div class="step-meta">Months 4-8 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ai1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://course.fast.ai/" target="_blank" class="res-link">fast.ai &mdash; Practical Deep Learning for Coders (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Top-down deep learning: build a working image classifier in lesson 1, then learn the theory underneath. Covers vision, NLP, tabular, and recommendation systems. Every lesson has a Jupyter notebook. Jeremy Howard's teaching builds confidence fast by starting with working code.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best practical DL</span><span class="rtag vid">fast.ai</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" class="res-link">Andrej Karpathy &mdash; Neural Networks: Zero to Hero (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Builds neural networks, backprop, and GPT from scratch in pure Python/NumPy. The most valuable free deep learning content on the internet. After fast.ai gives practical skills, Karpathy gives foundational understanding. The "makemore" and "nanoGPT" videos are essential viewing.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Watch all episodes</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4" target="_blank" class="res-link">Stanford CS231n &mdash; CNNs for Visual Recognition (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The Stanford deep learning course that launched a generation of AI researchers. Covers image classification, CNNs, backpropagation, batch norm, dropout, transfer learning, object detection, segmentation, and generative models. Free on YouTube with lecture notes and assignments.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.deeplearningbook.org/" target="_blank" class="res-link">Deep Learning &mdash; Goodfellow, Bengio, Courville (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The deep learning bible, free at deeplearningbook.org. Part I (applied math), Part II (deep networks), Part III (research). Dense but comprehensive. Use as reference when you need mathematical rigor on regularization, optimization, CNNs, RNNs, autoencoders, or generative models.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag book">Reference bible</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The three concepts that are deep learning:</b> (1) Gradient descent &mdash; how models learn. (2) Backpropagation &mdash; how gradients flow through layers. (3) The universal approximation theorem &mdash; why neural networks can learn anything. Everything else (CNNs, RNNs, transformers, attention) is architecture design built on these three ideas. Master these three and every new architecture becomes just a variation on a theme.</div>
+      </div>
+    </div>
+
+    <!-- AI Step 3: Transformers & LLMs -->
+    <div class="step" id="ai2">
+      <div class="step-head" onclick="tog('ai2')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info"><div class="step-title">Transformers &amp; LLMs &mdash; the architecture that changed everything</div><div class="step-meta">Months 8-12 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-ai2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" class="res-link">Andrej Karpathy &mdash; "Let's build GPT" (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">2-hour video building GPT from scratch. After this you understand tokenization, embeddings, attention, positional encoding, and why transformers work. The single most important video for an AI engineer. Watch twice: once to follow along, once to code it yourself.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Essential</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4" target="_blank" class="res-link">Stanford CS224N &mdash; NLP with Deep Learning (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's NLP course covering word vectors, neural networks for NLP, attention, transformers, pretraining (BERT, GPT), question answering, generation, and ethics. Chris Manning's lectures are rigorous and connected to current research. Free on YouTube with assignments and notes.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best NLP course</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://huggingface.co/learn/nlp-course" target="_blank" class="res-link">Hugging Face NLP Course (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free course covering the Hugging Face ecosystem: Transformers library, tokenizers, fine-tuning, datasets, model hub, and deployment. The practical counterpart to CS224N. After theory, this teaches you to use, fine-tune, and deploy real transformer models in production.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Practical transformers</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The paper reading habit:</b> Start reading one ML paper per week. Begin with: "Attention Is All You Need" (transformers), "BERT" (bidirectional pretraining), "GPT-3" (few-shot learning), "InstructGPT" (RLHF). Use Yannic Kilcher's YouTube channel for paper walkthroughs when you get stuck. The ability to read papers is what separates ML engineers from ML users.</div>
+      </div>
+    </div>
+
+    <!-- AI Step 4: Diffusion, Multimodal, Frontier -->
+    <div class="step" id="ai3">
+      <div class="step-head" onclick="tog('ai3')">
+        <div class="step-num num-ai">4</div>
+        <div class="step-info"><div class="step-title">Diffusion, Multimodal, Agents &mdash; the frontier</div><div class="step-meta">Months 12-18 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ai3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=HoKDTa5jHvg" target="_blank" class="res-link">Diffusion Models from Scratch &mdash; fast.ai Part 2 <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">fast.ai Part 2 covers diffusion models (Stable Diffusion) from mathematical foundations to implementation. Build a working image generator from scratch. Understanding diffusion mathematically (forward process, reverse process, noise scheduling, DDPM) is essential for working with image generation systems.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Diffusion foundations</span><span class="rtag vid">fast.ai</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.deeplearning.ai/short-courses/" target="_blank" class="res-link">DeepLearning.AI Short Courses &mdash; LLM agents, RAG, multimodal (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free 1-2 hour courses on: LangChain agents, RAG systems, fine-tuning LLMs, multimodal models, and building AI applications. Each course is built with the framework creators (OpenAI, Anthropic, Google, Meta). Do all courses on agents, RAG, and multimodal models.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Stay current</span><span class="rtag tool">Short courses</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@YannicKilcher" target="_blank" class="res-link">Yannic Kilcher &mdash; ML Paper Explanations (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best ML paper reading channel. Yannic walks through cutting-edge papers line by line: GPT-4, Llama, Mixtral, Stable Diffusion, RLHF, Constitutional AI, and more. Subscribe and watch weekly to stay current with the field's rapid evolution.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://arxiv.org/list/cs.AI/recent" target="_blank" class="res-link">arXiv cs.AI &mdash; daily paper feed <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The firehose of AI research. Scan daily for breakthrough papers. Use Papers With Code (paperswithcode.com) to find implementations. At the frontier, the best resource is the research itself. Set up a daily habit of scanning 10 abstracts and deep-reading 1 paper per week.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Research feed</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The honest truth about the frontier:</b> AI is moving so fast that any curriculum is outdated within 6 months. The techniques in this section will evolve. What does NOT change: mathematical foundations (linear algebra, probability, optimization), programming fundamentals (Python, PyTorch), and the ability to read papers. Invest in the invariants. The specific architectures will keep changing, but the person who can read the paper describing the next breakthrough will always be valuable.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

@@ -1,0 +1,1380 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="The Polymath Mind — Cross-Domain Mastery Program" activeNav="courses">
+
+  <div class="nav" style="flex-wrap:wrap;gap:6px;">
+    <button class="tn active" onclick="show(0)">The Polymath Framework</button>
+    <button class="tn" onclick="show(1)">Mathematics</button>
+    <button class="tn" onclick="show(2)">Physics</button>
+    <button class="tn" onclick="show(3)">Computer Science</button>
+    <button class="tn" onclick="show(4)">Engineering & Robotics</button>
+    <button class="tn" onclick="show(5)">Software Engineering</button>
+    <button class="tn" onclick="show(6)">AI/ML/DL Integration</button>
+    <button class="tn" onclick="show(7)">The Synthesis Layer</button>
+  </div>
+
+  <!-- ============================================================
+       TAB 0 — THE POLYMATH FRAMEWORK
+       ============================================================ -->
+  <div class="panel active" id="p0">
+    <div class="track-header">
+      <div class="track-badge badge-ai">Philosophy & Methodology</div>
+      <div class="track-title">The Polymath Framework — how to master multiple domains</div>
+      <div class="track-sub">The modern world rewards specialists. But the greatest breakthroughs — from da Vinci's anatomical art to Shannon's information theory to Musk's engineering empires — come from people who refused to stay in one lane. This framework is the operating system for building genuine cross-domain expertise, not shallow breadth.</div>
+    </div>
+
+    <div class="step" id="pm0">
+      <div class="step-head" onclick="tog('pm0')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Mental Model: First Principles Thinking</div><div class="step-meta">Feynman / Musk / Aristotle</div></div>
+        <div class="step-arrow" id="a-pm0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">What it is</div>
+              <div class="res-desc">Decompose any problem into its most fundamental truths — the axioms that cannot be reduced further — and reason up from there. Aristotle called it "the first basis from which a thing is known." Feynman used it to rebuild quantum electrodynamics. Musk used it to price-engineer rockets and batteries from raw materials instead of accepting industry benchmarks. First principles thinking is the universal solvent for crossing domain boundaries: when you strip away jargon, every field reduces to a small set of core truths that connect to other fields.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">How to practice it</div>
+              <div class="res-desc">Pick any concept you are studying. Ask: "What are the 3-5 fundamental assumptions this rests on?" Then ask: "Which of these assumptions also appear in another domain I know?" Example: gradient descent in ML rests on (1) a differentiable loss surface, (2) iterative local search, (3) step-size control. These same three ideas appear in control systems (PID tuning), economics (price adjustment), and evolution (mutation rate). When you see the shared skeleton, you transfer intuition instantly.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://fs.blog/first-principles/" target="_blank" class="res-link">Farnam Street — First Principles: The Building Blocks of True Knowledge <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free essay on first principles thinking. Shane Parrish traces the concept from Aristotle through Feynman to modern applications. Read this before anything else in this program.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Read first</span><span class="rtag book">Essay</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=NV3sBlRgzTI" target="_blank" class="res-link">Elon Musk explains First Principles — TED Talk <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The clearest public explanation of how Musk applied first principles to SpaceX rocket costs, Tesla battery pricing, and Boring Company tunneling. Watch for the method, not the celebrity.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Practice exercise:</b> Take any technology you use daily (a database, a neural network, a compiler). Write down its 5 fundamental assumptions. Then find one assumption that is shared with a completely different field. This 15-minute exercise rewires how you see knowledge — from vertical silos to a horizontal web.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm1">
+      <div class="step-head" onclick="tog('pm1')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Mental Model: Latticework of Mental Models</div><div class="step-meta">Charlie Munger's worldly wisdom</div></div>
+        <div class="step-arrow" id="a-pm1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The core idea</div>
+              <div class="res-desc">Charlie Munger — Warren Buffett's partner and one of the most successful investors in history — argues that you need roughly 80-100 mental models drawn from all major disciplines (physics, biology, psychology, mathematics, economics, engineering, history) to make reliably good decisions. No single model is sufficient. "To the man with only a hammer, every problem looks like a nail." The latticework is the antidote: a mesh of models that lets you see the same problem from multiple angles simultaneously.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">Key models to acquire from each domain</div>
+              <div class="res-desc">Physics: entropy, feedback loops, critical mass, equilibrium. Biology: evolution, ecosystem dynamics, niche specialization, immune response. Mathematics: compounding, inversion, Bayesian updating, power laws. Psychology: incentive structures, confirmation bias, loss aversion, social proof. Engineering: redundancy, margin of safety, bottleneck analysis, fail-safes. Economics: opportunity cost, supply/demand, game theory, comparative advantage. Each model is a lens. Collect enough lenses and you develop compound vision.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://fs.blog/mental-models/" target="_blank" class="res-link">Farnam Street — Mental Models: The Best Way to Make Intelligent Decisions <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Comprehensive free catalog of ~100 mental models organized by discipline. Bookmark this page. Review one new model per week alongside your domain studies.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Reference catalog</span><span class="rtag book">Web</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Poor Charlie's Almanack" by Charlie Munger</div>
+              <div class="res-desc">The definitive collection of Munger's speeches and essays on worldly wisdom and mental models. His 1994 speech "A Lesson on Elementary, Worldly Wisdom" is the foundational text for the latticework approach. Available in libraries and used bookstores.</div>
+              <div class="res-tags"><span class="rtag must">Essential reading</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The polymath advantage:</b> Most people learn models from one field and force-fit them everywhere. A software engineer sees everything as a systems problem. An economist sees everything as incentives. The polymath holds 10+ lenses simultaneously and picks the one that fits best. This is Munger's "worldly wisdom" — and it is the single strongest argument for the program you are about to undertake.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm2">
+      <div class="step-head" onclick="tog('pm2')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info"><div class="step-title">The Expertise Progression: T-shaped to Pi-shaped to Comb-shaped</div><div class="step-meta">Building your knowledge architecture</div></div>
+        <div class="step-arrow" id="a-pm2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">T</div>
+            <div class="res-content">
+              <div class="res-name">Stage 1: T-shaped (Year 1-2)</div>
+              <div class="res-desc">One deep vertical of expertise (your "spike") plus broad surface-level knowledge across many domains. You start here. Pick your first deep vertical — the one that pays your bills or fuels your obsession. Go deep enough to be in the top 10% of practitioners. For this program, that spike might be AI/ML, mathematics, or software engineering. The horizontal bar is your broad survey of all the other domains in this program.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#928;</div>
+            <div class="res-content">
+              <div class="res-name">Stage 2: Pi-shaped (Year 2-3)</div>
+              <div class="res-desc">Two deep verticals connected by broad knowledge. Now you have two spikes. The magic happens at the intersection — the problems only someone with BOTH deep skills can see. A mathematician who deeply understands ML can do things neither a pure mathematician nor a pure ML engineer can do alone. This is where you become genuinely rare and valuable.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9610;</div>
+            <div class="res-content">
+              <div class="res-name">Stage 3: Comb-shaped (Year 3-4+)</div>
+              <div class="res-desc">Multiple deep verticals — 3, 4, 5 domains of genuine depth — all connected by a thick horizontal bar of cross-domain knowledge. This is the polymath endstate. You can work at the intersection of physics, mathematics, computer science, and AI simultaneously. You see connections invisible to specialists. You become the person who can bridge any two teams, translate any two fields, and invent at any intersection. This is the goal of this entire program.</div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Your immediate action:</b> Decide your first spike. Which domain in this program will you take to genuine depth first? Commit to it for 6-12 months before adding a second spike. Breadth without one initial depth produces a dilettante, not a polymath. The order matters: depth first, then breadth, then more depth in a second domain.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm3">
+      <div class="step-head" onclick="tog('pm3')">
+        <div class="step-num num-ai">4</div>
+        <div class="step-info"><div class="step-title">How Polymaths Actually Learn — the meta-skill</div><div class="step-meta">Study strategies from history's greatest cross-domain thinkers</div></div>
+        <div class="step-arrow" id="a-pm3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The Feynman Technique</div>
+              <div class="res-desc">Richard Feynman could learn any subject by: (1) Studying the material. (2) Explaining it in simple language as if teaching a child. (3) Identifying where the explanation breaks down — those are your real gaps. (4) Going back and filling the gaps, then re-explaining. This forces deep understanding rather than surface familiarity. Apply it every single week to whatever you are studying.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">Interleaving over blocking</div>
+              <div class="res-desc">Cognitive science shows that mixing different subjects in a single study session (interleaving) produces deeper learning than studying one subject for hours (blocking). Study math for 45 minutes, then physics for 45 minutes, then CS for 45 minutes. The switching cost is real but the cross-pollination it produces is worth far more. Your brain finds connections that blocked study never reveals.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The Spacing Effect + Active Recall</div>
+              <div class="res-desc">You forget 80% of what you learn within 48 hours unless you actively retrieve it at increasing intervals. This is the spacing effect, the most replicated finding in cognitive science. Use Anki flashcards for every domain. 15 minutes of spaced retrieval per day retains more than 3 hours of passive re-reading per week. Create cards that force you to EXPLAIN, not just recognize.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">Analogical reasoning — the polymath superpower</div>
+              <div class="res-desc">The single most powerful cognitive tool for cross-domain work is reasoning by analogy. When learning a new concept, immediately ask: "What does this remind me of in a domain I already know?" Electrical circuits map to fluid dynamics. Neural networks map to biological neurons (loosely). Category theory maps to type systems. Every analogy you find is a bridge that lets you transfer years of intuition from one domain to another in minutes.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214484" target="_blank" class="res-link">"Range: Why Generalists Triumph in a Specialized World" by David Epstein <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The definitive modern case for polymathic thinking. Epstein dismantles the "10,000 hour rule" myth and shows how the most impactful innovators sample widely before specializing deeply. Full of research and case studies. Essential reading for anyone on this path.</div>
+              <div class="res-tags"><span class="rtag must">Essential</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X" target="_blank" class="res-link">"Ultralearning" by Scott Young <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Young taught himself the entire MIT CS curriculum in one year. This book is his methodology: metalearning, focus, directness, drilling, retrieval, experimentation, and feedback. Apply his 9 principles to every domain in this program.</div>
+              <div class="res-tags"><span class="rtag must">Methodology</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The non-obvious truth about polymaths:</b> They do not learn faster than specialists. They learn differently. They constantly map new knowledge onto existing knowledge from other domains. This mapping — not raw study hours — is what produces the explosive compound returns that make polymaths appear superhuman. You are not trying to be smart. You are trying to be connected.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 1 — MATHEMATICS
+       ============================================================ -->
+  <div class="panel" id="p1">
+    <div class="track-header">
+      <div class="track-badge badge-math">Foundations to Frontiers</div>
+      <div class="track-title">Mathematics — the universal language of reality</div>
+      <div class="track-sub">Mathematics is not a domain alongside others — it is the substrate underneath all of them. Physics is applied mathematics. Computer science is discrete mathematics. ML is optimization theory. Every hour invested in mathematical depth pays compound interest across every other domain in this program. This track takes you from foundational rigor through to the frontiers of modern mathematics.</div>
+    </div>
+
+    <div class="step" id="pm4">
+      <div class="step-head" onclick="tog('pm4')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info"><div class="step-title">Set Theory & Mathematical Logic</div><div class="step-meta">The foundation of all mathematical reasoning</div></div>
+        <div class="step-arrow" id="a-pm4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Naive Set Theory" by Paul Halmos</div>
+              <div class="res-desc">The classic introduction to set theory. Short (~100 pages), beautifully written, and rigorous enough to build everything else on top of. Covers: sets, relations, functions, ordinals, cardinals, axiom of choice, Zorn's lemma. This tiny book gives you the language that all of mathematics speaks. Read it with pen and paper — prove every theorem yourself before reading Halmos's proof.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"How to Prove It" by Daniel Velleman</div>
+              <div class="res-desc">If you have not done proof-based mathematics before, read this first. Teaches proof techniques — direct proof, contradiction, induction, contrapositive — through set theory and logic. Every proof technique you learn here is used in every subsequent mathematics course. This is the bridge from computational math to real math.</div>
+              <div class="res-tags"><span class="rtag must">If new to proofs</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-510-introduction-to-mathematical-logic-and-set-theory-fall-2024/" target="_blank" class="res-link">MIT OCW — Introduction to Mathematical Logic <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course covering propositional logic, first-order logic, completeness, compactness, and undecidability. Pair with Halmos for the set theory side and you have a complete logical foundation.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Why this matters for everything else:</b> Set theory gives you the vocabulary (sets, functions, relations). Logic gives you the grammar (proof, implication, quantification). Without these two, every subsequent math course is a house built on sand. Spend 3-4 weeks here before moving forward. You cannot rush foundations.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm5">
+      <div class="step-head" onclick="tog('pm5')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info"><div class="step-title">Real Analysis</div><div class="step-meta">Rigorous calculus — the backbone of continuous mathematics</div></div>
+        <div class="step-arrow" id="a-pm5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm5">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Principles of Mathematical Analysis" by Walter Rudin (Baby Rudin)</div>
+              <div class="res-desc">The gold standard textbook for rigorous real analysis. Chapters 1-7 cover: the real number system, basic topology, sequences and series, continuity, differentiation, Riemann-Stieltjes integration, and sequences/series of functions. Rudin is famously terse — every line matters, every exercise teaches. This book will teach you to think like a mathematician. Do not skip exercises. Work problems daily.</div>
+              <div class="res-tags"><span class="rtag must">The standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Calculus" by Michael Spivak</div>
+              <div class="res-desc">If Rudin is too dense to start, begin with Spivak. It covers the same material as Baby Rudin but with more motivation and gentler pacing. Spivak's exercises are legendary — they are where the real learning happens. Many professional mathematicians started here. Use Spivak as your on-ramp to Rudin, not a replacement for it.</div>
+              <div class="res-tags"><span class="rtag must">Gentler on-ramp</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/" target="_blank" class="res-link">MIT 18.100A — Real Analysis (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course with full lecture notes and problem sets. Professor Casey Rodriguez teaches with exceptional clarity. Use alongside Rudin — watch lectures for intuition, then read Rudin for rigor, then solve the MIT problem sets for practice.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw" target="_blank" class="res-link">Francis Su — Real Analysis Lectures (Harvey Mudd, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free lecture series that follows Baby Rudin chapter by chapter. Su is one of the most beloved math educators alive. His lectures add the warmth and intuition that Rudin's text intentionally omits. Watch each lecture before tackling the corresponding Rudin chapter.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why real analysis matters beyond math:</b> Real analysis gives you the rigorous language of limits, convergence, and continuity that underpins all of: neural network convergence proofs, statistical consistency, optimization theory, signal processing, and quantum mechanics. When you understand epsilon-delta arguments at a gut level, the theoretical ML and physics literature becomes readable instead of opaque.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm6">
+      <div class="step-head" onclick="tog('pm6')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info"><div class="step-title">Abstract Algebra</div><div class="step-meta">Groups, rings, fields — the architecture of structure</div></div>
+        <div class="step-arrow" id="a-pm6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm6">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Algebra" by Michael Artin</div>
+              <div class="res-desc">The best undergraduate algebra textbook. Artin is concrete where many algebra books are abstract — he motivates groups through symmetry, rings through polynomials, and fields through number systems. Covers: groups, subgroups, homomorphisms, quotient groups, rings, ideals, fields, Galois theory. More geometric and intuitive than Dummit & Foote. The exercises range from computational to deeply theoretical.</div>
+              <div class="res-tags"><span class="rtag must">Primary text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Algebra" by Serge Lang</div>
+              <div class="res-desc">The graduate-level reference. Lang covers everything: groups, rings, modules, fields, Galois theory, homological algebra, commutative algebra, representation theory. Dense and comprehensive. Use as your reference encyclopedia after learning from Artin. When you need to look up a theorem or definition at the graduate level, Lang is where you go.</div>
+              <div class="res-tags"><span class="rtag book">Graduate reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/" target="_blank" class="res-link">MIT 18.701 — Algebra I (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT algebra course using Artin's textbook. Lecture notes and problem sets available. Covers groups through representation theory. Pair directly with Artin — same order, same notation.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5" target="_blank" class="res-link">Benedict Gross — Abstract Algebra (Harvard, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full Harvard undergraduate algebra course, freely available. Gross is an exceptional lecturer who connects algebra to number theory, geometry, and physics throughout. His treatment of group actions and Sylow theorems is particularly illuminating.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Cross-domain connection:</b> Group theory is the mathematics of symmetry. In physics, Noether's theorem says every symmetry of nature corresponds to a conservation law — energy conservation comes from time-translation symmetry, momentum conservation from spatial symmetry. In CS, algebraic structures appear in type theory, cryptography (finite fields, elliptic curves), and error-correcting codes. When you learn groups, you are learning the skeleton key to physics and CS simultaneously.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm7">
+      <div class="step-head" onclick="tog('pm7')">
+        <div class="step-num num-math">4</div>
+        <div class="step-info"><div class="step-title">Topology</div><div class="step-meta">The study of shape, continuity, and connectedness</div></div>
+        <div class="step-arrow" id="a-pm7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm7">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Topology" by James Munkres</div>
+              <div class="res-desc">The definitive undergraduate topology textbook, used by virtually every mathematics department in the world. Part I (general topology): topological spaces, connectedness, compactness, countability, separation axioms, metrization. Part II (algebraic topology): fundamental group, covering spaces, Seifert-van Kampen theorem. Munkres writes with exceptional clarity. Every theorem is motivated, every proof is clean. Do every exercise in Chapters 1-7 at minimum.</div>
+              <div class="res-tags"><span class="rtag must">The standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLLq_gUfXAnkl8bjQh-hGQ9u24xZP9x0dx" target="_blank" class="res-link">Topology & Geometry by Dr. Tadashi Tokieda (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Tokieda is one of the most engaging mathematics lecturers alive. His topology lectures use physical intuition and toy demonstrations to make abstract concepts visceral. Watch before tackling each Munkres chapter for motivation and intuition.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMXMi3bUMThGdYqos36X_lA" target="_blank" class="res-link">3Blue1Brown — Topology-related videos <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Videos on the Borsuk-Ulam theorem, surface topology, and related concepts. Perfect visual introductions before formal study. 3B1B's video on topology showing why you can always find two antipodal points with the same temperature is a masterpiece of mathematical storytelling.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Where topology appears in other domains:</b> Topological Data Analysis (TDA) is a growing field in ML that uses persistent homology to find shape in high-dimensional data. In physics, topological quantum computing is a leading approach to fault-tolerant quantum computers. In robotics, configuration spaces are topological objects. Topology is not abstract luxury — it is increasingly applied infrastructure.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm8">
+      <div class="step-head" onclick="tog('pm8')">
+        <div class="step-num num-math">5</div>
+        <div class="step-info"><div class="step-title">Number Theory, Differential Geometry, Complex Analysis</div><div class="step-meta">The intermediate frontier</div></div>
+        <div class="step-arrow" id="a-pm8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm8">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"An Introduction to the Theory of Numbers" by Hardy & Wright</div>
+              <div class="res-desc">The classic number theory text, still unmatched for elegance. Covers divisibility, primes, congruences, quadratic residues, continued fractions, and Diophantine approximation. Number theory is essential for cryptography (RSA, elliptic curves) and has deep connections to algebra and analysis. Hardy's writing is a masterclass in mathematical exposition.</div>
+              <div class="res-tags"><span class="rtag must">Classic</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Differential Geometry of Curves and Surfaces" by Manfredo do Carmo</div>
+              <div class="res-desc">The standard introduction to differential geometry. Covers curves, surfaces, Gauss map, intrinsic geometry, Gauss-Bonnet theorem. This is the mathematics of curved spaces — essential for general relativity, computer graphics, and robotics. do Carmo's exposition is geometric and intuitive before becoming rigorous.</div>
+              <div class="res-tags"><span class="rtag must">For physics + robotics</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Complex Analysis" by Lars Ahlfors</div>
+              <div class="res-desc">The standard graduate complex analysis text. Covers analytic functions, complex integration, Cauchy's theorem, residues, conformal mapping, analytic continuation. Complex analysis is the most beautiful branch of mathematics — theorems here are more powerful and surprising than anywhere else. Essential for quantum mechanics, signal processing, and advanced physics.</div>
+              <div class="res-tags"><span class="rtag book">Graduate text</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-950-differential-geometry-fall-2008/" target="_blank" class="res-link">MIT 18.950 — Differential Geometry (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course with lecture notes. Covers classical differential geometry of curves and surfaces. Excellent companion to do Carmo.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Study order suggestion:</b> Complex analysis and number theory can be studied in parallel with each other after real analysis and algebra. Differential geometry requires multivariable calculus and linear algebra. If your primary interest is physics, prioritize differential geometry. If CS/cryptography, prioritize number theory. If ML theory, prioritize complex analysis (for characteristic functions and Fourier analysis).</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm9">
+      <div class="step-head" onclick="tog('pm9')">
+        <div class="step-num num-math">6</div>
+        <div class="step-info"><div class="step-title">Functional Analysis & Category Theory</div><div class="step-meta">The advanced frontier — unifying frameworks</div></div>
+        <div class="step-arrow" id="a-pm9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm9">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introductory Functional Analysis with Applications" by Erwin Kreyszig</div>
+              <div class="res-desc">The gentlest introduction to functional analysis — Banach spaces, Hilbert spaces, bounded linear operators, spectral theory. Kreyszig motivates every definition with applications. This is the mathematics of infinite-dimensional vector spaces, which is the language of quantum mechanics, PDEs, and modern optimization theory. Prerequisite: real analysis (Rudin) and linear algebra.</div>
+              <div class="res-tags"><span class="rtag must">Best intro</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Category Theory in Context" by Emily Riehl (free PDF)</div>
+              <div class="res-desc">Free at math.jhu.edu/~eriehl/context.pdf. Category theory is "the mathematics of mathematics" — it studies the structure that all mathematical structures share. Categories, functors, natural transformations, adjunctions, limits, Yoneda lemma. Riehl is the best modern expositor. This connects to: type theory in CS, database schema design, functional programming (monads, functors), and theoretical physics. Prerequisite: abstract algebra and topology.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Modern mathematics</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_" target="_blank" class="res-link">Bartosz Milewski — Category Theory for Programmers (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free lecture series that teaches category theory through the lens of programming (Haskell). Milewski makes abstract concepts concrete with code examples. If you are coming from a CS background, this is your entry point into category theory before tackling Riehl's book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The polymath payoff of category theory:</b> Category theory is the ultimate cross-domain language. It formalizes the idea of "structural similarity" between different mathematical (and scientific) domains. A functor between categories IS the formal version of an analogy. Learning category theory literally trains you to see the deep structural connections between fields — the exact skill that defines a polymath.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 2 — PHYSICS
+       ============================================================ -->
+  <div class="panel" id="p2">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Classical to Quantum to Cosmological</div>
+      <div class="track-title">Physics — understanding reality from first principles</div>
+      <div class="track-sub">Physics is the original polymath discipline — it demands mathematics, computation, and engineering simultaneously. The sequence below takes you from classical mechanics through to the frontiers of theoretical physics. The Feynman Lectures on Physics serve as your backbone throughout: a three-volume masterpiece that connects every topic with unmatched clarity and physical intuition.</div>
+    </div>
+
+    <div class="step" id="pm10">
+      <div class="step-head" onclick="tog('pm10')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">Classical Mechanics</div><div class="step-meta">Goldstein / Feynman Vol. 1 / Lagrangian & Hamiltonian formalism</div></div>
+        <div class="step-arrow" id="a-pm10">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm10">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.feynmanlectures.caltech.edu/" target="_blank" class="res-link">The Feynman Lectures on Physics — Volume I (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Freely available at feynmanlectures.caltech.edu. Start here. Feynman's lectures cover mechanics, thermodynamics, waves, and optics with unparalleled physical intuition. Feynman teaches you to THINK about physics, not just calculate. Read Chapters 1-15 for mechanics, then Chapters 39-52 for thermodynamics and statistical mechanics. Every physicist alive was shaped by these lectures.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">The backbone</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Classical Mechanics" by Herbert Goldstein, Poole & Safko</div>
+              <div class="res-desc">The standard graduate text. Covers Lagrangian mechanics, Hamiltonian mechanics, canonical transformations, Hamilton-Jacobi theory, rigid body dynamics, and classical chaos. The Lagrangian and Hamiltonian formulations are not just elegant math — they are the direct precursors to quantum mechanics and quantum field theory. You cannot do theoretical physics without this language.</div>
+              <div class="res-tags"><span class="rtag must">Graduate standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" target="_blank" class="res-link">MIT 8.01 Classical Mechanics (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT mechanics course with video lectures, problem sets, and exams. Covers Newtonian mechanics, rotational dynamics, and central forces. Excellent preparation before tackling Goldstein's Lagrangian formalism.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL47F408D36D4CF129" target="_blank" class="res-link">Leonard Susskind — Classical Mechanics (Stanford, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's "Theoretical Minimum" lecture series. Susskind teaches the minimum you need to do real physics — Lagrangians, Hamiltonians, phase space, Poisson brackets. Free on YouTube. More mathematically rigorous than typical undergraduate courses but deeply motivated by physical intuition.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Connection to robotics:</b> Lagrangian mechanics is exactly how we derive equations of motion for robots. Every joint of a robotic arm is a generalized coordinate in a Lagrangian. When you learn Goldstein Chapter 1-2, you are simultaneously learning robot dynamics. This is the polymath advantage: one effort, two domains mastered.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm11">
+      <div class="step-head" onclick="tog('pm11')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Electrodynamics</div><div class="step-meta">Griffiths / Maxwell's equations / electromagnetic waves</div></div>
+        <div class="step-arrow" id="a-pm11">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm11">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introduction to Electrodynamics" by David J. Griffiths</div>
+              <div class="res-desc">Universally regarded as the best undergraduate E&M textbook ever written. Griffiths has a gift for making vector calculus feel natural. Covers: electrostatics, magnetostatics, electrodynamics, Maxwell's equations, electromagnetic waves, radiation, relativistic electrodynamics. Every problem is worth solving — Griffiths problems are famous for being challenging but fair, and they build physical intuition that no amount of lecture-watching can replace.</div>
+              <div class="res-tags"><span class="rtag must">The gold standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2019/" target="_blank" class="res-link">MIT 8.02 — Electricity and Magnetism (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course with full video lectures by Walter Lewin (legendary demonstrations) or more recent versions. Use for visualization alongside Griffiths text. The demonstrations alone — from Van de Graaff generators to electromagnetic induction — make abstract concepts unforgettable.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@PBSSpaceTime" target="_blank" class="res-link">PBS Space Time — Electromagnetism playlist (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">PBS Space Time covers electromagnetic phenomena with beautiful animations and deep conceptual clarity. Their episodes on Maxwell's equations, light, and electromagnetic radiation connect E&M to relativity and quantum mechanics in ways that textbooks often miss.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why E&M matters beyond physics:</b> Maxwell's equations unify electricity, magnetism, and light. Understanding them deeply connects to: signal processing (electromagnetic waves), antenna design and wireless engineering, photonics, and the gauge symmetry concepts that underpin all of modern particle physics. Griffiths Chapter 7-9 on electromagnetic waves is also the theoretical foundation for all wireless communication.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm12">
+      <div class="step-head" onclick="tog('pm12')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Quantum Mechanics</div><div class="step-meta">Sakurai / Griffiths QM / the heart of modern physics</div></div>
+        <div class="step-arrow" id="a-pm12">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm12">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introduction to Quantum Mechanics" by Griffiths & Schroeter</div>
+              <div class="res-desc">Start here. Griffiths brings the same clarity to QM that he brings to E&M. Covers: Schrodinger equation, formalism (Hilbert space), angular momentum, spin, identical particles, perturbation theory, scattering. The wave-function-first approach builds intuition before formalism. Do every problem.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Modern Quantum Mechanics" by J.J. Sakurai & Jim Napolitano</div>
+              <div class="res-desc">The graduate standard. Sakurai starts with Stern-Gerlach experiments and builds quantum mechanics from the formalism of kets, bras, and operators — the opposite of Griffiths' approach. Covers: angular momentum, symmetry, perturbation theory, scattering, relativistic QM. After Griffiths gives you intuition, Sakurai gives you the operator-algebraic framework that connects directly to QFT.</div>
+              <div class="res-tags"><span class="rtag must">Graduate standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" target="_blank" class="res-link">MIT 8.04 / 8.05 — Quantum Physics I & II (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT quantum mechanics sequence with video lectures by Barton Zwiebach. Excellent visual demonstrations and step-by-step problem solving. 8.04 covers foundations, 8.05 covers the formalism and applications. Free problem sets and exams.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@LookingGlassUniverse" target="_blank" class="res-link">Looking Glass Universe — Quantum Mechanics (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Mithuna Yoganathan's channel provides some of the clearest conceptual explanations of quantum mechanics on YouTube. Her series on quantum entanglement, measurement, and the path integral formulation complement textbook study beautifully.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The math prerequisite:</b> You need linear algebra (operators on Hilbert spaces), complex analysis (wave functions are complex-valued), and differential equations. If your functional analysis from the math track is solid, Sakurai will feel natural. If not, start with Griffiths QM and return to Sakurai after more mathematical preparation.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm13">
+      <div class="step-head" onclick="tog('pm13')">
+        <div class="step-num num-dsa">4</div>
+        <div class="step-info"><div class="step-title">Statistical Mechanics, General Relativity & QFT</div><div class="step-meta">The advanced frontier of physics</div></div>
+        <div class="step-arrow" id="a-pm13">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm13">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Statistical Mechanics" by R.K. Pathria & Paul Beale</div>
+              <div class="res-desc">The comprehensive graduate text. Covers: ensembles, quantum statistics, Bose-Einstein and Fermi-Dirac systems, phase transitions, fluctuations, and non-equilibrium stat mech. Statistical mechanics is where physics meets information theory and probability — the connection to ML is direct (Boltzmann machines, energy-based models, simulated annealing all come from stat mech concepts).</div>
+              <div class="res-tags"><span class="rtag must">Graduate standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Spacetime and Geometry" by Sean Carroll</div>
+              <div class="res-desc">The most readable introduction to general relativity. Carroll develops differential geometry and tensor calculus as needed, then derives Einstein's field equations, Schwarzschild solution, gravitational waves, and cosmology. Clear, modern, and well-motivated. Requires: multivariable calculus, linear algebra, and ideally some differential geometry (do Carmo).</div>
+              <div class="res-tags"><span class="rtag must">Best intro to GR</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"An Introduction to Quantum Field Theory" by Peskin & Schroeder</div>
+              <div class="res-desc">The standard QFT textbook. Covers: canonical quantization, Feynman diagrams, QED, renormalization, non-abelian gauge theories, and the Standard Model. This is the summit of the physics track — the framework that unifies quantum mechanics and special relativity. Extremely demanding. Prerequisites: Sakurai-level QM, classical mechanics (Lagrangian/Hamiltonian), and solid real/complex analysis.</div>
+              <div class="res-tags"><span class="rtag book">Advanced</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@pbsspacetime" target="_blank" class="res-link">PBS Space Time (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best science communication channel for theoretical physics. Episodes on general relativity, quantum field theory, string theory, and cosmology are produced at a level that is deep enough to supplement graduate study while remaining visually engaging. Watch their GR and QFT series alongside your textbook study.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@veaborea" target="_blank" class="res-link">Veritasium — Physics explainers (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Derek Muller's channel provides deeply researched, high-production-value videos on physics topics from turbulence to quantum entanglement. His videos on general relativity and the nature of gravity are excellent supplementary viewing.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>String theory primer:</b> After QFT, for string theory basics start with Barton Zwiebach's "A First Course in String Theory" — it is designed to be accessible with just QM and special relativity. Polchinski's two volumes are the graduate standard but require solid QFT. String theory is where physics, differential geometry, algebraic geometry, and topology all converge — the ultimate polymath subject.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 3 — COMPUTER SCIENCE
+       ============================================================ -->
+  <div class="panel" id="p3">
+    <div class="track-header">
+      <div class="track-badge badge-ml">Theory to Systems</div>
+      <div class="track-title">Computer Science — the science of computation and abstraction</div>
+      <div class="track-sub">Computer science is not programming. It is the mathematical study of computation, information, and abstraction. This track follows the intellectual spine of CS from the theory of what is computable, through algorithms, programming languages, compilers, operating systems, and up to formal verification — the frontier where CS meets mathematical logic.</div>
+    </div>
+
+    <div class="step" id="pm14">
+      <div class="step-head" onclick="tog('pm14')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info"><div class="step-title">Theory of Computation</div><div class="step-meta">Sipser / What is computable and what is not</div></div>
+        <div class="step-arrow" id="a-pm14">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm14">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introduction to the Theory of Computation" by Michael Sipser</div>
+              <div class="res-desc">The clearest book ever written on automata theory, computability, and complexity. Covers: finite automata, regular languages, context-free grammars, Turing machines, decidability, reducibility, time complexity (P vs NP), space complexity. Sipser's proofs are models of clarity. Every CS student should work through this book cover to cover. The chapter on P vs NP will change how you think about the limits of computation forever.</div>
+              <div class="res-tags"><span class="rtag must">The standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/" target="_blank" class="res-link">MIT 18.404J — Theory of Computation (OCW, taught by Sipser) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Sipser himself teaching his own book at MIT. Free video lectures, problem sets, and exams. There is no better way to learn this material than from the person who wrote the definitive text. His lectures add intuition and motivation that even his excellent book sometimes omits.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Taught by the author</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Why this matters for a polymath:</b> Theory of computation teaches you the absolute limits of what machines can do. The halting problem proves some things are fundamentally uncomputable. P vs NP asks whether verification is easier than discovery — a question with implications for cryptography, optimization, AI, and even the philosophy of mathematics. This is where CS becomes philosophy.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm15">
+      <div class="step-head" onclick="tog('pm15')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info"><div class="step-title">Algorithms & Data Structures</div><div class="step-meta">CLRS / the engineering of efficiency</div></div>
+        <div class="step-arrow" id="a-pm15">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm15">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introduction to Algorithms" by Cormen, Leiserson, Rivest, Stein (CLRS)</div>
+              <div class="res-desc">The bible of algorithms. Covers: sorting, data structures (heaps, BSTs, hash tables, red-black trees), graph algorithms (BFS, DFS, shortest paths, MSTs), dynamic programming, greedy algorithms, amortized analysis, NP-completeness, approximation algorithms. 1300+ pages of the most rigorous algorithm analysis available. Use as a reference throughout your career — nobody reads it linearly.</div>
+              <div class="res-tags"><span class="rtag must">The bible</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" class="res-link">MIT 6.006 — Introduction to Algorithms (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT algorithms course with full video lectures by Erik Demaine and Jason Ku. Covers the core CLRS chapters with excellent visualizations and worked examples. Follow with MIT 6.046 (Design and Analysis of Algorithms) for advanced topics.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V" target="_blank" class="res-link">Stanford Algorithms — Tim Roughgarden (YouTube/Coursera) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Roughgarden's algorithm courses are famously well-taught. Available on YouTube and as a Coursera specialization (audit free). His explanations of divide-and-conquer, graph algorithms, and greedy algorithms are particularly strong. Excellent complement to CLRS.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="pm16">
+      <div class="step-head" onclick="tog('pm16')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info"><div class="step-title">Programming Languages & Compilers</div><div class="step-meta">SICP / Dragon Book / the soul of software</div></div>
+        <div class="step-arrow" id="a-pm16">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm16">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html" target="_blank" class="res-link">"Structure and Interpretation of Computer Programs" (SICP) — free online <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The most intellectually transformative CS textbook ever written. Abelson and Sussman teach you to think about computation itself — abstraction, recursion, interpretation, metalinguistic abstraction. You build a Scheme interpreter inside Scheme. By the end, you understand what a programming language IS at a fundamental level. Free online. MIT used this as their intro CS course for decades.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Life-changing</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Compilers: Principles, Techniques, and Tools" (Dragon Book) by Aho, Lam, Sethi, Ullman</div>
+              <div class="res-desc">The definitive compiler textbook. Covers: lexical analysis, parsing (LL, LR, LALR), syntax-directed translation, intermediate representations, code generation, optimization. Building a compiler is one of the most educational projects in all of CS — it touches automata theory, data structures, algorithms, and architecture simultaneously. The Dragon Book is dense but comprehensive.</div>
+              <div class="res-tags"><span class="rtag must">Classic</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL_2VhOvlMk4UHo_GcoswPVnRLa1Wn2LMu" target="_blank" class="res-link">MIT 6.001 SICP Lectures — Abelson & Sussman (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The original 1986 MIT SICP lectures. Abelson and Sussman teaching their own masterpiece. Despite being recorded decades ago, these lectures remain unmatched for depth and clarity. Watch them alongside reading the book — the authors add stories, motivations, and connections that the text alone cannot convey.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://craftinginterpreters.com/" target="_blank" class="res-link">"Crafting Interpreters" by Robert Nystrom (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at craftinginterpreters.com. A beautifully written, practical guide to building two complete interpreters — one in Java (tree-walk), one in C (bytecode VM). More accessible than the Dragon Book for a first compiler project. Do this before or alongside the Dragon Book.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Build one</span><span class="rtag tool">Project</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The SICP effect:</b> SICP will change how you think about all software. After working through it, you will see every programming language as a set of design choices, every framework as a thin abstraction, and every "paradigm war" (OOP vs FP) as a false dichotomy. SICP graduates think at a level of abstraction above most programmers. That level of abstraction is where polymath insights live.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm17">
+      <div class="step-head" onclick="tog('pm17')">
+        <div class="step-num num-ml">4</div>
+        <div class="step-info"><div class="step-title">Operating Systems, Networks, Databases & Cryptography</div><div class="step-meta">Systems infrastructure + formal verification</div></div>
+        <div class="step-arrow" id="a-pm17">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm17">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" class="res-link">"Operating Systems: Three Easy Pieces" (OSTEP) — free online <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at ostep.org. The best OS textbook available. Covers: virtualization (processes, memory), concurrency (threads, locks, semaphores, condition variables), persistence (file systems, I/O). Written with humor and exceptional clarity. The concurrency chapters alone are worth reading for anyone writing multithreaded code.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Best OS text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Computer Networking: A Top-Down Approach" by Kurose & Ross</div>
+              <div class="res-desc">The standard networking textbook. Starts from the application layer (HTTP, DNS, SMTP) and works down to the link layer. Clear, well-illustrated, with Wireshark labs that let you see real network traffic. Understanding networking is essential for distributed systems, cloud computing, and security engineering.</div>
+              <div class="res-tags"><span class="rtag must">Standard text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Designing Data-Intensive Applications" by Martin Kleppmann (DDIA)</div>
+              <div class="res-desc">The modern bible for databases and distributed data systems. Covers: data models, storage engines, replication, partitioning, transactions, consistency, batch/stream processing. Kleppmann explains the trade-offs behind every database design choice. This book bridges CS theory and practical distributed systems engineering.</div>
+              <div class="res-tags"><span class="rtag must">Modern classic</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Introduction to Modern Cryptography" by Katz & Lindell</div>
+              <div class="res-desc">Rigorous, proof-based introduction to cryptography. Covers: symmetric encryption, public-key encryption, digital signatures, hash functions, zero-knowledge proofs. Cryptography is where number theory, algebra, and CS theory converge. This book treats crypto as a mathematical discipline, not a cookbook of protocols.</div>
+              <div class="res-tags"><span class="rtag must">Math meets CS</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Software Foundations" — online textbook (free, Coq-based)</div>
+              <div class="res-desc">Free at softwarefoundations.cis.upenn.edu. Interactive textbook teaching formal verification using the Coq proof assistant. You learn to write mathematical proofs that are machine-checked — programs that are provably correct. This is the frontier of CS where programming meets mathematical logic. Connects directly to type theory, category theory, and the foundations of mathematics.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag tool">Interactive</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Recommended study order:</b> OSTEP first (you need to understand processes and memory to understand anything else). Then networking (Kurose). Then databases (DDIA). Then cryptography (Katz & Lindell — needs number theory from the math track). Formal verification last — it requires mathematical maturity from all previous tracks combined.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 4 — ENGINEERING & ROBOTICS
+       ============================================================ -->
+  <div class="panel" id="p4">
+    <div class="track-header">
+      <div class="track-badge badge-java">Signals to Autonomous Systems</div>
+      <div class="track-title">Engineering & Robotics — where math meets the physical world</div>
+      <div class="track-sub">This track takes you from the mathematical foundations of engineering (control theory, signal processing) through electronics and embedded systems to the frontier of autonomous robotics. Every topic here is a direct application of the mathematics and physics from the earlier tabs. This is where abstraction becomes reality.</div>
+    </div>
+
+    <div class="step" id="pm18">
+      <div class="step-head" onclick="tog('pm18')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">Control Systems</div><div class="step-meta">Feedback, stability, and the mathematics of regulation</div></div>
+        <div class="step-arrow" id="a-pm18">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm18">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Feedback Control of Dynamic Systems" by Franklin, Powell & Emami-Naeini</div>
+              <div class="res-desc">The standard undergraduate control systems text. Covers: modeling physical systems, feedback fundamentals, root locus, frequency response (Bode, Nyquist), state-space design, digital control. Control theory is the mathematics of making systems behave — it appears in robotics, aerospace, process engineering, and even in ML (gradient descent IS a control system where the loss is the error signal).</div>
+              <div class="res-tags"><span class="rtag must">Standard text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgHK1NC52DXXrriwihVrYZKqjk" target="_blank" class="res-link">Brian Douglas — Control Systems Lectures (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free video series on control systems. Brian Douglas explains transfer functions, PID control, Bode plots, and state-space methods with clarity that most professors cannot match. His MATLAB/Simulink demonstrations show theory becoming working controllers. Essential companion to any textbook.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best video series</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/" target="_blank" class="res-link">MIT 6.003 — Signals and Systems (OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course covering the prerequisite mathematics for control systems: Fourier series, Fourier transform, Laplace transform, Z-transform, LTI systems. These transforms are the mathematical backbone of signal processing AND control theory. Master them once, use them in both fields.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Project idea:</b> Build a PID controller for a simple system — balancing an inverted pendulum in simulation (Python + scipy). This single project combines: differential equations, linear algebra (state-space representation), control theory, and Python programming. Simulate in Python, then implement on an Arduino for the real-world version.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm19">
+      <div class="step-head" onclick="tog('pm19')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">Signal Processing & Electronics</div><div class="step-meta">From Fourier to circuits to embedded systems</div></div>
+        <div class="step-arrow" id="a-pm19">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm19">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Discrete-Time Signal Processing" by Oppenheim & Schafer</div>
+              <div class="res-desc">The definitive DSP textbook. Covers: discrete-time signals, Z-transform, DFT/FFT, filter design, multirate signal processing. DSP is where complex analysis, linear algebra, and engineering converge. The FFT alone — the most important algorithm of the 20th century — connects to everything from audio processing to quantum simulation.</div>
+              <div class="res-tags"><span class="rtag must">The standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"The Art of Electronics" by Horowitz & Hill</div>
+              <div class="res-desc">The legendary electronics book, now in its 3rd edition. Covers: resistors, capacitors, transistors, op-amps, digital logic, microcontrollers. Written for practitioners, not theorists — Horowitz and Hill teach by building circuits, not solving equations. If you want to understand what happens inside the hardware that runs your software, this is the book.</div>
+              <div class="res-tags"><span class="rtag must">Legendary</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@BenEater" target="_blank" class="res-link">Ben Eater — Building a Computer from Scratch (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Ben Eater builds an 8-bit computer on breadboards from individual logic gates. This is the single best resource for understanding how hardware actually works — from NAND gates to a functioning CPU with RAM and I/O. His 6502 computer project is equally excellent. Watch every video if you want to understand embedded systems from the transistor up.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Watch all</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Embedded systems path:</b> After electronics fundamentals, study embedded C programming on ARM microcontrollers (STM32). Resources: "Making Embedded Systems" by Elecia White, and the STM32 CubeIDE tutorials. Embedded is where software meets hardware — the bridge between your CS knowledge and physical robotics systems.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm20">
+      <div class="step-head" onclick="tog('pm20')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Robot Kinematics, Computer Vision & Autonomous Systems</div><div class="step-meta">ROS2 / perception / navigation / FPGA design</div></div>
+        <div class="step-arrow" id="a-pm20">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm20">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Modern Robotics: Mechanics, Planning, and Control" by Lynch & Park (free PDF)</div>
+              <div class="res-desc">Free PDF and Coursera specialization. Covers: rigid body motions, forward/inverse kinematics, velocity kinematics, dynamics, motion planning, robot control. Uses Lie group theory (screw theory) for kinematics — more elegant and general than Denavit-Hartenberg. The math connects directly to differential geometry from the math track.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF + Coursera</span><span class="rtag must">Primary text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Multiple View Geometry in Computer Vision" by Hartley & Zisserman</div>
+              <div class="res-desc">The definitive text on geometric computer vision — epipolar geometry, fundamental matrix, homography, 3D reconstruction, camera calibration. This is the mathematical backbone of how robots see the world. Heavy on projective geometry and linear algebra. Essential for any work in visual SLAM, autonomous driving, or AR/VR.</div>
+              <div class="res-tags"><span class="rtag must">Vision bible</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://docs.ros.org/en/humble/Tutorials.html" target="_blank" class="res-link">ROS2 Humble — Official Tutorials <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">ROS2 (Robot Operating System 2) is the standard framework for building robot software. The official tutorials take you from installation through nodes, topics, services, actions, and launch files. After completing tutorials, build a simulated robot in Gazebo that navigates autonomously using Nav2. ROS2 is the practical glue that connects all robotics theory into working systems.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Industry standard</span><span class="rtag tool">Framework</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cs231n.stanford.edu/" target="_blank" class="res-link">Stanford CS231n — Convolutional Neural Networks for Visual Recognition <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free course notes, assignments, and lecture videos. Covers CNNs, object detection, segmentation, generative models — the deep learning side of computer vision for robotics. After Hartley & Zisserman give you the geometric foundations, CS231n gives you the neural network perception stack that modern robots use.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Digital Design and Computer Architecture" by Harris & Harris (for FPGA)</div>
+              <div class="res-desc">For FPGA design, start here. Covers digital logic, processor architecture, and hardware description languages (SystemVerilog). FPGAs let you design custom hardware — essential for high-performance robotics, signal processing, and neural network accelerators. Follow with Xilinx/AMD or Intel FPGA tutorials for practical implementation.</div>
+              <div class="res-tags"><span class="rtag book">Textbook</span><span class="rtag tool">FPGA</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The capstone robotics project:</b> Build a ROS2-based robot (simulated in Gazebo or on real hardware like TurtleBot) that uses a camera for perception (YOLO/OpenCV), SLAM for mapping, and Nav2 for autonomous navigation. This single project integrates: control systems, kinematics, computer vision, embedded systems, and software engineering. It is a polymath project by definition.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 5 — SOFTWARE ENGINEERING
+       ============================================================ -->
+  <div class="panel" id="p5">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Architecture to Leadership</div>
+      <div class="track-title">Software Engineering — building systems that endure</div>
+      <div class="track-sub">Software engineering is distinct from computer science the way civil engineering is distinct from physics. CS asks "what is computable?" Software engineering asks "how do we build large, correct, maintainable, performant systems with teams of humans?" This track covers the craft of building real software at scale — from architecture patterns through distributed systems to technical leadership.</div>
+    </div>
+
+    <div class="step" id="pm21">
+      <div class="step-head" onclick="tog('pm21')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">Architecture Patterns & Design</div><div class="step-meta">How to structure systems that survive</div></div>
+        <div class="step-arrow" id="a-pm21">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm21">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Designing Data-Intensive Applications" by Martin Kleppmann (DDIA)</div>
+              <div class="res-desc">Listed again here because it bridges CS and software engineering. DDIA explains the fundamental trade-offs in every architectural decision: consistency vs availability, latency vs throughput, simplicity vs flexibility. Read cover to cover. This is the single most important book for anyone building backend systems.</div>
+              <div class="res-tags"><span class="rtag must">Read cover to cover</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Clean Architecture" by Robert C. Martin</div>
+              <div class="res-desc">Principles of software architecture: dependency inversion, separation of concerns, ports and adapters, the clean architecture pattern. Martin's framework for thinking about boundaries between components applies to any system in any language. Read alongside DDIA — Martin gives you the principles, Kleppmann gives you the implementations.</div>
+              <div class="res-tags"><span class="rtag must">Principles</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"A Philosophy of Software Design" by John Ousterhout</div>
+              <div class="res-desc">Short, opinionated, and brilliant. Ousterhout (creator of Tcl) argues that the central problem of software design is managing complexity. His concepts of "deep modules" and "information hiding" will change how you design every API and interface. Read in a weekend, apply for a career.</div>
+              <div class="res-tags"><span class="rtag must">Quick essential read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="pm22">
+      <div class="step-head" onclick="tog('pm22')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Distributed Systems & Cloud Native</div><div class="step-meta">Building at scale</div></div>
+        <div class="step-arrow" id="a-pm22">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm22">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB" target="_blank" class="res-link">MIT 6.824 — Distributed Systems (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Robert Morris's MIT distributed systems course. Free lectures on YouTube, with labs where you build Raft consensus, MapReduce, and a fault-tolerant key-value store in Go. This is widely considered the best distributed systems course available anywhere. The labs alone will teach you more about real distributed systems than any amount of reading.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best DS course</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Kubernetes in Action" by Marko Luksa + official K8s docs</div>
+              <div class="res-desc">The standard reference for Kubernetes. Covers: pods, services, deployments, stateful sets, operators, networking, storage. Cloud native means containerized, orchestrated, and observable. Learn Docker first (the official getting-started guide is sufficient), then Kubernetes. Follow with Helm for package management and Istio for service mesh.</div>
+              <div class="res-tags"><span class="rtag must">Industry standard</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Site Reliability Engineering" by Google (free online)</div>
+              <div class="res-desc">Free at sre.google/sre-book. Google's definitive guide to running reliable systems at scale. Covers: SLOs/SLIs/SLAs, toil reduction, monitoring, incident response, capacity planning. This book bridges DevOps practices with distributed systems theory. Essential reading for anyone who wants to build systems that actually stay up.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Google SRE</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="pm23">
+      <div class="step-head" onclick="tog('pm23')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Security, Performance & Technical Leadership</div><div class="step-meta">The senior engineering frontier</div></div>
+        <div class="step-arrow" id="a-pm23">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm23">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"The Web Application Hacker's Handbook" by Stuttard & Pinto</div>
+              <div class="res-desc">The definitive guide to web application security testing. Covers: authentication flaws, session management, access controls, input validation, SQL injection, XSS, CSRF, and more. Security engineering requires understanding how attackers think — this book teaches you offense so you can build better defense. Pair with OWASP Top 10 for current threat landscape.</div>
+              <div class="res-tags"><span class="rtag must">Security foundation</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Systems Performance" by Brendan Gregg</div>
+              <div class="res-desc">The definitive performance engineering reference. Gregg covers: CPU, memory, I/O, networking performance from kernel to application level. His USE (Utilization, Saturation, Errors) methodology is a systematic approach to performance analysis that works on any system. Essential for anyone building systems that must be fast, not just correct.</div>
+              <div class="res-tags"><span class="rtag must">Performance bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Staff Engineer" by Will Larson + "An Elegant Puzzle"</div>
+              <div class="res-desc">"Staff Engineer" maps the path from senior to staff/principal engineer — setting technical direction, managing technical debt, aligning engineering with business. "An Elegant Puzzle" covers engineering management: team sizing, organizational design, succession planning. The polymath advantage in technical leadership: you can bridge any two teams because you speak every team's language.</div>
+              <div class="res-tags"><span class="rtag must">Leadership path</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The polymath CTO:</b> The most effective technical leaders are polymaths by necessity — they must understand product, engineering, security, performance, data, and business simultaneously. Every domain in this program makes you a better technical leader. Security requires understanding cryptography (math track). Performance requires understanding hardware (engineering track). Architecture requires understanding distributed systems (CS track). The polymath path IS the technical leadership path.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 6 — AI/ML/DL INTEGRATION
+       ============================================================ -->
+  <div class="panel" id="p6">
+    <div class="track-header">
+      <div class="track-badge badge-ai">Cross-Domain AI Applications</div>
+      <div class="track-title">AI/ML/DL Integration — how every domain feeds into intelligence</div>
+      <div class="track-sub">AI is not a siloed discipline. It is the convergence point of every other domain in this program. Physics gives AI better inductive biases. Mathematics gives AI its theoretical foundation. Robotics gives AI a body. Engineering gives AI real-world constraints. This tab maps the specific intersections where cross-domain knowledge produces breakthroughs impossible for any single-domain expert.</div>
+    </div>
+
+    <div class="step" id="pm24">
+      <div class="step-head" onclick="tog('pm24')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Mathematical Foundations of ML</div><div class="step-meta">Where rigorous math produces better ML</div></div>
+        <div class="step-arrow" id="a-pm24">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm24">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://mml-book.github.io/" target="_blank" class="res-link">"Mathematics for Machine Learning" — Deisenroth, Faisal, Ong (free PDF) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at mml-book.github.io. The definitive bridge between pure math and ML. Covers: linear algebra, analytic geometry, matrix decompositions, vector calculus, probability, optimization, and then applies each to: linear regression, PCA, Gaussian mixture models, SVMs. Read after completing the math track foundations — it will feel like a victory lap.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">The bridge</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"Understanding Machine Learning: From Theory to Algorithms" by Shalev-Shwartz & Ben-David (free PDF)</div>
+              <div class="res-desc">Free PDF available online. The rigorous theoretical treatment of ML: PAC learning, VC dimension, Rademacher complexity, regularization theory, boosting, kernel methods, online learning. This is ML as a mathematical discipline. Requires real analysis and probability. After this book, you understand WHY algorithms work, not just HOW.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Theory depth</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU" target="_blank" class="res-link">Stanford CS229 — Machine Learning (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Andrew Ng's Stanford ML course — more mathematical than his Coursera specialization. Free lectures on YouTube cover supervised learning, generative models, kernel methods, EM, factor analysis, and reinforcement learning with full mathematical derivations. The notes (cs229.stanford.edu) are a permanent reference.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The math-ML connection map:</b> Linear algebra = dimensionality reduction (PCA, SVD). Probability = Bayesian ML, generative models. Real analysis = convergence proofs, generalization bounds. Topology = manifold learning, topological data analysis. Category theory = compositional deep learning. Every math topic you study has a direct ML application.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm25">
+      <div class="step-head" onclick="tog('pm25')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Physics-Informed Neural Networks (PINNs)</div><div class="step-meta">Where physics meets deep learning</div></div>
+        <div class="step-arrow" id="a-pm25">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm25">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">What are PINNs?</div>
+              <div class="res-desc">Physics-Informed Neural Networks encode known physical laws (differential equations, conservation laws, symmetries) directly into the loss function of a neural network. Instead of learning physics purely from data, the network is constrained to obey physical laws. This reduces data requirements dramatically, produces physically plausible predictions, and enables scientific discovery. PINNs are one of the hottest research areas in scientific computing.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://arxiv.org/abs/1711.10561" target="_blank" class="res-link">Raissi, Perdikaris, Karniadakis — "Physics Informed Deep Learning" (arXiv) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The foundational PINN paper. Read after you have solid DL foundations and understand PDEs from the physics track. The key insight: add a PDE residual term to the standard neural network loss function. The network then learns to satisfy the PDE while fitting the data. This paper launched an entire research field.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Foundational paper</span><span class="rtag book">Research</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@Eigensteve" target="_blank" class="res-link">Steve Brunton — Data-Driven Science (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Steve Brunton's channel at University of Washington covers the intersection of data science, dynamical systems, and scientific computing. His playlists on PINNs, sparse identification of nonlinear dynamics (SINDy), and dynamic mode decomposition are the best free resources at the physics-ML intersection. His book "Data-Driven Science and Engineering" is also excellent.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best physics-ML channel</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why PINNs need a polymath:</b> To build effective PINNs, you need: (1) Deep learning expertise to design the network architecture. (2) Physics knowledge to write the correct PDE constraints. (3) Numerical analysis to understand discretization and convergence. (4) Domain expertise to interpret results. No single-domain expert has all four. This is the prototypical polymath research problem.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm26">
+      <div class="step-head" onclick="tog('pm26')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info"><div class="step-title">Robotics + Reinforcement Learning</div><div class="step-meta">Giving AI a body and purpose</div></div>
+        <div class="step-arrow" id="a-pm26">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm26">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" class="res-link">"Reinforcement Learning: An Introduction" by Sutton & Barto (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free online at incompleteideas.net. THE textbook on RL by the founders of the field. Covers: MDPs, dynamic programming, Monte Carlo methods, temporal-difference learning, policy gradient, function approximation. This is where an agent learns to act in the world — the bridge between ML and robotics. Read Chapters 1-13 at minimum.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">The RL bible</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://rail.eecs.berkeley.edu/deeprlcourse/" target="_blank" class="res-link">UC Berkeley CS285 — Deep Reinforcement Learning (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Sergey Levine's course is the state-of-the-art in deep RL. Free lectures and assignments. Covers: policy gradients, actor-critic, model-based RL, offline RL, goal-conditioned RL, and RL for robotics. This course directly connects modern deep RL to robot manipulation and locomotion. Highly mathematical and deeply practical.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">State of the art</span><span class="rtag vid">UC Berkeley</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://gymnasium.farama.org/" target="_blank" class="res-link">Gymnasium (formerly OpenAI Gym) — RL environments <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free Python library of RL environments: CartPole, MountainCar, Atari games, MuJoCo robot simulations. Start with CartPole (control theory meets RL), progress to MuJoCo humanoid locomotion. Every RL algorithm should be tested here before being deployed on real robots.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The convergence project:</b> Train a simulated robot arm (MuJoCo or PyBullet) to perform a manipulation task using deep RL. This combines: control theory (stability), kinematics (robot modeling), deep learning (policy network), and RL (reward shaping). It is the quintessential cross-domain AI project.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm27">
+      <div class="step-head" onclick="tog('pm27')">
+        <div class="step-num num-ai">4</div>
+        <div class="step-info"><div class="step-title">Scientific Computing & Computational Biology</div><div class="step-meta">AI for science and discovery</div></div>
+        <div class="step-arrow" id="a-pm27">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm27">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLMrJAkhIeNNQz5JDB00bMYLGVFnOkmel6" target="_blank" class="res-link">Steve Brunton — Scientific Computing / Data-Driven Engineering (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Brunton's full course on scientific computing covers: numerical linear algebra, ODEs/PDEs, Fourier analysis, SVD for data, dynamic mode decomposition, and ML for scientific computing. This is where the math track, physics track, and CS track all converge into computational science.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">AlphaFold and the AI-for-Science revolution</div>
+              <div class="res-desc">DeepMind's AlphaFold solved protein structure prediction — a 50-year grand challenge in biology — using deep learning constrained by physical and evolutionary priors. This is the template for AI-for-science: domain knowledge (biology/physics) + deep learning + massive computation. Study the AlphaFold2 paper (Jumper et al., Nature 2021) and the open-source code to understand how polymathic AI systems are built. Similarly, study DeepMind's GNoME for materials discovery and weather prediction models like GraphCast.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://julia.mit.edu/" target="_blank" class="res-link">MIT "Introduction to Computational Thinking" with Julia (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free MIT course using Julia for scientific computing. Julia is purpose-built for numerical computing — as fast as C, as readable as Python. The course covers: image processing, climate modeling, optimization, and differential equations, all with interactive Julia notebooks. An excellent entry into scientific computing for someone coming from the Python ML world.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Julia</span><span class="rtag vid">MIT</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The AI-for-Science thesis:</b> The next decade of AI breakthroughs will come not from better architectures alone, but from injecting domain knowledge into AI systems. AlphaFold worked because it encoded evolutionary and physical constraints. The people who can bridge AI AND a scientific domain will produce the breakthroughs. This is the ultimate polymath career path: become fluent in both AI and a scientific domain, then work at the intersection where nobody else can.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       TAB 7 — THE SYNTHESIS LAYER
+       ============================================================ -->
+  <div class="panel" id="p7">
+    <div class="track-header">
+      <div class="track-badge badge-math">Connecting All Domains</div>
+      <div class="track-title">The Synthesis Layer — becoming more than the sum of your parts</div>
+      <div class="track-sub">Knowledge in separate domains is a library. Knowledge connected across domains is an engine. This final tab is about the synthesis — how to deliberately connect your domains, build at intersections, publish interdisciplinary work, and construct a polymath identity that compounds over decades. This is where the program transforms from "learning a lot" into "becoming someone rare."</div>
+    </div>
+
+    <div class="step" id="pm28">
+      <div class="step-head" onclick="tog('pm28')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info"><div class="step-title">Cross-Domain Projects — the forcing function</div><div class="step-meta">Projects that require multiple domains simultaneously</div></div>
+        <div class="step-arrow" id="a-pm28">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm28">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">1</div>
+            <div class="res-content">
+              <div class="res-name">Physics simulation with ML acceleration</div>
+              <div class="res-desc">Build a fluid dynamics or N-body simulation using classical numerical methods, then train a neural network to accelerate it (neural operators, PINNs). Requires: physics (PDEs, conservation laws), mathematics (numerical analysis), CS (efficient implementation), and ML (network design, training). Deploy as an interactive web visualization. Domains touched: 4.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">2</div>
+            <div class="res-content">
+              <div class="res-name">Autonomous robot with learned perception and control</div>
+              <div class="res-desc">Build a physical or simulated robot that uses computer vision for perception, RL for decision-making, and classical control for low-level actuation. Requires: robotics (kinematics, ROS2), ML (CNNs for vision, RL for policy), control systems (PID for motors), embedded systems (hardware interface), and software engineering (the system integration). Domains touched: 5.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">3</div>
+            <div class="res-content">
+              <div class="res-name">Cryptographic protocol with formal verification</div>
+              <div class="res-desc">Design a novel cryptographic protocol, implement it, and formally verify its security properties using Coq or Lean. Requires: number theory (algebra over finite fields), CS theory (computational complexity of breaking the protocol), software engineering (implementation), and formal methods (machine-checked proofs of correctness). Domains touched: 4.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">4</div>
+            <div class="res-content">
+              <div class="res-name">AI-powered scientific discovery tool</div>
+              <div class="res-desc">Build a tool that uses ML to accelerate scientific research in a specific domain: drug discovery (chemistry + ML), materials science (physics + ML), mathematical conjecture generation (math + ML), or automated theorem proving (logic + ML). Study the existing literature (AlphaFold, GNoME, Llemma), then build your own version for a niche domain. Domains touched: 3-5 depending on the domain.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">5</div>
+            <div class="res-content">
+              <div class="res-name">Quantum computing simulator with educational visualization</div>
+              <div class="res-desc">Build a quantum circuit simulator from scratch using the mathematics of quantum mechanics (linear algebra over complex vector spaces, tensor products, unitary operators). Add beautiful visualizations (Bloch sphere, state evolution, entanglement). Requires: quantum mechanics, linear algebra, software engineering, and visualization. Deploy as a web app. Domains touched: 4.</div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The rule of cross-domain projects:</b> Every project you build from this point forward should touch at least 3 domains. Single-domain projects prove competence. Cross-domain projects prove synthesis. Synthesis is what makes a polymath — and what makes you irreplaceable.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm29">
+      <div class="step-head" onclick="tog('pm29')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info"><div class="step-title">Research at Intersections</div><div class="step-meta">Finding and publishing interdisciplinary work</div></div>
+        <div class="step-arrow" id="a-pm29">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm29">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">How to find research problems at intersections</div>
+              <div class="res-desc">The richest research problems live at boundaries between fields. To find them: (1) Read papers from two different fields in the same week and ask "what technique from field A would solve a problem in field B?" (2) Attend talks and conferences outside your primary domain. (3) Follow researchers who work at intersections — they model the path. (4) When you learn a new technique, immediately ask "where else could this apply?" The best intersection problems are ones where neither field alone has the tools to solve them, but both together do.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://arxiv.org/" target="_blank" class="res-link">arXiv — free research paper repository <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">All cutting-edge research in physics, mathematics, CS, and ML is posted on arXiv for free. Build a daily habit: read one abstract per day from a field adjacent to your main focus. Use Semantic Scholar (semanticscholar.org) or Connected Papers (connectedpapers.com) to find related work across field boundaries. Subscribe to arXiv categories in at least two domains.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Daily habit</span><span class="rtag tool">Research</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">Publishing venues for interdisciplinary work</div>
+              <div class="res-desc">Interdisciplinary journals and conferences: Nature, Science, PNAS (broad science). NeurIPS, ICML, ICLR (ML with growing physics/science tracks). Journal of Machine Learning Research (JMLR, free and open access). Physical Review X (physics + computation). AAAI (AI broadly). Workshop papers at major conferences are excellent entry points — many NeurIPS/ICML workshops specifically seek cross-domain work. Start with workshop papers, build toward main conference submissions.</div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The publication strategy for a polymath:</b> Do not try to publish in the top venue of each field. Instead, find venues that VALUE cross-domain work. Workshop papers at NeurIPS/ICML that combine physics+ML are easier to get accepted than pure ML papers at the same venues, because you face less competition and reviewers value novelty of approach. Your polymath background IS your competitive advantage in publishing.</div>
+      </div>
+    </div>
+
+    <div class="step" id="pm30">
+      <div class="step-head" onclick="tog('pm30')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info"><div class="step-title">Building a Polymath Identity</div><div class="step-meta">How to present and compound your cross-domain expertise</div></div>
+        <div class="step-arrow" id="a-pm30">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-pm30">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The portfolio architecture</div>
+              <div class="res-desc">Your public presence should make your cross-domain expertise visible and legible. GitHub: organized by domain with cross-references between repos. Personal website/blog: write posts that explicitly connect two domains ("What quantum mechanics taught me about neural network optimization"). LinkedIn: headline that names your intersection ("AI + Physics + Robotics"). Each piece of public work should demonstrate synthesis, not just competence in one area.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The teaching advantage</div>
+              <div class="res-desc">Teach what you learn. Write blog posts, make YouTube videos, give talks at meetups. Teaching forces the Feynman Technique on yourself — you cannot explain what you do not deeply understand. But more importantly, teaching builds your public identity. A person who writes a blog post titled "Category Theory for Machine Learning Engineers" is immediately identified as someone who bridges fields. That identity compounds — people start bringing you problems that live at intersections.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon">&#9670;</div>
+            <div class="res-content">
+              <div class="res-name">The network effect</div>
+              <div class="res-desc">Polymaths need networks in multiple communities. Join: local math meetups, ML reading groups, robotics clubs, physics colloquia, open source projects in different domains. Online: follow researchers at intersections on Twitter/X, join Discord servers for different domains (ML Collective, Physics Forums, Robotics Worldwide). Each community gives you problems, collaborators, and perspectives that your other communities lack. Your cross-community position IS your unfair advantage.</div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">"The Polymath Playbook" — essential reading list for the polymath path</div>
+              <div class="res-desc">"Range" by David Epstein (why generalists win). "Ultralearning" by Scott Young (how to learn anything fast). "Poor Charlie's Almanack" by Charlie Munger (latticework of mental models). "Surely You're Joking, Mr. Feynman!" by Richard Feynman (the polymath life). "The Art of Doing Science and Engineering" by Richard Hamming (how to do great work). "Godel, Escher, Bach" by Douglas Hofstadter (the ultimate cross-domain book — mathematics, art, music, AI, consciousness). Read one per quarter.</div>
+              <div class="res-tags"><span class="rtag must">Essential reading</span><span class="rtag book">Books</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Your 48-month milestone check:</b> By the end of this program, you should be able to: (1) Read a research paper from any domain in this program and understand the core argument. (2) Build a project that touches 3+ domains. (3) Explain a concept from one domain using the language of another. (4) Identify research problems at intersections that specialists miss. (5) Have a public body of work that demonstrates synthesis, not just collection. If you can do all five, you are a polymath. Not because you know everything — but because you can connect anything.</div>
+        <button class="btn-ask" onclick="sendPrompt('Help me design a 12-month study plan that interleaves mathematics, physics, CS, and ML using the Polymath Framework methodology')">Design my personalized polymath study plan &#8599;</button>
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

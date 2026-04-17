@@ -1,0 +1,209 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Mathematics — Polymath.Sys" activeNav="courses">
+    <div class="track-header">
+      <div class="track-badge badge-math">Pure Mathematics &middot; 18-24 months</div>
+      <div class="track-title">Mathematics &mdash; the language underneath everything</div>
+      <div class="track-sub">Real Analysis, Abstract Algebra, Number Theory, Topology, Combinatorics, and Graph Theory. This is not math for applications &mdash; this is math for its own sake. The rigor you build here transfers to every technical domain. Proof-writing is the ultimate form of precise thinking.</div>
+    </div>
+
+    <!-- Math Step 1: Real Analysis -->
+    <div class="step" id="ma0">
+      <div class="step-head" onclick="tog('ma0')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info"><div class="step-title">Real Analysis &mdash; the rigorous foundations of calculus</div><div class="step-meta">Months 1-4 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ma0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Understanding Analysis &mdash; Stephen Abbott</div>
+              <div class="res-desc">The best first real analysis textbook. Abbott writes with motivation and clarity that Rudin lacks. Covers: the real numbers, sequences, series, continuity, differentiation, integration, and sequences of functions. Every theorem is preceded by motivation explaining WHY you should care. Do every exercise &mdash; proof-writing only develops through practice.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw" target="_blank" class="res-link">MIT 18.100A &mdash; Real Analysis (Casey Rodriguez, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT real analysis lectures free on YouTube. Rodriguez is an exceptional lecturer who makes epsilon-delta proofs intuitive. Watch alongside Abbott's book. The problem sets (available on OCW) are the real learning tool.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Principles of Mathematical Analysis &mdash; Walter Rudin ("Baby Rudin")</div>
+              <div class="res-desc">The classic. Terse, elegant, unforgiving. Read AFTER Abbott when you want to see the same material presented with maximum rigor and minimum hand-holding. Every serious mathematician has worked through Rudin. The exercises range from routine to research-level. Do at least the first 8 chapters.</div>
+              <div class="res-tags"><span class="rtag book">Classic textbook</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Proof-writing bootcamp:</b> For every theorem you study, close the book and try to prove it yourself before reading the proof. Then compare. This single habit builds proof-writing ability faster than any other method. Keep a "proof journal" where you write one clean proof per day.</div>
+      </div>
+    </div>
+
+    <!-- Math Step 2: Abstract Algebra -->
+    <div class="step" id="ma1">
+      <div class="step-head" onclick="tog('ma1')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info"><div class="step-title">Abstract Algebra &mdash; groups, rings, fields, symmetry</div><div class="step-meta">Months 4-8 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ma1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://abstract.ups.edu/" target="_blank" class="res-link">Abstract Algebra: Theory and Applications &mdash; Tom Judson (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A complete, free, open-source abstract algebra textbook at abstract.ups.edu. Covers groups, subgroups, cyclic groups, permutation groups, cosets, normal subgroups, homomorphisms, rings, integral domains, fields, field extensions, and Galois theory. Includes Sage computational exercises. A genuine alternative to Dummit &amp; Foote for self-study.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Start here</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5" target="_blank" class="res-link">Socratica &mdash; Abstract Algebra (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short (5-10 minute), beautifully produced videos covering groups, subgroups, homomorphisms, rings, and fields. Perfect for building quick intuition before diving into textbook proofs. The group theory playlist is particularly strong.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Algebra &mdash; Dummit &amp; Foote</div>
+              <div class="res-desc">The comprehensive reference. 900+ pages covering groups, rings, modules, fields, Galois theory, and more. Not a first read, but the book you go to when Judson's treatment feels incomplete. The exercise sets are enormous and graded in difficulty. Essential for anyone going to graduate school.</div>
+              <div class="res-tags"><span class="rtag book">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@VisualMath" target="_blank" class="res-link">Visual Group Theory &mdash; Visual Math (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Uses Cayley diagrams, symmetry visualizations, and color-coded animations to make group theory visual and concrete. Watch before reading each chapter to build geometric intuition for algebraic structures.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The connection to quantum:</b> Groups are the mathematical language of symmetry, and symmetry is the deepest principle in physics. When you reach quantum mechanics, you will see that particle physics IS group representation theory (SU(2), SU(3), the Standard Model). The algebra you learn here is not abstract &mdash; it IS the structure of physical reality.</div>
+      </div>
+    </div>
+
+    <!-- Math Step 3: Number Theory -->
+    <div class="step" id="ma2">
+      <div class="step-head" onclick="tog('ma2')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info"><div class="step-title">Number Theory &mdash; primes, congruences, cryptography foundations</div><div class="step-meta">Months 8-11 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-ma2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://shoup.net/ntb/" target="_blank" class="res-link">A Computational Introduction to Number Theory and Algebra &mdash; Victor Shoup (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free PDF at shoup.net/ntb. Covers divisibility, primes, congruences, Euler's theorem, quadratic reciprocity, and connects directly to RSA, Diffie-Hellman, and elliptic curve cryptography. Perfect for someone who wants number theory with computational applications.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Best for CS students</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL22w63XsKjqwAgBzVFVqZNMcVKpOOAA7c" target="_blank" class="res-link">Michael Penn &mdash; Number Theory (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Clear, proof-focused lectures on elementary number theory. Penn writes every proof on the board step by step. His style is ideal for self-study &mdash; just pause, attempt the proof yourself, then watch his approach.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">An Introduction to the Theory of Numbers &mdash; Hardy &amp; Wright</div>
+              <div class="res-desc">The classic. Dense, deep, and beautiful. Covers divisibility, primes, congruences, quadratic residues, continued fractions, and partitions. Not a first text, but the book you graduate to after Shoup. Every number theorist has this on their shelf.</div>
+              <div class="res-tags"><span class="rtag book">Classic</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The project connection:</b> Implement RSA encryption from scratch using your number theory knowledge. Then implement Diffie-Hellman key exchange. Understanding WHY these algorithms work (modular exponentiation, Euler's theorem, discrete logarithm hardness) makes cryptography transparent instead of magical.</div>
+      </div>
+    </div>
+
+    <!-- Math Step 4: Topology -->
+    <div class="step" id="ma3">
+      <div class="step-head" onclick="tog('ma3')">
+        <div class="step-num num-math">4</div>
+        <div class="step-info"><div class="step-title">Topology &mdash; continuity, connectedness, compactness without distance</div><div class="step-meta">Months 11-15 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-ma3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Topology &mdash; James Munkres</div>
+              <div class="res-desc">THE topology textbook. Part I covers set theory and general topology (topological spaces, connectedness, compactness, countability, separation axioms). Part II covers algebraic topology (fundamental group, covering spaces). The exercises are carefully graded and essential. Chapters 1-8 of Part I are the core curriculum.</div>
+              <div class="res-tags"><span class="rtag must">Standard text</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@Morphocular" target="_blank" class="res-link">Morphocular &mdash; Topology Visualizations (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Beautiful animated videos that make topological concepts visual. Open sets, continuity, quotient spaces, and homotopy explained through geometric intuition. Watch before each Munkres chapter to prime your visual thinking.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLd8NbPjkXPliJunBhtDNMuFsnZPeHpm-0" target="_blank" class="res-link">Tadashi Tokieda &mdash; Topology and Geometry (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Tokieda's lectures from the African Institute for Mathematical Sciences. Playful, intuitive, and deeply insightful. He teaches topology through physical demonstrations and clever arguments. A perfect complement to Munkres' formality.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why topology matters for data science:</b> Topological data analysis (TDA) uses persistent homology to find shape in high-dimensional data. The mathematical foundations you build here &mdash; open sets, continuous maps, homology groups &mdash; directly underpin cutting-edge ML research. Topology is also the language of quantum error correction codes.</div>
+      </div>
+    </div>
+
+    <!-- Math Step 5: Combinatorics & Graph Theory -->
+    <div class="step" id="ma4">
+      <div class="step-head" onclick="tog('ma4')">
+        <div class="step-num num-math">5</div>
+        <div class="step-info"><div class="step-title">Combinatorics &amp; Graph Theory &mdash; counting, structure, algorithms</div><div class="step-meta">Months 15-18 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-ma4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-212-algebraic-combinatorics-spring-2019/" target="_blank" class="res-link">MIT 18.212 &mdash; Algebraic Combinatorics (MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Richard Stanley's MIT course on combinatorics. Covers walks on graphs, Catalan numbers, generating functions, partitions, and Young tableaux. Free lecture notes and problem sets on OCW. Stanley's "Enumerative Combinatorics" Vol 1 is the companion text.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Graph Theory &mdash; Reinhard Diestel (free online)</div>
+              <div class="res-desc">The standard graduate graph theory text, free at diestel-graph-theory.com. Covers connectivity, matchings, coloring, planarity, flows, Hamilton cycles, random graphs, and graph minors. Beautifully structured with clear proofs. The free online edition is complete.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Standard text</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@Sarada-Herke" target="_blank" class="res-link">Sarada Herke &mdash; Graph Theory (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">70+ short videos covering graph theory from basics to advanced topics. Clear visual demonstrations with hand-drawn graphs. Great for building intuition alongside Diestel's more formal treatment.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The competitive programming connection:</b> Combinatorics and graph theory are the mathematical backbone of competitive programming. Problems involving counting, paths, matchings, and network flows all draw directly from this material. Study these topics and your CP rating will jump.</div>
+      </div>
+    </div>
+</PhaseLayout>

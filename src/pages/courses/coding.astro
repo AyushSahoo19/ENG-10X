@@ -1,0 +1,165 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Coding Mastery — Polymath.Sys" activeNav="courses">
+
+    <div class="track-header">
+      <div class="track-badge badge-java">Language Mastery &middot; Ongoing</div>
+      <div class="track-title">Coding Mastery &mdash; C, C++, Python, Rust, Go, Assembly</div>
+      <div class="track-sub">Deep fluency in systems programming languages. This is not about syntax &mdash; it is about understanding memory models, type systems, concurrency primitives, and the machine underneath. Each language teaches a different way of thinking about computation. Master the language, master the paradigm.</div>
+    </div>
+
+    <!-- Coding Step 1: C -->
+    <div class="step" id="cd0">
+      <div class="step-head" onclick="tog('cd0')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">C &mdash; the language closest to the machine</div><div class="step-meta">Months 1-3 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-cd0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The C Programming Language &mdash; Kernighan &amp; Ritchie (K&amp;R)</div>
+              <div class="res-desc">The original C book by the language's creators. 272 pages of dense, perfect prose. Every exercise builds mastery. Read cover to cover and do every exercise. There is no substitute for this book. After K&amp;R, you understand pointers, memory management, and the Unix philosophy at a visceral level.</div>
+              <div class="res-tags"><span class="rtag must">The definitive book</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@JacobSorworker" target="_blank" class="res-link">Jacob Sorber &mdash; C and Systems Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Focused, practical C tutorials: pointers, arrays, structs, memory allocation, file I/O, sockets, threads. Each video is 10-15 min with working code. Use alongside K&amp;R when you need to see concepts in action.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://exercism.org/tracks/c" target="_blank" class="res-link">Exercism &mdash; C Track (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free guided exercises in C with mentoring. 95+ exercises covering strings, pointers, structs, memory management, and algorithms in C. The difficulty ramp is well-calibrated. After K&amp;R, grind Exercism to build fluency.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>C mastery project:</b> Build a memory allocator (malloc/free) from scratch using sbrk. Then build a simple shell. Then build an HTTP server. These three projects &mdash; in that order &mdash; prove you understand memory, processes, and I/O at the systems level. C is the language of operating systems, databases, and compilers.</div>
+      </div>
+    </div>
+
+    <!-- Coding Step 2: C++ -->
+    <div class="step" id="cd1">
+      <div class="step-head" onclick="tog('cd1')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">C++ &mdash; systems programming with abstraction power</div><div class="step-meta">Months 3-6 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-cd1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">A Tour of C++ &mdash; Bjarne Stroustrup</div>
+              <div class="res-desc">The best concise C++ introduction by the language's creator. Covers modern C++ (C++17/20): RAII, move semantics, templates, concepts, containers, algorithms, concurrency, and modules. Only 256 pages. Read if you already know C and want to learn C++ fast.</div>
+              <div class="res-tags"><span class="rtag must">Best quick start</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.learncpp.com/" target="_blank" class="res-link">learncpp.com &mdash; comprehensive free C++ tutorial <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The most comprehensive free C++ tutorial online. Covers everything from basics to templates, move semantics, smart pointers, and STL. Updated regularly with modern C++ standards. Use as reference alongside Stroustrup's book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best free resource</span><span class="rtag tool">Tutorial</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@TheCherno" target="_blank" class="res-link">The Cherno &mdash; C++ Series (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">100+ C++ videos from basics to advanced: virtual functions, templates, move semantics, smart pointers, multithreading, and game engine architecture. The Cherno's practical, game-dev perspective makes abstract C++ features concrete. The game engine series is particularly instructive.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>C++ is where performance meets abstraction.</b> Game engines (Unreal), browsers (Chrome), databases (MySQL, MongoDB), and ML frameworks (PyTorch's C++ backend, TensorFlow) are all C++. If you want to work on systems that process millions of operations per second, C++ mastery is non-negotiable.</div>
+      </div>
+    </div>
+
+    <!-- Coding Step 3: Rust -->
+    <div class="step" id="cd2">
+      <div class="step-head" onclick="tog('cd2')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Rust &mdash; memory safety without garbage collection</div><div class="step-meta">Months 6-9 &middot; ~70 hours</div></div>
+        <div class="step-arrow" id="a-cd2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://doc.rust-lang.org/book/" target="_blank" class="res-link">The Rust Programming Language (free online, "The Book") <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The official Rust book, free at doc.rust-lang.org/book. Covers ownership, borrowing, lifetimes, structs, enums, pattern matching, traits, generics, closures, iterators, smart pointers, concurrency, and async. Beautifully written with progressive examples. Read every chapter and do the exercises.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Start here</span><span class="rtag book">Official book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://github.com/rust-lang/rustlings" target="_blank" class="res-link">Rustlings &mdash; small exercises to learn Rust (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Interactive exercises that run in your terminal. Fix compiler errors, fill in implementations, and pass tests. The exercises follow The Book chapter by chapter. Complete all 95+ exercises after reading each corresponding chapter.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Hands-on practice</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@jonhoo" target="_blank" class="res-link">Jon Gjengset &mdash; Crust of Rust (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Deep, intermediate Rust content: iterators, smart pointers, lifetime annotations, async/await internals, and building real projects. His streams where he builds production-quality Rust code are the best way to learn idiomatic Rust after The Book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Rust project path:</b> Build a CLI tool (file search, JSON processor), then a web server with Actix or Axum, then a concurrent data structure. Rust's compiler is your teacher &mdash; fight the borrow checker until the ownership model clicks. Once it does, you will never think about memory the same way again.</div>
+      </div>
+    </div>
+
+    <!-- Coding Step 4: Go & Python & Assembly -->
+    <div class="step" id="cd3">
+      <div class="step-head" onclick="tog('cd3')">
+        <div class="step-num num-java">4</div>
+        <div class="step-info"><div class="step-title">Go, Python (advanced), Assembly &mdash; completing the spectrum</div><div class="step-meta">Months 9-12+ &middot; ~60 hours each</div></div>
+        <div class="step-arrow" id="a-cd3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://go.dev/tour/" target="_blank" class="res-link">A Tour of Go + "Go by Example" (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Go's official interactive tour at go.dev/tour and gobyexample.com together teach Go in a weekend. Go's goroutines and channels make concurrent programming natural. Build a concurrent web scraper, then a CLI tool, then a microservice. Go is the language of Kubernetes, Docker, and cloud infrastructure.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Weekend to start</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Fluent Python &mdash; Luciano Ramalho</div>
+              <div class="res-desc">The advanced Python book for programmers who already know Python. Covers data model, sequences, functions as objects, decorators, closures, iterators, generators, context managers, metaprogramming, and concurrency. Reading this transforms Python from "the language I use" to "a language I deeply understand."</div>
+              <div class="res-tags"><span class="rtag must">Advanced Python</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Ben Eater &mdash; 6502 Assembly (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Build a computer and program it in assembly. Ben Eater's 6502 series shows you how assembly code maps to hardware operations. After watching, you understand what every high-level language compiles TO. Pair with the NASM x86-64 tutorial at asmtutor.com for modern assembly.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The polyglot advantage:</b> Each language teaches a paradigm. C teaches memory. C++ teaches abstraction over memory. Rust teaches ownership. Go teaches simplicity and concurrency. Python teaches expressiveness. Assembly teaches what actually happens. Together they give you a complete mental model of computation from silicon to application.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

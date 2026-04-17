@@ -1,0 +1,1181 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="World-Class Engineer Program" activeNav="courses">
+
+  <div class="timeline">
+    <div class="tw"><div class="tw-num">CS</div><div class="tw-lbl">Core Foundation</div></div>
+    <div class="tw"><div class="tw-num">DSA</div><div class="tw-lbl">Mastery</div></div>
+    <div class="tw"><div class="tw-num">LLD</div><div class="tw-lbl">Low-Level Design</div></div>
+    <div class="tw"><div class="tw-num">HLD</div><div class="tw-lbl">High-Level Design</div></div>
+    <div class="tw"><div class="tw-num">SD</div><div class="tw-lbl">System Design</div></div>
+    <div class="tw"><div class="tw-num">LOW</div><div class="tw-lbl">Low-Level Prog</div></div>
+    <div class="tw"><div class="tw-num">HIGH</div><div class="tw-lbl">High-Level Prog</div></div>
+    <div class="tw"><div class="tw-num">DS+AI</div><div class="tw-lbl">Distributed+ML</div></div>
+    <div class="tw"><div class="tw-num">SE</div><div class="tw-lbl">Full SE Program</div></div>
+  </div>
+
+  <div class="nav">
+    <button class="ntab active" onclick="show(0)">CS Core</button>
+    <button class="ntab" onclick="show(1)">DSA Mastery</button>
+    <button class="ntab" onclick="show(2)">LLD</button>
+    <button class="ntab" onclick="show(3)">HLD</button>
+    <button class="ntab" onclick="show(4)">System Design</button>
+    <button class="ntab" onclick="show(5)">Low-Level Prog</button>
+    <button class="ntab" onclick="show(6)">High-Level Prog</button>
+    <button class="ntab" onclick="show(7)">Distributed + AI/ML</button>
+    <button class="ntab" onclick="show(8)">Full SE Program</button>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 0: CS CORE FOUNDATION                   -->
+  <!-- ============================================ -->
+  <div class="panel active" id="p0">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Months 1-6 · The bedrock of engineering</div>
+      <div class="track-title">CS Core Foundation -- what separates engineers from coders</div>
+      <div class="track-sub">Computer Architecture, Operating Systems, Networking, Databases, Compilers, and Distributed Systems Theory. These six pillars define the difference between someone who writes code and someone who understands machines. Every senior engineer interview, every system design round, every production incident traces back to one of these six areas. Skip them and you build on sand.</div>
+    </div>
+
+    <!-- Computer Architecture -->
+    <div class="step" id="e0">
+      <div class="step-head" onclick="tog('e0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">Computer Architecture -- how machines actually compute</div><div class="step-meta">4-6 weeks · ~40 hours</div></div>
+        <div class="step-arrow" id="a-e0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.nand2tetris.org/" target="_blank" class="res-link">Nand2Tetris (Part 1 + Part 2) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Build an entire computer from NAND gates to a working operating system. Part 1 covers hardware: logic gates, ALU, CPU, RAM, machine language. Part 2 covers software: assembler, VM translator, compiler, OS. Free on Coursera (audit) and nand2tetris.org. This single course replaces an entire semester of computer architecture because you BUILD every layer instead of just reading about it. The project-based approach means you truly understand how a CPU fetches, decodes, and executes instructions.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Start here</span><span class="rtag vid">Coursera + site</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://csapp.cs.cmu.edu/" target="_blank" class="res-link">CS:APP -- Computer Systems: A Programmer's Perspective (Bryant &amp; O'Hallaron) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The CMU textbook that every top CS program uses. Covers data representation, machine-level programs, processor architecture, memory hierarchy, linking, exceptional control flow, virtual memory, and system-level I/O. Focus chapters: Ch1 (tour), Ch3 (machine programs), Ch5 (optimization), Ch6 (memory hierarchy), Ch9 (virtual memory). The labs (bomb lab, attack lab, cache lab) are legendary -- do them.</div>
+              <div class="res-tags"><span class="rtag book">Textbook</span><span class="rtag must">CMU standard</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Stanford CS107 -- Computer Organization &amp; Systems <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's version of the systems course. Covers bits and bytes, C pointers and memory, assembly language, memory management, and system calls. The assignments are brutally effective at teaching you what the machine is actually doing under your high-level code. Available through Stanford Engineering Everywhere.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>What you actually do:</b> Start with Nand2Tetris Part 1 (6 projects, ~3 weeks). Then read CS:APP chapters 1, 3, 5, 6 alongside the CMU labs. After this you should be able to explain exactly what happens when you type <code>int x = 42;</code> in C -- from the register allocation to the cache line fetch to the virtual memory translation. If you cannot trace that path, you are not done.</div>
+      </div>
+    </div>
+
+    <!-- Operating Systems -->
+    <div class="step" id="e1">
+      <div class="step-head" onclick="tog('e1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Operating Systems Internals -- processes, memory, filesystems</div><div class="step-meta">6-8 weeks · ~50 hours</div></div>
+        <div class="step-arrow" id="a-e1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" class="res-link">OSTEP -- Operating Systems: Three Easy Pieces (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best OS textbook ever written, and it is completely free at pages.cs.wisc.edu/~remzi/OSTEP/. Three sections: Virtualization (processes, scheduling, address spaces, paging), Concurrency (threads, locks, condition variables, semaphores), Persistence (I/O devices, file systems, journaling). The writing is exceptionally clear. Every chapter has homework simulations you can run. This book alone is a full OS course.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">The OS bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pdos.csail.mit.edu/6.828/2023/" target="_blank" class="res-link">MIT 6.S081 -- Operating System Engineering (xv6) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">MIT's legendary OS course built around xv6, a teaching Unix written in C. You implement system calls, page tables, copy-on-write fork, multithreading, a file system, and a network driver. The labs are publicly available with autograders. This is where you go from understanding OS theory to actually modifying a kernel. Lectures by Frans Kaashoek are on YouTube.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Build a real kernel</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@JacobSorber" target="_blank" class="res-link">Jacob Sorber -- Systems Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short, focused videos on processes, threads, pipes, sockets, signals, memory mapping, and file I/O in C. Perfect companion to OSTEP -- when a chapter's concept feels abstract, search Jacob Sorber's channel for a 10-minute hands-on demonstration.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why this matters for system design interviews:</b> When you say "the process forks and the child inherits the file descriptor table," interviewers know instantly whether you actually understand what happens. OS knowledge is the difference between hand-waving at "concurrency issues" and precisely explaining race conditions, deadlocks, and the exact memory model your application runs on.</div>
+      </div>
+    </div>
+
+    <!-- Networking -->
+    <div class="step" id="e2">
+      <div class="step-head" onclick="tog('e2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Networking -- TCP/IP stack, HTTP, DNS, sockets</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS" target="_blank" class="res-link">Stanford CS144 -- Introduction to Computer Networking <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's networking course with publicly available labs where you build a working TCP implementation from scratch. You implement the TCP sender, receiver, and connection over an unreliable network. By the end you understand TCP not because you memorized the state diagram, but because you wrote one. The 2024 labs use modern C++.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Build TCP yourself</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://beej.us/guide/bgnet/" target="_blank" class="res-link">Beej's Guide to Network Programming <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The classic free guide to socket programming in C. Covers: socket creation, binding, listening, accepting, sending, receiving, select/poll, and building a simple HTTP server from raw sockets. Every backend engineer should have written a socket server at least once. This guide makes it approachable.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Classic</span><span class="rtag book">Guide</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@HusseinNasser-ku4yb" target="_blank" class="res-link">Hussein Nasser -- Backend &amp; Networking Deep Dives (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">In-depth videos on TCP vs UDP, HTTP/1.1 vs HTTP/2 vs HTTP/3, TLS handshake, DNS resolution, connection pooling, load balancing internals, and reverse proxies. His style is perfect for engineers -- he explains the protocol layer by layer with real packet captures. Watch the TCP and HTTP/2 deep dives first.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The networking checkpoint:</b> Open Wireshark, capture a TCP handshake (SYN, SYN-ACK, ACK), then an HTTP request. Trace every packet through the layers: Ethernet frame, IP header, TCP segment, HTTP payload. If you can annotate every field in the packet capture, you understand networking at the level that matters for production debugging.</div>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="step" id="e3">
+      <div class="step-head" onclick="tog('e3')">
+        <div class="step-num num-dsa">4</div>
+        <div class="step-info"><div class="step-title">Databases -- B-trees, LSM trees, MVCC, query optimization</div><div class="step-meta">6-8 weeks · ~50 hours</div></div>
+        <div class="step-arrow" id="a-e3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://dataintensive.net/" target="_blank" class="res-link">Designing Data-Intensive Applications -- Martin Kleppmann <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">DDIA is the single most important book for any software engineer working on backend systems. Part I: Data models, storage engines (B-trees vs LSM trees), encoding formats. Part II: Replication, partitioning, transactions (MVCC, serializable isolation). Part III: Derived data, batch processing, stream processing. Read cover to cover. This book will come up in every system design interview you ever do. Chapters 3 (Storage), 5 (Replication), 7 (Transactions), and 9 (Consistency) are the most critical.</div>
+              <div class="res-tags"><span class="rtag must">The engineering bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://15445.courses.cs.cmu.edu/" target="_blank" class="res-link">CMU 15-445 -- Database Systems (Andy Pavlo) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Andy Pavlo's database course is the gold standard. All lectures on YouTube. Covers: SQL, storage engines, B+ trees, hash tables, buffer pool management, query execution, query optimization, concurrency control (2PL, MVCC), crash recovery (WAL, ARIES). The BusTub project has you build a database engine component by component. Pavlo's teaching style is electric -- he makes B-tree page splits exciting.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best DB course</span><span class="rtag vid">YouTube + CMU</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Architecture of a Database System -- Hellerstein, Stonebraker, Hamilton (free paper)</div>
+              <div class="res-desc">A survey paper that walks through the architecture of a modern RDBMS end to end: process model, parallel architecture, relational query processor, storage system, transactions, buffer management. Reading this paper gives you the aerial view that makes DDIA and Pavlo's course click together. Free PDF from UC Berkeley.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag book">Research paper</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why B-trees and LSM trees matter:</b> B-trees power every SQL database (PostgreSQL, MySQL). LSM trees power every write-heavy NoSQL store (RocksDB, Cassandra, LevelDB). Understanding their tradeoffs (read amplification vs write amplification vs space amplification) is the foundation of every storage decision you will ever make. DDIA Chapter 3 covers this perfectly.</div>
+      </div>
+    </div>
+
+    <!-- Compilers -->
+    <div class="step" id="e4">
+      <div class="step-head" onclick="tog('e4')">
+        <div class="step-num num-dsa">5</div>
+        <div class="step-info"><div class="step-title">Compilers -- lexing, parsing, code generation</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://craftinginterpreters.com/" target="_blank" class="res-link">Crafting Interpreters -- Robert Nystrom (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best book on compilers/interpreters for practitioners. Free at craftinginterpreters.com. Part I builds a tree-walk interpreter in Java (jlox). Part II builds a bytecode virtual machine in C (clox). Covers: scanning, parsing (Pratt parser), ASTs, closures, garbage collection, classes, inheritance. The writing quality is extraordinary -- each chapter builds perfectly on the last. Do both implementations.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Best compiler book</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykUFc8TOpLyElaED" target="_blank" class="res-link">Stanford CS143 -- Compilers (Alex Aiken) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's compiler course with full lectures on edX/YouTube. Covers lexical analysis (finite automata, regex), parsing (LL, LR), semantic analysis, code generation, and optimization. More theoretical than Crafting Interpreters -- use after you have the practical foundation from Nystrom's book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Why every engineer should build a compiler once:</b> Compilers teach you parsing (used in every config file, API response, and protocol you will ever handle), tree transformations (used in every code analysis tool, linter, and transpiler), and optimization (the same pass-based approach used in ML compilers like XLA and TVM). The skills transfer everywhere.</div>
+      </div>
+    </div>
+
+    <!-- Distributed Systems Theory -->
+    <div class="step" id="e5">
+      <div class="step-head" onclick="tog('e5')">
+        <div class="step-num num-dsa">6</div>
+        <div class="step-info"><div class="step-title">Distributed Systems Theory -- consensus, replication, fault tolerance</div><div class="step-meta">6-8 weeks · ~60 hours</div></div>
+        <div class="step-arrow" id="a-e5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e5">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pdos.csail.mit.edu/6.824/" target="_blank" class="res-link">MIT 6.824 -- Distributed Systems (Robert Morris) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The most famous distributed systems course in the world. All lectures on YouTube. You read and discuss foundational papers (MapReduce, Raft, Zookeeper, Spark, Memcached at Facebook) and implement: a MapReduce framework, a Raft consensus library, a fault-tolerant key/value store, and a sharded key/value store. The labs are in Go. This course alone will put you ahead of 95% of backend engineers in distributed systems understanding.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">The DS course</span><span class="rtag vid">MIT</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Essential Papers: Raft, Paxos, Dynamo, BigTable, MapReduce</div>
+              <div class="res-desc">Read in this order: (1) MapReduce (Dean &amp; Ghemawat, 2004) -- the paper that started modern distributed computing. (2) Raft (Ongaro &amp; Ousterhout, 2014) -- consensus made understandable. (3) Dynamo (DeCandia et al., 2007) -- Amazon's eventually consistent key-value store. (4) BigTable (Chang et al., 2006) -- Google's distributed storage. (5) Paxos Made Simple (Lamport, 2001) -- the original consensus algorithm explained clearly. All free on Google Scholar.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Read all 5</span><span class="rtag book">Research papers</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://dataintensive.net/" target="_blank" class="res-link">DDIA Part II -- Distributed Data (Kleppmann) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Chapters 5-9 of DDIA cover distributed data: replication (single-leader, multi-leader, leaderless), partitioning (range, hash), transactions (serializability, two-phase commit), consistency and consensus. Read these chapters alongside the MIT 6.824 papers -- Kleppmann synthesizes decades of distributed systems research into a coherent narrative.</div>
+              <div class="res-tags"><span class="rtag must">Essential companion</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The distributed systems test:</b> After completing MIT 6.824, you should be able to explain: (1) Why the CAP theorem is actually about network partitions, not a three-way tradeoff. (2) How Raft elects a leader and handles log replication. (3) Why Dynamo uses vector clocks for conflict resolution. (4) The difference between linearizability and serializability. If you can whiteboard all four, you have mastered the theory.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 1: DSA MASTERY                          -->
+  <!-- ============================================ -->
+  <div class="panel" id="p1">
+    <div class="track-header">
+      <div class="track-badge badge-math">Months 1-8 · The universal technical language</div>
+      <div class="track-title">DSA Mastery -- from arrays to suffix arrays, from sorting to advanced optimization</div>
+      <div class="track-sub">Data structures and algorithms are not just interview prep. They are the vocabulary of computation. Every database index is a B-tree. Every autocomplete is a trie. Every network route is a shortest path. Every compiler optimization is graph coloring. Master DSA and you can read the source code of any system on earth.</div>
+    </div>
+
+    <!-- Foundational Data Structures -->
+    <div class="step" id="e6">
+      <div class="step-head" onclick="tog('e6')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info"><div class="step-title">Foundational Data Structures -- arrays through trees and graphs</div><div class="step-meta">Weeks 1-6 · ~45 hours</div></div>
+        <div class="step-arrow" id="a-e6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e6">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" class="res-link">MIT 6.006 -- Introduction to Algorithms <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The standard MIT algorithms course covering: arrays, linked lists, hash tables, BSTs, AVL trees, heaps, graphs, BFS, DFS, shortest paths (Dijkstra, Bellman-Ford), dynamic programming. Erik Demaine's lectures are on YouTube. The problem sets are rigorous and teach you to prove correctness and analyze complexity. Start here for the theoretical foundation.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Theory foundation</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY" target="_blank" class="res-link">Stanford CS106B -- Programming Abstractions <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's foundational data structures course in C++. Covers vectors, stacks, queues, sets, maps, linked lists, trees, graphs, and recursion with exceptional clarity. If MIT 6.006 feels too theoretical initially, start with CS106B for the implementation-focused approach, then layer 6.006's rigor on top.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://neetcode.io/" target="_blank" class="res-link">NeetCode 150 + NeetCode All <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">150 curated LeetCode problems organized by pattern: arrays, two pointers, sliding window, stack, binary search, linked list, trees, tries, heap, backtracking, graphs, DP, greedy, intervals, math, bit manipulation. Each has a video solution. Complete NeetCode 150 first, then move to NeetCode All (300+) for comprehensive coverage. The roadmap structure prevents the common trap of random LeetCode grinding.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Primary practice</span><span class="rtag tool">neetcode.io</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Complexity analysis rule:</b> For EVERY problem you solve, write down the time and space complexity before submitting. Not after. If you cannot determine the complexity, you do not understand your own solution. This habit is non-negotiable -- it is what interviews test and what production systems demand.</div>
+      </div>
+    </div>
+
+    <!-- Advanced Data Structures -->
+    <div class="step" id="e7">
+      <div class="step-head" onclick="tog('e7')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info"><div class="step-title">Advanced Data Structures -- tries, segment trees, suffix arrays, union-find</div><div class="step-meta">Weeks 7-14 · ~40 hours</div></div>
+        <div class="step-arrow" id="a-e7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e7">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/" target="_blank" class="res-link">MIT 6.046 -- Design and Analysis of Algorithms <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The follow-up to 6.006 covering advanced topics: divide and conquer, randomized algorithms, amortized analysis, van Emde Boas trees, skip lists, network flow, linear programming, NP-completeness, and approximation algorithms. This is where you go from solving problems to understanding WHY certain algorithmic approaches work and proving their optimality.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Advanced theory</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cp-algorithms.com/" target="_blank" class="res-link">CP-Algorithms (cp-algorithms.com) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The definitive free reference for competitive programming algorithms and data structures. Covers: segment trees (with lazy propagation), Fenwick trees (BIT), suffix arrays, suffix automaton, Aho-Corasick, heavy-light decomposition, centroid decomposition, LCA, flows, and matchings. Each article includes theory, implementation, and practice problems. Use as a reference, not a textbook -- look up specific structures as you encounter them in problems.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to Algorithms (CLRS) -- Cormen, Leiserson, Rivest, Stein</div>
+              <div class="res-desc">The reference textbook. Do not read cover to cover. Use it for: formal proofs of correctness, amortized analysis of red-black trees and union-find, network flow algorithms (Ford-Fulkerson, push-relabel), and NP-completeness reductions. Chapters 13 (red-black trees), 21 (union-find), 26 (max flow), and 34 (NP-completeness) are the essential advanced chapters.</div>
+              <div class="res-tags"><span class="rtag book">Reference bible</span><span class="rtag must">CLRS</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Where advanced DS appears in real systems:</b> Segment trees power database range queries. Tries power autocomplete and IP routing tables. Union-Find powers Kruskal's MST in network topology and connected component detection in social graphs. Suffix arrays power full-text search engines. Bloom filters power distributed cache invalidation. These are not academic curiosities -- they are production primitives.</div>
+      </div>
+    </div>
+
+    <!-- Algorithm Patterns -->
+    <div class="step" id="e8">
+      <div class="step-head" onclick="tog('e8')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info"><div class="step-title">Algorithm Mastery -- sorting, graphs, DP, advanced optimization</div><div class="step-meta">Weeks 8-20 · ~60 hours</div></div>
+        <div class="step-arrow" id="a-e8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e8">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank" class="res-link">Abdul Bari -- Algorithms (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Best free explanations of: merge sort, quick sort, heap sort, counting sort, radix sort, graph traversals, Dijkstra, Bellman-Ford, Floyd-Warshall, Prim, Kruskal, topological sort, all DP patterns (0/1 knapsack, LCS, LIS, matrix chain, edit distance). Watch the DP playlist first -- his breakdown of subproblem structure is the clearest available. Then graph algorithms.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">DP + Graphs</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Algorithm Design Manual -- Steven Skiena</div>
+              <div class="res-desc">The practical counterpart to CLRS. Part I teaches algorithm design techniques. Part II is a catalog of algorithmic problems organized by type -- when you face a new problem, look it up in Skiena's catalog to find the right approach. His "war stories" connect algorithms to real engineering problems. Especially strong on graph algorithms and combinatorial optimization.</div>
+              <div class="res-tags"><span class="rtag book">Book</span><span class="rtag must">Practical companion</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://codeforces.com/" target="_blank" class="res-link">Codeforces + LeetCode -- progressive practice <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">LeetCode for interview-style problems (pattern recognition, clean implementation). Codeforces for competitive programming (algorithmic thinking under constraints). Practice plan: LeetCode daily (1 medium, timed 25 min), Codeforces weekly (virtual contests at Div2 level). Track your solve rate by category -- your weakest category is your next study target.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The DP mastery sequence:</b> (1) Fibonacci variants -- understand overlapping subproblems. (2) 0/1 Knapsack -- understand choice. (3) LCS/LIS -- understand two-sequence alignment. (4) Matrix chain multiplication -- understand interval DP. (5) Tree DP -- understand DP on non-linear structures. (6) Bitmask DP -- understand state compression. Solve 10 problems per category before moving on. After 60 DP problems you will recognize any DP problem on sight.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 2: LLD (LOW-LEVEL DESIGN)               -->
+  <!-- ============================================ -->
+  <div class="panel" id="p2">
+    <div class="track-header">
+      <div class="track-badge badge-java">Months 3-8 · Writing code that survives</div>
+      <div class="track-title">Low-Level Design -- OOP, SOLID, patterns, clean code, real system construction</div>
+      <div class="track-sub">LLD is the art of writing code that other engineers can read, extend, test, and maintain. It is the difference between a prototype that works and a system that lives for years. This track covers object-oriented design, the SOLID principles, the Gang of Four design patterns, refactoring, and building real systems from class diagrams to working code.</div>
+    </div>
+
+    <!-- OOP + SOLID -->
+    <div class="step" id="e9">
+      <div class="step-head" onclick="tog('e9')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">OOP Principles + SOLID -- the design foundation</div><div class="step-meta">3-4 weeks · ~25 hours</div></div>
+        <div class="step-arrow" id="a-e9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e9">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank" class="res-link">Clean Code -- Robert C. Martin <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The foundational book on writing readable, maintainable code. Covers: meaningful names, functions (small, do one thing), comments (mostly harmful), formatting, error handling, boundaries, unit tests, classes, and systems. Read chapters 1-10 carefully. The code smells chapter (Ch17) is a permanent reference you will revisit for years. Every professional engineer should read this once.</div>
+              <div class="res-tags"><span class="rtag must">Essential reading</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164" target="_blank" class="res-link">Clean Architecture -- Robert C. Martin <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Covers SOLID principles in depth: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion. Then applies them to component design and architecture: component cohesion (REP, CCP, CRP), component coupling (ADP, SDP, SAP), and the Clean Architecture pattern itself. The SOLID chapters (Part III) are the most important -- they change how you think about every class you design.</div>
+              <div class="res-tags"><span class="rtag must">SOLID deep dive</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@ChristopherOkhravi" target="_blank" class="res-link">Christopher Okhravi -- Design Patterns (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Clear, concise video explanations of every GoF design pattern. Each video is 15-25 minutes with UML diagrams and code examples. Watch alongside reading Head First Design Patterns or the GoF book. His Strategy, Observer, Decorator, and Factory Method videos are particularly strong.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>SOLID in practice:</b> After reading each SOLID principle, open your most recent project and find 3 violations. Refactor them. The learning happens in the refactoring, not the reading. SRP violations are the easiest to find -- look for classes with more than one reason to change. DIP violations are the most impactful to fix -- look for high-level modules importing low-level modules directly.</div>
+      </div>
+    </div>
+
+    <!-- Design Patterns -->
+    <div class="step" id="e10">
+      <div class="step-head" onclick="tog('e10')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">Design Patterns (GoF) -- the shared vocabulary of OOP</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e10">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e10">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://refactoring.guru/design-patterns" target="_blank" class="res-link">Refactoring.Guru -- Design Patterns (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free visual guide to all 23 GoF patterns. Each pattern has: problem description, solution with UML, pseudocode, real-world analogy, code examples in 10+ languages, relations to other patterns. Creational: Singleton, Factory Method, Abstract Factory, Builder, Prototype. Structural: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy. Behavioral: Chain of Responsibility, Command, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor. Study the 10 most common first: Strategy, Observer, Decorator, Factory, Singleton, Builder, Adapter, Command, State, Template Method.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best pattern reference</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Head First Design Patterns -- Freeman &amp; Robson</div>
+              <div class="res-desc">The most accessible design patterns book. Uses visual learning, humor, and progressive examples. Starts with Strategy and Observer (the two most important patterns), then builds to Decorator, Factory, Singleton, Command, Adapter, Template Method, Iterator, Composite, State, and Proxy. Each chapter shows the pattern solving a real problem, then generalizes. Read this before attempting the GoF book.</div>
+              <div class="res-tags"><span class="rtag book">Book</span><span class="rtag must">Start here</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://refactoring.guru/refactoring" target="_blank" class="res-link">Refactoring -- Martin Fowler (+ Refactoring.Guru catalog) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Fowler's Refactoring catalog teaches you to transform messy code into clean code through small, safe, reversible steps: Extract Method, Move Method, Replace Conditional with Polymorphism, Introduce Parameter Object, Replace Inheritance with Delegation. The free catalog at refactoring.guru/refactoring covers every refactoring with before/after examples. Master 20 refactorings and your code reviews will never be the same.</div>
+              <div class="res-tags"><span class="rtag free">Free catalog</span><span class="rtag book">Book + site</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The LLD interview pattern:</b> Design a parking lot. Design a chess game. Design an elevator system. Design a vending machine. These questions test your ability to: (1) identify entities and relationships, (2) apply SOLID principles, (3) use appropriate design patterns, (4) handle edge cases, (5) write extensible code. Practice 10 LLD problems on paper before any interview. The system you build from scratch in step 3 is your ultimate practice.</div>
+      </div>
+    </div>
+
+    <!-- Building Real Systems -->
+    <div class="step" id="e11">
+      <div class="step-head" onclick="tog('e11')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Building Real Systems from Scratch -- UML to working code</div><div class="step-meta">4-6 weeks · ~40 hours</div></div>
+        <div class="step-arrow" id="a-e11">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e11">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.educative.io/courses/grokking-the-low-level-design-interview-using-ood-principles" target="_blank" class="res-link">Grokking the Low-Level Design Interview <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">20+ LLD problems with full solutions: parking lot, library management, airline reservation, hotel management, chess, movie ticket booking, ATM, restaurant management. Each problem follows: requirements gathering, use case diagram, class diagram, activity diagram, code implementation. The structured approach teaches you a repeatable process for any LLD problem.</div>
+              <div class="res-tags"><span class="rtag book">Course</span><span class="rtag must">LLD practice</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997" target="_blank" class="res-link">Effective Java -- Joshua Bloch <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">90 specific best practices for Java development, each one a masterclass in API design and defensive programming. Items 1-5 (static factories, builders, singletons, private constructors, dependency injection) directly apply SOLID and patterns. Items 10-14 (equals, hashCode, Comparable) teach contract-based programming. Items 42-48 (lambdas, streams) teach modern Java idioms. Every Java engineer must read this cover to cover.</div>
+              <div class="res-tags"><span class="rtag must">Java bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://github.com/ashishps1/awesome-low-level-design" target="_blank" class="res-link">awesome-low-level-design (GitHub) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Community-curated collection of LLD problems with solutions in Java, Python, and C++. Includes: parking lot, elevator, snake and ladders, tic-tac-toe, file system, hotel booking, social media feed, task management. Each solution demonstrates proper OOP, design patterns, and SOLID adherence. Use as practice problems and reference implementations.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">GitHub</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The LLD build challenge:</b> Pick 3 systems from the list below and build each one from scratch in your language of choice. No frameworks. Pure OOP. (1) A library management system with borrowing, reservations, and fines. (2) A parking lot with multiple levels, spot types, and ticketing. (3) A chess game with full move validation. For each: draw the UML class diagram first, identify which design patterns apply, then implement with unit tests. These three projects alone will make you confident in any LLD interview.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 3: HLD (HIGH-LEVEL DESIGN)              -->
+  <!-- ============================================ -->
+  <div class="panel" id="p3">
+    <div class="track-header">
+      <div class="track-badge badge-ai">Months 4-10 · Architecting at scale</div>
+      <div class="track-title">High-Level Design -- system architecture at millions of users</div>
+      <div class="track-sub">HLD is about the decisions that determine whether a system serves 100 users or 100 million. Load balancers, caching layers, message queues, database sharding, microservices vs monoliths, event-driven architecture. These are the building blocks of every large-scale system on the internet. This track teaches you to reason about them from first principles.</div>
+    </div>
+
+    <!-- Fundamentals of Scale -->
+    <div class="step" id="e12">
+      <div class="step-head" onclick="tog('e12')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Foundations of Scale -- load balancing, caching, CDNs, databases at scale</div><div class="step-meta">4-6 weeks · ~40 hours</div></div>
+        <div class="step-arrow" id="a-e12">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e12">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF" target="_blank" class="res-link">System Design Interview Vol. 1 -- Alex Xu <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The essential HLD reference. Chapter 1 covers the building blocks: DNS, CDN, load balancer, reverse proxy, application layer, database (SQL vs NoSQL), caching (cache-aside, write-through, write-back), message queues, and back-of-the-envelope estimation. Each subsequent chapter designs a real system using these building blocks. Read Chapter 1 three times -- it is the vocabulary for every system design conversation you will ever have.</div>
+              <div class="res-tags"><span class="rtag must">The HLD bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@ByteByteGo" target="_blank" class="res-link">ByteByteGo -- System Design (Alex Xu YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Alex Xu's YouTube channel provides visual walkthroughs of every major system design topic: how DNS works, how a CDN works, how databases scale (replication vs sharding), how message queues work (Kafka internals), how caching works (Redis architecture), and how load balancing works (L4 vs L7). Each video is 8-15 minutes with clear architecture diagrams. Watch all the "System Design Concepts" videos first.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best visuals</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://github.com/donnemartin/system-design-primer" target="_blank" class="res-link">System Design Primer (GitHub -- 280k+ stars) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Comprehensive free guide covering: scalability (vertical vs horizontal), availability (SLAs, redundancy), CAP theorem, consistency patterns (weak, eventual, strong), DNS, CDN, load balancer (active-passive, active-active), reverse proxy, application layer (microservices vs SOA), database (RDBMS, NoSQL, SQL vs NoSQL), cache (CDN cache, application cache, database cache), asynchronism (message queues, task queues). Use as your permanent reference alongside Alex Xu's book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Reference guide</span><span class="rtag tool">GitHub</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Back-of-the-envelope estimation practice:</b> Before designing any system, estimate: (1) Daily active users, (2) Queries per second, (3) Storage per year, (4) Bandwidth requirements. Practice these calculations until they are automatic. Example: Twitter has ~500M tweets/day = ~6000 tweets/second. Average tweet = 300 bytes. Storage/day = 500M x 300B = 150GB. With media: 150GB x 5 = 750GB/day. Being able to do this math quickly is what separates junior from senior system designers.</div>
+      </div>
+    </div>
+
+    <!-- Microservices + Event-Driven -->
+    <div class="step" id="e13">
+      <div class="step-head" onclick="tog('e13')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Microservices, Message Queues, Event-Driven Architecture</div><div class="step-meta">4-6 weeks · ~40 hours</div></div>
+        <div class="step-arrow" id="a-e13">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e13">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Building Microservices -- Sam Newman</div>
+              <div class="res-desc">The definitive book on microservice architecture. Covers: decomposition strategies, integration patterns (REST, gRPC, messaging), service discovery, circuit breakers, distributed tracing, deployment patterns (blue-green, canary), and the critical question of when NOT to use microservices. The chapter on splitting the monolith is especially valuable -- it teaches you to identify service boundaries using domain-driven design concepts.</div>
+              <div class="res-tags"><span class="rtag must">Essential</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@MartinKleppmann" target="_blank" class="res-link">Martin Kleppmann -- Distributed Systems Lectures (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Kleppmann's lecture series covers event-driven architecture, stream processing, CRDTs, causal consistency, and the theory behind modern distributed systems. His explanations connect directly to DDIA -- watch these lectures after reading the relevant DDIA chapters for maximum depth. The lectures on event sourcing and CQRS are particularly useful for HLD interviews.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/System-Design-Interview-Insiders-Guide/dp/1736049119" target="_blank" class="res-link">System Design Interview Vol. 2 -- Alex Xu <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Covers advanced HLD topics: proximity service (geohashing), nearby friends, Google Maps, distributed message queue design, metrics monitoring, ad click event aggregation, hotel reservation, distributed email service, S3-like object storage, real-time gaming leaderboard, payment system, and stock exchange. Each chapter teaches new architectural patterns: consistent hashing, geospatial indexing, time-series databases, event sourcing.</div>
+              <div class="res-tags"><span class="rtag must">Advanced HLD</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The monolith vs microservice decision:</b> Start with a monolith. Always. Microservices solve organizational scaling problems (multiple teams), not technical scaling problems (most systems). A well-designed monolith with clear module boundaries outperforms a poorly designed microservice architecture every time. Know when to split: when teams step on each other's deployments, when different services need different scaling profiles, when fault isolation is critical. Never split because it seems "modern."</div>
+      </div>
+    </div>
+
+    <!-- Database at Scale -->
+    <div class="step" id="e14">
+      <div class="step-head" onclick="tog('e14')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info"><div class="step-title">Databases at Scale -- sharding, replication, consistency tradeoffs</div><div class="step-meta">3-4 weeks · ~30 hours</div></div>
+        <div class="step-arrow" id="a-e14">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e14">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">DDIA Chapters 5-7 -- Replication, Partitioning, Transactions</div>
+              <div class="res-desc">Chapter 5: Single-leader, multi-leader, and leaderless replication. Read-your-writes, monotonic reads, consistent prefix reads. Chapter 6: Partitioning by key range vs hash, secondary indexes (local vs global), rebalancing strategies. Chapter 7: ACID guarantees, read committed, snapshot isolation, serializable isolation (actual serial, 2PL, SSI). These three chapters are the foundation of every database scaling decision.</div>
+              <div class="res-tags"><span class="rtag must">Re-read these</span><span class="rtag book">DDIA</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://15721.courses.cs.cmu.edu/" target="_blank" class="res-link">CMU 15-721 -- Advanced Database Systems (Andy Pavlo) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The advanced follow-up to 15-445. Covers in-memory databases, MVCC implementations (MV-TO, MV-OCC, MV-2PL), query compilation (vs interpretation), vectorized execution, OLAP vs OLTP, columnar storage, and modern database architectures. All lectures on YouTube. Watch after completing DDIA and 15-445 for cutting-edge database architecture understanding.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube + CMU</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The sharding decision framework:</b> (1) Do you actually need sharding? Read replicas solve 90% of read scaling. (2) What is your shard key? Wrong choice = hot spots. (3) Range sharding (good for scans) vs hash sharding (good for even distribution). (4) How do you handle cross-shard queries? (5) How do you rebalance when a shard grows? If you can answer all five with specifics for a given system, you can handle any HLD database question.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 4: SYSTEM DESIGN                        -->
+  <!-- ============================================ -->
+  <div class="panel" id="p4">
+    <div class="track-header">
+      <div class="track-badge badge-ml">Months 6-12 · The combined approach</div>
+      <div class="track-title">System Design -- designing Twitter, Uber, WhatsApp, YouTube from scratch</div>
+      <div class="track-sub">System design combines everything: CS fundamentals, data structures, LLD patterns, HLD building blocks, database knowledge, and distributed systems theory. Each problem below is a full-stack exercise in engineering reasoning. This is what top companies pay $300k+ for.</div>
+    </div>
+
+    <!-- Social + Messaging Systems -->
+    <div class="step" id="e15">
+      <div class="step-head" onclick="tog('e15')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info"><div class="step-title">Social + Messaging -- Twitter, WhatsApp, Instagram, Facebook Newsfeed</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e15">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e15">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Alex Xu Vol. 1 -- Design a Chat System (Ch12), News Feed (Ch11), Twitter Search (Ch13)</div>
+              <div class="res-desc">Chat system: WebSocket connections, message delivery (online vs offline), group chat fan-out, message storage (key-value store with message ID ordering), presence service. News feed: fan-out on write vs fan-out on read (hybrid for celebrities), feed ranking, caching strategy. These chapters teach the core patterns that appear in 60% of system design interviews.</div>
+              <div class="res-tags"><span class="rtag must">Core SD problems</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@GauravSen" target="_blank" class="res-link">Gaurav Sen -- System Design (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Gaurav Sen's channel has detailed system design videos for: WhatsApp, Instagram, Twitter, Tinder, Zoom, and more. His approach focuses on requirement clarification, capacity estimation, and iterative design. The WhatsApp and Instagram videos are the best free walkthroughs available. Watch each video, pause at the requirements phase, try designing yourself, then continue.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX" target="_blank" class="res-link">Tushar Roy -- System Design Playlist (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Detailed whiteboard-style system design for messenger systems, URL shorteners, and web crawlers. His deliberate pace makes complex architectures easier to follow. Use alongside Alex Xu for alternative perspectives on the same problems -- seeing two approaches to the same system deepens understanding significantly.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Design Twitter in 45 minutes:</b> (1) Requirements: post tweets, follow users, news feed, search. (2) Estimation: 300M MAU, 600 tweets/sec write, 600K reads/sec. (3) Core: tweet service, fan-out service, timeline service, search service. (4) Storage: tweets in append-only store, user graph in graph DB, timeline in Redis sorted set. (5) Fan-out: push model for regular users (&lt;10K followers), pull model for celebrities. (6) Search: inverted index (Elasticsearch). Practice this design until you can whiteboard it cold.</div>
+      </div>
+    </div>
+
+    <!-- Ride-Sharing + Location -->
+    <div class="step" id="e16">
+      <div class="step-head" onclick="tog('e16')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info"><div class="step-title">Ride-Sharing + Location -- Uber, Google Maps, Proximity Service</div><div class="step-meta">3-4 weeks · ~25 hours</div></div>
+        <div class="step-arrow" id="a-e16">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e16">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Alex Xu Vol. 2 -- Proximity Service (Ch1), Nearby Friends (Ch2), Google Maps (Ch3)</div>
+              <div class="res-desc">Proximity service: geohashing, quadtrees, Hilbert curves for spatial indexing. Nearby friends: WebSocket connections, Redis pub/sub for location updates, geospatial queries. Google Maps: map tile serving, Dijkstra/A* for routing, ETA prediction, precomputed routing tables. These three chapters teach geospatial system design -- a category that appears in ~20% of SD interviews.</div>
+              <div class="res-tags"><span class="rtag must">Geo-spatial SD</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=umWABit-wbk" target="_blank" class="res-link">Uber Engineering Blog + Tech Talks <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Uber's engineering blog and conference talks cover their real architecture: H3 hexagonal indexing, Ringpop (consistent hashing), Schemaless (append-only MySQL), CQRS for dispatch, Kafka for event streaming, and machine learning for ETA/pricing. Reading real engineering blogs alongside textbook designs shows you how theory meets production reality.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Engineering blog</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The geohashing insight:</b> A geohash converts 2D coordinates into a 1D string. Adjacent locations share a common prefix. This transforms spatial queries ("find all restaurants within 1km") into simple prefix queries on a B-tree index. Understanding this one data structure unlocks the design of every location-based system: Uber, Google Maps, Yelp, DoorDash, Pokemon Go. DDIA does not cover this well -- Alex Xu Vol. 2 Chapter 1 is the best resource.</div>
+      </div>
+    </div>
+
+    <!-- Infrastructure Systems -->
+    <div class="step" id="e17">
+      <div class="step-head" onclick="tog('e17')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info"><div class="step-title">Infrastructure -- YouTube, Distributed File System, Rate Limiter, Notification System</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e17">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e17">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Alex Xu Vol. 1 -- Rate Limiter (Ch4), URL Shortener (Ch8), YouTube (Ch14), Notification (Ch10)</div>
+              <div class="res-desc">Rate limiter: token bucket, leaky bucket, fixed window, sliding window log, sliding window counter. URL shortener: base62 encoding, hash collision resolution, read-heavy caching strategy. YouTube: video upload pipeline (transcoding, thumbnail generation), CDN for serving, adaptive bitrate streaming. Notification system: iOS APNs, Android FCM, SMS, email -- unified delivery with retry and deduplication. Each design teaches a unique architectural pattern.</div>
+              <div class="res-tags"><span class="rtag must">Core infrastructure SD</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Google File System + BigTable papers (free)</div>
+              <div class="res-desc">GFS paper (Ghemawat et al., 2003): How Google stores petabytes across commodity hardware. Master-chunkserver architecture, chunk replication, consistency model. BigTable paper (Chang et al., 2006): Distributed sparse, sorted map built on GFS. SSTable format, memtable, compaction, column families. These two papers are the foundation of every distributed storage system (HDFS, HBase, Cassandra). Free on Google Research.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Foundational papers</span><span class="rtag book">Research papers</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers" target="_blank" class="res-link">Grokking Modern System Design Interview <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Covers 16 system designs with interactive diagrams: DNS, CDN, sequencer, distributed search, YouTube, Quora, Google Docs, pub/sub, rate limiter, blob store, distributed task scheduler, Yelp, Google Maps, Uber, Twitter, and Newsfeed. Each design has: requirements, high-level design, detailed design, evaluation. The interactive format lets you explore each component.</div>
+              <div class="res-tags"><span class="rtag tool">Interactive</span><span class="rtag must">Comprehensive</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The system design practice method:</b> (1) Set a 45-minute timer. (2) Pick a system from the list. (3) Spend 5 min on requirements and estimation. (4) Spend 10 min on high-level architecture diagram. (5) Spend 20 min on deep dive into 2-3 critical components. (6) Spend 10 min on scaling, failure modes, and monitoring. Do this 2-3 times per week. Record yourself explaining your design -- watch the recording and note where you hesitate. That hesitation is your study target.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 5: LOW-LEVEL PROGRAMMING                -->
+  <!-- ============================================ -->
+  <div class="panel" id="p5">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Months 2-10 · Understanding the machine</div>
+      <div class="track-title">Low-Level Programming -- C, Assembly, Memory, Kernels, Drivers, Compilers</div>
+      <div class="track-sub">Low-level programming is where you learn what the machine actually does. No garbage collector. No runtime. No abstractions hiding the truth. When you allocate memory, you free it. When you access an array, you calculate the address. When you write a driver, you talk to hardware registers. This knowledge makes you dangerous in any language because you understand what every abstraction is hiding.</div>
+    </div>
+
+    <!-- C and Assembly -->
+    <div class="step" id="e18">
+      <div class="step-head" onclick="tog('e18')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">C Programming -- pointers, memory management, systems programming</div><div class="step-meta">6-8 weeks · ~50 hours</div></div>
+        <div class="step-arrow" id="a-e18">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e18">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The C Programming Language -- Kernighan &amp; Ritchie (K&amp;R)</div>
+              <div class="res-desc">The original C book by the creators of C. Under 300 pages, every page essential. Covers: types, operators, control flow, functions, pointers and arrays, structures, input/output, Unix system interface. The exercises are deceptively deep -- implementing malloc, printf, and a simple calculator teaches more than any modern C tutorial. Read cover to cover, do every exercise.</div>
+              <div class="res-tags"><span class="rtag must">The C bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Stanford CS107 -- Computer Organization &amp; Systems <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's deep dive into C, assembly, and how programs execute on hardware. Covers: bits and bytes, chars and C strings, pointers (pointer arithmetic, void*, function pointers), stack and heap, assembly language (x86-64), buffer overflows, and memory management. The assignments are progressive and practical. After CS107, pointer bugs will never mystify you again.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Pointers mastery</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://csapp.cs.cmu.edu/" target="_blank" class="res-link">CS:APP -- Chapters 3 (Machine Programs) and 5 (Optimization) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Chapter 3 teaches x86-64 assembly by showing how C compiles to machine code. You learn to read compiler output, understand calling conventions, and debug at the assembly level. Chapter 5 teaches performance optimization: loop unrolling, reducing memory aliasing, exploiting instruction-level parallelism. The bomb lab and attack lab are the best assembly learning exercises ever designed.</div>
+              <div class="res-tags"><span class="rtag must">Assembly + optimization</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The pointer mastery test:</b> Implement the following in C from scratch with no libraries: (1) A dynamic array (like Java ArrayList) with resize. (2) A linked list with insert, delete, reverse. (3) A hash map with separate chaining. (4) A memory allocator (simple malloc/free using a free list). If you can write all four without segfaults and with proper memory cleanup (valgrind reports zero leaks), you have mastered C pointers and memory management.</div>
+      </div>
+    </div>
+
+    <!-- OS Kernel + Drivers -->
+    <div class="step" id="e19">
+      <div class="step-head" onclick="tog('e19')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">OS Kernel Basics + Device Drivers + Embedded Systems</div><div class="step-meta">6-10 weeks · ~60 hours</div></div>
+        <div class="step-arrow" id="a-e19">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e19">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pdos.csail.mit.edu/6.828/2023/" target="_blank" class="res-link">MIT 6.S081 -- Operating System Engineering (xv6 labs) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Implement kernel features in xv6: system calls (trace, sysinfo), page tables (speed up page faults, copy-on-write fork), traps (alarms, lazy allocation), multithreading (uthread, barrier), network driver, lock contention reduction, file system (large files, symbolic links), mmap. Each lab takes 10-20 hours and teaches a core OS concept through implementation. The best way to learn OS internals.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Kernel implementation</span><span class="rtag vid">MIT</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Linux Device Drivers (3rd ed.) -- Corbet, Rubini, Kroah-Hartman (free online)</div>
+              <div class="res-desc">Free at lwn.net/Kernel/LDD3/. The definitive guide to writing Linux kernel modules and device drivers. Covers: character drivers, concurrency and race conditions, memory mapping, DMA, block drivers, PCI drivers, USB drivers, and the Linux device model. Even if you never write a production driver, understanding the kernel module system teaches you how the OS manages hardware -- knowledge that helps you understand containerization, virtualization, and performance tuning.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLnHqA_xKJMaz9RWDLas4dFJzFMPQmjHss" target="_blank" class="res-link">Stanford CS149 -- Parallel Computing <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Covers parallel programming from hardware to software: multi-core processors, SIMD, GPU architecture, shared memory programming (pthreads, OpenMP), message passing (MPI), lock-free data structures, memory consistency models, and CUDA. The assignments include implementing a parallel renderer and an asynchronous page rank. Understanding parallelism is essential for both systems programming and modern ML/AI workloads.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">Stanford</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Compiler construction as a capstone:</b> After mastering C, OS internals, and assembly, build a compiler for a simple language (Crafting Interpreters Part 2 in C is perfect). A compiler combines: lexing (string processing), parsing (tree construction), type checking (graph algorithms), code generation (assembly knowledge), optimization (data flow analysis). It is the ultimate low-level programming project because it exercises every skill in this track simultaneously.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 6: HIGH-LEVEL PROGRAMMING               -->
+  <!-- ============================================ -->
+  <div class="panel" id="p6">
+    <div class="track-header">
+      <div class="track-badge badge-java">Months 1-12 · Mastering the tools of production</div>
+      <div class="track-title">High-Level Programming -- Python, Java, Go, Rust with framework ecosystems</div>
+      <div class="track-sub">A world-class engineer does not just know one language. They understand paradigms: Python for rapid prototyping and ML, Java for enterprise systems, Go for infrastructure and microservices, Rust for performance-critical systems. Each language teaches a different way of thinking about problems. The frameworks are where language knowledge becomes production capability.</div>
+    </div>
+
+    <!-- Python + FastAPI -->
+    <div class="step" id="e20">
+      <div class="step-head" onclick="tog('e20')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">Python Mastery + FastAPI ecosystem</div><div class="step-meta">Ongoing · Start month 1</div></div>
+        <div class="step-arrow" id="a-e20">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e20">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Fluent Python (2nd ed.) -- Luciano Ramalho</div>
+              <div class="res-desc">Goes far beyond beginner Python into: data model (dunder methods), sequences, dictionaries, functions as first-class objects, decorators and closures, object references and mutability, pythonic OOP, iterators and generators, context managers, coroutines, metaprogramming. After this book you understand Python at the level of a core contributor. Focus on: Part I (data model), Part III (functions), Part V (control flow with generators/coroutines).</div>
+              <div class="res-tags"><span class="rtag must">Advanced Python</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://fastapi.tiangolo.com/tutorial/" target="_blank" class="res-link">FastAPI Official Tutorial (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best-documented Python framework. Built on Starlette (async) and Pydantic (validation). The official tutorial covers: path parameters, query parameters, request bodies, response models, dependency injection, security (OAuth2, JWT), middleware, background tasks, WebSockets, testing, and deployment. FastAPI is now the default choice for Python APIs -- faster than Flask, better typed, auto-generates OpenAPI docs.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Python API standard</span><span class="rtag tool">Docs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Java + Spring Boot -->
+    <div class="step" id="e21">
+      <div class="step-head" onclick="tog('e21')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">Java Mastery + Spring Boot ecosystem</div><div class="step-meta">Ongoing · Start month 1</div></div>
+        <div class="step-arrow" id="a-e21">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e21">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997" target="_blank" class="res-link">Effective Java (3rd ed.) -- Joshua Bloch <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">90 items covering every aspect of professional Java. Must-read items: Item 1 (static factory methods), Item 2 (Builder pattern), Item 3 (Singleton), Item 10-14 (equals/hashCode/Comparable contracts), Item 17 (minimize mutability), Item 42-48 (lambdas and streams), Item 49-56 (methods), Item 57-68 (general programming), Item 78-84 (concurrency). Joshua Bloch was the architect of Java Collections -- this book teaches you to think like the language designers.</div>
+              <div class="res-tags"><span class="rtag must">Java bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Java Concurrency in Practice -- Goetz et al.</div>
+              <div class="res-desc">The definitive book on concurrent programming in Java. Covers: thread safety, sharing objects, composing objects, building blocks (concurrent collections, synchronizers), task execution (thread pools, Executor framework), cancellation, shutting down, applying thread pools, liveness (deadlock, starvation, livelock), performance and scalability, explicit locks, atomic variables, and the Java Memory Model. Every backend Java engineer must understand chapters 1-5 and 16.</div>
+              <div class="res-tags"><span class="rtag must">Concurrency</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://spring.io/guides" target="_blank" class="res-link">Spring Boot Official Guides + Baeldung.com <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Spring Boot is the dominant Java backend framework. Master: Spring MVC (REST controllers, request mapping), Spring Data JPA (repositories, query methods, pagination), Spring Security (authentication, authorization, JWT, OAuth2), Spring Boot Actuator (health, metrics, monitoring), and Spring Cloud (config server, service discovery, circuit breaker). Baeldung has the best article per Spring concept -- search "Baeldung [topic]" for any Spring question.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Enterprise standard</span><span class="rtag tool">Docs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Go + Rust -->
+    <div class="step" id="e22">
+      <div class="step-head" onclick="tog('e22')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Go (Gin) + Rust (Actix) -- modern systems languages</div><div class="step-meta">Months 4-12 · After Java/Python foundation</div></div>
+        <div class="step-arrow" id="a-e22">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e22">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://go.dev/tour/welcome/1" target="_blank" class="res-link">A Tour of Go (official) + Effective Go <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Go's official tutorial teaches the language in your browser. Then read Effective Go for idiomatic patterns: goroutines, channels, select, error handling, interfaces, embedding, defer. Go's simplicity is its power -- no generics abuse, no inheritance hierarchies, just functions, interfaces, and goroutines. The Gin framework adds routing and middleware for HTTP APIs. Go is the language of infrastructure: Docker, Kubernetes, Terraform, Prometheus are all written in Go.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Go entry point</span><span class="rtag tool">Official</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://doc.rust-lang.org/book/" target="_blank" class="res-link">The Rust Programming Language (free online -- "The Rust Book") <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The official Rust book at doc.rust-lang.org/book/. Covers ownership, borrowing, lifetimes, pattern matching, error handling (Result/Option), traits, generics, closures, iterators, smart pointers, concurrency, and unsafe Rust. Rust's ownership system eliminates data races and memory bugs at compile time -- learning Rust changes how you think about memory in every other language. The Actix-web framework provides Tokio-based async HTTP. Chapters 4 (ownership), 10 (generics/traits/lifetimes), and 16 (concurrency) are the most important.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">The Rust Book</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://github.com/pingcap/talent-plan" target="_blank" class="res-link">PingCAP Talent Plan -- Distributed Systems in Rust/Go <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free course from the TiDB team. Build a distributed key-value store in Rust (TinyKV) or Go. Covers: standalone KV, Raft consensus, multi-Raft, transactions. This is the ultimate project for combining language mastery with distributed systems knowledge. If you complete TinyKV, you have a portfolio project that will impress any systems team on earth.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Ultimate project</span><span class="rtag tool">GitHub</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Language choice in production:</b> Python for ML/data/scripting/prototyping. Java for large enterprise systems with big teams. Go for microservices, CLIs, and infrastructure tools. Rust for performance-critical systems (databases, browsers, game engines, embedded). Knowing all four means you can join any team. But depth in one matters more than breadth in four -- pick your primary (Java or Go for backend) and go deep, then expand.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 7: DISTRIBUTED SYSTEMS + AI/ML/DL       -->
+  <!-- ============================================ -->
+  <div class="panel" id="p7">
+    <div class="track-header">
+      <div class="track-badge badge-ai">Months 8-18 · The convergence</div>
+      <div class="track-title">Distributed Systems + AI/ML/DL -- where scale meets intelligence</div>
+      <div class="track-sub">Modern ML engineering is distributed systems engineering. Training a large model requires MapReduce-style data pipelines. Serving predictions at scale requires load balancing, caching, and queue-based architectures. Feature stores are distributed databases. Model registries are artifact management systems. This track unifies both disciplines into the skill set that defines the ML engineer of the next decade.</div>
+    </div>
+
+    <!-- Distributed Computing -->
+    <div class="step" id="e23">
+      <div class="step-head" onclick="tog('e23')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Distributed Computing -- MapReduce, Spark, Kafka, Flink</div><div class="step-meta">6-8 weeks · ~50 hours</div></div>
+        <div class="step-arrow" id="a-e23">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e23">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">MapReduce Paper + DDIA Chapter 10 (Batch Processing)</div>
+              <div class="res-desc">Start with the MapReduce paper (Dean &amp; Ghemawat, 2004) -- the paradigm that launched modern distributed data processing. Then read DDIA Chapter 10 which covers: Unix philosophy of data processing, MapReduce and distributed filesystems, beyond MapReduce (dataflow engines like Spark), and joins in batch processing. Understanding MapReduce deeply makes Spark, Flink, and Beam immediately comprehensible because they are all refinements of the same idea.</div>
+              <div class="res-tags"><span class="rtag free">Free paper + book</span><span class="rtag must">Foundation</span><span class="rtag book">Paper + DDIA</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.confluent.io/resources/kafka-the-definitive-guide-v2/" target="_blank" class="res-link">Kafka: The Definitive Guide (free from Confluent) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free ebook from Confluent. Kafka is the backbone of modern event-driven architecture and real-time data pipelines. Covers: producers, consumers, consumer groups, partitions, replication, exactly-once semantics, Kafka Connect (data integration), Kafka Streams (stream processing), and Schema Registry. Understanding Kafka internals -- how log compaction works, how consumer group rebalancing works, how ISR (in-sync replicas) provide durability -- is essential for any engineer building real-time systems.</div>
+              <div class="res-tags"><span class="rtag free">Free ebook</span><span class="rtag must">Event streaming bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://spark.apache.org/docs/latest/" target="_blank" class="res-link">Apache Spark -- Learning Spark (2nd ed.) + Official Docs <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Spark replaced MapReduce by keeping data in memory across operations. Learn: RDDs, DataFrames, Spark SQL, Structured Streaming, MLlib. The key concepts are lazy evaluation, DAG execution, shuffles, and partitioning. Learning Spark (2nd ed.) by Damji et al. is the best book. For hands-on: set up a local Spark cluster, load a 1GB dataset, write transformations, and examine the Spark UI to understand execution plans.</div>
+              <div class="res-tags"><span class="rtag free">Free docs</span><span class="rtag tool">Framework</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The streaming vs batch mental model:</b> Batch processing (MapReduce, Spark batch) = process all data, produce result. Stream processing (Kafka Streams, Flink) = process data as it arrives, continuously update result. DDIA Chapter 11 covers stream processing in depth. The real world is moving from batch to streaming for ML features (feature stores), monitoring (metrics), and analytics (real-time dashboards). Understanding both paradigms and when to use which is what separates a data engineer from a data plumber.</div>
+      </div>
+    </div>
+
+    <!-- ML Engineering at Scale -->
+    <div class="step" id="e24">
+      <div class="step-head" onclick="tog('e24')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">ML Engineering -- model serving, feature stores, ML pipelines at scale</div><div class="step-meta">6-10 weeks · ~60 hours</div></div>
+        <div class="step-arrow" id="a-e24">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e24">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Designing Machine Learning Systems -- Chip Huyen</div>
+              <div class="res-desc">The DDIA of machine learning. Covers the entire ML lifecycle in production: data engineering (data collection, labeling, feature engineering), model development (model selection, training, evaluation), model deployment (online prediction, batch prediction, edge deployment), monitoring and maintenance (data distribution shifts, model degradation, retraining triggers), and infrastructure (feature stores, model stores, ML platforms). Every ML engineer should read this cover to cover.</div>
+              <div class="res-tags"><span class="rtag must">ML systems bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://fullstackdeeplearning.com/" target="_blank" class="res-link">Full Stack Deep Learning (FSDL) -- free course <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at fullstackdeeplearning.com. Covers the production ML stack: data management, experiment tracking (W&amp;B, MLflow), testing ML systems, deployment patterns (REST API, batch, streaming), monitoring, continual learning, and team processes. The 2022 edition includes LLM application development. This course bridges the gap between Jupyter notebook ML and production ML engineering. Watch all lectures and follow along with the labs.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Production ML</span><span class="rtag vid">Course</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://madewithml.com/" target="_blank" class="res-link">Made With ML -- MLOps Course (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at madewithml.com. Covers the MLOps lifecycle end-to-end: product design, data engineering (labeling, preprocessing, augmentation), model training (baselines, experiment tracking, hyperparameter optimization), evaluation (offline metrics, behavioral testing, online metrics), serving (REST, batch, streaming), and monitoring (performance, drift). Every concept includes working Python code. The best free MLOps resource.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">MLOps</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The distributed training landscape:</b> Data parallelism (each GPU gets a copy of the model, different data batches -- PyTorch DDP). Model parallelism (model is split across GPUs -- Megatron-LM, DeepSpeed). Pipeline parallelism (model stages on different GPUs, micro-batches pipelined -- GPipe). For LLMs, all three are combined: FSDP (Fully Sharded Data Parallelism) + tensor parallelism + pipeline parallelism. Understanding these patterns is what separates ML scientists from ML engineers who train at scale.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- TAB 8: FULL SE PROGRAM                      -->
+  <!-- ============================================ -->
+  <div class="panel" id="p8">
+    <div class="track-header">
+      <div class="track-badge badge-ml">Months 6-18 · The complete lifecycle</div>
+      <div class="track-title">Full Software Engineering Program -- requirements to monitoring</div>
+      <div class="track-sub">A world-class engineer does not just write code. They gather requirements, design systems, implement solutions, write tests, set up CI/CD pipelines, deploy to production, monitor health, respond to incidents, and iterate based on feedback. This track covers the complete software engineering lifecycle with the practices, tools, and culture that separate hobby projects from production systems.</div>
+    </div>
+
+    <!-- Requirements + Design -->
+    <div class="step" id="e25">
+      <div class="step-head" onclick="tog('e25')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info"><div class="step-title">Requirements, Design, and Implementation best practices</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e25">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e25">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">A Philosophy of Software Design -- John Ousterhout</div>
+              <div class="res-desc">A concise book (180 pages) on managing software complexity. Core ideas: deep modules (simple interface, complex implementation), information hiding, define errors out of existence, design it twice, comments should describe things that are not obvious from the code. Ousterhout's CS190 course at Stanford is built around this book. Read this alongside Clean Code -- they complement each other. Where Clean Code focuses on code-level practices, Ousterhout focuses on design-level thinking.</div>
+              <div class="res-tags"><span class="rtag must">Design thinking</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The Pragmatic Programmer -- Hunt &amp; Thomas</div>
+              <div class="res-desc">70 practical tips for professional software development: DRY (Don't Repeat Yourself), orthogonality, tracer bullets, prototypes, domain languages, estimation, plain text, version control, debugging, code generators, design by contract, and "good enough" software. This book has shaped more professional developers than any other. Tips 1-20 cover career mindset, 20-40 cover design, 40-70 cover tools and practices.</div>
+              <div class="res-tags"><span class="rtag must">Career-defining</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Software Engineering at Google -- Winters, Manshreck, Wright (free online)</div>
+              <div class="res-desc">Free at abseil.io/resources/swe-book. How Google does software engineering at scale: code review, testing, documentation, style guides, dependency management, large-scale changes, version control (monorepo), CI/CD, and compute as a service. This book teaches you practices that work at the scale of billions of lines of code. Even if you never work at Google, the testing and code review chapters will transform your professional practices.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Google's practices</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testing -->
+    <div class="step" id="e26">
+      <div class="step-head" onclick="tog('e26')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info"><div class="step-title">Testing -- unit, integration, E2E, TDD, property-based testing</div><div class="step-meta">3-4 weeks · ~25 hours</div></div>
+        <div class="step-arrow" id="a-e26">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e26">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Unit Testing Principles, Practices, and Patterns -- Vladimir Khorikov</div>
+              <div class="res-desc">The best book on what makes a good test. Covers: the four pillars of a good test (protection against regressions, resistance to refactoring, fast feedback, maintainability), London vs Classical schools of TDD, mocks vs stubs (and why most developers overuse mocks), testing anti-patterns, and integration testing strategies. After this book you will write fewer, better tests that actually catch bugs instead of testing implementation details.</div>
+              <div class="res-tags"><span class="rtag must">Testing philosophy</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Software Engineering at Google -- Chapters 11-14 (Testing)</div>
+              <div class="res-desc">Google's testing chapters cover: testing overview (test sizes: small/medium/large), unit testing (best practices, avoiding brittleness), test doubles (fakes over mocks), and larger tests (integration, E2E, A/B testing). The key insight: Google uses mostly small tests (unit), fewer medium tests (integration), and very few large tests (E2E) -- the testing pyramid enforced at scale. Chapter 12 on unit testing alone is worth reading three times.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Testing at scale</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The testing minimum:</b> Every production system you build must have: (1) Unit tests for business logic (aim for 80% branch coverage on core logic). (2) Integration tests for API endpoints (test the contract, not the implementation). (3) One E2E test for the critical path (user signup, payment flow, core feature). (4) A CI pipeline that runs all tests on every pull request. Start with this minimum. Expand test coverage only where bugs actually appear -- data-driven testing is more effective than target-driven testing.</div>
+      </div>
+    </div>
+
+    <!-- CI/CD + DevOps -->
+    <div class="step" id="e27">
+      <div class="step-head" onclick="tog('e27')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info"><div class="step-title">CI/CD, DevOps, Deployment, and Monitoring</div><div class="step-meta">4-6 weeks · ~35 hours</div></div>
+        <div class="step-arrow" id="a-e27">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e27">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://docs.github.com/en/actions" target="_blank" class="res-link">GitHub Actions -- official docs (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">GitHub Actions is the most accessible CI/CD platform. Free for public repos, generous free tier for private. Learn: workflow syntax (triggers, jobs, steps), environment variables and secrets, matrix builds (test across multiple OS/language versions), caching dependencies, deploying to cloud providers, custom actions. Set up a pipeline that: lints, tests, builds, and deploys on every push to main. This should be the first thing you configure on every new project.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">CI/CD foundation</span><span class="rtag tool">Docs</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.docker.com/get-started/" target="_blank" class="res-link">Docker + Kubernetes fundamentals <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Docker: Containerize every application. Learn Dockerfile syntax, multi-stage builds, docker-compose for local development, volume mounts, networking. Kubernetes: Pods, Services, Deployments, ConfigMaps, Secrets, Ingress, HPA (horizontal pod autoscaler). Start with Docker (1 week), then learn Kubernetes concepts (2 weeks), then deploy a real application to a managed K8s cluster (GKE/EKS free tier). The official K8s tutorials at kubernetes.io are the best starting point.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Container essentials</span><span class="rtag tool">DevOps</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Site Reliability Engineering (SRE Book) -- Google (free online)</div>
+              <div class="res-desc">Free at sre.google/sre-book/. How Google runs production systems. Key chapters: SLOs/SLIs/SLAs (Ch4), eliminating toil (Ch5), monitoring distributed systems (Ch6), release engineering (Ch8), on-call (Ch11), incident management (Ch14), and postmortems (Ch15). The SLO chapter alone transforms how you think about reliability -- instead of "100% uptime" (impossible), you set an error budget and make decisions based on how much budget remains.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Operations bible</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The observability triad:</b> Logs (what happened -- structured JSON logs with correlation IDs), Metrics (how much/how fast -- Prometheus + Grafana for dashboards), Traces (the journey of a request across services -- OpenTelemetry + Jaeger). Every production system must have all three. Set them up before you need them, not during an incident. Free stack: Grafana Cloud free tier (logs + metrics + traces) or self-hosted Prometheus + Loki + Tempo + Grafana.</div>
+      </div>
+    </div>
+
+    <!-- Agile + Process -->
+    <div class="step" id="e28">
+      <div class="step-head" onclick="tog('e28')">
+        <div class="step-num num-ml">4</div>
+        <div class="step-info"><div class="step-title">Agile, Team Practices, and Engineering Culture</div><div class="step-meta">Ongoing · integrate into every project</div></div>
+        <div class="step-arrow" id="a-e28">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-e28">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Accelerate -- Forsgren, Humble, Kim</div>
+              <div class="res-desc">Research-backed book proving that software delivery performance (deployment frequency, lead time, change failure rate, MTTR) predicts organizational performance. The four key metrics (DORA metrics) are now the industry standard for measuring engineering team health. Understanding these metrics and the practices that drive them (trunk-based development, CI/CD, monitoring, loosely coupled architecture) makes you effective in any engineering organization.</div>
+              <div class="res-tags"><span class="rtag must">Team performance</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The Staff Engineer's Path -- Tanya Reilly</div>
+              <div class="res-desc">For the long game. Covers: big-picture thinking, project execution, leveling up, alignment, and technical decision-making at the staff+ level. Even early in your career, understanding how senior engineers think about technical strategy, cross-team coordination, and architectural decisions helps you grow faster. The chapter on "being glue" (the essential but often invisible work) is especially important.</div>
+              <div class="res-tags"><span class="rtag book">Book</span><span class="rtag must">Career growth</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The complete SE checklist for every project:</b> (1) Requirements document (even if just for yourself). (2) Design doc with architecture diagram. (3) Git with meaningful commit messages. (4) Tests (unit + integration minimum). (5) CI pipeline (GitHub Actions). (6) Containerized deployment (Docker). (7) Monitoring (at least health check + error alerting). (8) README with setup instructions, architecture overview, and API docs. (9) Postmortem for any incident. Treat personal projects with this discipline and professional projects become natural.</div>
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

@@ -1,0 +1,1851 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="The Polymaths -- History's Greatest Minds" activeNav="polymaths">
+
+  <div class="track-header" style="margin-bottom:2rem;">
+    <div class="track-title">The Polymaths -- History's Greatest Minds</div>
+    <div class="track-sub">From Aristotle to Turing, these are the individuals who refused to be confined to a single domain. They connected fields, invented new ones, and reshaped the world by thinking across boundaries. Study their patterns. Absorb their methods. Become one of them.</div>
+  </div>
+
+  <div class="nav">
+    <button class="tn active" onclick="show(0)">Ancient</button>
+    <button class="tn" onclick="show(1)">Renaissance</button>
+    <button class="tn" onclick="show(2)">Enlightenment</button>
+    <button class="tn" onclick="show(3)">Modern</button>
+    <button class="tn" onclick="show(4)">Contemporary</button>
+    <button class="tn" onclick="show(5)">The Pattern</button>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 0: THE ANCIENT POLYMATHS                                -->
+  <!-- ============================================================ -->
+  <div class="panel active" id="p0">
+    <div class="track-header">
+      <div class="track-badge badge-math">~600 BCE -- 1100 CE</div>
+      <div class="track-title">The Ancient Polymaths</div>
+      <div class="track-sub">The original cross-domain thinkers. In an era without disciplinary boundaries, these minds moved freely between philosophy, mathematics, medicine, engineering, and poetry -- laying the foundations for every field we know today.</div>
+    </div>
+
+    <div class="pm-grid">
+
+      <!-- ARISTOTLE -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">AR</div>
+          <div class="pm-info">
+            <div class="pm-name">Aristotle</div>
+            <div class="pm-years">384--322 BCE</div>
+          </div>
+        </div>
+        <div class="pm-bio">Student of Plato, tutor of Alexander the Great, and arguably the most influential intellectual in Western history. Aristotle single-handedly founded or formalized logic, biology, political science, metaphysics, ethics, and literary criticism. His works dominated European and Islamic thought for nearly two millennia.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Logic</span>
+          <span class="rtag must">Philosophy</span>
+          <span class="rtag vid">Biology</span>
+          <span class="rtag book">Physics</span>
+          <span class="rtag free">Political Science</span>
+          <span class="rtag must">Ethics</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Created formal logic (syllogisms) -- the foundation of all deductive reasoning and computer science</li>
+            <li>Classified over 500 animal species, establishing comparative biology centuries before Darwin</li>
+            <li>Wrote the <em>Nicomachean Ethics</em>, still the starting point for virtue ethics philosophy</li>
+            <li>Formalized rhetoric and poetics, including the concept of catharsis in drama</li>
+            <li>Founded the Lyceum, one of the first systematic research institutions</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"The more you know, the more you realize you don't know." -- Aristotle understood that knowledge expands the frontier of ignorance, driving perpetual curiosity.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Nicomachean Ethics</em> -- Aristotle (translated by Terence Irwin)</li>
+            <li><em>Aristotle's Way</em> -- Edith Hall (2019)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ARCHIMEDES -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">AC</div>
+          <div class="pm-info">
+            <div class="pm-name">Archimedes</div>
+            <div class="pm-years">c. 287--212 BCE</div>
+          </div>
+        </div>
+        <div class="pm-bio">The greatest mathematician and engineer of antiquity. Working in Syracuse, Archimedes discovered the principles of buoyancy and the lever, approximated pi with stunning accuracy, and invented war machines that held off the Roman siege for years. He anticipated integral calculus by nearly two thousand years with his method of exhaustion.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Engineering</span>
+          <span class="rtag book">Astronomy</span>
+          <span class="rtag free">Invention</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Discovered the principle of buoyancy (Archimedes' Principle) while analyzing a crown's purity</li>
+            <li>Proved the law of the lever and declared "Give me a place to stand and I will move the Earth"</li>
+            <li>Approximated pi between 3 10/71 and 3 1/7, the best estimate for centuries</li>
+            <li>Invented the Archimedes screw for raising water, still used in modern irrigation</li>
+            <li>Anticipated calculus with the "method of exhaustion" to compute areas and volumes</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." -- Archimedes understood leverage as both a physical and intellectual principle: the right tool amplifies everything.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Works of Archimedes</em> -- edited by T. L. Heath</li>
+            <li><em>Archimedes and the Roman Imagination</em> -- Mary Jaeger (2008)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HYPATIA -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">HY</div>
+          <div class="pm-info">
+            <div class="pm-name">Hypatia of Alexandria</div>
+            <div class="pm-years">c. 350--415 CE</div>
+          </div>
+        </div>
+        <div class="pm-bio">The first well-documented female mathematician, astronomer, and philosopher. Head of the Neoplatonic school in Alexandria, Hypatia edited and commented on foundational mathematical texts, built astrolabes and hydrometers, and became a symbol of learning in the ancient world. Her murder by a Christian mob marked the symbolic end of classical antiquity's intellectual openness.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Astronomy</span>
+          <span class="rtag vid">Philosophy</span>
+          <span class="rtag book">Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Edited and wrote commentaries on Diophantus's <em>Arithmetica</em>, preserving key algebraic ideas</li>
+            <li>Commented on Apollonius's work on conic sections, which later influenced Kepler</li>
+            <li>Designed improved astrolabes for astronomical measurement</li>
+            <li>Invented a graduated brass hydrometer for measuring liquid density</li>
+            <li>Led Alexandria's intellectual community, teaching students from across the Mediterranean</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Reserve your right to think, for even to think wrongly is better than not to think at all." -- Hypatia valued independent reasoning above all, even in an era of rising dogmatism.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Hypatia: The Life and Legend of an Ancient Philosopher</em> -- Edward J. Watts (2017)</li>
+            <li><em>Hypatia of Alexandria</em> -- Maria Dzielska (1995)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AL-KHWARIZMI -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">AK</div>
+          <div class="pm-info">
+            <div class="pm-name">Al-Khwarizmi</div>
+            <div class="pm-years">c. 780--850 CE</div>
+          </div>
+        </div>
+        <div class="pm-bio">The father of algebra. Working in Baghdad's House of Wisdom during the Islamic Golden Age, Muhammad ibn Musa al-Khwarizmi wrote the foundational text on algebra, introduced Hindu-Arabic numerals to the Islamic world, and created astronomical and trigonometric tables used for centuries. The word "algorithm" derives from the Latin form of his name.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Astronomy</span>
+          <span class="rtag vid">Geography</span>
+          <span class="rtag book">Algorithm Design</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Wrote <em>Al-Kitab al-Mukhtasar fi Hisab al-Jabr wal-Muqabala</em> -- the book that gave algebra its name</li>
+            <li>Systematized the Hindu-Arabic numeral system, eventually replacing Roman numerals in Europe</li>
+            <li>Produced the first reliable astronomical tables (zij) for the Islamic world</li>
+            <li>Created a world map for Caliph al-Ma'mun, improving on Ptolemy's geography</li>
+            <li>His name became "algorithm" -- the most fundamental concept in computer science</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>Al-Khwarizmi's genius was systematization: he took scattered methods from Babylonian, Greek, and Indian traditions and unified them into a coherent, teachable framework. The best polymaths don't just discover -- they organize knowledge so others can build on it.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Algebra of Mohammed ben Musa</em> -- translated by Frederic Rosen</li>
+            <li><em>The House of Wisdom</em> -- Jim Al-Khalili (2011)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- OMAR KHAYYAM -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">OK</div>
+          <div class="pm-info">
+            <div class="pm-name">Omar Khayyam</div>
+            <div class="pm-years">1048--1131 CE</div>
+          </div>
+        </div>
+        <div class="pm-bio">A Persian mathematician, astronomer, philosopher, and poet who achieved breakthroughs in every field he touched. Khayyam classified and solved cubic equations geometrically, reformed the Persian calendar to be more accurate than the Gregorian calendar, and wrote the <em>Rubaiyat</em> -- one of the most translated works of poetry in history.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Astronomy</span>
+          <span class="rtag vid">Poetry</span>
+          <span class="rtag book">Philosophy</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Classified and geometrically solved all types of cubic equations, five centuries before Cardano</li>
+            <li>Discovered what is now called Pascal's triangle and the binomial theorem</li>
+            <li>Created the Jalali calendar (1079), accurate to within one day in 5,000 years</li>
+            <li>Contributed to non-Euclidean geometry by examining Euclid's parallel postulate</li>
+            <li>Wrote the <em>Rubaiyat</em>, later translated by Edward FitzGerald into a Victorian sensation</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"A loaf of bread, a jug of wine, and thou." -- Khayyam's poetry reveals a mind that balanced rigorous mathematical work with deep philosophical reflection on impermanence. He understood that the polymath life requires both discipline and wonder.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Rubaiyat of Omar Khayyam</em> -- translated by Edward FitzGerald</li>
+            <li><em>Omar Khayyam: Poet, Rebel, Astronomer</em> -- Hazhir Teimourian (2007)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- IBN SINA (AVICENNA) -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">IS</div>
+          <div class="pm-info">
+            <div class="pm-name">Ibn Sina (Avicenna)</div>
+            <div class="pm-years">c. 980--1037 CE</div>
+          </div>
+        </div>
+        <div class="pm-bio">The most influential physician and philosopher of the Islamic Golden Age. Ibn Sina wrote over 450 works, of which around 240 survive. His <em>Canon of Medicine</em> was the standard medical textbook in Europe and the Islamic world for over 600 years. He also made major contributions to Aristotelian philosophy, psychology, astronomy, and chemistry.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Medicine</span>
+          <span class="rtag must">Philosophy</span>
+          <span class="rtag vid">Psychology</span>
+          <span class="rtag book">Chemistry</span>
+          <span class="rtag free">Astronomy</span>
+          <span class="rtag must">Mathematics</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Wrote <em>The Canon of Medicine</em>, a 5-volume medical encyclopedia used as a textbook until the 1700s</li>
+            <li>Introduced systematic experimentation and clinical trials to medicine</li>
+            <li>Developed the concept of "momentum" (mail) in physics, anticipating Newton's first law</li>
+            <li>Advanced Aristotelian philosophy with his distinction between essence and existence</li>
+            <li>Described contagion and quarantine methods centuries before germ theory</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes." -- Ibn Sina's relentless pursuit of root causes across every domain is the polymath's core method: never settle for surface understanding.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Avicenna's Medicine</em> -- Mones Abu-Asab et al. (2013)</li>
+            <li><em>Avicenna</em> -- Lenn E. Goodman (2006)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 1: RENAISSANCE MASTERS                                  -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p1">
+    <div class="track-header">
+      <div class="track-badge badge-java">1400 -- 1700 CE</div>
+      <div class="track-title">Renaissance Masters</div>
+      <div class="track-sub">The era when "Renaissance man" became a term. These polymaths lived during the explosion of humanism, empiricism, and the scientific revolution. They painted, built, calculated, and experimented -- often all in the same week.</div>
+    </div>
+
+    <div class="pm-grid">
+
+      <!-- LEONARDO DA VINCI -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">LV</div>
+          <div class="pm-info">
+            <div class="pm-name">Leonardo da Vinci</div>
+            <div class="pm-years">1452--1519</div>
+          </div>
+        </div>
+        <div class="pm-bio">The archetypal polymath. Leonardo was a painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His notebooks -- over 7,000 pages of diagrams, observations, and inventions -- reveal a mind of unparalleled curiosity. He designed flying machines, tanks, and solar power concentrators centuries before they became feasible.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Art</span>
+          <span class="rtag must">Engineering</span>
+          <span class="rtag vid">Anatomy</span>
+          <span class="rtag book">Architecture</span>
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Invention</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Painted the <em>Mona Lisa</em> and <em>The Last Supper</em>, redefining Western art</li>
+            <li>Produced the most detailed anatomical drawings of his era, including the first accurate depiction of the human spine</li>
+            <li>Designed flying machines (ornithopter), armored vehicles, and a robot knight</li>
+            <li>Pioneered sfumato, chiaroscuro, and atmospheric perspective in painting technique</li>
+            <li>Studied fluid dynamics, optics, and botany with rigorous observational method</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Learning never exhausts the mind." -- Leonardo's method was pure observation: he drew to understand, and understood to draw. His notebooks prove that the act of recording sharpens perception.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Leonardo da Vinci</em> -- Walter Isaacson (2017)</li>
+            <li><em>The Notebooks of Leonardo da Vinci</em> -- translated by Jean Paul Richter</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GALILEO GALILEI -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">GG</div>
+          <div class="pm-info">
+            <div class="pm-name">Galileo Galilei</div>
+            <div class="pm-years">1564--1642</div>
+          </div>
+        </div>
+        <div class="pm-bio">The father of modern observational astronomy, modern physics, and the scientific method. Galileo improved the telescope, discovered Jupiter's moons, observed Saturn's rings, and championed heliocentrism at great personal cost. His insistence on mathematical description of nature and experimental verification laid the groundwork for all modern science.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Astronomy</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Mathematics</span>
+          <span class="rtag book">Engineering</span>
+          <span class="rtag free">Philosophy</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Discovered the four largest moons of Jupiter (Galilean moons), proving not everything orbits Earth</li>
+            <li>Established the law of falling bodies -- all objects fall at the same rate regardless of mass</li>
+            <li>Improved the telescope from 3x to 30x magnification and turned it to the sky</li>
+            <li>Described the principle of relativity of motion, later central to Einstein's work</li>
+            <li>Championed the heliocentric model, writing <em>Dialogue Concerning the Two Chief World Systems</em></li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Measure what is measurable, and make measurable what is not so." -- Galileo's core principle: if you can't measure it, you can't understand it. He turned qualitative philosophy into quantitative science.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Galileo's Daughter</em> -- Dava Sobel (1999)</li>
+            <li><em>Dialogue Concerning the Two Chief World Systems</em> -- Galileo Galilei</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ISAAC NEWTON -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">IN</div>
+          <div class="pm-info">
+            <div class="pm-name">Isaac Newton</div>
+            <div class="pm-years">1643--1727</div>
+          </div>
+        </div>
+        <div class="pm-bio">Widely considered the most influential scientist who ever lived. In his "annus mirabilis" (1665--1666), Newton developed calculus, discovered the laws of motion and universal gravitation, and made breakthroughs in optics -- all while Cambridge was closed for plague. He also served as Warden of the Royal Mint, wrote extensively on theology and alchemy, and invented the reflecting telescope.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Optics</span>
+          <span class="rtag book">Astronomy</span>
+          <span class="rtag free">Alchemy</span>
+          <span class="rtag must">Theology</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-invented calculus (independently of Leibniz), providing the mathematical language for physics</li>
+            <li>Formulated the three laws of motion and the law of universal gravitation in the <em>Principia</em></li>
+            <li>Demonstrated that white light is composed of a spectrum of colors using prisms</li>
+            <li>Invented the Newtonian reflecting telescope, still the basis for many modern telescopes</li>
+            <li>Developed the generalized binomial theorem and Newton's method for finding roots</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"If I have seen further, it is by standing on the shoulders of giants." -- Newton understood that polymathic achievement builds on existing knowledge. His genius was synthesizing disparate fields into unified theories.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Never at Rest: A Biography of Isaac Newton</em> -- Richard Westfall (1980)</li>
+            <li><em>The Principia: Mathematical Principles of Natural Philosophy</em> -- Isaac Newton</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GOTTFRIED LEIBNIZ -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">GL</div>
+          <div class="pm-info">
+            <div class="pm-name">Gottfried Wilhelm Leibniz</div>
+            <div class="pm-years">1646--1716</div>
+          </div>
+        </div>
+        <div class="pm-bio">Perhaps the last true "universal genius." Leibniz made major contributions to mathematics, philosophy, physics, theology, law, politics, history, and engineering. He independently invented calculus (with a notation superior to Newton's that we still use today), envisioned binary arithmetic, designed mechanical calculators, and dreamed of a universal language of logic that anticipated computer science by 250 years.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Philosophy</span>
+          <span class="rtag vid">Logic</span>
+          <span class="rtag book">Physics</span>
+          <span class="rtag free">Law</span>
+          <span class="rtag must">Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-invented calculus with superior notation (dy/dx, integral sign) used universally today</li>
+            <li>Developed binary arithmetic -- the foundation of all modern digital computing</li>
+            <li>Created the <em>Monadology</em>, one of the most original metaphysical systems in philosophy</li>
+            <li>Built the Stepped Reckoner, one of the first mechanical calculators that could multiply and divide</li>
+            <li>Envisioned the <em>characteristica universalis</em> -- a formal language for all reasoning, anticipating mathematical logic and AI</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Nothing is more important than to see the sources of invention, which are, in my opinion, more interesting than the inventions themselves." -- Leibniz valued the process of discovery over its products, a hallmark of the polymath mindset.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Leibniz: An Intellectual Biography</em> -- Maria Rosa Antognazza (2009)</li>
+            <li><em>Discourse on Metaphysics and Other Essays</em> -- Gottfried Leibniz</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BLAISE PASCAL -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">BP</div>
+          <div class="pm-info">
+            <div class="pm-name">Blaise Pascal</div>
+            <div class="pm-years">1623--1662</div>
+          </div>
+        </div>
+        <div class="pm-bio">A child prodigy who made foundational contributions to mathematics, physics, philosophy, and theology -- all before dying at 39. Pascal invented one of the first mechanical calculators at age 19, co-founded probability theory through his correspondence with Fermat, proved the existence of vacuums against Aristotelian dogma, and wrote the <em>Pensees</em>, one of the great works of Christian philosophy.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Philosophy</span>
+          <span class="rtag book">Theology</span>
+          <span class="rtag free">Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-founded probability theory with Fermat, the basis of statistics, insurance, and machine learning</li>
+            <li>Built the Pascaline, one of the first mechanical calculators, at age 19</li>
+            <li>Proved atmospheric pressure exists and varies with altitude, overturning Aristotelian physics</li>
+            <li>Discovered Pascal's triangle and its connection to binomial coefficients</li>
+            <li>Wrote the <em>Pensees</em>, including Pascal's Wager -- the first formal decision-theoretic argument</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"All of humanity's problems stem from man's inability to sit quietly in a room alone." -- Pascal understood that deep thought requires solitude and focus, the very conditions that enable polymathic breakthroughs.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Pensees</em> -- Blaise Pascal (translated by A. J. Krailsheimer)</li>
+            <li><em>Pascal: Adversity and Grace</em> -- Marvin R. O'Connell (1997)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ROBERT HOOKE -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">RH</div>
+          <div class="pm-info">
+            <div class="pm-name">Robert Hooke</div>
+            <div class="pm-years">1635--1703</div>
+          </div>
+        </div>
+        <div class="pm-bio">England's forgotten polymath, overshadowed by his rivalry with Newton. Hooke coined the word "cell" in biology, formulated Hooke's Law of elasticity, served as chief surveyor rebuilding London after the Great Fire, designed scientific instruments, and made contributions to astronomy, paleontology, and architecture. He was the Royal Society's first Curator of Experiments.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Physics</span>
+          <span class="rtag must">Biology</span>
+          <span class="rtag vid">Architecture</span>
+          <span class="rtag book">Microscopy</span>
+          <span class="rtag free">Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Published <em>Micrographia</em> (1665), the first major work on microscopy, coining the term "cell"</li>
+            <li>Formulated Hooke's Law (F = kx) -- the foundation of elasticity and material science</li>
+            <li>Co-designed the Monument to the Great Fire and helped rebuild London after 1666</li>
+            <li>Invented the balance spring for watches, enabling accurate portable timekeeping</li>
+            <li>Proposed a wave theory of light and contributed to early ideas about gravity and planetary motion</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>Hooke's <em>Micrographia</em> demonstrated that new instruments create new sciences. By looking through a microscope, he saw what no human had ever seen and founded cell biology. The polymath's edge is often instrumental: build the tool, discover the field.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Curious Life of Robert Hooke</em> -- Lisa Jardine (2004)</li>
+            <li><em>Micrographia</em> -- Robert Hooke (1665, available via Project Gutenberg)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 2: ENLIGHTENMENT & INDUSTRIAL                           -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p2">
+    <div class="track-header">
+      <div class="track-badge badge-dl">1700 -- 1870 CE</div>
+      <div class="track-title">Enlightenment & Industrial Polymaths</div>
+      <div class="track-sub">The age of reason and revolution. As disciplines began to formalize and specialize, these polymaths refused to stay in their lanes. They moved between pure mathematics, experimental physics, politics, engineering, and computing -- showing that cross-pollination drives breakthrough.</div>
+    </div>
+
+    <div class="pm-grid">
+
+      <!-- BENJAMIN FRANKLIN -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">BF</div>
+          <div class="pm-info">
+            <div class="pm-name">Benjamin Franklin</div>
+            <div class="pm-years">1706--1790</div>
+          </div>
+        </div>
+        <div class="pm-bio">America's original polymath. Franklin was a printer, writer, inventor, scientist, diplomat, and statesman. He proved lightning was electrical, invented the lightning rod, bifocals, and the Franklin stove, founded the first public library and fire department in America, helped draft the Declaration of Independence, and negotiated the alliance with France that won the Revolutionary War.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Physics</span>
+          <span class="rtag must">Politics</span>
+          <span class="rtag vid">Invention</span>
+          <span class="rtag book">Writing</span>
+          <span class="rtag free">Diplomacy</span>
+          <span class="rtag must">Business</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Proved lightning is electrical with his famous kite experiment (1752), then invented the lightning rod</li>
+            <li>Invented bifocal glasses, the Franklin stove, and the flexible urinary catheter</li>
+            <li>Founded the first public lending library, volunteer fire department, and the University of Pennsylvania</li>
+            <li>Helped draft and signed the Declaration of Independence, Constitution, and Treaty of Paris</li>
+            <li>Mapped the Gulf Stream, advancing oceanography and transatlantic navigation</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"An investment in knowledge pays the best interest." -- Franklin's method was relentlessly practical: every piece of knowledge had to be applicable. He didn't learn for the sake of learning; he learned to solve problems and help his community.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Benjamin Franklin: An American Life</em> -- Walter Isaacson (2003)</li>
+            <li><em>The Autobiography of Benjamin Franklin</em> -- Benjamin Franklin</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LEONHARD EULER -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">LE</div>
+          <div class="pm-info">
+            <div class="pm-name">Leonhard Euler</div>
+            <div class="pm-years">1707--1783</div>
+          </div>
+        </div>
+        <div class="pm-bio">The most prolific mathematician in history. Euler produced over 800 papers and 90 volumes of work across pure mathematics, mechanics, optics, astronomy, and music theory. He introduced much of modern mathematical notation (e, i, pi, sigma, f(x)), continued producing groundbreaking work even after going blind, and laid foundations for graph theory, topology, and analysis.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Astronomy</span>
+          <span class="rtag book">Music Theory</span>
+          <span class="rtag free">Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Introduced the notation e, i, f(x), and the sigma symbol -- the modern language of mathematics</li>
+            <li>Proved Euler's identity (e^(i*pi) + 1 = 0), called "the most beautiful equation in mathematics"</li>
+            <li>Founded graph theory by solving the Seven Bridges of Konigsberg problem</li>
+            <li>Made foundational contributions to number theory, calculus of variations, and fluid dynamics</li>
+            <li>Continued producing half a page of mathematics per day even after total blindness</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>Euler's output -- averaging 800+ pages of new mathematics per year for decades -- proves that polymathic productivity is about daily practice, not sporadic inspiration. He calculated the way other people breathed: continuously, unconsciously, and prolifically.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Euler: The Master of Us All</em> -- William Dunham (1999)</li>
+            <li><em>Dr. Euler's Fabulous Formula</em> -- Paul Nahin (2006)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CARL FRIEDRICH GAUSS -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">CG</div>
+          <div class="pm-info">
+            <div class="pm-name">Carl Friedrich Gauss</div>
+            <div class="pm-years">1777--1855</div>
+          </div>
+        </div>
+        <div class="pm-bio">The "Prince of Mathematicians." A child prodigy who famously summed the integers 1 to 100 instantly at age seven, Gauss made fundamental contributions to number theory, algebra, statistics, analysis, differential geometry, geodesy, geophysics, electrostatics, astronomy, and optics. He proved the Fundamental Theorem of Algebra and developed the method of least squares, central to all modern statistics.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Astronomy</span>
+          <span class="rtag vid">Physics</span>
+          <span class="rtag book">Statistics</span>
+          <span class="rtag free">Geodesy</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Wrote <em>Disquisitiones Arithmeticae</em> at age 21, reshaping number theory and algebra forever</li>
+            <li>Developed the method of least squares, foundational to regression and all modern statistics</li>
+            <li>Proved the Fundamental Theorem of Algebra (every polynomial has a root in the complex numbers)</li>
+            <li>Discovered the Gaussian (normal) distribution -- the bell curve underpinning all of probability</li>
+            <li>Made breakthroughs in non-Euclidean geometry but kept them private, decades before Bolyai and Lobachevsky published</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Few, but ripe." -- Gauss's motto. He only published work he considered perfect. His approach: go deep, polish relentlessly, and release only when the result is unassailable. Quality over quantity, though his quantity was still staggering.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Prince of Mathematics: Carl Friedrich Gauss</em> -- M. B. W. Tent (2006)</li>
+            <li><em>Gauss: A Biographical Study</em> -- W. K. Buhler (1981)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MICHAEL FARADAY -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">MF</div>
+          <div class="pm-info">
+            <div class="pm-name">Michael Faraday</div>
+            <div class="pm-years">1791--1867</div>
+          </div>
+        </div>
+        <div class="pm-bio">The greatest experimental physicist in history, who rose from extreme poverty and no formal education to transform our understanding of electromagnetism. A bookbinder's apprentice who educated himself by reading the books he bound, Faraday discovered electromagnetic induction, diamagnetism, and electrolysis. His work made electric motors, generators, and transformers possible -- the entire electrical age rests on his discoveries.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Physics</span>
+          <span class="rtag must">Chemistry</span>
+          <span class="rtag vid">Electromagnetism</span>
+          <span class="rtag book">Science Communication</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Discovered electromagnetic induction -- the principle behind electric generators and transformers</li>
+            <li>Invented the Faraday cage, the electric motor prototype, and the first electrical generator</li>
+            <li>Established the laws of electrolysis, founding electrochemistry</li>
+            <li>Introduced the concept of "fields" in physics, which Maxwell later formalized mathematically</li>
+            <li>Created the Royal Institution Christmas Lectures, pioneering public science communication</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Nothing is too wonderful to be true, if it be consistent with the laws of nature." -- Faraday proved that lack of formal education is not a barrier. His method was pure empiricism: test everything, trust your observations, let nature teach you.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Electric Life of Michael Faraday</em> -- Alan Hirshfeld (2006)</li>
+            <li><em>The Chemical History of a Candle</em> -- Michael Faraday (his Christmas Lectures)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CHARLES BABBAGE -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">CB</div>
+          <div class="pm-info">
+            <div class="pm-name">Charles Babbage</div>
+            <div class="pm-years">1791--1871</div>
+          </div>
+        </div>
+        <div class="pm-bio">The father of the computer. Babbage designed the Difference Engine and the Analytical Engine -- a general-purpose mechanical computer with memory, a processor, and conditional branching -- over a century before electronic computers. He also made contributions to mathematics, cryptography, economics, and mechanical engineering, and helped found the Royal Astronomical Society and the British Association for the Advancement of Science.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Computer Science</span>
+          <span class="rtag must">Mathematics</span>
+          <span class="rtag vid">Engineering</span>
+          <span class="rtag book">Economics</span>
+          <span class="rtag free">Cryptography</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Designed the Analytical Engine -- the first general-purpose computing machine, with concepts of memory, CPU, and loops</li>
+            <li>Built a working section of the Difference Engine for calculating mathematical tables</li>
+            <li>Pioneered operations research and cost analysis in manufacturing (<em>On the Economy of Machinery and Manufactures</em>)</li>
+            <li>Broke the Vigenere cipher, a major cryptographic achievement kept secret by the British government</li>
+            <li>Helped establish modern scientific institutions and professionalize British science</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"Errors using inadequate data are much less than those using no data at all." -- Babbage was obsessed with precision and automation. His vision: eliminate human error by mechanizing thought itself. He was 100 years ahead of his time.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Difference Engine</em> -- Doron Swade (2001)</li>
+            <li><em>Passages from the Life of a Philosopher</em> -- Charles Babbage (autobiography)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ADA LOVELACE -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">AL</div>
+          <div class="pm-info">
+            <div class="pm-name">Ada Lovelace</div>
+            <div class="pm-years">1815--1852</div>
+          </div>
+        </div>
+        <div class="pm-bio">The first computer programmer. Daughter of Lord Byron and trained in mathematics by her mother, Ada Lovelace saw the potential of Babbage's Analytical Engine far beyond its inventor. She wrote the first algorithm intended for machine execution, recognized that computers could manipulate symbols (not just numbers), and envisioned computing as a creative tool -- all in the 1840s, a century before electronic computers existed.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Computing</span>
+          <span class="rtag vid">Logic</span>
+          <span class="rtag book">Philosophy of Mind</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Wrote the first published computer algorithm (for computing Bernoulli numbers on the Analytical Engine)</li>
+            <li>Recognized that computing machines could manipulate symbols, not just numbers -- anticipating AI and digital music</li>
+            <li>Wrote extensive notes on the Analytical Engine that surpassed Babbage's own understanding of its potential</li>
+            <li>Distinguished between what a machine "can" do and what it "will" do -- an early form of the halting problem</li>
+            <li>Envisioned computing as a creative, not merely mechanical, pursuit</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"The Analytical Engine weaves algebraical patterns just as the Jacquard loom weaves flowers and leaves." -- Ada saw the deep analogy between computation and creation. Her vision: machines as partners in human imagination, not mere calculators.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Ada's Algorithm</em> -- James Essinger (2014)</li>
+            <li><em>Ada, the Enchantress of Numbers</em> -- Betty Alexandra Toole (1992)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 3: MODERN TITANS                                        -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p3">
+    <div class="track-header">
+      <div class="track-badge badge-py">1850 -- 1990 CE</div>
+      <div class="track-title">Modern Titans</div>
+      <div class="track-sub">In an era of accelerating specialization, these polymaths swam against the current. They invented entire fields -- information theory, computer science, quantum electrodynamics -- by importing ideas across disciplinary walls that their peers treated as impenetrable.</div>
+    </div>
+
+    <div class="pm-grid">
+
+      <!-- NIKOLA TESLA -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">NT</div>
+          <div class="pm-info">
+            <div class="pm-name">Nikola Tesla</div>
+            <div class="pm-years">1856--1943</div>
+          </div>
+        </div>
+        <div class="pm-bio">The inventor who electrified the world. Tesla's alternating current (AC) system won the "War of Currents" against Edison's direct current and became the global standard for electrical power. He held over 300 patents, invented the induction motor, the Tesla coil, radio-controlled devices, and envisioned wireless energy transmission, smartphones, and the internet decades before they existed.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Electrical Engineering</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Invention</span>
+          <span class="rtag book">Mechanical Engineering</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Designed the AC polyphase power system that electrified the modern world</li>
+            <li>Invented the induction motor, Tesla coil, and rotating magnetic field</li>
+            <li>Built the first radio-controlled boat (1898), demonstrating remote control technology</li>
+            <li>Designed the hydroelectric power system at Niagara Falls</li>
+            <li>Envisioned wireless global communication and energy transmission, anticipating Wi-Fi and the internet</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane." -- Tesla's superpower was visualization: he could simulate entire machines in his mind before building them, testing and refining mentally.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>My Inventions: The Autobiography of Nikola Tesla</em> -- Nikola Tesla</li>
+            <li><em>Wizard: The Life and Times of Nikola Tesla</em> -- Marc Seifer (1996)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HENRI POINCARE -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">HP</div>
+          <div class="pm-info">
+            <div class="pm-name">Henri Poincare</div>
+            <div class="pm-years">1854--1912</div>
+          </div>
+        </div>
+        <div class="pm-bio">The last mathematician to master all branches of the field in his era. Poincare founded topology, made transformative contributions to celestial mechanics, and came close to discovering special relativity before Einstein. He also wrote brilliant essays on the philosophy and psychology of mathematical creativity, describing how insights emerge from the unconscious mind after periods of incubation.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Physics</span>
+          <span class="rtag vid">Philosophy</span>
+          <span class="rtag book">Topology</span>
+          <span class="rtag free">Celestial Mechanics</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Founded algebraic topology, creating entirely new mathematical tools for studying shape and space</li>
+            <li>Discovered deterministic chaos in the three-body problem, founding chaos theory</li>
+            <li>Formulated the Poincare conjecture, one of the seven Millennium Prize Problems (proved by Perelman in 2003)</li>
+            <li>Independently derived the Lorentz transformations, coming close to special relativity</li>
+            <li>Wrote <em>Science and Hypothesis</em> and <em>Science and Method</em>, classic works on the psychology of mathematical discovery</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"It is by logic that we prove, but by intuition that we discover." -- Poincare described how breakthroughs arrive: intense focused work, followed by rest, then a sudden flash of insight from the unconscious. His theory of creativity remains influential in cognitive science.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Science and Hypothesis</em> -- Henri Poincare</li>
+            <li><em>Henri Poincare: A Scientific Biography</em> -- Jeremy Gray (2012)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- JOHN VON NEUMANN -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">JN</div>
+          <div class="pm-info">
+            <div class="pm-name">John von Neumann</div>
+            <div class="pm-years">1903--1957</div>
+          </div>
+        </div>
+        <div class="pm-bio">Widely regarded as the greatest intellect of the 20th century. Von Neumann made fundamental contributions to mathematics, physics, computer science, economics, and game theory. He designed the architecture still used in virtually every modern computer, co-developed the atomic bomb, founded game theory, formalized quantum mechanics, and invented cellular automata. Colleagues described his mental speed as "superhuman."</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Computer Science</span>
+          <span class="rtag vid">Physics</span>
+          <span class="rtag book">Economics</span>
+          <span class="rtag free">Game Theory</span>
+          <span class="rtag must">Nuclear Science</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Designed the von Neumann architecture -- the stored-program computer model used in virtually all modern machines</li>
+            <li>Co-founded game theory with Oskar Morgenstern, publishing <em>Theory of Games and Economic Behavior</em></li>
+            <li>Provided the rigorous mathematical foundation for quantum mechanics</li>
+            <li>Invented cellular automata and the concept of self-replicating machines</li>
+            <li>Made critical contributions to the Manhattan Project (implosion lens design) and Monte Carlo simulation methods</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is." -- Von Neumann's approach: mathematics is not a specialty, it is the universal language. Every problem, from economics to warfare to biology, yields to mathematical formalization.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Man from the Future</em> -- Ananyo Bhattacharya (2022)</li>
+            <li><em>Theory of Games and Economic Behavior</em> -- John von Neumann and Oskar Morgenstern</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ALAN TURING -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">AT</div>
+          <div class="pm-info">
+            <div class="pm-name">Alan Turing</div>
+            <div class="pm-years">1912--1954</div>
+          </div>
+        </div>
+        <div class="pm-bio">The father of computer science and artificial intelligence. Turing formalized the concept of computation itself with the Turing machine, cracked the Enigma code at Bletchley Park (arguably shortening WWII by two years), proposed the Turing Test for machine intelligence, and pioneered mathematical biology with his work on morphogenesis. His life was tragically cut short after prosecution for homosexuality.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Computer Science</span>
+          <span class="rtag must">Mathematics</span>
+          <span class="rtag vid">Cryptography</span>
+          <span class="rtag book">AI</span>
+          <span class="rtag free">Biology</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Defined the Turing machine (1936), formalizing the concept of "algorithm" and proving the limits of computation</li>
+            <li>Led the effort to crack the Enigma cipher at Bletchley Park, helping shorten WWII significantly</li>
+            <li>Proposed the Turing Test (1950), the foundational concept for artificial intelligence</li>
+            <li>Developed mathematical models of morphogenesis, explaining how patterns form in biology</li>
+            <li>Designed the ACE computer, one of the first stored-program electronic computers</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"We can only see a short distance ahead, but we can see plenty there that needs to be done." -- Turing's genius was asking the right questions: What is computation? Can machines think? Why do leopards have spots? Each question opened an entire field.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Alan Turing: The Enigma</em> -- Andrew Hodges (1983)</li>
+            <li><em>Computing Machinery and Intelligence</em> -- Alan Turing (1950 paper)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CLAUDE SHANNON -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">CS</div>
+          <div class="pm-info">
+            <div class="pm-name">Claude Shannon</div>
+            <div class="pm-years">1916--2001</div>
+          </div>
+        </div>
+        <div class="pm-bio">The father of information theory. Shannon's 1948 paper "A Mathematical Theory of Communication" is one of the most important scientific papers of the 20th century, founding the entire field of digital communications. He also proved that Boolean algebra could implement any logical operation in circuits (his master's thesis, called "possibly the most important master's thesis of the century"), built chess-playing machines, and juggled unicycles at MIT.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Information Theory</span>
+          <span class="rtag must">Mathematics</span>
+          <span class="rtag vid">Electrical Engineering</span>
+          <span class="rtag book">Cryptography</span>
+          <span class="rtag free">AI</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Founded information theory with his 1948 paper, defining the bit as the fundamental unit of information</li>
+            <li>Proved Boolean algebra underlies digital circuit design (1937 master's thesis), enabling all modern computing</li>
+            <li>Established the theoretical limits of data compression and error-correcting codes</li>
+            <li>Built one of the first chess-playing computers and maze-solving robots</li>
+            <li>Proved that a one-time pad provides perfect secrecy in cryptography</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>Shannon's colleague described his method: "He would pick a problem, work on it in isolation, and come back with the entire solution." Shannon's approach was playful curiosity: he juggled, built gadgets, and rode unicycles because play and problem-solving use the same cognitive muscles.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>A Mind at Play: How Claude Shannon Invented the Information Age</em> -- Jimmy Soni and Rob Goodman (2017)</li>
+            <li><em>A Mathematical Theory of Communication</em> -- Claude Shannon (1948 paper)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RICHARD FEYNMAN -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">RF</div>
+          <div class="pm-info">
+            <div class="pm-name">Richard Feynman</div>
+            <div class="pm-years">1918--1988</div>
+          </div>
+        </div>
+        <div class="pm-bio">Nobel laureate, safecracker, bongo player, artist, and the greatest physics teacher who ever lived. Feynman revolutionized quantum electrodynamics with his Feynman diagrams, worked on the Manhattan Project at Los Alamos, cracked the cause of the Challenger disaster, pioneered quantum computing, and taught generations of physicists through his legendary Caltech lectures. He embodied the joy of finding things out.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Physics</span>
+          <span class="rtag must">Mathematics</span>
+          <span class="rtag vid">Teaching</span>
+          <span class="rtag book">Computing</span>
+          <span class="rtag free">Biology</span>
+          <span class="rtag must">Art</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Developed Feynman diagrams for visualizing quantum interactions, revolutionizing particle physics</li>
+            <li>Reformulated quantum mechanics via the path integral formulation</li>
+            <li>Proposed quantum computing (1982), launching the field decades before practical quantum computers</li>
+            <li>Created the <em>Feynman Lectures on Physics</em>, the gold standard of physics education</li>
+            <li>Identified the O-ring failure that caused the Challenger disaster through a simple ice-water demonstration</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"What I cannot create, I do not understand." -- Feynman's method: rebuild every concept from first principles. If you can't explain it simply, you don't understand it deeply enough. His "Feynman Technique" for learning remains the gold standard.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>"Surely You're Joking, Mr. Feynman!"</em> -- Richard Feynman (1985)</li>
+            <li><em>The Feynman Lectures on Physics</em> -- Richard Feynman, Robert Leighton, Matthew Sands</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 4: CONTEMPORARY POLYMATHS                               -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p4">
+    <div class="track-header">
+      <div class="track-badge badge-llm">1950 -- Present</div>
+      <div class="track-title">Contemporary Polymaths</div>
+      <div class="track-sub">In an era of extreme specialization, these individuals prove that polymathic thinking is not only still possible but may be the most powerful competitive advantage in the modern world. They bridge theory and practice, academia and industry, and multiple disciplines simultaneously.</div>
+    </div>
+
+    <div class="pm-grid">
+
+      <!-- ELON MUSK -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">EM</div>
+          <div class="pm-info">
+            <div class="pm-name">Elon Musk</div>
+            <div class="pm-years">1971--present</div>
+          </div>
+        </div>
+        <div class="pm-bio">The most visible polymath of the 21st century. Musk taught himself rocket science, battery chemistry, and tunnel engineering to build SpaceX, Tesla, and The Boring Company. He co-founded PayPal, Neuralink (brain-computer interfaces), and xAI. His method of "learning by reading" and applying first-principles reasoning across industries has reshaped electric vehicles, space exploration, and clean energy.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Aerospace</span>
+          <span class="rtag must">Energy</span>
+          <span class="rtag vid">AI</span>
+          <span class="rtag book">Software</span>
+          <span class="rtag free">Neuroscience</span>
+          <span class="rtag must">Manufacturing</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Built SpaceX from scratch, achieving reusable orbital rockets and reducing launch costs by 10x</li>
+            <li>Scaled Tesla into the world's most valuable automaker, mainstreaming electric vehicles globally</li>
+            <li>Drove development of battery technology and solar energy through Tesla Energy and the Gigafactory</li>
+            <li>Co-founded Neuralink to develop brain-computer interfaces for treating neurological conditions</li>
+            <li>Applied first-principles thinking to disrupt multiple trillion-dollar industries simultaneously</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"I think it's important to reason from first principles rather than by analogy. The normal way we conduct our lives is we reason by analogy. First principles is a physics way of looking at the world." -- Musk's cross-domain method: decompose any problem to its fundamental truths, then reason up.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Elon Musk</em> -- Walter Isaacson (2023)</li>
+            <li><em>Liftoff: Elon Musk and the Desperate Early Days That Launched SpaceX</em> -- Eric Berger (2021)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DEMIS HASSABIS -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">DH</div>
+          <div class="pm-info">
+            <div class="pm-name">Demis Hassabis</div>
+            <div class="pm-years">1976--present</div>
+          </div>
+        </div>
+        <div class="pm-bio">Co-founder of DeepMind and a 2024 Nobel Prize laureate in Chemistry. Hassabis was a chess prodigy at age four, designed the classic video game <em>Theme Park</em> at 17, earned a PhD in cognitive neuroscience from UCL, and then built the AI lab that created AlphaGo, AlphaFold, and AlphaZero. AlphaFold solved the 50-year-old protein folding problem, potentially the most impactful scientific breakthrough of the 2020s.</div>
+        <div class="pm-domains">
+          <span class="rtag free">AI</span>
+          <span class="rtag must">Neuroscience</span>
+          <span class="rtag vid">Game Design</span>
+          <span class="rtag book">Biology</span>
+          <span class="rtag free">Computer Science</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-founded DeepMind, the world's leading AI research lab (acquired by Google for ~$500M)</li>
+            <li>Led development of AlphaGo, which defeated the world Go champion, a landmark in AI history</li>
+            <li>Created AlphaFold, which predicted the 3D structure of virtually all known proteins</li>
+            <li>Developed AlphaZero, which mastered chess, shogi, and Go from scratch through self-play</li>
+            <li>Bridged neuroscience and AI, using insights about the brain to design better learning algorithms</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"The key to AI is understanding intelligence itself, and the key to understanding intelligence is studying the brain." -- Hassabis's career is a masterclass in strategic polymathy: each domain (games, neuroscience, AI, biology) feeds into and amplifies the others.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Genius Makers</em> -- Cade Metz (2021)</li>
+            <li>DeepMind's published papers on AlphaFold and AlphaGo (freely available)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TERENCE TAO -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">TT</div>
+          <div class="pm-info">
+            <div class="pm-name">Terence Tao</div>
+            <div class="pm-years">1975--present</div>
+          </div>
+        </div>
+        <div class="pm-bio">Often called the greatest living mathematician. Tao won the Fields Medal in 2006, scored 760 on the math SAT at age eight, and has made groundbreaking contributions across an extraordinary range of mathematical fields -- harmonic analysis, partial differential equations, number theory, combinatorics, and compressed sensing. He has over 350 published papers and is known for his ability to move between mathematical subfields with remarkable fluency.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Number Theory</span>
+          <span class="rtag vid">Harmonic Analysis</span>
+          <span class="rtag book">Combinatorics</span>
+          <span class="rtag free">Compressed Sensing</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Proved the Green-Tao theorem: the primes contain arbitrarily long arithmetic progressions</li>
+            <li>Made breakthroughs in compressed sensing (with Candes), enabling MRI scans to be 8x faster</li>
+            <li>Advanced the understanding of the Navier-Stokes equations and wave maps</li>
+            <li>Contributed to the Polymath project, pioneering massively collaborative mathematics</li>
+            <li>Maintains a mathematical blog that has become a global resource for researchers</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"It's not enough to just be smart. You also have to be brave." -- Tao's approach: don't get trapped in one subfield. Read widely, collaborate freely, and apply tools from one area to problems in another. His breadth within mathematics is a model for cross-domain thinking in any field.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Solving Mathematical Problems: A Personal Perspective</em> -- Terence Tao</li>
+            <li>Terence Tao's blog: terrytao.wordpress.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- EDWARD WITTEN -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">EW</div>
+          <div class="pm-info">
+            <div class="pm-name">Edward Witten</div>
+            <div class="pm-years">1951--present</div>
+          </div>
+        </div>
+        <div class="pm-bio">The only physicist to win the Fields Medal (1990), mathematics' highest honor. Witten is the world's leading string theorist and has made transformative contributions to both theoretical physics and pure mathematics. He unified the five string theories into M-theory, developed topological quantum field theories, and made breakthroughs in knot theory, algebraic geometry, and quantum gravity. He originally studied history and linguistics at Brandeis before switching to physics.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Theoretical Physics</span>
+          <span class="rtag must">Mathematics</span>
+          <span class="rtag vid">String Theory</span>
+          <span class="rtag book">Topology</span>
+          <span class="rtag free">Quantum Gravity</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Unified the five string theories into M-theory (1995), reshaping theoretical physics</li>
+            <li>Developed topological quantum field theories, creating deep connections between physics and mathematics</li>
+            <li>Won the Fields Medal for mathematical contributions inspired by quantum field theory</li>
+            <li>Made breakthroughs in Morse theory, knot invariants, and algebraic geometry using physics insights</li>
+            <li>Advanced understanding of supersymmetry, dualities, and the landscape of string vacua</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>Witten's career demonstrates the power of "intellectual migration." He studied history, then linguistics, then economics, then applied math, then physics -- and his winding path gave him perspectives that pure specialists lacked. Sometimes the scenic route produces the deepest insights.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Elegant Universe</em> -- Brian Greene (1999, covers Witten's contributions extensively)</li>
+            <li><em>Not Even Wrong</em> -- Peter Woit (2006, for a critical perspective on string theory)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GEOFFREY HINTON -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">GH</div>
+          <div class="pm-info">
+            <div class="pm-name">Geoffrey Hinton</div>
+            <div class="pm-years">1947--present</div>
+          </div>
+        </div>
+        <div class="pm-bio">The "Godfather of Deep Learning" and a 2024 Nobel Prize laureate in Physics. Hinton spent decades championing neural networks when the entire AI community dismissed them, drawing on insights from psychology, neuroscience, and physics. His work on backpropagation, Boltzmann machines, and deep belief networks laid the groundwork for the AI revolution. He left Google in 2023 to warn about AI existential risks.</div>
+        <div class="pm-domains">
+          <span class="rtag free">AI / Deep Learning</span>
+          <span class="rtag must">Neuroscience</span>
+          <span class="rtag vid">Cognitive Science</span>
+          <span class="rtag book">Physics</span>
+          <span class="rtag free">Psychology</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-developed backpropagation for training neural networks, the core algorithm of modern deep learning</li>
+            <li>Invented Boltzmann machines, applying ideas from statistical physics to neural networks</li>
+            <li>Pioneered deep belief networks, reigniting interest in deep learning in 2006</li>
+            <li>Supervised the team that created AlexNet (2012), the breakthrough that launched the deep learning revolution</li>
+            <li>Developed capsule networks and the forward-forward algorithm as alternatives to backpropagation</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"I think the brain is a machine, and I think we'll eventually understand it." -- Hinton's career proves the value of intellectual stubbornness. He believed in neural networks for 30 years while the field abandoned them. The polymath's lesson: when your cross-domain intuition conflicts with consensus, trust it and keep working.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>Genius Makers</em> -- Cade Metz (2021)</li>
+            <li>Hinton's 2024 Nobel Prize lecture (available on nobelprize.org)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- JIM SIMONS -->
+      <div class="polymath-entry">
+        <div class="pm-header">
+          <div class="pm-initials">JS</div>
+          <div class="pm-info">
+            <div class="pm-name">Jim Simons</div>
+            <div class="pm-years">1938--2024</div>
+          </div>
+        </div>
+        <div class="pm-bio">Mathematician, codebreaker, and the most successful quantitative investor in history. Simons co-developed the Chern-Simons form (a foundational result in differential geometry and theoretical physics), broke Soviet codes for the NSA, then founded Renaissance Technologies. His Medallion Fund returned an average of 66% per year before fees over 30 years -- the greatest investment track record ever. He donated over $2.7 billion to math and science through the Simons Foundation.</div>
+        <div class="pm-domains">
+          <span class="rtag free">Mathematics</span>
+          <span class="rtag must">Finance</span>
+          <span class="rtag vid">Cryptography</span>
+          <span class="rtag book">Physics</span>
+          <span class="rtag free">Philanthropy</span>
+        </div>
+        <div class="pm-contributions">
+          <div class="pm-section-title">Greatest Contributions</div>
+          <ul>
+            <li>Co-developed the Chern-Simons form, used in string theory, quantum field theory, and condensed matter physics</li>
+            <li>Built Renaissance Technologies and the Medallion Fund -- the greatest quantitative investment vehicle ever</li>
+            <li>Proved that mathematical pattern recognition could systematically beat financial markets</li>
+            <li>Founded the Simons Foundation, funding mathematics and basic science research at scale</li>
+            <li>Worked as a codebreaker at the NSA's Institute for Defense Analyses during the Cold War</li>
+          </ul>
+        </div>
+        <div class="pm-quote">
+          <div class="pm-section-title">Key Insight</div>
+          <blockquote>"In my whole life, I've never hired a finance person. I only hire mathematicians, physicists, astronomers, and computer scientists." -- Simons proved that deep mathematical thinking transfers to any domain. His fund succeeded precisely because it was staffed by polymaths, not specialists.</blockquote>
+        </div>
+        <div class="pm-reading">
+          <div class="pm-section-title">Recommended Reading</div>
+          <ul>
+            <li><em>The Man Who Solved the Market</em> -- Gregory Zuckerman (2019)</li>
+            <li>Jim Simons's Numberphile interview on YouTube</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PANEL 5: THE POLYMATH PATTERN                                 -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p5">
+    <div class="track-header">
+      <div class="track-badge badge-build">Meta-Analysis</div>
+      <div class="track-title">The Polymath Pattern</div>
+      <div class="track-sub">What do Aristotle, Leonardo, von Neumann, and Feynman have in common? Beneath the surface of their individual brilliance lies a set of recurring patterns, habits, and cognitive strategies. Study these patterns. They are learnable.</div>
+    </div>
+
+    <!-- COMMON TRAITS -->
+    <div class="pm-analysis-section">
+      <div class="pm-analysis-title">Common Traits Across All Eras</div>
+      <div class="pm-analysis-grid">
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">01</div>
+          <div class="pm-trait-name">Insatiable Curiosity</div>
+          <div class="pm-trait-desc">Every polymath shared an almost pathological need to understand how things work. Leonardo dissected cadavers to understand muscles. Feynman picked locks to understand security. Shannon built juggling robots for fun. This curiosity is not passive -- it is an active, relentless drive to pull apart and reassemble every phenomenon they encounter.</div>
+        </div>
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">02</div>
+          <div class="pm-trait-name">First-Principles Thinking</div>
+          <div class="pm-trait-desc">Polymaths don't accept inherited assumptions. Galileo questioned Aristotle. Musk questioned rocket pricing. Turing questioned what "computation" even means. They strip problems to their fundamental components, then rebuild from ground truth. This is the cognitive habit that enables domain transfer: if you understand principles, you can apply them anywhere.</div>
+        </div>
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">03</div>
+          <div class="pm-trait-name">Prolific Note-Taking & Externalization</div>
+          <div class="pm-trait-desc">Leonardo's 7,200+ pages of notebooks. Euler's 800 papers. Gauss's mathematical diary. Feynman's notebooks. Polymaths externalize their thinking obsessively. Writing is not just record-keeping -- it is thinking. The act of writing forces clarity, reveals gaps, and creates a "second brain" that compounds over time. Every polymath was also a prolific writer.</div>
+        </div>
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">04</div>
+          <div class="pm-trait-name">Cross-Pollination</div>
+          <div class="pm-trait-desc">The defining move: importing ideas from one field into another. Hinton brought physics (Boltzmann distributions) into AI. Simons brought mathematics into finance. Shannon brought Boolean logic into circuit design. Poincare brought topology into celestial mechanics. The breakthrough almost always comes from applying a mature tool from Field A to an unsolved problem in Field B.</div>
+        </div>
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">05</div>
+          <div class="pm-trait-name">High Tolerance for Confusion</div>
+          <div class="pm-trait-desc">Polymaths spend most of their time confused -- and they are comfortable with it. When entering a new domain, they accept being a beginner. Von Neumann moved from pure math to physics to economics to computing, each time starting from ignorance. The willingness to be confused is what separates polymaths from specialists: specialists avoid confusion, polymaths seek it.</div>
+        </div>
+        <div class="pm-trait-card">
+          <div class="pm-trait-num">06</div>
+          <div class="pm-trait-name">Playfulness & Tinkering</div>
+          <div class="pm-trait-desc">Shannon juggled and built gadgets. Feynman played bongos and cracked safes. Franklin flew kites. Leonardo sketched imaginary machines. Polymaths maintain a childlike sense of play that keeps their creativity alive. The line between "serious work" and "play" is invisible to them because both are expressions of curiosity.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- T-SHAPE MODEL -->
+    <div class="pm-analysis-section">
+      <div class="pm-analysis-title">The Expertise Evolution: T to Pi to Comb</div>
+      <div class="pm-shape-model">
+        <div class="pm-shape-card">
+          <div class="pm-shape-icon">T</div>
+          <div class="pm-shape-name">T-Shaped (Specialist+)</div>
+          <div class="pm-shape-desc">Deep expertise in one domain with broad awareness of adjacent fields. This is where most experts stop. Examples: a mathematician who reads popular science, an engineer who appreciates art. The "T" has one deep vertical bar (your specialty) and a horizontal bar (general knowledge).</div>
+          <div class="pm-shape-example">Example: A machine learning engineer who also understands product design.</div>
+        </div>
+        <div class="pm-shape-card">
+          <div class="pm-shape-icon">&Pi;</div>
+          <div class="pm-shape-name">Pi-Shaped (Dual Expert)</div>
+          <div class="pm-shape-desc">Deep expertise in two domains with the horizontal bar of general knowledge connecting them. This is where cross-pollination begins. The combination of two deep skills creates unique insights that neither domain alone could produce. Most successful founders and innovators are Pi-shaped.</div>
+          <div class="pm-shape-example">Example: Hassabis (neuroscience + AI), Simons (mathematics + finance).</div>
+        </div>
+        <div class="pm-shape-card">
+          <div class="pm-shape-icon">IIII</div>
+          <div class="pm-shape-name">Comb-Shaped (Polymath)</div>
+          <div class="pm-shape-desc">Deep expertise in three or more domains with a broad horizontal bar connecting them all. This is the full polymath. The "comb" has multiple deep teeth (domains of genuine competence) connected by a broad base of general knowledge. Each additional deep skill multiplies -- not adds -- the possible connections.</div>
+          <div class="pm-shape-example">Example: Von Neumann (math + physics + CS + economics), Feynman (physics + math + teaching + biology + art).</div>
+        </div>
+      </div>
+      <div class="pm-evolution-note">
+        <strong>The key insight:</strong> You don't need to be comb-shaped from day one. Start with T (go deep in one thing). Then develop a second spike (Pi). Then a third. Each new depth takes less time because your learning infrastructure -- note-taking, first-principles thinking, pattern recognition -- transfers. Leonardo didn't start as a polymath; he started as a painter's apprentice.
+      </div>
+    </div>
+
+    <!-- DAILY ROUTINES -->
+    <div class="pm-analysis-section">
+      <div class="pm-analysis-title">Daily Routines Comparison</div>
+      <div class="pm-routine-grid">
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">Leonardo da Vinci</div>
+          <div class="pm-routine-desc">Worked in intense bursts across multiple projects. Rose early to sketch and observe. Alternated between painting, engineering, and anatomical study. Kept notebooks always at hand. Walked extensively for observation and thinking. No fixed schedule -- driven by curiosity and commission deadlines.</div>
+        </div>
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">Isaac Newton</div>
+          <div class="pm-routine-desc">Legendary for obsessive focus. During his <em>annus mirabilis</em>, he barely ate or slept. Often forgot meals. Worked alone for extended periods. His method was sustained, deep concentration on a single problem until it cracked. He would then pivot to an entirely different domain.</div>
+        </div>
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">Leonhard Euler</div>
+          <div class="pm-routine-desc">Wrote mathematics every day without exception, producing roughly half a page of finished work daily. Worked surrounded by his 13 children. Maintained this output even after going completely blind, dictating to assistants. His routine was pure consistency -- no bursts, just relentless daily output.</div>
+        </div>
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">Benjamin Franklin</div>
+          <div class="pm-routine-desc">Famous for his structured daily schedule: rose at 5am, asked "What good shall I do this day?", worked in focused blocks, reserved evenings for review. Tracked 13 virtues in a weekly chart. His system was the original "habit tracker" -- 250 years before apps existed.</div>
+        </div>
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">Richard Feynman</div>
+          <div class="pm-routine-desc">Alternated between intense work and deliberate play. Frequented strip clubs to sketch. Played bongos in a samba band. His "unproductive" activities were actually incubation periods. He worked on physics problems on and off all day, with no clear boundary between work and life.</div>
+        </div>
+        <div class="pm-routine-card">
+          <div class="pm-routine-name">John von Neumann</div>
+          <div class="pm-routine-desc">Threw lavish parties and maintained an active social life (unusual for a mathematician). Worked in noisy environments and claimed he couldn't focus in silence. Solved problems while driving or at parties. His routine was scattered by external standards but internally consistent -- his brain never stopped.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CROSS-DOMAIN CONNECTIONS -->
+    <div class="pm-analysis-section">
+      <div class="pm-analysis-title">How They Connected Their Domains</div>
+      <div class="pm-connections-list">
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Leonardo: Art &rarr; Anatomy</div>
+          <div class="pm-connection-desc">To paint the human body more accurately, Leonardo dissected over 30 cadavers and produced the most detailed anatomical drawings of his era. The artistic drive for realism produced genuine scientific discovery.</div>
+        </div>
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Shannon: Mathematics &rarr; Circuit Design</div>
+          <div class="pm-connection-desc">Shannon's master's thesis proved that Boolean algebra could be implemented in electrical circuits. This single insight -- connecting abstract logic to physical switches -- is the foundation of all digital computing.</div>
+        </div>
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Hinton: Physics &rarr; Neural Networks</div>
+          <div class="pm-connection-desc">Hinton imported the Boltzmann distribution from statistical physics to create Boltzmann machines -- neural networks that learn by settling into energy minima. This physics metaphor produced a generation of breakthroughs in machine learning.</div>
+        </div>
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Poincare: Topology &rarr; Celestial Mechanics</div>
+          <div class="pm-connection-desc">Poincare invented algebraic topology to study the qualitative behavior of planetary orbits. He didn't solve the three-body problem -- he proved it was unsolvable and discovered chaos, founding an entirely new science in the process.</div>
+        </div>
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Feynman: Visualization &rarr; Particle Physics</div>
+          <div class="pm-connection-desc">Feynman diagrams transformed quantum electrodynamics from impenetrable mathematics into intuitive visual representations. He brought an artist's instinct for spatial thinking into the most abstract domain in physics.</div>
+        </div>
+        <div class="pm-connection-item">
+          <div class="pm-connection-from">Simons: Differential Geometry &rarr; Financial Markets</div>
+          <div class="pm-connection-desc">Simons applied mathematical pattern recognition (hidden Markov models, statistical anomalies) from his pure math background to find structure in financial data that economists couldn't see, because economists weren't looking with the right tools.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACTIONABLE LESSONS -->
+    <div class="pm-analysis-section">
+      <div class="pm-analysis-title">Actionable Lessons for Modern Polymath Aspirants</div>
+      <div class="pm-lessons-list">
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">01</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Go Deep First, Then Wide</div>
+            <div class="pm-lesson-desc">Don't try to learn everything at once. Master one field deeply enough to contribute. Then use the learning infrastructure you built -- note-taking, first-principles thinking, rapid prototyping -- to accelerate learning in the next field. Depth precedes breadth.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">02</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Keep a Commonplace Book / Zettelkasten</div>
+            <div class="pm-lesson-desc">Every polymath externalized their thinking. Start a system for capturing, connecting, and retrieving ideas across domains. Use Obsidian, Notion, or physical notebooks. The key is cross-referencing: link ideas from different fields. This is where serendipitous connections emerge.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">03</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Practice Deliberate Transfer</div>
+            <div class="pm-lesson-desc">When you learn a concept in one field, immediately ask: "Where else does this pattern appear?" Gradient descent in ML is hill-climbing in optimization is natural selection in biology is simulated annealing in physics. The concept is one; the applications are infinite.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">04</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Read Outside Your Field Every Day</div>
+            <div class="pm-lesson-desc">Dedicate 30 minutes daily to reading outside your primary domain. If you're a programmer, read biology. If you're a mathematician, read history. If you're an artist, read physics. The polymaths didn't silo their reading -- their breakthroughs came from unexpected combinations.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">05</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Build Things Constantly</div>
+            <div class="pm-lesson-desc">Feynman: "What I cannot create, I do not understand." Don't just read about domains -- build in them. Write code. Run experiments. Make art. Build circuits. The act of creation forces understanding in a way that passive study never can. Ship something in every domain you enter.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">06</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Teach What You Learn</div>
+            <div class="pm-lesson-desc">Feynman taught. Euler wrote textbooks. Gauss mentored. Franklin published. Teaching forces you to fill gaps in your understanding and creates a feedback loop that accelerates mastery. Write blog posts, make videos, mentor others -- the polymath who teaches becomes the polymath who truly understands.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">07</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Embrace the Adjacent Possible</div>
+            <div class="pm-lesson-desc">Don't plan your polymathic journey too rigidly. Follow your curiosity to the "adjacent possible" -- the domains just beyond your current knowledge that share structural similarities. From math, the adjacent possible includes physics, CS, and economics. From biology, it includes chemistry, medicine, and AI. Each step opens new doors.</div>
+          </div>
+        </div>
+        <div class="pm-lesson-item">
+          <div class="pm-lesson-num">08</div>
+          <div class="pm-lesson-content">
+            <div class="pm-lesson-title">Protect Unstructured Thinking Time</div>
+            <div class="pm-lesson-desc">Poincare's breakthroughs came during walks. Newton's came during plague isolation. Feynman's came while playing bongos. Schedule time with no agenda, no screens, and no inputs. This is when your unconscious mind connects the dots between domains. The modern polymath's greatest enemy is not ignorance -- it is distraction.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- STYLES                                                        -->
+  <!-- ============================================================ -->
+  <style>
+    /* Polymath Grid */
+    .pm-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    /* Polymath Entry Card */
+    .polymath-entry {
+      background: var(--card-bg, #121212);
+      border: 1px solid var(--card-border, #232323);
+      border-radius: var(--border-radius-lg, 6px);
+      padding: 1.5rem;
+      transition: border-color 0.2s ease;
+    }
+    .polymath-entry:hover {
+      border-color: var(--card-border-hover, #4e4e4e);
+    }
+
+    /* Header */
+    .pm-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .pm-initials {
+      width: 48px;
+      height: 48px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+    .pm-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .pm-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .pm-years {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* Bio */
+    .pm-bio {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #999;
+      margin-bottom: 1rem;
+    }
+
+    /* Domains */
+    .pm-domains {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Section Titles */
+    .pm-section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    /* Contributions */
+    .pm-contributions {
+      margin-bottom: 1.25rem;
+    }
+    .pm-contributions ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pm-contributions li {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #bbb;
+      padding: 4px 0 4px 16px;
+      position: relative;
+    }
+    .pm-contributions li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      background: #333;
+      border-radius: 1px;
+    }
+
+    /* Quote */
+    .pm-quote {
+      margin-bottom: 1.25rem;
+    }
+    .pm-quote blockquote {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #aaa;
+      border-left: 2px solid #333;
+      padding-left: 16px;
+      margin: 0;
+      font-style: italic;
+    }
+
+    /* Reading */
+    .pm-reading ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pm-reading li {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #888;
+      padding: 2px 0 2px 16px;
+      position: relative;
+    }
+    .pm-reading li::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 10px;
+      width: 8px;
+      height: 2px;
+      background: #444;
+    }
+
+    /* =============================== */
+    /* PANEL 6: ANALYSIS STYLES        */
+    /* =============================== */
+    .pm-analysis-section {
+      margin-bottom: 3rem;
+    }
+    .pm-analysis-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #222;
+      letter-spacing: -0.01em;
+    }
+
+    /* Traits Grid */
+    .pm-analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .pm-trait-card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 1.25rem;
+    }
+    .pm-trait-num {
+      font-size: 11px;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: 6px;
+      font-family: monospace;
+    }
+    .pm-trait-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .pm-trait-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #888;
+    }
+
+    /* Shape Model */
+    .pm-shape-model {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .pm-shape-card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .pm-shape-icon {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      font-family: monospace;
+      letter-spacing: 0.1em;
+    }
+    .pm-shape-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+    .pm-shape-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #888;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .pm-shape-example {
+      font-size: 12px;
+      color: #555;
+      font-style: italic;
+      text-align: left;
+    }
+    .pm-evolution-note {
+      background: #0d0d0d;
+      border: 1px solid #1a1a1a;
+      border-left: 3px solid #444;
+      padding: 1rem 1.25rem;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #999;
+      border-radius: 4px;
+    }
+
+    /* Routine Grid */
+    .pm-routine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .pm-routine-card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 1.25rem;
+    }
+    .pm-routine-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .pm-routine-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #888;
+    }
+
+    /* Connections */
+    .pm-connections-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .pm-connection-item {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+    }
+    .pm-connection-from {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .pm-connection-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #888;
+    }
+
+    /* Lessons */
+    .pm-lessons-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .pm-lesson-item {
+      display: flex;
+      gap: 1rem;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 4px;
+      padding: 1.25rem;
+    }
+    .pm-lesson-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: #444;
+      font-family: monospace;
+      min-width: 24px;
+      flex-shrink: 0;
+    }
+    .pm-lesson-content {
+      flex: 1;
+    }
+    .pm-lesson-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .pm-lesson-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #888;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .pm-analysis-grid,
+      .pm-shape-model,
+      .pm-routine-grid {
+        grid-template-columns: 1fr;
+      }
+      .pm-name {
+        font-size: 16px;
+      }
+      .polymath-entry {
+        padding: 1rem;
+      }
+    }
+  </style>
+
+</PhaseLayout>

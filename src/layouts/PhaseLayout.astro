@@ -1,0 +1,89 @@
+---
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  activeNav: 'strategy' | 'phase1' | 'phase2' | 'phase3' | 'circular' | 'courses' | 'challenges' | 'polymaths';
+}
+
+const { title, activeNav } = Astro.props;
+
+const navItems = [
+  { key: 'strategy', label: 'Strategy', href: '/roadmaps/master' },
+  { key: 'phase1', label: 'Phase 1', href: '/roadmaps/phase-1' },
+  { key: 'phase2', label: 'Phase 2', href: '/roadmaps/phase-2' },
+  { key: 'phase3', label: 'Phase 3', href: '/roadmaps/phase-3' },
+  { key: 'circular', label: 'AI Circular', href: '/circular' },
+  { key: 'courses', label: 'Courses', href: '/courses' },
+  { key: 'challenges', label: 'Challenges', href: '/challenges' },
+  { key: 'polymaths', label: 'Polymaths', href: '/polymaths' },
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="layout">
+      <a href="/" class="back-link">&larr; Back to Portal</a>
+
+      <nav class="phase-header-nav">
+        {navItems.map(item => (
+          <a href={item.href} class:list={['phn-link', { active: activeNav === item.key }]}>{item.label}</a>
+        ))}
+      </nav>
+
+      <div class="root">
+        <slot />
+      </div>
+    </div>
+
+    <!-- TAB CONTROLS -->
+    <script is:inline>
+    window.show = function(index) {
+        const allPanels = document.querySelectorAll('.panel, .phase-panel');
+        allPanels.forEach((p, j) => { p.classList.toggle('active', j === index); });
+        const allTabs = document.querySelectorAll('.tab, .ntab, .tn');
+        allTabs.forEach((t, j) => { t.classList.toggle('active', j === index); });
+        const pbar = document.getElementById('pbar');
+        if (pbar) {
+            const totalTabs = allTabs.length;
+            const percentage = Math.round(((index + 1) / totalTabs) * 100);
+            pbar.style.width = percentage + '%';
+        }
+    };
+
+    window.tog = function(id) {
+        const bodyId = 'b-' + id;
+        const arrowId = 'a-' + id;
+        const body = document.getElementById(bodyId);
+        const arrow = document.getElementById(arrowId);
+        if (body) {
+            const isOpen = body.classList.toggle('open');
+            if (arrow) { arrow.classList.toggle('open', isOpen); }
+        }
+    };
+
+    window.sendPrompt = function(message) {
+        const existing = document.getElementById('ai-toast');
+        if(existing) existing.remove();
+        const toast = document.createElement('div');
+        toast.id = 'ai-toast';
+        toast.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#111;border:1px solid #333;padding:16px 20px;border-radius:6px;font-family:inherit;color:#fff;box-shadow:0 10px 40px rgba(0,0,0,0.8);transform:translateY(100px);opacity:0;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);z-index:1000;max-width:320px;';
+        toast.innerHTML = '<div style="font-size:11px;font-weight:600;text-transform:uppercase;color:#888;margin-bottom:6px;">AI Assistant Request</div><div style="font-size:13px;line-height:1.5;color:#ddd;">"' + message + '"</div><div style="font-size:11px;margin-top:10px;color:#555;">[Simulated backend request]</div>';
+        document.body.appendChild(toast);
+        requestAnimationFrame(() => { toast.style.transform = 'translateY(0)'; toast.style.opacity = '1'; });
+        setTimeout(() => { toast.style.transform = 'translateY(20px)'; toast.style.opacity = '0'; setTimeout(() => toast.remove(), 400); }, 4000);
+    };
+    </script>
+  </body>
+</html>

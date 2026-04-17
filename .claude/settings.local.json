@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx astro:*)",
+      "Bash(node -e ':*)",
+      "Bash(node -e \"const fs=require\\('fs'\\); const c=fs.readFileSync\\('C:/Users/ayush/OneDrive/Desktop/Subject/Astro ENg/src/pages/index.astro','utf8'\\); const lines=c.split\\('\\\\n'\\); console.log\\('total lines:',lines.length\\);\")",
+      "Bash(node \"C:/Users/ayush/OneDrive/Desktop/Subject/Astro ENg/_patch_home.js\")",
+      "Bash(node \"C:/Users/ayush/OneDrive/Desktop/Subject/Astro ENg/_patch_home.cjs\")"
+    ]
+  }
+}

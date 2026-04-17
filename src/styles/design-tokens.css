@@ -1,0 +1,43 @@
+/* ============================================
+   POLYMATH.SYS — OBSIDIAN DESIGN TOKENS
+   Exact parity with original styles.css :root
+   ============================================ */
+
+:root {
+    --bg-color: #0b0b0b;
+    --card-bg: #121212;
+    --card-border: #232323;
+    --card-border-hover: #4e4e4e;
+
+    --text-primary: #ededed;
+    --text-secondary: #888888;
+    --accent: #ffffff;
+
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    --border-radius-md: 4px;
+    --border-radius-lg: 6px;
+
+    /* Global colors for components */
+    --color-border-secondary: #333;
+    --color-border-tertiary: #222;
+    --color-background-primary: #0b0b0b;
+    --color-background-secondary: #121212;
+    --color-background-info: #1a1a1a;
+    --color-text-info: #ffffff;
+    --color-border-info: #555;
+
+    --color-background-warning: #fcba031a;
+    --color-text-warning: #fcba03;
+    --color-border-warning: #fcba0355;
+
+    --color-background-success: #1a5c1a1a;
+    --color-text-success: #3c933c;
+
+    --color-border-danger: #8b1a1a55;
+}

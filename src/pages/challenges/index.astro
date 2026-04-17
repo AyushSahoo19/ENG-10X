@@ -1,0 +1,1482 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100-Day Challenges" activeNav="challenges">
+
+  <div class="nav">
+    <button class="tn active" onclick="show(0)">CS/SE</button>
+    <button class="tn" onclick="show(1)">AI/ML/DL</button>
+    <button class="tn" onclick="show(2)">Polymath</button>
+    <button class="tn" onclick="show(3)">Competitive Programming</button>
+    <button class="tn" onclick="show(4)">System Design</button>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TAB 0: 100 DAYS CS/SE CHALLENGE                              -->
+  <!-- ============================================================ -->
+  <div class="panel active" id="p0">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">100 Days -- 50 Projects -- Full CS/SE Stack</div>
+      <div class="track-title">100 Days of Computer Science & Software Engineering</div>
+      <div class="track-sub">From programming fundamentals to capstone integration. Every concept a working CS graduate should know, compressed into 100 days of deliberate practice. 50 hands-on projects ensure nothing stays theoretical. You will write code every single day.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) Code for a minimum of 2 hours every day -- no exceptions, no zero days. (2) Push at least one commit to GitHub daily. (3) Complete all 5 projects per block before moving to the next. (4) Write a brief learning log entry each day in your repo's JOURNAL.md. (5) Every project must have a README with problem statement, architecture, and how to run it. (6) If you miss a day, do double the next day -- never skip two consecutive days.
+    </div>
+
+    <!-- Days 1-10 -->
+    <div class="step" id="ch0-s0">
+      <div class="step-head" onclick="tog('ch0-s0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--10: Programming Fundamentals + Git</div>
+          <div class="step-meta">Variables, control flow, functions, recursion, file I/O, version control</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s0">
+        <p><b>Day 1:</b> Environment setup -- install your language (Python/Java/C++), editor, Git. Write Hello World, push first commit.</p>
+        <p><b>Day 2:</b> Variables, data types, type casting. Primitive vs reference types. Memory model basics.</p>
+        <p><b>Day 3:</b> Conditionals -- if/else, switch/match, ternary. Boolean logic and truth tables.</p>
+        <p><b>Day 4:</b> Loops -- for, while, do-while. Loop invariants. Nested loops and time complexity intuition.</p>
+        <p><b>Day 5:</b> Functions -- parameters, return types, scope, pure functions. DRY principle.</p>
+        <p><b>Day 6:</b> Recursion -- base cases, recursive calls, call stack visualization. Factorial, Fibonacci, power.</p>
+        <p><b>Day 7:</b> Arrays and strings -- traversal, search, slicing, common patterns (two-pointer, sliding window intro).</p>
+        <p><b>Day 8:</b> File I/O -- reading/writing files, CSV parsing, JSON handling. Error handling with try/catch.</p>
+        <p><b>Day 9:</b> Git deep dive -- branching, merging, rebasing, conflict resolution, .gitignore, commit messages.</p>
+        <p><b>Day 10:</b> Integration day -- combine everything learned into a cohesive project.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - CLI Calculator:</b> Supports +, -, *, /, %, power, sqrt. Handles edge cases (division by zero, overflow). Input history saved to file.<br>
+          <b>P2 - Password Generator & Validator:</b> Generate passwords with configurable length/complexity. Validate against rules (uppercase, digits, symbols). Entropy calculator.<br>
+          <b>P3 - File Organizer:</b> Scans a directory and sorts files into folders by extension. Handles duplicates, logs actions, supports undo via a manifest file.<br>
+          <b>P4 - Markdown to HTML Converter:</b> Parse headers, bold, italic, links, lists, code blocks. Recursion for nested lists. Output valid HTML with basic CSS.<br>
+          <b>P5 - Git Contribution Tracker:</b> Parse git log output, visualize commits per day/week as a heatmap in the terminal. Track streaks, show stats.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 11-20 -->
+    <div class="step" id="ch0-s1">
+      <div class="step-head" onclick="tog('ch0-s1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 11--20: Data Structures Basics</div>
+          <div class="step-meta">Arrays, linked lists, stacks, queues, hash maps, sets</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s1">
+        <p><b>Day 11:</b> Dynamic arrays -- how ArrayList/vector works internally. Amortized O(1) append. Implement from scratch.</p>
+        <p><b>Day 12:</b> Singly linked lists -- node structure, insertion, deletion, traversal, reversal.</p>
+        <p><b>Day 13:</b> Doubly linked lists and circular linked lists. When to use each. LRU cache intro.</p>
+        <p><b>Day 14:</b> Stacks -- array-based and linked-list-based. Call stack connection. Parentheses matching.</p>
+        <p><b>Day 15:</b> Queues -- standard queue, deque, circular buffer. BFS preview.</p>
+        <p><b>Day 16:</b> Hash maps -- hashing functions, collision handling (chaining, open addressing). Load factor.</p>
+        <p><b>Day 17:</b> Hash sets, multisets. Frequency counting. Anagram detection, two-sum pattern.</p>
+        <p><b>Day 18:</b> Comparing data structures -- when to use what. Time/space complexity tables.</p>
+        <p><b>Day 19:</b> Iterator pattern -- building custom iterators. Lazy evaluation.</p>
+        <p><b>Day 20:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Linked List Library:</b> Full implementation: singly, doubly, circular. Supports insert, delete, reverse, merge sort, cycle detection (Floyd's). Published as a reusable module with tests.<br>
+          <b>P2 - Stack Calculator (Shunting Yard):</b> Infix to postfix conversion using Dijkstra's shunting-yard algorithm. Evaluate postfix expressions. Support parentheses, operator precedence, functions (sin, cos, log).<br>
+          <b>P3 - LRU Cache:</b> Implement LRU cache using doubly linked list + hash map. O(1) get/put. Configurable capacity. TTL-based expiry. Thread-safe version.<br>
+          <b>P4 - Spell Checker:</b> Hash-based dictionary lookup. Suggest corrections using edit distance (Levenshtein). Frequency-weighted suggestions. Load dictionary from file.<br>
+          <b>P5 - Task Queue System:</b> Priority queue with multiple priority levels. FIFO within same priority. Supports enqueue, dequeue, peek, reschedule. Persistent storage to disk.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 21-30 -->
+    <div class="step" id="ch0-s2">
+      <div class="step-head" onclick="tog('ch0-s2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 21--30: Advanced DS + Algorithms</div>
+          <div class="step-meta">Trees, graphs, heaps, sorting, searching, dynamic programming</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s2">
+        <p><b>Day 21:</b> Binary trees -- traversals (inorder, preorder, postorder, level-order). Recursive vs iterative.</p>
+        <p><b>Day 22:</b> Binary search trees -- insert, delete, search, min/max, successor/predecessor. Balancing intro.</p>
+        <p><b>Day 23:</b> Heaps -- min-heap, max-heap. Heapify. Priority queue implementation. Heap sort.</p>
+        <p><b>Day 24:</b> Graph representation -- adjacency list, adjacency matrix. Directed vs undirected, weighted vs unweighted.</p>
+        <p><b>Day 25:</b> Graph traversal -- BFS, DFS. Connected components. Cycle detection. Topological sort.</p>
+        <p><b>Day 26:</b> Shortest paths -- Dijkstra, Bellman-Ford. Negative edges. Relaxation concept.</p>
+        <p><b>Day 27:</b> Sorting algorithms -- merge sort, quicksort, counting sort, radix sort. Stability. When to use which.</p>
+        <p><b>Day 28:</b> Binary search variations -- search in rotated array, first/last occurrence, search space problems.</p>
+        <p><b>Day 29:</b> Dynamic programming -- memoization vs tabulation. Overlapping subproblems. Optimal substructure. Classic problems: knapsack, LCS, coin change.</p>
+        <p><b>Day 30:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Graph Visualizer:</b> Interactive graph builder in the terminal or browser. Add/remove nodes and edges. Run BFS, DFS, Dijkstra with step-by-step animation. Export adjacency list.<br>
+          <b>P2 - Pathfinding Simulator:</b> Grid-based pathfinder. Implement A*, Dijkstra, BFS. Visualize explored nodes and final path. Obstacle placement. Compare algorithm performance.<br>
+          <b>P3 - Expression Tree Evaluator:</b> Parse mathematical expressions into a tree. Support variables, functions, derivatives (symbolic differentiation). Print tree structure.<br>
+          <b>P4 - Compression Tool:</b> Implement Huffman coding from scratch. Compress and decompress files. Show compression ratio. Compare with run-length encoding.<br>
+          <b>P5 - DP Problem Solver:</b> Solve and visualize 10 classic DP problems. Show the DP table being filled step by step. Trace back optimal solution. Include knapsack, LCS, edit distance, matrix chain multiplication.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-40 -->
+    <div class="step" id="ch0-s3">
+      <div class="step-head" onclick="tog('ch0-s3')">
+        <div class="step-num num-dsa">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--40: OOP + Design Patterns</div>
+          <div class="step-meta">SOLID principles, creational/structural/behavioral patterns, refactoring</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s3">
+        <p><b>Day 31:</b> OOP fundamentals -- classes, objects, encapsulation, abstraction. Constructors and destructors.</p>
+        <p><b>Day 32:</b> Inheritance and polymorphism -- method overriding, abstract classes, interfaces. Liskov substitution.</p>
+        <p><b>Day 33:</b> SOLID principles deep dive -- Single Responsibility, Open/Closed, Liskov, Interface Segregation, Dependency Inversion. Code examples for each.</p>
+        <p><b>Day 34:</b> Creational patterns -- Singleton, Factory Method, Abstract Factory, Builder, Prototype.</p>
+        <p><b>Day 35:</b> Structural patterns -- Adapter, Bridge, Composite, Decorator, Facade, Proxy.</p>
+        <p><b>Day 36:</b> Behavioral patterns -- Observer, Strategy, Command, State, Template Method, Iterator.</p>
+        <p><b>Day 37:</b> Refactoring techniques -- extract method, extract class, replace conditional with polymorphism. Code smells.</p>
+        <p><b>Day 38:</b> Unit testing -- test-driven development (TDD), mocking, test doubles. Write tests for previous projects.</p>
+        <p><b>Day 39:</b> Clean code principles -- naming, functions, comments, formatting. Reading "Clean Code" key chapters.</p>
+        <p><b>Day 40:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Design Pattern Showcase:</b> Implement all 7 most-used patterns in a single codebase: Singleton (config manager), Factory (shape creator), Observer (event system), Strategy (sorting), Decorator (logging), Builder (query builder), Command (undo/redo).<br>
+          <b>P2 - Plugin Architecture:</b> Build a plugin system where features are loaded dynamically. Uses Factory + Strategy + Observer patterns. Plugin interface, plugin registry, event bus.<br>
+          <b>P3 - State Machine Engine:</b> Generic finite state machine. Define states, transitions, guards. Visualize state diagram. Use for: traffic light, vending machine, game character AI.<br>
+          <b>P4 - ORM Lite:</b> A mini object-relational mapper. Map classes to SQL tables. Support CRUD operations, simple queries, relationships (one-to-many). Uses Builder and Proxy patterns.<br>
+          <b>P5 - Test Framework:</b> Build a minimal testing framework from scratch: test discovery, assertions, setup/teardown, mocking. Run tests, report results with pass/fail counts and timing.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 41-50 -->
+    <div class="step" id="ch0-s4">
+      <div class="step-head" onclick="tog('ch0-s4')">
+        <div class="step-num num-dsa">5</div>
+        <div class="step-info">
+          <div class="step-title">Days 41--50: Databases + SQL</div>
+          <div class="step-meta">Relational modeling, SQL mastery, indexing, transactions, NoSQL</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s4">
+        <p><b>Day 41:</b> Relational model -- tables, rows, columns, primary keys, foreign keys. ER diagrams. Normalization (1NF, 2NF, 3NF, BCNF).</p>
+        <p><b>Day 42:</b> SQL fundamentals -- SELECT, WHERE, ORDER BY, GROUP BY, HAVING. Aggregate functions.</p>
+        <p><b>Day 43:</b> Joins deep dive -- INNER, LEFT, RIGHT, FULL, CROSS, SELF joins. Join algorithms (nested loop, hash, merge).</p>
+        <p><b>Day 44:</b> Subqueries, CTEs, window functions -- ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, running totals.</p>
+        <p><b>Day 45:</b> Indexing -- B-tree indexes, hash indexes, composite indexes. EXPLAIN plans. Query optimization.</p>
+        <p><b>Day 46:</b> Transactions -- ACID properties. Isolation levels. Deadlocks. Optimistic vs pessimistic locking.</p>
+        <p><b>Day 47:</b> NoSQL overview -- document stores (MongoDB), key-value (Redis), column-family (Cassandra), graph (Neo4j). When to use what.</p>
+        <p><b>Day 48:</b> Database design -- schema design for real applications. Denormalization trade-offs. Partitioning and sharding intro.</p>
+        <p><b>Day 49:</b> Stored procedures, triggers, views, materialized views. Database security basics.</p>
+        <p><b>Day 50:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - SQL Query Engine:</b> Parse a subset of SQL (SELECT, WHERE, JOIN, GROUP BY). Execute against CSV files loaded into memory. Support basic query optimization (predicate pushdown).<br>
+          <b>P2 - Mini ORM:</b> Map objects to PostgreSQL tables. Auto-generate CREATE TABLE from class definitions. Support migrations (add column, rename). Connection pooling.<br>
+          <b>P3 - Database Indexer:</b> Build a B-tree index from scratch. Support insert, search, range queries. Benchmark: indexed vs sequential scan performance on 1M rows.<br>
+          <b>P4 - E-Commerce Schema:</b> Design and implement a full e-commerce database: users, products, orders, payments, reviews, inventory. Write 30 complex queries covering every SQL concept. Seed with realistic data.<br>
+          <b>P5 - Redis Clone:</b> In-memory key-value store supporting GET, SET, DEL, EXPIRE, LPUSH, LRANGE. TCP server. Persistence via append-only file. Benchmark throughput.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 51-60 -->
+    <div class="step" id="ch0-s5">
+      <div class="step-head" onclick="tog('ch0-s5')">
+        <div class="step-num num-dsa">6</div>
+        <div class="step-info">
+          <div class="step-title">Days 51--60: Operating Systems + Networks</div>
+          <div class="step-meta">Processes, threads, memory, TCP/IP, HTTP, DNS, sockets</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s5">
+        <p><b>Day 51:</b> Process model -- process creation, states, context switching. PCB. fork/exec model.</p>
+        <p><b>Day 52:</b> Threads -- user threads vs kernel threads. Thread pools. Race conditions. Mutexes, semaphores.</p>
+        <p><b>Day 53:</b> Memory management -- virtual memory, paging, page tables, TLB. Malloc internals.</p>
+        <p><b>Day 54:</b> File systems -- inodes, directories, journaling. ext4/NTFS basics. Disk scheduling.</p>
+        <p><b>Day 55:</b> Networking fundamentals -- OSI model, TCP/IP stack. IP addressing, subnetting, routing basics.</p>
+        <p><b>Day 56:</b> TCP deep dive -- 3-way handshake, flow control, congestion control. TCP vs UDP trade-offs.</p>
+        <p><b>Day 57:</b> HTTP protocol -- request/response, methods, headers, status codes. HTTP/1.1 vs HTTP/2 vs HTTP/3.</p>
+        <p><b>Day 58:</b> DNS -- recursive vs iterative resolution. Caching. Record types (A, AAAA, CNAME, MX, TXT). CDN basics.</p>
+        <p><b>Day 59:</b> Socket programming -- TCP and UDP sockets. Client-server model. Non-blocking I/O. Select/poll/epoll.</p>
+        <p><b>Day 60:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Unix Shell:</b> Build a shell from scratch: command parsing, piping (|), redirection (>, >>), background processes (&), built-in commands (cd, pwd, history, exit). Signal handling (Ctrl+C).<br>
+          <b>P2 - HTTP Server:</b> Serve static files over HTTP/1.1. Parse requests, route to handlers. Support GET/POST. Content-Type detection. Concurrent connections via threading or async I/O.<br>
+          <b>P3 - Chat Application:</b> Real-time TCP chat. Multiple rooms, usernames, private messages. Server handles multiple clients concurrently. Message history stored to file.<br>
+          <b>P4 - Memory Allocator:</b> Implement malloc/free using sbrk. First-fit, best-fit, and buddy system strategies. Coalescing free blocks. Measure fragmentation.<br>
+          <b>P5 - Network Scanner:</b> Scan a subnet for active hosts (ICMP ping). Port scanner for common ports. Service detection. Output formatted results. Concurrent scanning for speed.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-70 -->
+    <div class="step" id="ch0-s6">
+      <div class="step-head" onclick="tog('ch0-s6')">
+        <div class="step-num num-dsa">7</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--70: System Design + Architecture</div>
+          <div class="step-meta">Scalability, load balancing, caching, microservices, message queues</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s6">
+        <p><b>Day 61:</b> Scalability fundamentals -- vertical vs horizontal scaling. Stateless services. CAP theorem.</p>
+        <p><b>Day 62:</b> Load balancing -- round-robin, least connections, consistent hashing. Layer 4 vs Layer 7.</p>
+        <p><b>Day 63:</b> Caching -- cache strategies (write-through, write-back, write-around). Cache invalidation. CDN caching. Redis/Memcached.</p>
+        <p><b>Day 64:</b> Message queues -- pub/sub, point-to-point. Kafka, RabbitMQ concepts. Exactly-once, at-least-once delivery.</p>
+        <p><b>Day 65:</b> Microservices architecture -- decomposition strategies, API gateway, service discovery, circuit breaker.</p>
+        <p><b>Day 66:</b> Database scaling -- replication (master-slave, master-master). Sharding strategies. Read replicas.</p>
+        <p><b>Day 67:</b> API design -- REST principles, versioning, pagination, rate limiting. GraphQL overview. gRPC for internal services.</p>
+        <p><b>Day 68:</b> Authentication and security -- JWT, OAuth 2.0, session-based auth. HTTPS, CORS, XSS, CSRF, SQL injection prevention.</p>
+        <p><b>Day 69:</b> Monitoring and observability -- logging, metrics, tracing. ELK stack. Prometheus + Grafana. Alerting.</p>
+        <p><b>Day 70:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - URL Shortener:</b> Full system: shorten URLs, redirect, track clicks. Base62 encoding. Rate limiting. Analytics dashboard. Redis cache + PostgreSQL storage. REST API + simple frontend.<br>
+          <b>P2 - Real-Time Chat System:</b> WebSocket-based chat with rooms. Message persistence. Online status. Typing indicators. Horizontal scaling with Redis pub/sub. JWT authentication.<br>
+          <b>P3 - Rate Limiter:</b> Implement token bucket, sliding window, and fixed window algorithms. Middleware for HTTP servers. Distributed rate limiting via Redis. Configurable per-user limits.<br>
+          <b>P4 - Task Scheduler:</b> Distributed task queue like a mini-Celery. Submit tasks via API, workers pull and execute. Retry logic, dead letter queue, priority. Dashboard showing task status.<br>
+          <b>P5 - API Gateway:</b> Reverse proxy with routing, authentication, rate limiting, request/response transformation. Load balancing across backend services. Health checks. Configuration via YAML.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 71-80 -->
+    <div class="step" id="ch0-s7">
+      <div class="step-head" onclick="tog('ch0-s7')">
+        <div class="step-num num-dsa">8</div>
+        <div class="step-info">
+          <div class="step-title">Days 71--80: Web Development Full Stack</div>
+          <div class="step-meta">HTML/CSS, JavaScript, React/Vue, Node/Express, full-stack apps</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s7">
+        <p><b>Day 71:</b> HTML5 + CSS3 deep dive -- semantic HTML, flexbox, grid, responsive design, accessibility basics.</p>
+        <p><b>Day 72:</b> JavaScript core -- ES6+ features, closures, promises, async/await, event loop, prototypal inheritance.</p>
+        <p><b>Day 73:</b> DOM manipulation, event handling, fetch API. Build a dynamic SPA without frameworks.</p>
+        <p><b>Day 74:</b> React fundamentals -- components, JSX, props, state, hooks (useState, useEffect, useContext).</p>
+        <p><b>Day 75:</b> React advanced -- custom hooks, useReducer, React Router, context API, performance (memo, useMemo, useCallback).</p>
+        <p><b>Day 76:</b> Node.js + Express -- routing, middleware, error handling, file uploads. REST API best practices.</p>
+        <p><b>Day 77:</b> Full-stack integration -- React frontend + Express backend + PostgreSQL. Environment variables, CORS, deployment.</p>
+        <p><b>Day 78:</b> State management -- Redux Toolkit or Zustand. API caching with React Query/SWR.</p>
+        <p><b>Day 79:</b> Testing -- Jest, React Testing Library, Cypress for E2E. Test pyramid. Code coverage.</p>
+        <p><b>Day 80:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Portfolio Site:</b> Responsive personal site with dark mode, project showcase, blog section. Built with semantic HTML, CSS Grid, vanilla JS. Deployed on Vercel/Netlify.<br>
+          <b>P2 - Kanban Board:</b> Trello-like board with drag-and-drop. React frontend, Express backend, PostgreSQL. User auth, multiple boards, real-time updates via WebSocket.<br>
+          <b>P3 - Markdown Blog Engine:</b> Write posts in Markdown, render as HTML. Tags, search, pagination. RSS feed. Admin panel for CRUD. Syntax highlighting for code blocks.<br>
+          <b>P4 - E-Commerce Store:</b> Product listing, cart, checkout flow. Stripe integration (test mode). User accounts, order history, admin dashboard. Full CRUD API.<br>
+          <b>P5 - Real-Time Dashboard:</b> Live data visualization dashboard. WebSocket data stream, Chart.js/D3.js charts, filterable tables. Responsive layout. Data from a public API or mock generator.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-90 -->
+    <div class="step" id="ch0-s8">
+      <div class="step-head" onclick="tog('ch0-s8')">
+        <div class="step-num num-dsa">9</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--90: DevOps + Cloud</div>
+          <div class="step-meta">Docker, CI/CD, Kubernetes, AWS/GCP, IaC, monitoring</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s8">
+        <p><b>Day 81:</b> Linux command line mastery -- process management, permissions, shell scripting, cron, systemd.</p>
+        <p><b>Day 82:</b> Docker fundamentals -- images, containers, Dockerfile, docker-compose. Multi-stage builds. Volumes.</p>
+        <p><b>Day 83:</b> Docker advanced -- networking, health checks, resource limits. Dockerize all previous projects.</p>
+        <p><b>Day 84:</b> CI/CD -- GitHub Actions. Build, test, lint, deploy pipeline. Branch protection. Automated releases.</p>
+        <p><b>Day 85:</b> Cloud fundamentals -- AWS free tier: EC2, S3, RDS, Lambda, API Gateway. Or GCP equivalents.</p>
+        <p><b>Day 86:</b> Infrastructure as Code -- Terraform basics. Declare infrastructure, plan, apply. State management.</p>
+        <p><b>Day 87:</b> Kubernetes fundamentals -- pods, deployments, services, ingress. kubectl. Minikube for local dev.</p>
+        <p><b>Day 88:</b> Kubernetes advanced -- ConfigMaps, Secrets, persistent volumes, HPA, rolling updates.</p>
+        <p><b>Day 89:</b> Monitoring + logging -- Prometheus metrics, Grafana dashboards, centralized logging with ELK or Loki.</p>
+        <p><b>Day 90:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - CI/CD Pipeline:</b> GitHub Actions pipeline for a full-stack app: lint, unit test, integration test, build Docker image, push to registry, deploy to staging, run E2E tests, promote to production.<br>
+          <b>P2 - Docker Compose Stack:</b> Multi-service app: React frontend + Node API + PostgreSQL + Redis + Nginx reverse proxy. All orchestrated via docker-compose. One command to spin up entire environment.<br>
+          <b>P3 - Kubernetes Deployment:</b> Deploy a microservices app to Kubernetes. 3 services, ingress controller, persistent storage, ConfigMaps for environment. Auto-scaling based on CPU. Rolling updates with zero downtime.<br>
+          <b>P4 - Infrastructure as Code:</b> Terraform project provisioning: VPC, subnets, EC2/ECS, RDS, S3, CloudFront. Modular design. Remote state in S3. Environment separation (dev/staging/prod).<br>
+          <b>P5 - Monitoring Stack:</b> Deploy Prometheus + Grafana + Alertmanager. Custom dashboards for application metrics. Alert rules for latency, error rate, resource usage. Slack/email notifications.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 91-100 -->
+    <div class="step" id="ch0-s9">
+      <div class="step-head" onclick="tog('ch0-s9')">
+        <div class="step-num num-dsa">10</div>
+        <div class="step-info">
+          <div class="step-title">Days 91--100: Capstone Integration</div>
+          <div class="step-meta">5 major projects combining everything from all 9 previous blocks</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s9">
+        <p><b>Day 91:</b> Capstone planning -- choose 5 projects that combine multiple domains. Architecture diagrams, tech stack decisions, task breakdown.</p>
+        <p><b>Day 92--93:</b> Capstone Project 1 build sprint.</p>
+        <p><b>Day 94--95:</b> Capstone Project 2 build sprint.</p>
+        <p><b>Day 96--97:</b> Capstone Project 3 build sprint.</p>
+        <p><b>Day 98:</b> Capstone Projects 4 and 5 build sprint.</p>
+        <p><b>Day 99:</b> Polish -- documentation, tests, deployment, README for all capstones.</p>
+        <p><b>Day 100:</b> Retrospective -- write a comprehensive blog post about the 100-day journey. Update portfolio. Share on LinkedIn.</p>
+        <div class="do-box">
+          <b>5 Capstone Projects:</b><br>
+          <b>P1 - Distributed Key-Value Store:</b> Multi-node KV store with replication, consistency (Raft consensus simplified), partitioning. REST API. Docker-compose cluster. Combines: DS, OS, networking, system design, DevOps.<br>
+          <b>P2 - GitHub Clone (Mini):</b> Git hosting platform: repo creation, file browser, commit history, branch management, pull requests, code review comments. Full-stack React + Node + PostgreSQL. Combines: Git, web dev, databases, auth.<br>
+          <b>P3 - Real-Time Collaborative Editor:</b> Google Docs-style editor. OT or CRDT-based conflict resolution. WebSocket sync. Cursor presence. Document versioning. Combines: DS, algorithms, networking, full-stack, system design.<br>
+          <b>P4 - Container Orchestrator (Mini):</b> Simplified container scheduler: submit jobs, assign to workers, health checks, restart on failure. REST API for management. Combines: OS, networking, system design, Docker, distributed systems.<br>
+          <b>P5 - Developer Platform:</b> Internal developer platform: service catalog, deployment triggers, environment management, logs viewer, metrics dashboard. Integrates with Docker and GitHub Actions. Combines: everything.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TAB 1: 100 DAYS AI/ML/DL CHALLENGE                          -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p1">
+    <div class="track-header">
+      <div class="track-badge badge-ai">100 Days -- 50 Projects -- Zero to Production AI</div>
+      <div class="track-title">100 Days of AI / ML / Deep Learning</div>
+      <div class="track-sub">From Python data basics to deploying production ML systems. Every major AI paradigm covered: classical ML, deep learning, computer vision, NLP, transformers, generative AI, LLMs, and MLOps. 50 projects take you from Jupyter notebooks to production pipelines.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) Write or train something every day -- no passive video days without code. (2) Every project must run end-to-end: data in, prediction out. (3) Track all experiments in a structured log (Weights & Biases free tier or manual CSV). (4) Push notebooks and scripts to GitHub daily. (5) Write model cards for every trained model: what data, what metrics, what limitations. (6) By day 100 you must have at least 3 models deployed and publicly accessible.
+    </div>
+
+    <!-- Days 1-10 -->
+    <div class="step" id="ch1-s0">
+      <div class="step-head" onclick="tog('ch1-s0')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--10: Python for Data Science + NumPy/Pandas</div>
+          <div class="step-meta">Data wrangling fluency, visualization, exploratory analysis</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s0">
+        <p><b>Day 1:</b> Python setup (Anaconda/Miniconda), Jupyter notebooks, virtual environments. Python refresher: list comprehensions, generators, decorators.</p>
+        <p><b>Day 2:</b> NumPy fundamentals -- arrays, broadcasting, vectorized operations, reshaping, indexing, slicing.</p>
+        <p><b>Day 3:</b> NumPy advanced -- linear algebra ops (dot, matmul, inv, eig), random module, performance vs loops.</p>
+        <p><b>Day 4:</b> Pandas Series and DataFrames -- creation, indexing (loc/iloc), dtypes, missing values.</p>
+        <p><b>Day 5:</b> Pandas data manipulation -- groupby, merge, join, pivot_table, melt, apply, map.</p>
+        <p><b>Day 6:</b> Pandas time series -- datetime index, resampling, rolling windows, shift/lag.</p>
+        <p><b>Day 7:</b> Matplotlib -- figure/axes model, line/bar/scatter/histogram, subplots, styling, saving.</p>
+        <p><b>Day 8:</b> Seaborn -- statistical plots: heatmaps, pair plots, violin plots, box plots, regression plots.</p>
+        <p><b>Day 9:</b> Exploratory Data Analysis (EDA) methodology -- systematic approach: shape, dtypes, nulls, distributions, correlations, outliers.</p>
+        <p><b>Day 10:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - NumPy Linear Algebra Toolkit:</b> Implement matrix operations from scratch using only NumPy: Gaussian elimination, LU decomposition, eigenvalue computation (power iteration), SVD. Benchmark against np.linalg.<br>
+          <b>P2 - COVID-19 Data Analysis:</b> Download real COVID data (Johns Hopkins dataset). Clean, aggregate by country. Compute: growth rates, rolling averages, CFR. 10+ visualizations. Publishable Jupyter notebook.<br>
+          <b>P3 - Financial Data Dashboard:</b> Pull stock data via yfinance. Compute returns, volatility, Sharpe ratio, correlation matrix. Bollinger bands, moving averages. Interactive plots with Plotly.<br>
+          <b>P4 - Web Scraping Pipeline:</b> Scrape a data source (jobs, products, weather). Clean with Pandas. Handle pagination, rate limiting, error recovery. Store in CSV + SQLite. Schedule with cron.<br>
+          <b>P5 - Automated EDA Report:</b> Build a tool that takes any CSV and generates a full EDA report: data types, missing values, distributions, correlations, outlier detection, summary statistics. Output as HTML.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 11-20 -->
+    <div class="step" id="ch1-s1">
+      <div class="step-head" onclick="tog('ch1-s1')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 11--20: Statistics + Probability for ML</div>
+          <div class="step-meta">Distributions, hypothesis testing, Bayesian thinking, A/B testing</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s1">
+        <p><b>Day 11:</b> Descriptive statistics -- mean, median, mode, variance, standard deviation, skewness, kurtosis. Implement from scratch.</p>
+        <p><b>Day 12:</b> Probability basics -- sample space, events, conditional probability, Bayes theorem. Monty Hall, birthday paradox.</p>
+        <p><b>Day 13:</b> Discrete distributions -- Bernoulli, Binomial, Poisson, Geometric. PMF, CDF, expected value, variance.</p>
+        <p><b>Day 14:</b> Continuous distributions -- Uniform, Normal, Exponential, Beta. PDF, CDF. Central Limit Theorem simulation.</p>
+        <p><b>Day 15:</b> Sampling -- random sampling, stratified, bootstrap. Sampling distributions. Confidence intervals.</p>
+        <p><b>Day 16:</b> Hypothesis testing -- null/alternative, p-values, t-tests (one-sample, two-sample, paired), chi-squared. Type I/II errors.</p>
+        <p><b>Day 17:</b> ANOVA, correlation (Pearson, Spearman), effect size. Multiple testing correction (Bonferroni).</p>
+        <p><b>Day 18:</b> Bayesian statistics -- prior, likelihood, posterior. Beta-Binomial model. Bayesian A/B testing.</p>
+        <p><b>Day 19:</b> Information theory basics -- entropy, cross-entropy, KL divergence. Connection to ML loss functions.</p>
+        <p><b>Day 20:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - A/B Testing Framework:</b> Simulate A/B tests with configurable sample size, effect size, significance level. Compute power curves. Frequentist and Bayesian approaches side by side. Visualize results.<br>
+          <b>P2 - Distribution Visualizer:</b> Interactive tool to explore all major distributions. Adjust parameters, see PDF/CDF change in real time. Overlay multiple distributions. Show CLT convergence animation.<br>
+          <b>P3 - Monte Carlo Simulator:</b> Estimate pi, option prices (Black-Scholes), game outcomes, and integrals using Monte Carlo methods. Convergence analysis. Variance reduction techniques.<br>
+          <b>P4 - Statistical Hypothesis Tester:</b> Upload a dataset, select columns, choose test type. Automatically checks assumptions (normality, equal variance). Runs appropriate test, reports results with plain-English interpretation.<br>
+          <b>P5 - Bayesian Inference Engine:</b> Implement Bayesian updating for coin flip, A/B testing, and linear regression. Visualize prior, likelihood, and posterior evolution as data arrives. MCMC sampler (Metropolis-Hastings) from scratch.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 21-30 -->
+    <div class="step" id="ch1-s2">
+      <div class="step-head" onclick="tog('ch1-s2')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 21--30: Classical ML -- Regression & Classification</div>
+          <div class="step-meta">Scikit-learn mastery, model evaluation, cross-validation</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s2">
+        <p><b>Day 21:</b> ML fundamentals -- supervised vs unsupervised, train/test split, overfitting/underfitting, bias-variance tradeoff.</p>
+        <p><b>Day 22:</b> Linear regression -- from scratch (normal equation + gradient descent). Then scikit-learn. R-squared, MSE, MAE.</p>
+        <p><b>Day 23:</b> Polynomial regression, regularization -- Ridge (L2), Lasso (L1), ElasticNet. Regularization path plots.</p>
+        <p><b>Day 24:</b> Logistic regression -- sigmoid, cross-entropy loss, gradient descent. Decision boundaries. Multi-class (OvR, softmax).</p>
+        <p><b>Day 25:</b> K-Nearest Neighbors -- distance metrics, curse of dimensionality, choosing K. KD-tree optimization.</p>
+        <p><b>Day 26:</b> Decision trees -- splitting criteria (Gini, entropy), pruning, feature importance. Visualize tree structure.</p>
+        <p><b>Day 27:</b> Support Vector Machines -- max margin, kernel trick (RBF, polynomial), soft margin (C parameter).</p>
+        <p><b>Day 28:</b> Model evaluation -- confusion matrix, precision, recall, F1, ROC-AUC, PR curve. Cross-validation (K-fold, stratified).</p>
+        <p><b>Day 29:</b> Unsupervised learning -- K-Means, DBSCAN, hierarchical clustering. PCA for dimensionality reduction. t-SNE visualization.</p>
+        <p><b>Day 30:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - House Price Predictor:</b> Kaggle House Prices competition. Full pipeline: EDA, feature engineering (encode categoricals, handle missing, create interactions), model selection (Linear, Ridge, Lasso, SVR), cross-validation, submission.<br>
+          <b>P2 - Customer Churn Classifier:</b> Predict telecom churn. Handle class imbalance (SMOTE, class weights). Feature importance analysis. Logistic regression, SVM, KNN comparison. Threshold tuning for business metrics.<br>
+          <b>P3 - ML from Scratch Library:</b> Implement LinearRegression, LogisticRegression, KNN, DecisionTree from scratch using only NumPy. Match scikit-learn API (.fit, .predict). Unit tests comparing against sklearn results.<br>
+          <b>P4 - Credit Scoring Model:</b> Build a credit risk model. Feature engineering from raw transaction data. WoE/IV for feature selection. Logistic regression with scorecard. Model monitoring dashboard.<br>
+          <b>P5 - Clustering & Segmentation:</b> Customer segmentation using RFM analysis + K-Means. Determine optimal K (elbow, silhouette). Profile each segment. PCA + t-SNE visualization. Business recommendations per segment.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-40 -->
+    <div class="step" id="ch1-s3">
+      <div class="step-head" onclick="tog('ch1-s3')">
+        <div class="step-num num-ai">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--40: Ensemble Methods + Feature Engineering</div>
+          <div class="step-meta">Random forests, gradient boosting, XGBoost, LightGBM, Kaggle techniques</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s3">
+        <p><b>Day 31:</b> Bagging -- Bootstrap Aggregating, Random Forest. Out-of-bag error. Feature importance (MDI, permutation).</p>
+        <p><b>Day 32:</b> Boosting theory -- AdaBoost, Gradient Boosting intuition. Sequential error correction. Learning rate.</p>
+        <p><b>Day 33:</b> XGBoost deep dive -- regularization, column subsampling, histogram-based splitting. Hyperparameter tuning.</p>
+        <p><b>Day 34:</b> LightGBM + CatBoost -- leaf-wise growth, native categorical handling, GPU training. When to choose which.</p>
+        <p><b>Day 35:</b> Feature engineering -- encoding (label, one-hot, target, frequency), binning, interactions, polynomial features.</p>
+        <p><b>Day 36:</b> Advanced feature engineering -- date/time features, text features (TF-IDF), aggregation features, lag features.</p>
+        <p><b>Day 37:</b> Feature selection -- correlation filter, mutual information, recursive feature elimination, Boruta, L1 selection.</p>
+        <p><b>Day 38:</b> Hyperparameter optimization -- GridSearchCV, RandomizedSearchCV, Optuna (Bayesian optimization). Search spaces.</p>
+        <p><b>Day 39:</b> Model stacking and blending -- stacked generalization, multi-level stacking, weighted averaging. Avoiding leakage.</p>
+        <p><b>Day 40:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Kaggle Tabular Competition:</b> Enter an active Kaggle tabular competition. Full pipeline: EDA, feature engineering, XGBoost + LightGBM + CatBoost, hyperparameter tuning with Optuna, stacking ensemble. Target top 10%.<br>
+          <b>P2 - Fraud Detection System:</b> Highly imbalanced dataset. Anomaly detection + classification hybrid. Feature engineering from transaction sequences. Cost-sensitive learning. Precision-recall optimization.<br>
+          <b>P3 - Feature Store:</b> Build a reusable feature engineering pipeline. Define feature transformations as classes. Version features. Compute features on-demand or pre-compute. Store in Parquet/SQLite.<br>
+          <b>P4 - AutoML Pipeline:</b> Automated ML: data preprocessing, feature engineering, model selection, hyperparameter tuning, evaluation. Configurable via YAML. Comparable to a simplified auto-sklearn.<br>
+          <b>P5 - Demand Forecasting:</b> Predict product demand using time series + ML hybrid. Calendar features, lag features, rolling statistics. LightGBM with custom loss. Compare against ARIMA/Prophet baseline.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 41-50 -->
+    <div class="step" id="ch1-s4">
+      <div class="step-head" onclick="tog('ch1-s4')">
+        <div class="step-num num-ai">5</div>
+        <div class="step-info">
+          <div class="step-title">Days 41--50: Neural Networks from Scratch</div>
+          <div class="step-meta">Perceptrons, backpropagation, activation functions, optimization, PyTorch</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s4">
+        <p><b>Day 41:</b> Perceptron -- single neuron, activation, weights, bias. Implement AND/OR/XOR gates. XOR failure and why layers matter.</p>
+        <p><b>Day 42:</b> Multi-layer perceptron -- forward pass math. Matrix multiplication for layers. Activation functions (sigmoid, ReLU, tanh).</p>
+        <p><b>Day 43:</b> Backpropagation -- chain rule, computational graph, gradient flow. Implement backprop from scratch in NumPy.</p>
+        <p><b>Day 44:</b> Loss functions -- MSE, cross-entropy, binary cross-entropy. Connection to maximum likelihood estimation.</p>
+        <p><b>Day 45:</b> Optimizers -- SGD, momentum, RMSProp, Adam. Learning rate schedules (step, cosine, warmup).</p>
+        <p><b>Day 46:</b> Regularization -- dropout, batch normalization, weight decay, early stopping. Data augmentation intro.</p>
+        <p><b>Day 47:</b> PyTorch fundamentals -- tensors, autograd, nn.Module, DataLoader, training loop.</p>
+        <p><b>Day 48:</b> PyTorch training pipeline -- custom datasets, transforms, model saving/loading, GPU training, mixed precision.</p>
+        <p><b>Day 49:</b> Debugging neural networks -- learning rate finder, gradient checking, loss curves analysis, common failure modes.</p>
+        <p><b>Day 50:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Neural Network from Scratch:</b> Full MLP framework in pure NumPy: configurable layers, ReLU/sigmoid/softmax, backprop, mini-batch SGD + Adam. Train on MNIST. Achieve >97% accuracy. No PyTorch allowed.<br>
+          <b>P2 - Autograd Engine:</b> Build a tiny autograd system (like Karpathy's micrograd). Support: add, mul, pow, relu, backward. Build computational graphs. Train a small MLP using your engine.<br>
+          <b>P3 - MNIST Classifier (PyTorch):</b> MLP and CNN on MNIST. Experiment with architectures, optimizers, learning rates. TensorBoard logging. Hyperparameter sweep. Achieve >99% accuracy.<br>
+          <b>P4 - Neural Network Visualizer:</b> Visualize network architecture, weights, activations, and gradients during training. Show dead neurons, gradient magnitudes per layer, loss landscape (2D slice).<br>
+          <b>P5 - Tabular DL:</b> Apply neural networks to tabular data. Entity embeddings for categoricals. Compare MLP vs XGBoost on 3 datasets. Implement TabNet-style architecture. When does DL beat trees?
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 51-60 -->
+    <div class="step" id="ch1-s5">
+      <div class="step-head" onclick="tog('ch1-s5')">
+        <div class="step-num num-ai">6</div>
+        <div class="step-info">
+          <div class="step-title">Days 51--60: CNNs + Computer Vision</div>
+          <div class="step-meta">Convolutions, architectures, transfer learning, object detection, segmentation</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s5">
+        <p><b>Day 51:</b> Convolution operation -- filters/kernels, stride, padding, feature maps. Implement conv2d from scratch.</p>
+        <p><b>Day 52:</b> CNN architecture -- conv layers, pooling, flatten, FC layers. LeNet-5 implementation. Receptive field.</p>
+        <p><b>Day 53:</b> Modern architectures -- AlexNet, VGG, ResNet (skip connections), Inception. Architecture evolution timeline.</p>
+        <p><b>Day 54:</b> Transfer learning -- pre-trained models, feature extraction, fine-tuning. When to freeze vs unfreeze layers.</p>
+        <p><b>Day 55:</b> Data augmentation -- geometric transforms, color jitter, cutout, mixup, CutMix. Albumentations library.</p>
+        <p><b>Day 56:</b> Object detection -- anchor boxes, IoU, NMS. YOLO architecture overview. Using pre-trained YOLO for inference.</p>
+        <p><b>Day 57:</b> Image segmentation -- semantic vs instance segmentation. U-Net architecture. Dice loss.</p>
+        <p><b>Day 58:</b> Vision Transformers (ViT) -- patch embeddings, self-attention for images. Comparing CNN vs ViT.</p>
+        <p><b>Day 59:</b> Advanced topics -- neural style transfer, image super-resolution, face detection/recognition overview.</p>
+        <p><b>Day 60:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Image Classifier:</b> Fine-tune ResNet50 on a custom dataset (collect 10 classes via web scraping). Data augmentation, learning rate scheduling, TTA. Deploy as a Gradio app on Hugging Face Spaces.<br>
+          <b>P2 - Object Detector:</b> Fine-tune YOLOv8 on a custom dataset (labeled via Roboflow). Real-time inference on webcam. Track detection metrics (mAP). Deploy with FastAPI.<br>
+          <b>P3 - Medical Image Segmentation:</b> U-Net on a medical imaging dataset (e.g., lung CT scans or retinal images). Dice score optimization. Visualize predictions overlaid on originals.<br>
+          <b>P4 - Neural Style Transfer App:</b> Implement Gatys et al. style transfer. Apply artistic styles to user-uploaded photos. Gradio interface with style selection. Compare optimization-based vs feed-forward approaches.<br>
+          <b>P5 - Visual Search Engine:</b> Encode images using a pre-trained CNN. Build a vector similarity search. Upload an image, find the 10 most visually similar images from a dataset of 10K+ images. FAISS for fast retrieval.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-70 -->
+    <div class="step" id="ch1-s6">
+      <div class="step-head" onclick="tog('ch1-s6')">
+        <div class="step-num num-ai">7</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--70: RNNs + NLP + Transformers</div>
+          <div class="step-meta">Sequence models, attention, BERT, GPT, text classification, generation</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s6">
+        <p><b>Day 61:</b> Text preprocessing -- tokenization, stemming, lemmatization, stop words, TF-IDF, bag of words.</p>
+        <p><b>Day 62:</b> Word embeddings -- Word2Vec (CBOW, Skip-gram), GloVe. Training embeddings, visualization with t-SNE.</p>
+        <p><b>Day 63:</b> RNN fundamentals -- vanilla RNN, hidden state, BPTT. Vanishing gradient problem.</p>
+        <p><b>Day 64:</b> LSTM and GRU -- gates (forget, input, output), cell state. Bidirectional RNNs. Sequence-to-sequence.</p>
+        <p><b>Day 65:</b> Attention mechanism -- Bahdanau (additive), Luong (multiplicative). Attention weights visualization.</p>
+        <p><b>Day 66:</b> Transformer architecture -- self-attention, multi-head attention, positional encoding, feed-forward layers. Implement from scratch.</p>
+        <p><b>Day 67:</b> BERT -- masked language modeling, next sentence prediction. Fine-tuning for classification. Hugging Face Transformers library.</p>
+        <p><b>Day 68:</b> GPT -- autoregressive language modeling. Causal attention. Text generation strategies (greedy, beam search, top-k, nucleus sampling).</p>
+        <p><b>Day 69:</b> Modern NLP -- named entity recognition, question answering, summarization, zero-shot classification with Hugging Face pipelines.</p>
+        <p><b>Day 70:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Sentiment Analyzer:</b> Fine-tune BERT on movie reviews (SST-2 or IMDB). Compare with TF-IDF + Logistic Regression baseline. Deploy as FastAPI endpoint with Gradio frontend.<br>
+          <b>P2 - Text Generator:</b> Train a character-level and word-level language model on a text corpus. Implement sampling strategies. Fine-tune GPT-2 on a custom domain. Interactive generation UI.<br>
+          <b>P3 - Named Entity Recognizer:</b> Fine-tune a token classification model. Custom entity types for a specific domain (e.g., medical, legal). Evaluate with entity-level F1. Visualize entities in text.<br>
+          <b>P4 - Question Answering System:</b> Fine-tune BERT/RoBERTa for extractive QA on SQuAD. Build a pipeline: input context + question, output answer with confidence score. Compare with generative QA.<br>
+          <b>P5 - Transformer from Scratch:</b> Implement the full transformer (encoder + decoder) in PyTorch. Train on a small translation dataset (English-French). Visualize attention heads. Compare with Hugging Face implementation.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 71-80 -->
+    <div class="step" id="ch1-s7">
+      <div class="step-head" onclick="tog('ch1-s7')">
+        <div class="step-num num-ai">8</div>
+        <div class="step-info">
+          <div class="step-title">Days 71--80: GANs + Diffusion + Generative AI</div>
+          <div class="step-meta">Image generation, VAEs, stable diffusion, multimodal models</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s7">
+        <p><b>Day 71:</b> Generative models overview -- discriminative vs generative. Autoencoders -- encoder, bottleneck, decoder. Reconstruction loss.</p>
+        <p><b>Day 72:</b> Variational Autoencoders (VAE) -- latent space, KL divergence, reparameterization trick. Interpolation in latent space.</p>
+        <p><b>Day 73:</b> GAN fundamentals -- generator vs discriminator, adversarial training, Nash equilibrium. Mode collapse.</p>
+        <p><b>Day 74:</b> GAN architectures -- DCGAN, conditional GAN, Pix2Pix, CycleGAN. Progressive growing.</p>
+        <p><b>Day 75:</b> GAN training tricks -- Wasserstein loss, spectral normalization, gradient penalty. FID and IS metrics.</p>
+        <p><b>Day 76:</b> Diffusion models theory -- forward process (noise schedule), reverse process, denoising score matching. DDPM.</p>
+        <p><b>Day 77:</b> Stable Diffusion -- U-Net denoiser, CLIP text encoder, latent space diffusion. Using diffusers library.</p>
+        <p><b>Day 78:</b> Multimodal models -- CLIP (contrastive learning), image captioning, visual question answering. Zero-shot classification.</p>
+        <p><b>Day 79:</b> Advanced generative -- ControlNet, LoRA fine-tuning, image inpainting, text-guided editing.</p>
+        <p><b>Day 80:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Face Generator (DCGAN):</b> Train DCGAN on CelebA. Generate realistic faces. Latent space arithmetic (smiling vector, glasses vector). FID tracking during training.<br>
+          <b>P2 - Image-to-Image Translation:</b> Pix2Pix for paired translation (sketch to photo) or CycleGAN for unpaired (horse to zebra). Train on custom dataset. Side-by-side comparison gallery.<br>
+          <b>P3 - VAE Latent Explorer:</b> Train VAE on MNIST and Fashion-MNIST. Interactive latent space exploration: walk between digits, generate interpolations, reconstruct with noise. 2D latent space visualization.<br>
+          <b>P4 - AI Art Generator:</b> Fine-tune Stable Diffusion with LoRA on a custom style (your art, a specific aesthetic). Prompt engineering for consistent output. Build a Gradio app for text-to-image generation.<br>
+          <b>P5 - Multimodal Search:</b> Use CLIP to build text-to-image and image-to-text search. Index a large image dataset. Query with natural language. Rank results by similarity. Compare with traditional image search.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-90 -->
+    <div class="step" id="ch1-s8">
+      <div class="step-head" onclick="tog('ch1-s8')">
+        <div class="step-num num-ai">9</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--90: LLMs + RAG + Agents</div>
+          <div class="step-meta">Prompt engineering, fine-tuning, RAG pipelines, autonomous agents</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s8">
+        <p><b>Day 81:</b> LLM landscape -- GPT, Claude, Llama, Gemini, Mistral. API usage, pricing, context windows, capabilities.</p>
+        <p><b>Day 82:</b> Prompt engineering -- system prompts, few-shot, chain-of-thought, self-consistency, structured output (JSON mode).</p>
+        <p><b>Day 83:</b> Embeddings -- text embedding models, vector similarity, semantic search. Embedding dimensions and quality trade-offs.</p>
+        <p><b>Day 84:</b> Vector databases -- ChromaDB, Pinecone, Weaviate, pgvector. CRUD operations, filtering, hybrid search.</p>
+        <p><b>Day 85:</b> RAG pipeline -- document loading, chunking strategies, embedding, retrieval, augmented generation. Evaluation (faithfulness, relevance).</p>
+        <p><b>Day 86:</b> Advanced RAG -- hybrid search (dense + sparse), re-ranking, query decomposition, multi-hop retrieval, parent-child chunks.</p>
+        <p><b>Day 87:</b> Fine-tuning LLMs -- LoRA/QLoRA on Llama/Mistral. Dataset preparation, training, evaluation. Merge and quantize.</p>
+        <p><b>Day 88:</b> AI agents -- tool use, function calling, ReAct pattern. LangChain/LlamaIndex agents. Planning and execution.</p>
+        <p><b>Day 89:</b> Multi-agent systems -- agent orchestration, task decomposition, collaboration patterns. CrewAI or AutoGen.</p>
+        <p><b>Day 90:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - RAG Knowledge Base:</b> Full RAG pipeline over your own documents (notes, PDFs, code). ChromaDB + OpenAI/local embeddings. Evaluation with RAGAS. Gradio chat interface. Source citation in responses.<br>
+          <b>P2 - Code Assistant:</b> RAG over a codebase. Parse code into meaningful chunks. Answer questions about code architecture. Generate code based on existing patterns. Function-level retrieval.<br>
+          <b>P3 - Fine-Tuned Domain Expert:</b> QLoRA fine-tune Llama/Mistral on domain-specific data (medical, legal, financial). Evaluate against base model. Deploy on Hugging Face with 4-bit quantization.<br>
+          <b>P4 - AI Research Agent:</b> Agent that takes a research question, searches the web, reads papers, synthesizes findings. Tool use: web search, PDF reader, note-taker. Produces structured report.<br>
+          <b>P5 - Multi-Agent Workflow:</b> Team of agents: researcher, writer, critic, editor. Given a topic, they collaboratively produce a well-researched article. Each agent has distinct personality and tools.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 91-100 -->
+    <div class="step" id="ch1-s9">
+      <div class="step-head" onclick="tog('ch1-s9')">
+        <div class="step-num num-ai">10</div>
+        <div class="step-info">
+          <div class="step-title">Days 91--100: MLOps + Production Deployment</div>
+          <div class="step-meta">Model serving, monitoring, pipelines, CI/CD for ML, experiment tracking</div>
+        </div>
+        <div class="step-arrow" id="a-ch1-s9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch1-s9">
+        <p><b>Day 91:</b> MLOps overview -- ML lifecycle, technical debt in ML systems, reproducibility. MLflow/W&B for experiment tracking.</p>
+        <p><b>Day 92:</b> Data versioning -- DVC (Data Version Control). Track datasets and models alongside code. Reproducible experiments.</p>
+        <p><b>Day 93:</b> Model serving -- FastAPI + Docker. Batch vs real-time inference. Model serialization (ONNX, TorchScript). Latency optimization.</p>
+        <p><b>Day 94:</b> Model monitoring -- data drift detection (Evidently AI), performance degradation, feature drift. Alerting.</p>
+        <p><b>Day 95:</b> ML pipelines -- Airflow/Prefect for orchestration. DAGs for data processing, training, evaluation, deployment.</p>
+        <p><b>Day 96:</b> CI/CD for ML -- automated testing (data tests, model tests, integration tests). GitHub Actions for ML. Model registry.</p>
+        <p><b>Day 97:</b> Containerization for ML -- Docker for GPU workloads. Multi-stage builds for smaller images. NVIDIA Container Toolkit.</p>
+        <p><b>Day 98:</b> Cloud ML services -- AWS SageMaker / GCP Vertex AI / Azure ML overview. Managed training, deployment, endpoints.</p>
+        <p><b>Day 99:</b> Scaling ML -- distributed training (DDP, FSDP). Model parallelism. Inference optimization (quantization, distillation, pruning).</p>
+        <p><b>Day 100:</b> Retrospective -- deploy all 3 best models as production services. Write comprehensive blog post. Update portfolio.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - ML Pipeline:</b> End-to-end pipeline: data ingestion, validation, preprocessing, training, evaluation, model registry, deployment. Orchestrated with Prefect/Airflow. Triggered by new data.<br>
+          <b>P2 - Model Monitoring Dashboard:</b> Deploy a model and monitor it. Track prediction distribution, data drift, accuracy over time. Automated retraining trigger when drift exceeds threshold. Grafana dashboard.<br>
+          <b>P3 - ML API Platform:</b> Multi-model serving platform. REST API with model versioning, A/B testing, canary deployments. Authentication, rate limiting, usage tracking. Docker + Kubernetes deployment.<br>
+          <b>P4 - Experiment Tracker:</b> Build a simplified MLflow: log parameters, metrics, artifacts. Compare runs. Model registry with staging/production labels. Web UI for viewing experiments.<br>
+          <b>P5 - Production ML System:</b> Full production system: data pipeline + training pipeline + serving + monitoring + CI/CD. Real-time predictions, batch predictions, model updates without downtime. The capstone that proves you can do production ML.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TAB 2: 100 DAYS POLYMATH CHALLENGE                           -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p2">
+    <div class="track-header">
+      <div class="track-badge badge-math">100 Days -- 50 Projects -- Cross-Domain Mastery</div>
+      <div class="track-title">100 Days of the Polymath</div>
+      <div class="track-sub">Mathematics, physics, CS theory, electronics, quantum computing, biology, robotics, finance, philosophy -- all connected through computation and first principles. This challenge builds the interdisciplinary foundation that separates specialists from polymaths. Every project bridges at least two domains.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) Each day starts with 30 minutes of theory reading, followed by hands-on implementation. (2) Every project must include a written explanation connecting the current domain to at least one previous domain. (3) Maintain a "connections journal" -- document every cross-domain insight. (4) No domain stays isolated: by day 100, your concept graph must have links between all 10 blocks. (5) Publish weekly essays synthesizing what you learned. (6) The goal is depth through breadth -- understanding how everything connects.
+    </div>
+
+    <!-- Days 1-10 -->
+    <div class="step" id="ch2-s0">
+      <div class="step-head" onclick="tog('ch2-s0')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--10: Mathematics Foundations</div>
+          <div class="step-meta">Number theory, set theory, logic, proof techniques, abstract algebra intro</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s0">
+        <p><b>Day 1:</b> Set theory -- sets, operations (union, intersection, complement), power sets, Cartesian products. Russell's paradox.</p>
+        <p><b>Day 2:</b> Logic -- propositional logic, truth tables, quantifiers, logical equivalences. Proof by contradiction.</p>
+        <p><b>Day 3:</b> Proof techniques -- direct proof, contrapositive, contradiction, induction (weak and strong). Proof writing style.</p>
+        <p><b>Day 4:</b> Number theory -- divisibility, primes, GCD/LCM, Euclidean algorithm, modular arithmetic.</p>
+        <p><b>Day 5:</b> Number theory advanced -- Fermat's little theorem, Euler's totient, Chinese Remainder Theorem. RSA connection.</p>
+        <p><b>Day 6:</b> Combinatorics -- counting principles, permutations, combinations, pigeonhole principle, inclusion-exclusion.</p>
+        <p><b>Day 7:</b> Graph theory -- definitions, isomorphism, Euler/Hamilton paths, planar graphs, coloring, trees.</p>
+        <p><b>Day 8:</b> Abstract algebra intro -- groups, rings, fields. Symmetry groups. Integers mod n as a group.</p>
+        <p><b>Day 9:</b> Functions and relations -- injective, surjective, bijective. Equivalence relations, partial orders.</p>
+        <p><b>Day 10:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Proof Verifier:</b> Build a simple proof checker for propositional logic. Parse logical statements, verify inference rules (modus ponens, etc.), check proof validity step by step.<br>
+          <b>P2 - RSA Cryptosystem:</b> Implement RSA from scratch using number theory: key generation (large primes, totient), encryption, decryption. Miller-Rabin primality test. Extended Euclidean algorithm.<br>
+          <b>P3 - Combinatorics Solver:</b> Tool that solves counting problems: permutations, combinations, derangements, Stirling numbers, Catalan numbers. Visualize Pascal's triangle and its hidden patterns.<br>
+          <b>P4 - Graph Theory Explorer:</b> Interactive graph creation and analysis. Compute: chromatic number, planarity test, Euler/Hamilton path detection, minimum spanning tree, shortest path. Visualize results.<br>
+          <b>P5 - Group Theory Visualizer:</b> Visualize symmetry groups (dihedral groups, permutation groups). Cayley tables, subgroup lattice, group action on geometric objects. Show why groups matter for physics symmetries.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 11-20 -->
+    <div class="step" id="ch2-s1">
+      <div class="step-head" onclick="tog('ch2-s1')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 11--20: Physics Simulations</div>
+          <div class="step-meta">Classical mechanics, electromagnetism, thermodynamics, waves</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s1">
+        <p><b>Day 11:</b> Newtonian mechanics -- forces, Newton's laws, free body diagrams. Numerical integration (Euler method).</p>
+        <p><b>Day 12:</b> Energy and momentum -- conservation laws, collisions (elastic, inelastic), work-energy theorem.</p>
+        <p><b>Day 13:</b> Rotational mechanics -- torque, angular momentum, moment of inertia. Rigid body simulation.</p>
+        <p><b>Day 14:</b> Gravity -- orbital mechanics, Kepler's laws, two-body problem, n-body simulation.</p>
+        <p><b>Day 15:</b> Waves -- wave equation, superposition, interference, standing waves, Fourier analysis connection.</p>
+        <p><b>Day 16:</b> Electrostatics -- Coulomb's law, electric field, potential, Gauss's law. Field visualization.</p>
+        <p><b>Day 17:</b> Electromagnetism -- magnetic fields, Lorentz force, Faraday's law, Maxwell's equations overview.</p>
+        <p><b>Day 18:</b> Thermodynamics -- laws of thermodynamics, entropy, heat engines, statistical mechanics intro.</p>
+        <p><b>Day 19:</b> Fluid dynamics basics -- Navier-Stokes intuition, Bernoulli's principle, laminar vs turbulent flow.</p>
+        <p><b>Day 20:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - N-Body Gravity Simulator:</b> Simulate gravitational interactions between N bodies. Verlet integration for stability. Visualize orbits in 2D/3D. Preset: solar system, binary stars, galaxy collision.<br>
+          <b>P2 - Wave Interference Simulator:</b> 2D wave propagation with multiple sources. Visualize interference patterns, diffraction through slits. Fourier analysis of composite waves. Connect to quantum double-slit.<br>
+          <b>P3 - Electromagnetic Field Visualizer:</b> Place charges and current-carrying wires. Compute and visualize electric and magnetic field lines. Equipotential surfaces. Interactive charge manipulation.<br>
+          <b>P4 - Thermodynamic Engine Simulator:</b> Simulate Carnot, Otto, Diesel cycles. PV diagrams, efficiency calculations. Boltzmann distribution visualization. Entropy calculation at each step.<br>
+          <b>P5 - Particle Collision Simulator:</b> 2D particle system with elastic and inelastic collisions. Momentum and energy conservation verified. Maxwell-Boltzmann distribution emergent from random initial conditions.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 21-30 -->
+    <div class="step" id="ch2-s2">
+      <div class="step-head" onclick="tog('ch2-s2')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 21--30: CS Theory + Algorithms</div>
+          <div class="step-meta">Automata, computability, complexity, information theory</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s2">
+        <p><b>Day 21:</b> Finite automata -- DFA, NFA, regular expressions. Equivalence of DFA and NFA. Pumping lemma for regular languages.</p>
+        <p><b>Day 22:</b> Context-free grammars -- production rules, parse trees, ambiguity. Pushdown automata. Pumping lemma for CFLs.</p>
+        <p><b>Day 23:</b> Turing machines -- definition, computation, Church-Turing thesis. Universal Turing machine.</p>
+        <p><b>Day 24:</b> Computability -- halting problem, undecidability, reducibility. What computers fundamentally cannot do.</p>
+        <p><b>Day 25:</b> Complexity theory -- P, NP, NP-complete, NP-hard. Cook's theorem. Common NP-complete problems.</p>
+        <p><b>Day 26:</b> Approximation algorithms -- when exact solutions are infeasible. Greedy approximations, LP relaxation.</p>
+        <p><b>Day 27:</b> Randomized algorithms -- Las Vegas vs Monte Carlo. Random pivot quicksort. Miller-Rabin. Bloom filters.</p>
+        <p><b>Day 28:</b> Information theory -- entropy, mutual information, channel capacity, data compression limits (Shannon's theorem).</p>
+        <p><b>Day 29:</b> Lambda calculus -- syntax, reduction, Church numerals. Functional programming foundations. Connection to Turing machines.</p>
+        <p><b>Day 30:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Automata Simulator:</b> Build DFA, NFA, and PDA simulators. Parse regex into NFA (Thompson's construction). Visualize state transitions. Test string acceptance. Convert NFA to DFA.<br>
+          <b>P2 - Turing Machine Emulator:</b> Implement a universal Turing machine. Define machines via tape alphabet, states, transition function. Run and visualize tape head movement. Implement: binary addition, palindrome checker.<br>
+          <b>P3 - NP Problem Visualizer:</b> Implement brute-force and heuristic solutions for: TSP, graph coloring, SAT, knapsack. Visualize solution space. Compare exact vs approximate. Show exponential blowup.<br>
+          <b>P4 - Compression Toolkit:</b> Implement Shannon-Fano, Huffman, LZ77, LZW. Compare compression ratios on different data types (text, images, random). Calculate theoretical entropy limit.<br>
+          <b>P5 - Lambda Calculus Interpreter:</b> Parse and evaluate lambda expressions. Implement Church numerals, booleans, pairs. Beta reduction with normal and applicative order. Show computation as reduction sequence.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-40 -->
+    <div class="step" id="ch2-s3">
+      <div class="step-head" onclick="tog('ch2-s3')">
+        <div class="step-num num-math">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--40: Electronics + Signals</div>
+          <div class="step-meta">Digital logic, circuits, signals, Fourier transforms, DSP</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s3">
+        <p><b>Day 31:</b> Boolean algebra -- logic gates (AND, OR, NOT, XOR, NAND, NOR). Truth tables. De Morgan's laws. Karnaugh maps.</p>
+        <p><b>Day 32:</b> Combinational circuits -- multiplexers, decoders, encoders, adders (half, full, ripple-carry).</p>
+        <p><b>Day 33:</b> Sequential circuits -- flip-flops (SR, D, JK), registers, counters. Clock and timing.</p>
+        <p><b>Day 34:</b> CPU architecture -- fetch-decode-execute cycle. ALU, control unit, registers, memory hierarchy. Von Neumann model.</p>
+        <p><b>Day 35:</b> Analog signals -- continuous vs discrete, sampling, Nyquist theorem, aliasing. ADC/DAC concepts.</p>
+        <p><b>Day 36:</b> Fourier series -- decomposing periodic signals. Frequency domain intuition. Visualize time vs frequency.</p>
+        <p><b>Day 37:</b> Fourier transform -- DFT, FFT algorithm. Spectral analysis. Applications: audio, images, communication.</p>
+        <p><b>Day 38:</b> Filters -- low-pass, high-pass, band-pass. FIR vs IIR. Convolution theorem. Filter design.</p>
+        <p><b>Day 39:</b> Digital signal processing -- audio processing, noise removal, compression. Image as 2D signal. 2D convolution for image processing.</p>
+        <p><b>Day 40:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Logic Circuit Simulator:</b> Build and simulate digital circuits. Gate library, wire connections, propagation delay. Build: 4-bit adder, 4-bit counter, simple ALU. Visualize signal propagation.<br>
+          <b>P2 - CPU Emulator:</b> Emulate a simple 8-bit CPU: fetch-decode-execute, registers, ALU, memory. Custom instruction set (load, store, add, jump, halt). Assemble and run programs. Step-through debugger.<br>
+          <b>P3 - FFT Spectrum Analyzer:</b> Record audio, compute FFT in real time. Display frequency spectrum. Identify musical notes. Spectrogram (time-frequency) visualization. Built-in tuner for instruments.<br>
+          <b>P4 - Audio Effects Processor:</b> Apply DSP effects to audio files: reverb, echo, chorus, pitch shift, equalization. Implement as filter chains. Real-time processing from microphone input.<br>
+          <b>P5 - Image Filter Engine:</b> Apply frequency-domain operations to images: blur (low-pass), edge detection (high-pass), noise removal, compression (DCT like JPEG). Before/after comparison. Show frequency domain representation.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 41-50 -->
+    <div class="step" id="ch2-s4">
+      <div class="step-head" onclick="tog('ch2-s4')">
+        <div class="step-num num-math">5</div>
+        <div class="step-info">
+          <div class="step-title">Days 41--50: Quantum Computing Basics</div>
+          <div class="step-meta">Qubits, quantum gates, entanglement, quantum algorithms, Qiskit</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s4">
+        <p><b>Day 41:</b> Quantum mechanics prerequisites -- complex numbers, Dirac notation, state vectors. Hilbert space intuition.</p>
+        <p><b>Day 42:</b> Qubits -- superposition, measurement, probability amplitudes. Bloch sphere. Comparison with classical bits.</p>
+        <p><b>Day 43:</b> Single-qubit gates -- Pauli gates (X, Y, Z), Hadamard, phase gates, rotation gates. Unitary matrices.</p>
+        <p><b>Day 44:</b> Multi-qubit systems -- tensor products, entanglement, Bell states. CNOT gate. No-cloning theorem.</p>
+        <p><b>Day 45:</b> Quantum circuits -- circuit model of computation. Universality. Circuit depth and width. Qiskit basics.</p>
+        <p><b>Day 46:</b> Deutsch-Jozsa algorithm -- quantum parallelism, oracle model. First quantum advantage proof.</p>
+        <p><b>Day 47:</b> Grover's search -- amplitude amplification, quadratic speedup. Oracle construction. Application to NP problems.</p>
+        <p><b>Day 48:</b> Shor's algorithm overview -- period finding, quantum Fourier transform, threat to RSA.</p>
+        <p><b>Day 49:</b> Quantum error correction basics -- noise in quantum systems, bit-flip and phase-flip codes. Surface code overview.</p>
+        <p><b>Day 50:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Quantum Circuit Simulator:</b> Simulate quantum circuits on a classical computer. Matrix representation of gates. Apply gates to state vectors. Measure with probability. Visualize Bloch sphere evolution.<br>
+          <b>P2 - Quantum Teleportation:</b> Implement quantum teleportation protocol in Qiskit. Create Bell pairs, apply corrections. Run on IBM quantum hardware (free tier). Verify with state tomography.<br>
+          <b>P3 - Grover Search Implementation:</b> Implement Grover's algorithm for searching unsorted databases. Custom oracles for: satisfiability, graph coloring, Sudoku. Show quadratic speedup empirically.<br>
+          <b>P4 - Quantum Key Distribution:</b> Implement BB84 protocol. Simulate quantum channel with noise. Key generation, sifting, error estimation, privacy amplification. Compare security with classical Diffie-Hellman.<br>
+          <b>P5 - Variational Quantum Eigensolver:</b> VQE for finding ground state energy of simple molecules (H2, LiH). Parameterized quantum circuit + classical optimizer. Run on Qiskit simulator. Compare with exact diagonalization.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 51-60 -->
+    <div class="step" id="ch2-s5">
+      <div class="step-head" onclick="tog('ch2-s5')">
+        <div class="step-num num-math">6</div>
+        <div class="step-info">
+          <div class="step-title">Days 51--60: Biology + Computational Science</div>
+          <div class="step-meta">Genetics, bioinformatics, molecular simulation, evolutionary algorithms</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s5">
+        <p><b>Day 51:</b> Molecular biology basics -- DNA, RNA, proteins. Central dogma. Codons and amino acids. Genetic code.</p>
+        <p><b>Day 52:</b> Sequence alignment -- dynamic programming for alignment. Needleman-Wunsch (global), Smith-Waterman (local). BLOSUM matrices.</p>
+        <p><b>Day 53:</b> Genomics -- genome assembly, sequencing technologies. BLAST algorithm overview. GenBank and FASTA formats.</p>
+        <p><b>Day 54:</b> Phylogenetics -- evolutionary trees, distance methods (UPGMA, neighbor-joining). Maximum parsimony. Molecular clocks.</p>
+        <p><b>Day 55:</b> Protein structure -- primary, secondary, tertiary, quaternary structure. Folding problem. AlphaFold overview.</p>
+        <p><b>Day 56:</b> Population genetics -- Hardy-Weinberg, genetic drift, natural selection simulation. Fitness landscapes.</p>
+        <p><b>Day 57:</b> Evolutionary algorithms -- genetic algorithms, fitness function, selection, crossover, mutation. Neuroevolution intro.</p>
+        <p><b>Day 58:</b> Systems biology -- gene regulatory networks, metabolic pathways, ODE models. Boolean network models.</p>
+        <p><b>Day 59:</b> Computational neuroscience -- neuron models (Hodgkin-Huxley, integrate-and-fire), synaptic plasticity, neural coding.</p>
+        <p><b>Day 60:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - DNA Sequence Aligner:</b> Implement Needleman-Wunsch and Smith-Waterman from scratch. Score alignments with substitution matrices. Visualize alignment with color-coded matches/mismatches. Parse FASTA files.<br>
+          <b>P2 - Phylogenetic Tree Builder:</b> Compute distance matrices from sequences. Build trees with UPGMA and neighbor-joining. Visualize trees. Compare different sequences (e.g., cytochrome c across species).<br>
+          <b>P3 - Evolution Simulator:</b> Agent-based simulation: organisms with genomes, fitness function, selection, reproduction, mutation. Visualize population evolution over generations. Observe speciation, drift, adaptation.<br>
+          <b>P4 - Genetic Algorithm Optimizer:</b> Solve optimization problems with GA: traveling salesman, function optimization, neural network architecture search. Configurable: population size, mutation rate, crossover type.<br>
+          <b>P5 - Neuron Simulator:</b> Implement Hodgkin-Huxley and Leaky Integrate-and-Fire models. Simulate action potentials. Network of neurons with synaptic connections. Visualize voltage traces and spike trains.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-70 -->
+    <div class="step" id="ch2-s6">
+      <div class="step-head" onclick="tog('ch2-s6')">
+        <div class="step-num num-math">7</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--70: Robotics + Control Systems</div>
+          <div class="step-meta">Kinematics, PID control, path planning, SLAM, reinforcement learning</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s6">
+        <p><b>Day 61:</b> Robotics fundamentals -- degrees of freedom, coordinate frames, homogeneous transformations. Forward kinematics.</p>
+        <p><b>Day 62:</b> Inverse kinematics -- analytical and numerical methods. Jacobian matrix. Singularities.</p>
+        <p><b>Day 63:</b> Control theory basics -- open-loop vs closed-loop. Transfer functions. Poles and zeros. Stability.</p>
+        <p><b>Day 64:</b> PID control -- proportional, integral, derivative. Tuning methods (Ziegler-Nichols). Overshoot, settling time, steady-state error.</p>
+        <p><b>Day 65:</b> State-space control -- state variables, state equations. Observability, controllability. LQR controller.</p>
+        <p><b>Day 66:</b> Path planning -- A*, RRT (Rapidly-exploring Random Trees), potential fields. Configuration space.</p>
+        <p><b>Day 67:</b> Localization -- odometry, particle filters, Kalman filter. Sensor fusion (IMU + GPS).</p>
+        <p><b>Day 68:</b> SLAM overview -- Simultaneous Localization and Mapping. Feature-based and grid-based SLAM. Loop closure.</p>
+        <p><b>Day 69:</b> Reinforcement learning for robotics -- policy gradient, PPO, sim-to-real transfer. OpenAI Gym environments.</p>
+        <p><b>Day 70:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Robot Arm Simulator:</b> 2D/3D robotic arm with configurable joints. Forward and inverse kinematics. Interactive control: drag end-effector, joints follow. Trajectory planning.<br>
+          <b>P2 - PID Controller Tuner:</b> Simulate a plant (pendulum, temperature, motor speed). PID controller with interactive gain tuning. Real-time plots: setpoint, response, error. Auto-tuning mode.<br>
+          <b>P3 - Path Planner:</b> Grid-based environment with obstacles. Implement A*, Dijkstra, RRT, and potential field. Visualize exploration and final path. Dynamic obstacle avoidance. Comparison metrics.<br>
+          <b>P4 - Kalman Filter Tracker:</b> Track a moving object with noisy sensor data. 1D and 2D Kalman filter. Extended Kalman Filter for nonlinear systems. Visualize true state, measurement, and estimate.<br>
+          <b>P5 - RL Robot Navigator:</b> Train an agent to navigate a maze using Q-learning and PPO. Custom Gym environment. Reward shaping. Transfer learning between environments. Visualize learned policy.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 71-80 -->
+    <div class="step" id="ch2-s7">
+      <div class="step-head" onclick="tog('ch2-s7')">
+        <div class="step-num num-math">8</div>
+        <div class="step-info">
+          <div class="step-title">Days 71--80: Finance + Economics Modeling</div>
+          <div class="step-meta">Quantitative finance, portfolio theory, risk, game theory, agent-based models</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s7">
+        <p><b>Day 71:</b> Financial mathematics -- time value of money, compound interest, present value, bond pricing.</p>
+        <p><b>Day 72:</b> Portfolio theory -- Markowitz mean-variance, efficient frontier, Sharpe ratio. Capital Asset Pricing Model (CAPM).</p>
+        <p><b>Day 73:</b> Options pricing -- Black-Scholes model, Greeks (delta, gamma, theta, vega). Binomial tree model.</p>
+        <p><b>Day 74:</b> Risk management -- Value at Risk (VaR), Expected Shortfall (CVaR). Monte Carlo simulation for risk.</p>
+        <p><b>Day 75:</b> Time series for finance -- ARIMA, GARCH for volatility modeling. Cointegration. Pairs trading.</p>
+        <p><b>Day 76:</b> Algorithmic trading -- backtesting framework, moving average crossover, momentum, mean reversion strategies.</p>
+        <p><b>Day 77:</b> Game theory -- Nash equilibrium, dominant strategies, prisoner's dilemma, auctions. Mechanism design.</p>
+        <p><b>Day 78:</b> Microeconomics modeling -- supply/demand, market equilibrium, elasticity. Agent-based market simulation.</p>
+        <p><b>Day 79:</b> Network economics -- network effects, power laws, scale-free networks. Social network analysis. Influence propagation.</p>
+        <p><b>Day 80:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Portfolio Optimizer:</b> Download historical stock data. Compute efficient frontier. Optimize for max Sharpe ratio. Monte Carlo simulation of portfolio returns. Compare with equal-weight and S&P 500 benchmark.<br>
+          <b>P2 - Options Pricer:</b> Black-Scholes and binomial tree option pricing. Compute Greeks. Implied volatility surface. Interactive: change strike/expiry/vol, see price change. Compare model vs market prices.<br>
+          <b>P3 - Backtesting Engine:</b> Build a trading strategy backtester. Support: moving average, RSI, Bollinger Bands strategies. Track: returns, Sharpe, max drawdown, win rate. Walk-forward optimization.<br>
+          <b>P4 - Market Simulator:</b> Agent-based stock market. Agents with different strategies (fundamentalist, momentum, random). Order book, bid-ask spread emerges. Observe: crashes, bubbles, fat-tailed returns.<br>
+          <b>P5 - Game Theory Solver:</b> Solve 2-player games: find Nash equilibria, dominant strategies. Iterated prisoner's dilemma tournament with evolved strategies. Evolutionary stability analysis. Auction simulator.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-90 -->
+    <div class="step" id="ch2-s8">
+      <div class="step-head" onclick="tog('ch2-s8')">
+        <div class="step-num num-math">9</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--90: Philosophy of Science + Writing</div>
+          <div class="step-meta">Epistemology, scientific method, technical writing, essay craft</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s8">
+        <p><b>Day 81:</b> Epistemology -- what is knowledge? Justified true belief. Gettier problems. Sources of knowledge.</p>
+        <p><b>Day 82:</b> Philosophy of science -- falsifiability (Popper), paradigm shifts (Kuhn), research programs (Lakatos). Demarcation problem.</p>
+        <p><b>Day 83:</b> Scientific method -- hypothesis formation, experimental design, statistical testing, peer review. Replication crisis.</p>
+        <p><b>Day 84:</b> Philosophy of mathematics -- Platonism, formalism, constructivism. Are mathematical objects real? Godel's incompleteness theorems.</p>
+        <p><b>Day 85:</b> Philosophy of mind and AI -- Chinese Room argument, consciousness, Turing test, hard problem of consciousness. AI alignment.</p>
+        <p><b>Day 86:</b> Ethics of technology -- privacy, bias in AI, autonomous weapons, surveillance capitalism. Ethical frameworks: consequentialism, deontology, virtue ethics.</p>
+        <p><b>Day 87:</b> Technical writing -- structure (intro, methods, results, discussion), clarity, precision, audience awareness. LaTeX basics.</p>
+        <p><b>Day 88:</b> Essay craft -- thesis development, argument structure, evidence integration, counterarguments. Writing as thinking.</p>
+        <p><b>Day 89:</b> Research skills -- literature review, citation management, reading papers efficiently. Systematic review methodology.</p>
+        <p><b>Day 90:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Research Paper Analysis:</b> Read 5 landmark papers (Turing 1950, Shannon 1948, Feynman 1982, Attention Is All You Need, AlphaFold). Write a structured critique of each: contribution, methodology, limitations, impact.<br>
+          <b>P2 - AI Ethics Case Study:</b> Deep analysis of a real AI bias case (COMPAS, Amazon hiring, facial recognition). Stakeholder analysis, ethical framework application, proposed solutions. 3000-word essay.<br>
+          <b>P3 - Knowledge Synthesis Essay:</b> Write a 5000-word essay connecting 3+ domains from this challenge. Example: "How information theory connects thermodynamics, computation, and biology." Original thesis, evidence from your projects.<br>
+          <b>P4 - Technical Blog Series:</b> Write 5 tutorial blog posts teaching concepts from your strongest domains. Clear explanations, code examples, diagrams. Publish on personal blog or Medium. Aim for clarity that teaches others.<br>
+          <b>P5 - Research Proposal:</b> Write a formal research proposal for an interdisciplinary project combining at least 3 domains. Background, methodology, expected results, timeline, references. Format as if submitting to a conference.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 91-100 -->
+    <div class="step" id="ch2-s9">
+      <div class="step-head" onclick="tog('ch2-s9')">
+        <div class="step-num num-math">10</div>
+        <div class="step-info">
+          <div class="step-title">Days 91--100: Grand Synthesis</div>
+          <div class="step-meta">5 interdisciplinary capstone projects bridging all domains</div>
+        </div>
+        <div class="step-arrow" id="a-ch2-s9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch2-s9">
+        <p><b>Day 91:</b> Capstone planning -- identify the 5 projects that best demonstrate your polymath capability. Architecture and research for each.</p>
+        <p><b>Day 92--93:</b> Capstone Project 1 build sprint.</p>
+        <p><b>Day 94--95:</b> Capstone Project 2 build sprint.</p>
+        <p><b>Day 96--97:</b> Capstone Project 3 build sprint.</p>
+        <p><b>Day 98:</b> Capstone Projects 4 and 5 build sprint.</p>
+        <p><b>Day 99:</b> Polish -- documentation, visualization, deployment for all capstones.</p>
+        <p><b>Day 100:</b> Grand retrospective -- create a concept map linking all 10 domains. Write the definitive essay on your polymath journey. Update all profiles.</p>
+        <div class="do-box">
+          <b>5 Capstone Projects:</b><br>
+          <b>P1 - Quantum ML Hybrid:</b> Use a variational quantum circuit as a layer in a classical neural network. Train on a real dataset. Compare quantum-classical hybrid vs pure classical. Bridges: quantum computing + ML + linear algebra.<br>
+          <b>P2 - Evolutionary Neural Architecture Search:</b> Use genetic algorithms to evolve neural network architectures. Fitness = accuracy on validation set. Observe: architectures converge toward known good designs. Bridges: biology + CS theory + ML.<br>
+          <b>P3 - Physics-Informed Neural Network:</b> Solve differential equations (heat equation, wave equation, Navier-Stokes) using PINNs. Embed physics constraints into loss function. Compare with traditional numerical methods. Bridges: physics + ML + calculus.<br>
+          <b>P4 - Algorithmic Trading with RL:</b> Train an RL agent to trade stocks. State: technical indicators + order book features. Action: buy/sell/hold. Reward: risk-adjusted returns. Backtest against traditional strategies. Bridges: finance + RL + statistics.<br>
+          <b>P5 - Computational Biology Pipeline:</b> End-to-end: sequence alignment, phylogenetic tree, protein structure prediction (simplified). ML model for gene function prediction. Visualization dashboard. Bridges: biology + algorithms + ML + data visualization.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TAB 3: 100 DAYS COMPETITIVE PROGRAMMING                     -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p3">
+    <div class="track-header">
+      <div class="track-badge badge-java">100 Days -- 300+ Problems -- Codeforces 800 to 2000+</div>
+      <div class="track-title">100 Days of Competitive Programming</div>
+      <div class="track-sub">Structured progression from beginner (Codeforces rating ~800) to expert level (~2000+). Each day covers one concept with 3 practice problems and 1 contest-style challenge. By day 100, you will have solved 400+ problems and internalized every major algorithmic pattern used in competitions.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) Solve all 4 problems each day -- 3 practice + 1 contest challenge. Time yourself on the contest problem (max 45 min). (2) If stuck for 30 minutes, read the editorial, then re-implement from memory without looking. (3) Participate in at least 2 live Codeforces/AtCoder contests per week. (4) Maintain a "patterns notebook" -- for each problem type, record: pattern name, when to apply, template code. (5) Upsolve every contest: solve problems you could not solve during the contest. (6) Track your rating progression weekly.
+    </div>
+
+    <!-- Days 1-10 -->
+    <div class="step" id="ch3-s0">
+      <div class="step-head" onclick="tog('ch3-s0')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--10: Implementation + Brute Force (Rating 800--1000)</div>
+          <div class="step-meta">I/O, simulation, basic math, string manipulation, brute force</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s0">
+        <p><b>Day 1:</b> Fast I/O setup, competitive programming template. Solve 800-rated problems. Pattern: read input carefully, simulate exactly what the problem says.</p>
+        <p><b>Day 2:</b> Basic math -- modular arithmetic, GCD (Euclidean), LCM, primality check. 3 problems + 1 challenge.</p>
+        <p><b>Day 3:</b> String manipulation -- reversal, palindrome check, substring operations, character frequency. 3 problems + 1 challenge.</p>
+        <p><b>Day 4:</b> Array operations -- prefix sums, difference arrays, frequency counting. 3 problems + 1 challenge.</p>
+        <p><b>Day 5:</b> Sorting + searching -- custom comparators, binary search on answer. 3 problems + 1 challenge.</p>
+        <p><b>Day 6:</b> Simulation problems -- follow the instructions literally. Matrix rotation, spiral traversal. 3 problems + 1 challenge.</p>
+        <p><b>Day 7:</b> Brute force -- enumerate all possibilities. Bitmask enumeration for small N. 3 problems + 1 challenge.</p>
+        <p><b>Day 8:</b> Constructive algorithms -- find any valid answer. Greedy construction. 3 problems + 1 challenge.</p>
+        <p><b>Day 9:</b> Two pointers -- sorted array pair sum, merging, partitioning. 3 problems + 1 challenge.</p>
+        <p><b>Day 10:</b> Sliding window -- fixed and variable window, maximum sum subarray. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (20 min each) from the day's topic at 800--1000 rating + 1 contest-style problem (45 min) at 1000--1200 rating. Use Codeforces problemset filter by rating and tag.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 11-20 -->
+    <div class="step" id="ch3-s1">
+      <div class="step-head" onclick="tog('ch3-s1')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 11--20: Greedy Algorithms (Rating 1000--1200)</div>
+          <div class="step-meta">Greedy strategies, sorting-based greedy, exchange arguments</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s1">
+        <p><b>Day 11:</b> Greedy basics -- activity selection, interval scheduling. Prove greedy choice property. 3 problems + 1 challenge.</p>
+        <p><b>Day 12:</b> Greedy with sorting -- sort by one criterion, process greedily. Job scheduling with deadlines. 3 problems + 1 challenge.</p>
+        <p><b>Day 13:</b> Exchange argument proofs -- prove greedy is optimal by showing any swap makes it worse. 3 problems + 1 challenge.</p>
+        <p><b>Day 14:</b> Huffman-style greedy -- always pick the smallest/largest. Priority queue for greedy. 3 problems + 1 challenge.</p>
+        <p><b>Day 15:</b> Greedy on strings -- lexicographically smallest, rearranging characters. 3 problems + 1 challenge.</p>
+        <p><b>Day 16:</b> Greedy on arrays -- minimize/maximize operations, making arrays equal. 3 problems + 1 challenge.</p>
+        <p><b>Day 17:</b> Binary search on answer -- when the answer space is monotonic, binary search for optimal. 3 problems + 1 challenge.</p>
+        <p><b>Day 18:</b> Ternary search -- unimodal functions. Finding minimum/maximum of convex functions. 3 problems + 1 challenge.</p>
+        <p><b>Day 19:</b> Stack-based problems -- next greater element, largest rectangle in histogram, valid parentheses. 3 problems + 1 challenge.</p>
+        <p><b>Day 20:</b> Deque problems -- sliding window maximum, monotonic deque. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (25 min each) at 1000--1200 rating + 1 contest-style problem (45 min) at 1200--1400 rating. Focus on recognizing when greedy works vs when you need DP.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 21-30 -->
+    <div class="step" id="ch3-s2">
+      <div class="step-head" onclick="tog('ch3-s2')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 21--30: Dynamic Programming I (Rating 1200--1400)</div>
+          <div class="step-meta">1D DP, 2D DP, knapsack, LCS, LIS, interval DP</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s2">
+        <p><b>Day 21:</b> DP fundamentals -- overlapping subproblems, optimal substructure. Top-down vs bottom-up. Fibonacci as DP. 3 problems + 1 challenge.</p>
+        <p><b>Day 22:</b> 1D DP -- coin change, house robber, maximum subarray (Kadane). State definition practice. 3 problems + 1 challenge.</p>
+        <p><b>Day 23:</b> 0/1 Knapsack -- item selection with weight constraint. Subset sum. Equal partition. 3 problems + 1 challenge.</p>
+        <p><b>Day 24:</b> Unbounded knapsack -- unlimited items. Coin change (minimum coins), rod cutting. 3 problems + 1 challenge.</p>
+        <p><b>Day 25:</b> LCS and variants -- longest common subsequence, edit distance, shortest common supersequence. 3 problems + 1 challenge.</p>
+        <p><b>Day 26:</b> LIS -- longest increasing subsequence (O(n log n) with patience sort). Number of LIS. 3 problems + 1 challenge.</p>
+        <p><b>Day 27:</b> 2D DP -- grid paths, minimum path sum, unique paths with obstacles. 3 problems + 1 challenge.</p>
+        <p><b>Day 28:</b> Interval DP -- matrix chain multiplication, burst balloons, palindrome partitioning. 3 problems + 1 challenge.</p>
+        <p><b>Day 29:</b> DP on strings -- wildcard matching, regex matching, interleaving strings. 3 problems + 1 challenge.</p>
+        <p><b>Day 30:</b> DP practice day -- 5 mixed DP problems from contests. Focus on state definition speed. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (30 min each) at 1200--1400 rating + 1 contest-style problem (60 min) at 1400--1600 rating. The key skill: defining the DP state correctly within 5 minutes of reading the problem.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-40 -->
+    <div class="step" id="ch3-s3">
+      <div class="step-head" onclick="tog('ch3-s3')">
+        <div class="step-num num-java">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--40: Graph Algorithms I (Rating 1200--1400)</div>
+          <div class="step-meta">BFS, DFS, shortest paths, topological sort, connected components</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s3">
+        <p><b>Day 31:</b> Graph representation -- adjacency list, edge list. BFS and DFS templates. 3 problems + 1 challenge.</p>
+        <p><b>Day 32:</b> BFS applications -- shortest path in unweighted graph, multi-source BFS, 0-1 BFS. 3 problems + 1 challenge.</p>
+        <p><b>Day 33:</b> DFS applications -- cycle detection, connected components, bipartite check. 3 problems + 1 challenge.</p>
+        <p><b>Day 34:</b> Topological sort -- Kahn's algorithm, DFS-based. Course scheduling, dependency resolution. 3 problems + 1 challenge.</p>
+        <p><b>Day 35:</b> Dijkstra -- priority queue implementation. Shortest path with non-negative weights. Modified Dijkstra problems. 3 problems + 1 challenge.</p>
+        <p><b>Day 36:</b> Bellman-Ford -- negative edges, negative cycle detection. SPFA optimization. 3 problems + 1 challenge.</p>
+        <p><b>Day 37:</b> Floyd-Warshall -- all-pairs shortest paths. Transitive closure. Detect negative cycles. 3 problems + 1 challenge.</p>
+        <p><b>Day 38:</b> Minimum spanning tree -- Kruskal (Union-Find), Prim. Applications: network design, clustering. 3 problems + 1 challenge.</p>
+        <p><b>Day 39:</b> Union-Find (DSU) -- path compression, union by rank. Connected components dynamically. 3 problems + 1 challenge.</p>
+        <p><b>Day 40:</b> Graph practice day -- mixed graph problems from contests. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (30 min each) at 1200--1400 rating + 1 contest-style problem (60 min) at 1400--1600 rating. Build a graph algorithm template library you can copy-paste in contests.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 41-50 -->
+    <div class="step" id="ch3-s4">
+      <div class="step-head" onclick="tog('ch3-s4')">
+        <div class="step-num num-java">5</div>
+        <div class="step-info">
+          <div class="step-title">Days 41--50: Number Theory (Rating 1400--1600)</div>
+          <div class="step-meta">Primes, modular arithmetic, combinatorics, matrix exponentiation</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s4">
+        <p><b>Day 41:</b> Sieve of Eratosthenes -- O(n log log n) prime generation. Smallest prime factor sieve. Segmented sieve. 3 problems + 1 challenge.</p>
+        <p><b>Day 42:</b> Prime factorization -- trial division, Pollard's rho. Divisor count and sum from factorization. 3 problems + 1 challenge.</p>
+        <p><b>Day 43:</b> Modular arithmetic -- modular inverse (Fermat, extended Euclidean). Modular exponentiation. Chinese Remainder Theorem. 3 problems + 1 challenge.</p>
+        <p><b>Day 44:</b> Combinatorics for CP -- nCr mod p (precompute factorials + inverse), Lucas theorem. Catalan numbers. 3 problems + 1 challenge.</p>
+        <p><b>Day 45:</b> Inclusion-exclusion principle -- counting problems, coprime pairs, derangements. Mobius function. 3 problems + 1 challenge.</p>
+        <p><b>Day 46:</b> Matrix exponentiation -- compute n-th Fibonacci in O(log n). Linear recurrences. State transitions as matrices. 3 problems + 1 challenge.</p>
+        <p><b>Day 47:</b> Euler's totient function -- properties, computation. Multiplicative functions. Sum of GCDs. 3 problems + 1 challenge.</p>
+        <p><b>Day 48:</b> Game theory -- Sprague-Grundy theorem, Nim game, composite games. 3 problems + 1 challenge.</p>
+        <p><b>Day 49:</b> Probability in CP -- expected value linearity, random walks, geometric distribution problems. 3 problems + 1 challenge.</p>
+        <p><b>Day 50:</b> Number theory practice day -- mixed problems from Codeforces. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (35 min each) at 1400--1600 rating + 1 contest-style problem (60 min) at 1600--1800 rating. Number theory is the most common unexpected topic in contests -- master it early.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 51-60 -->
+    <div class="step" id="ch3-s5">
+      <div class="step-head" onclick="tog('ch3-s5')">
+        <div class="step-num num-java">6</div>
+        <div class="step-info">
+          <div class="step-title">Days 51--60: Dynamic Programming II (Rating 1400--1700)</div>
+          <div class="step-meta">Bitmask DP, digit DP, tree DP, DP optimization</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s5">
+        <p><b>Day 51:</b> Bitmask DP -- represent subsets as bitmasks. TSP, assignment problem. Iterate over subsets. 3 problems + 1 challenge.</p>
+        <p><b>Day 52:</b> Bitmask DP continued -- SOS (Sum over Subsets) DP. Profile DP (broken tiles). 3 problems + 1 challenge.</p>
+        <p><b>Day 53:</b> Digit DP -- count numbers in range [L, R] with specific properties. Tight constraint. Leading zeros. 3 problems + 1 challenge.</p>
+        <p><b>Day 54:</b> Tree DP -- subtree sizes, rerooting technique. Tree diameter, tree center. 3 problems + 1 challenge.</p>
+        <p><b>Day 55:</b> Tree DP continued -- independent set on tree, vertex cover. Rerooting for all-roots answers. 3 problems + 1 challenge.</p>
+        <p><b>Day 56:</b> DP with data structures -- DP + segment tree, DP + BIT. Speeding up transitions from O(n^2) to O(n log n). 3 problems + 1 challenge.</p>
+        <p><b>Day 57:</b> Convex hull trick -- optimize DP where transition is a linear function. Li Chao tree. 3 problems + 1 challenge.</p>
+        <p><b>Day 58:</b> Divide and conquer DP -- when transition satisfies monotonicity. SMAWK algorithm overview. 3 problems + 1 challenge.</p>
+        <p><b>Day 59:</b> Knuth optimization -- when cost function satisfies quadrilateral inequality. Optimal BST, matrix chain. 3 problems + 1 challenge.</p>
+        <p><b>Day 60:</b> Advanced DP practice day -- mixed problems from Codeforces Div 1/2 C-D level. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (40 min each) at 1400--1700 rating + 1 contest-style problem (75 min) at 1700--1900 rating. Advanced DP is where Div 2 participants separate from Div 1 contestants.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-70 -->
+    <div class="step" id="ch3-s6">
+      <div class="step-head" onclick="tog('ch3-s6')">
+        <div class="step-num num-java">7</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--70: Graph Algorithms II (Rating 1600--1800)</div>
+          <div class="step-meta">Network flow, matching, strongly connected components, bridges, LCA</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s6">
+        <p><b>Day 61:</b> Strongly connected components -- Kosaraju's and Tarjan's algorithms. Condensation graph. 3 problems + 1 challenge.</p>
+        <p><b>Day 62:</b> Bridges and articulation points -- Tarjan's algorithm. Block-cut tree. 2-edge-connected components. 3 problems + 1 challenge.</p>
+        <p><b>Day 63:</b> Euler tour and LCA -- lowest common ancestor. Binary lifting. Euler tour for subtree queries. 3 problems + 1 challenge.</p>
+        <p><b>Day 64:</b> Heavy-Light Decomposition -- path queries on trees. Combine with segment tree. 3 problems + 1 challenge.</p>
+        <p><b>Day 65:</b> Centroid decomposition -- divide and conquer on trees. Path counting, distance queries. 3 problems + 1 challenge.</p>
+        <p><b>Day 66:</b> Network flow -- Ford-Fulkerson, Edmonds-Karp (BFS augmentation), Dinic's algorithm. Max-flow min-cut theorem. 3 problems + 1 challenge.</p>
+        <p><b>Day 67:</b> Flow applications -- bipartite matching, minimum vertex cover, maximum independent set (Konig's theorem). 3 problems + 1 challenge.</p>
+        <p><b>Day 68:</b> Min-cost max-flow -- SPFA-based implementation. Assignment problem. 3 problems + 1 challenge.</p>
+        <p><b>Day 69:</b> 2-SAT -- implication graph, SCC reduction. Solving satisfiability constraints. 3 problems + 1 challenge.</p>
+        <p><b>Day 70:</b> Advanced graph practice day -- mixed problems. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (40 min each) at 1600--1800 rating + 1 contest-style problem (75 min) at 1800--2000 rating. Network flow and tree decompositions are the gateway to expert level.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 71-80 -->
+    <div class="step" id="ch3-s7">
+      <div class="step-head" onclick="tog('ch3-s7')">
+        <div class="step-num num-java">8</div>
+        <div class="step-info">
+          <div class="step-title">Days 71--80: String Algorithms (Rating 1600--1900)</div>
+          <div class="step-meta">Hashing, KMP, Z-function, suffix array, Aho-Corasick, tries</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s7">
+        <p><b>Day 71:</b> String hashing -- polynomial hash, collision avoidance, rolling hash. Rabin-Karp pattern matching. 3 problems + 1 challenge.</p>
+        <p><b>Day 72:</b> KMP algorithm -- failure function, pattern matching in O(n + m). Counting occurrences, periods of strings. 3 problems + 1 challenge.</p>
+        <p><b>Day 73:</b> Z-function -- definition, linear construction, applications. Equivalent power to KMP with different flavor. 3 problems + 1 challenge.</p>
+        <p><b>Day 74:</b> Trie -- insert, search, prefix matching. Count distinct substrings. XOR trie for maximum XOR. 3 problems + 1 challenge.</p>
+        <p><b>Day 75:</b> Aho-Corasick -- multi-pattern matching. Failure links. Counting pattern occurrences in text. 3 problems + 1 challenge.</p>
+        <p><b>Day 76:</b> Suffix array -- O(n log n) construction. LCP array. Number of distinct substrings. Pattern searching. 3 problems + 1 challenge.</p>
+        <p><b>Day 77:</b> Manacher's algorithm -- all palindromic substrings in O(n). Palindrome partitioning optimization. 3 problems + 1 challenge.</p>
+        <p><b>Day 78:</b> Suffix automaton -- minimal automaton accepting all suffixes. Number of distinct substrings, longest common substring of multiple strings. 3 problems + 1 challenge.</p>
+        <p><b>Day 79:</b> Palindromic tree (Eertree) -- all distinct palindromic substrings. Count palindromic substrings. 3 problems + 1 challenge.</p>
+        <p><b>Day 80:</b> String practice day -- mixed problems from Codeforces. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (40 min each) at 1600--1900 rating + 1 contest-style problem (75 min) at 1900--2100 rating. String algorithms are the most template-heavy topic -- build a comprehensive library.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-90 -->
+    <div class="step" id="ch3-s8">
+      <div class="step-head" onclick="tog('ch3-s8')">
+        <div class="step-num num-java">9</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--90: Data Structures + Geometry (Rating 1700--2000)</div>
+          <div class="step-meta">Segment tree, BIT, sparse table, convex hull, sweep line</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s8">
+        <p><b>Day 81:</b> Segment tree -- build, update, query. Range sum, range min/max. Point update and range query. 3 problems + 1 challenge.</p>
+        <p><b>Day 82:</b> Segment tree with lazy propagation -- range update + range query. Range add, range set. 3 problems + 1 challenge.</p>
+        <p><b>Day 83:</b> Persistent segment tree -- version history, k-th smallest in range. Merge sort tree. 3 problems + 1 challenge.</p>
+        <p><b>Day 84:</b> BIT (Fenwick tree) -- point update, prefix query. 2D BIT. Order statistics. 3 problems + 1 challenge.</p>
+        <p><b>Day 85:</b> Sparse table -- static range minimum query in O(1). Disjoint sparse table. Applications. 3 problems + 1 challenge.</p>
+        <p><b>Day 86:</b> Sqrt decomposition -- Mo's algorithm for offline range queries. Block decomposition. 3 problems + 1 challenge.</p>
+        <p><b>Day 87:</b> Computational geometry basics -- point, line, segment. Cross product, orientation test. Line intersection. 3 problems + 1 challenge.</p>
+        <p><b>Day 88:</b> Convex hull -- Graham scan, Andrew's monotone chain. Convex hull trick for DP. Rotating calipers. 3 problems + 1 challenge.</p>
+        <p><b>Day 89:</b> Sweep line -- event-based processing. Closest pair of points, rectangle union area, segment intersection. 3 problems + 1 challenge.</p>
+        <p><b>Day 90:</b> Advanced DS/geometry practice day. 3 problems + 1 challenge.</p>
+        <div class="do-box">
+          <b>Daily structure:</b> 3 practice problems (45 min each) at 1700--2000 rating + 1 contest-style problem (90 min) at 2000+ rating. These data structures are the backbone of hard competitive programming problems.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 91-100 -->
+    <div class="step" id="ch3-s9">
+      <div class="step-head" onclick="tog('ch3-s9')">
+        <div class="step-num num-java">10</div>
+        <div class="step-info">
+          <div class="step-title">Days 91--100: Contest Simulation + Mastery (Rating 1800--2000+)</div>
+          <div class="step-meta">Virtual contests, problem-solving strategy, speed optimization</div>
+        </div>
+        <div class="step-arrow" id="a-ch3-s9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch3-s9">
+        <p><b>Day 91:</b> Virtual contest -- Codeforces Div 2. Full 2-hour simulation. Upsolve all unsolved problems afterward.</p>
+        <p><b>Day 92:</b> Review + weakness analysis. Identify weakest topics. Drill 5 problems from weakest area.</p>
+        <p><b>Day 93:</b> Virtual contest -- Codeforces Div 1+2 combined. Focus on solving A-D within time.</p>
+        <p><b>Day 94:</b> Advanced techniques mashup -- problems combining DP + graphs, or math + data structures. 4 mixed problems.</p>
+        <p><b>Day 95:</b> Virtual contest -- AtCoder ABC. Different problem style. Focus on speed for A-E.</p>
+        <p><b>Day 96:</b> Speed training -- solve 10 problems rated 1200--1400 as fast as possible. Target: under 10 min each.</p>
+        <p><b>Day 97:</b> Virtual contest -- Codeforces Educational round. Upsolve everything.</p>
+        <p><b>Day 98:</b> Build your competitive programming library -- clean implementations of every algorithm. Tested, documented, copy-paste ready.</p>
+        <p><b>Day 99:</b> Virtual contest -- hardest one yet. Aim for Div 1 C/D level problems.</p>
+        <p><b>Day 100:</b> Retrospective -- compile statistics: problems solved, rating progression, strongest/weakest topics. Set goals for next 100 days. Publish your CP journey blog post.</p>
+        <div class="do-box">
+          <b>Final 10 days structure:</b> Alternate between virtual contests and targeted practice. The goal is not new concepts but fluency and speed. By day 100 you should be able to solve Div 2 A-D consistently within contest time and occasionally crack E.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- TAB 4: 100 DAYS SYSTEM DESIGN                                -->
+  <!-- ============================================================ -->
+  <div class="panel" id="p4">
+    <div class="track-header">
+      <div class="track-badge badge-ml">100 Days -- 100 Systems -- Architecture Mastery</div>
+      <div class="track-title">100 Days of System Design</div>
+      <div class="track-sub">One system per day. From fundamental building blocks to novel architectures. Each day you design a complete system: requirements, capacity estimation, API design, data model, high-level architecture, deep dives into critical components. By day 100, you will have designed every major system that appears in interviews and real engineering.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) For each system, spend 45 minutes designing before looking at any reference. (2) Document every design: requirements, APIs, data model, architecture diagram, trade-offs. (3) Use excalidraw or draw.io for diagrams -- visual thinking is mandatory. (4) After your attempt, study 2 reference designs and note what you missed. (5) Maintain a "building blocks" reference -- reusable patterns across designs. (6) Every design must address: scalability, reliability, latency, cost, and security.
+    </div>
+
+    <!-- Days 1-30 -->
+    <div class="step" id="ch4-s0">
+      <div class="step-head" onclick="tog('ch4-s0')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--30: Building Blocks</div>
+          <div class="step-meta">Fundamental components that compose into larger systems</div>
+        </div>
+        <div class="step-arrow" id="a-ch4-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch4-s0">
+        <p><b>Day 1:</b> Load Balancer -- L4 vs L7, algorithms (round-robin, least connections, consistent hashing), health checks, session affinity.</p>
+        <p><b>Day 2:</b> Reverse Proxy -- request routing, SSL termination, compression, caching at the edge.</p>
+        <p><b>Day 3:</b> CDN -- content distribution, cache invalidation, edge computing, pull vs push CDN.</p>
+        <p><b>Day 4:</b> DNS -- resolution flow, DNS-based load balancing, GeoDNS, TTL strategies.</p>
+        <p><b>Day 5:</b> Cache -- write policies, eviction strategies, cache stampede, distributed cache (Redis cluster).</p>
+        <p><b>Day 6:</b> Message Queue -- pub/sub, point-to-point, ordering guarantees, dead letter queues. Kafka vs RabbitMQ vs SQS.</p>
+        <p><b>Day 7:</b> Database Replication -- master-slave, master-master, synchronous vs async, failover.</p>
+        <p><b>Day 8:</b> Database Sharding -- horizontal partitioning, shard keys, resharding, cross-shard queries.</p>
+        <p><b>Day 9:</b> SQL Database -- ACID, indexing, query optimization, connection pooling, read replicas.</p>
+        <p><b>Day 10:</b> NoSQL Database -- document (MongoDB), column (Cassandra), key-value (DynamoDB), graph (Neo4j). Data modeling for each.</p>
+        <p><b>Day 11:</b> Object Storage -- S3-like storage, metadata, versioning, lifecycle policies, pre-signed URLs.</p>
+        <p><b>Day 12:</b> Block and File Storage -- EBS, EFS equivalents. IOPS, throughput, durability.</p>
+        <p><b>Day 13:</b> Search Engine -- inverted index, tokenization, ranking (TF-IDF, BM25), Elasticsearch architecture.</p>
+        <p><b>Day 14:</b> API Gateway -- routing, authentication, rate limiting, request transformation, circuit breaking.</p>
+        <p><b>Day 15:</b> Service Discovery -- client-side vs server-side, registry (Consul, etcd), health checking.</p>
+        <p><b>Day 16:</b> Rate Limiter -- token bucket, sliding window, distributed rate limiting, per-user vs global.</p>
+        <p><b>Day 17:</b> Distributed Lock -- Redis-based (Redlock), ZooKeeper, etcd. Fencing tokens, lock renewal.</p>
+        <p><b>Day 18:</b> Consistent Hashing -- virtual nodes, rebalancing, jump consistent hashing. Applications: cache, DB sharding.</p>
+        <p><b>Day 19:</b> Bloom Filter -- probabilistic data structure, false positive rate, counting bloom filter. Applications: cache, DB.</p>
+        <p><b>Day 20:</b> Leader Election -- Bully algorithm, Raft leader election, ZooKeeper ephemeral nodes.</p>
+        <p><b>Day 21:</b> Consensus -- Paxos, Raft. Log replication, safety, liveness. When you need consensus.</p>
+        <p><b>Day 22:</b> Event Sourcing -- events as source of truth, projections, snapshots. CQRS pattern.</p>
+        <p><b>Day 23:</b> Saga Pattern -- distributed transactions, choreography vs orchestration, compensation.</p>
+        <p><b>Day 24:</b> Circuit Breaker -- states (closed, open, half-open), fallback strategies, bulkhead pattern.</p>
+        <p><b>Day 25:</b> Monitoring -- metrics (counters, gauges, histograms), logging, tracing. Prometheus, Grafana, Jaeger.</p>
+        <p><b>Day 26:</b> Autoscaling -- horizontal pod autoscaler, predictive scaling, custom metrics. Scaling policies.</p>
+        <p><b>Day 27:</b> Data Pipeline -- batch (MapReduce, Spark), stream (Kafka Streams, Flink), lambda architecture.</p>
+        <p><b>Day 28:</b> Task Queue -- async job processing, retries, priority, idempotency. Celery, Sidekiq architecture.</p>
+        <p><b>Day 29:</b> WebSocket -- persistent connections, scaling WebSocket servers, pub/sub for real-time.</p>
+        <p><b>Day 30:</b> Building blocks review -- create your personal reference sheet of all 30 building blocks with when-to-use guidance.</p>
+        <div class="do-box">
+          <b>Output for each day:</b> One-page reference document with: what it is, when to use it, key trade-offs, common configurations, failure modes, and which systems use it. By day 30, you have a 30-page system design reference manual.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-60 -->
+    <div class="step" id="ch4-s1">
+      <div class="step-head" onclick="tog('ch4-s1')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--60: Classic Systems</div>
+          <div class="step-meta">Design the systems that power the internet</div>
+        </div>
+        <div class="step-arrow" id="a-ch4-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch4-s1">
+        <p><b>Day 31:</b> URL Shortener (TinyURL) -- base62 encoding, collision handling, analytics, read-heavy optimization.</p>
+        <p><b>Day 32:</b> Pastebin -- text storage, expiration, syntax highlighting, abuse prevention.</p>
+        <p><b>Day 33:</b> Rate Limiter Service -- multi-tenant, distributed, sliding window with Redis.</p>
+        <p><b>Day 34:</b> Twitter / X -- tweet feed, fanout-on-write vs fanout-on-read, celebrity problem, trending topics.</p>
+        <p><b>Day 35:</b> Instagram -- photo upload, feed generation, stories, explore page.</p>
+        <p><b>Day 36:</b> Facebook Newsfeed -- ranking algorithm, real-time updates, content diversity.</p>
+        <p><b>Day 37:</b> YouTube -- video upload/transcode pipeline, CDN, recommendation engine, live streaming.</p>
+        <p><b>Day 38:</b> Netflix -- video streaming, adaptive bitrate, content delivery, recommendation system.</p>
+        <p><b>Day 39:</b> WhatsApp -- end-to-end messaging, presence, group chats, media sharing, delivery receipts.</p>
+        <p><b>Day 40:</b> Slack -- channels, real-time messaging, search, file sharing, workspace management.</p>
+        <p><b>Day 41:</b> Uber -- ride matching, real-time location, ETA computation, surge pricing, driver dispatching.</p>
+        <p><b>Day 42:</b> Google Maps -- routing, map tile serving, real-time traffic, place search, offline maps.</p>
+        <p><b>Day 43:</b> Yelp / Nearby Search -- geospatial indexing (quadtree, geohash), reviews, ranking, real-time updates.</p>
+        <p><b>Day 44:</b> Amazon E-Commerce -- product catalog, search, cart, order processing, inventory management.</p>
+        <p><b>Day 45:</b> Booking.com / Airbnb -- search with availability, reservation system, double-booking prevention, pricing.</p>
+        <p><b>Day 46:</b> Dropbox / Google Drive -- file sync, chunking, deduplication, conflict resolution, sharing.</p>
+        <p><b>Day 47:</b> Google Docs -- real-time collaboration, OT/CRDT, presence, version history.</p>
+        <p><b>Day 48:</b> Google Search -- web crawler, indexer, PageRank, query processing, spelling correction.</p>
+        <p><b>Day 49:</b> Typeahead / Autocomplete -- trie-based, prefix matching, ranking by frequency, personalization.</p>
+        <p><b>Day 50:</b> Web Crawler -- BFS crawling, politeness, deduplication, distributed crawling, URL frontier.</p>
+        <p><b>Day 51:</b> Notification System -- push (APNs, FCM), email, SMS, in-app. Priority, templating, delivery tracking.</p>
+        <p><b>Day 52:</b> Chat System (Detailed) -- 1:1, group, read receipts, push notifications, message search, encryption.</p>
+        <p><b>Day 53:</b> Payment System -- payment processing, idempotency, reconciliation, fraud detection, PCI compliance.</p>
+        <p><b>Day 54:</b> Ticketmaster -- event ticketing, seat selection, high-concurrency checkout, waitlist, anti-bot.</p>
+        <p><b>Day 55:</b> Reddit -- posts, comments (tree structure), voting, subreddits, hot/top/new ranking.</p>
+        <p><b>Day 56:</b> Spotify -- music streaming, playlist management, recommendation, offline sync.</p>
+        <p><b>Day 57:</b> LinkedIn -- professional profiles, connections, job search, feed, InMail.</p>
+        <p><b>Day 58:</b> Tinder -- matching algorithm, geolocation, swipe queue, photo serving.</p>
+        <p><b>Day 59:</b> DoorDash / Food Delivery -- restaurant catalog, order management, driver assignment, real-time tracking, ETA.</p>
+        <p><b>Day 60:</b> Classic systems review -- identify common patterns across all 30 systems. Build a pattern catalog.</p>
+        <div class="do-box">
+          <b>Output for each day:</b> Complete design document with: functional/non-functional requirements, capacity estimation, API design, data model, high-level architecture diagram, deep dive on 2-3 critical components, trade-offs discussed.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-80 -->
+    <div class="step" id="ch4-s2">
+      <div class="step-head" onclick="tog('ch4-s2')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--80: Advanced Systems</div>
+          <div class="step-meta">Distributed databases, consensus, stream processing, observability</div>
+        </div>
+        <div class="step-arrow" id="a-ch4-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch4-s2">
+        <p><b>Day 61:</b> Distributed Key-Value Store (DynamoDB) -- partitioning, replication, consistency (eventual, strong), vector clocks.</p>
+        <p><b>Day 62:</b> Distributed File System (HDFS/GFS) -- name node, data nodes, block replication, fault tolerance.</p>
+        <p><b>Day 63:</b> Distributed Cache (Memcached cluster) -- consistent hashing, hot keys, cache warming, thundering herd.</p>
+        <p><b>Day 64:</b> Time-Series Database (InfluxDB) -- time-partitioned storage, downsampling, retention policies, compression.</p>
+        <p><b>Day 65:</b> Graph Database (Neo4j) -- graph storage, traversal optimization, index-free adjacency, Cypher queries.</p>
+        <p><b>Day 66:</b> Consensus System (etcd/ZooKeeper) -- Raft implementation, leader election, configuration management, service coordination.</p>
+        <p><b>Day 67:</b> Distributed Transaction Coordinator -- 2PC, 3PC, Sagas, TCC pattern. Handling partial failures.</p>
+        <p><b>Day 68:</b> Stream Processing (Kafka + Flink) -- event time vs processing time, windowing, exactly-once semantics, state management.</p>
+        <p><b>Day 69:</b> Log Aggregation (ELK) -- log collection, structured logging, indexing, search, alerting, retention.</p>
+        <p><b>Day 70:</b> Distributed Tracing (Jaeger) -- trace propagation, span collection, sampling strategies, performance analysis.</p>
+        <p><b>Day 71:</b> Feature Flag System -- flag storage, targeting rules, gradual rollout, A/B testing integration, kill switch.</p>
+        <p><b>Day 72:</b> A/B Testing Platform -- experiment design, traffic splitting, statistical analysis, guardrail metrics.</p>
+        <p><b>Day 73:</b> Workflow Engine (Temporal/Airflow) -- DAG execution, retries, timeouts, state persistence, observability.</p>
+        <p><b>Day 74:</b> Job Scheduler (Cron at Scale) -- distributed scheduling, exactly-once execution, priority, resource management.</p>
+        <p><b>Day 75:</b> Configuration Management -- centralized config, hot reload, environment separation, secrets management, audit trail.</p>
+        <p><b>Day 76:</b> Pub/Sub System (Kafka Deep Dive) -- partitions, consumer groups, offset management, compaction, exactly-once.</p>
+        <p><b>Day 77:</b> Object Storage (S3) -- erasure coding, metadata service, multi-part upload, versioning, lifecycle.</p>
+        <p><b>Day 78:</b> Container Orchestration (Kubernetes internals) -- scheduler, controller manager, etcd, API server, kubelet.</p>
+        <p><b>Day 79:</b> CI/CD Platform (GitHub Actions) -- runner management, workflow execution, artifact storage, secrets, matrix builds.</p>
+        <p><b>Day 80:</b> Advanced systems review -- catalog the distributed systems patterns you've learned.</p>
+        <div class="do-box">
+          <b>Output for each day:</b> Design document emphasizing distributed systems challenges: consistency model, partition tolerance, failure scenarios and recovery, data flow diagrams, operational runbook outline.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-100 -->
+    <div class="step" id="ch4-s3">
+      <div class="step-head" onclick="tog('ch4-s3')">
+        <div class="step-num num-ml">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--100: Novel & Emerging Systems</div>
+          <div class="step-meta">ML platforms, real-time recommendation, autonomous systems, frontier architectures</div>
+        </div>
+        <div class="step-arrow" id="a-ch4-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch4-s3">
+        <p><b>Day 81:</b> ML Training Platform -- distributed training, GPU scheduling, experiment tracking, model registry, data versioning.</p>
+        <p><b>Day 82:</b> ML Inference Platform -- model serving, batching, auto-scaling, A/B testing models, shadow mode.</p>
+        <p><b>Day 83:</b> Feature Store -- online + offline features, point-in-time correctness, feature sharing, monitoring.</p>
+        <p><b>Day 84:</b> Real-Time Recommendation -- candidate generation, ranking, re-ranking, diversity, cold start, feedback loop.</p>
+        <p><b>Day 85:</b> Ad Serving System -- real-time bidding (RTB), ad selection, click prediction, budget pacing, attribution.</p>
+        <p><b>Day 86:</b> Fraud Detection Platform -- real-time scoring, rule engine + ML, feedback loop, investigation tools.</p>
+        <p><b>Day 87:</b> IoT Data Platform -- device management, data ingestion (millions of devices), edge computing, alerts.</p>
+        <p><b>Day 88:</b> Autonomous Vehicle Data Pipeline -- sensor data (lidar, camera), real-time processing, map updates, simulation platform.</p>
+        <p><b>Day 89:</b> Multiplayer Game Server -- state synchronization, lag compensation, matchmaking, anti-cheat, session management.</p>
+        <p><b>Day 90:</b> Video Conferencing (Zoom) -- media streaming (WebRTC), SFU architecture, recording, screen sharing, breakout rooms.</p>
+        <p><b>Day 91:</b> Social Media Content Moderation -- automated detection (text, image, video), human review queue, appeals, policy enforcement.</p>
+        <p><b>Day 92:</b> Digital Wallet / Fintech -- balance management, transactions, KYC, regulatory compliance, fraud prevention.</p>
+        <p><b>Day 93:</b> Healthcare Records System -- HIPAA compliance, interoperability (HL7/FHIR), access control, audit logging.</p>
+        <p><b>Day 94:</b> Smart Home Platform -- device protocols, automation rules, voice integration, edge gateway, privacy.</p>
+        <p><b>Day 95:</b> Code Deployment Platform -- build system, artifact management, progressive rollout, canary analysis, rollback.</p>
+        <p><b>Day 96:</b> LLM Application Platform -- prompt management, token tracking, caching, rate limiting, multi-model routing, guardrails.</p>
+        <p><b>Day 97:</b> RAG-as-a-Service -- document ingestion, chunking, embedding pipeline, retrieval optimization, multi-tenant isolation.</p>
+        <p><b>Day 98:</b> AI Agent Platform -- tool registry, execution sandbox, memory management, multi-agent orchestration, safety guardrails.</p>
+        <p><b>Day 99:</b> Global-Scale DNS (like Cloudflare) -- anycast routing, DNSSEC, DDoS protection, edge caching, zero-trust networking.</p>
+        <p><b>Day 100:</b> Grand synthesis -- create your "System Design Bible": a comprehensive reference with all 100 systems, common patterns, building block catalog, and your personal design methodology.</p>
+        <div class="do-box">
+          <b>Final output:</b> By day 100 you have 100 system design documents. Compile them into a searchable knowledge base. This is your permanent reference for interviews, architecture decisions, and mentoring others. No one who completes this challenge will ever struggle in a system design interview again.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

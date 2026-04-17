@@ -1,0 +1,135 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Competitive Programming — Polymath.Sys" activeNav="courses">
+
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Competitive Programming &middot; Ongoing</div>
+      <div class="track-title">Competitive Programming &mdash; from beginner to IOI/ICPC level</div>
+      <div class="track-sub">Train algorithmic thinking to its extreme. Codeforces, AtCoder, TopCoder. This track builds problem-solving speed and depth through structured practice, contest participation, and targeted topic study. The goal is not to memorize solutions but to develop the pattern recognition that lets you decompose any problem into solvable components.</div>
+    </div>
+
+    <!-- CP Step 1: Foundations -->
+    <div class="step" id="cp0">
+      <div class="step-head" onclick="tog('cp0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">CP Foundations &mdash; building the problem-solving base</div><div class="step-meta">Months 1-3 &middot; Rating target: 1200 (Codeforces)</div></div>
+        <div class="step-arrow" id="a-cp0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cp0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cses.fi/book/book.pdf" target="_blank" class="res-link">Competitive Programmer's Handbook &mdash; Antti Laaksonen (free PDF) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free competitive programming textbook. 300 pages covering all essential topics: sorting, searching, dynamic programming, graph algorithms, trees, number theory, combinatorics, geometry, string algorithms, and advanced techniques. Concise, well-organized, with C++ examples. Read one chapter, solve 10 problems on that topic.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Essential</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cses.fi/problemset/" target="_blank" class="res-link">CSES Problem Set (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">300 curated problems organized by topic, perfectly sequenced for learning. Introductory problems, sorting, searching, DP, graph, tree, math, string, geometry, and advanced. Solve all 300 and you will have covered every major CP topic. This is the best single problem set for structured CP practice.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best problem set</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@Errichto" target="_blank" class="res-link">Errichto &mdash; Competitive Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">One of the top competitive programmers in the world explaining problem-solving live. Contest walkthroughs, topic deep dives (DP, graphs, math), and live problem-solving sessions. His binary search and DP videos are particularly exceptional. Watch after attempting problems yourself.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://atcoder.jp/contests/abc" target="_blank" class="res-link">AtCoder Beginner Contests (ABC) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Weekly contests with problems A-F ranging from trivial to hard. Problems A-D are perfect for beginners. AtCoder problems are cleaner and better written than Codeforces at the easy level. Do every ABC contest for 3 months to build contest stamina and speed.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Contests</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The daily practice rule:</b> Solve 2-3 problems per day, 7 days a week. Participate in every Codeforces and AtCoder contest. After each contest, upsolve every problem you could not solve during the contest. The gap between contest performance and upsolve performance IS your growth edge.</div>
+      </div>
+    </div>
+
+    <!-- CP Step 2: Intermediate -->
+    <div class="step" id="cp1">
+      <div class="step-head" onclick="tog('cp1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Intermediate Topics &mdash; DP, graphs, number theory, segment trees</div><div class="step-meta">Months 3-8 &middot; Rating target: 1600 (Codeforces)</div></div>
+        <div class="step-arrow" id="a-cp1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cp1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cp-algorithms.com/" target="_blank" class="res-link">cp-algorithms.com (e-maxx eng) &mdash; algorithm encyclopedia <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The definitive free reference for competitive programming algorithms. Covers: number theory, algebra, data structures (segment trees, BIT, DSU), string algorithms (KMP, Z-function, suffix array), graph algorithms, geometry, and more. Each article has theory + C++ implementation + practice problems. Bookmark and reference constantly.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Bookmark this</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@SecondThread" target="_blank" class="res-link">SecondThread &mdash; Advanced CP Topics (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Deep dives into segment trees, heavy-light decomposition, centroid decomposition, flows, and contest strategy. SecondThread consistently breaks down hard problems into understandable steps. His segment tree series is the best on YouTube.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Competitive Programming 4 &mdash; Steven Halim &amp; Felix Halim</div>
+              <div class="res-desc">The most comprehensive CP book (2 volumes, 1900+ pages). Covers every topic with hundreds of UVa/Kattis problem references. The problem classification system is invaluable &mdash; for each topic, you get 20-50 practice problems sorted by difficulty. Worth the investment if you are serious about competitive programming.</div>
+              <div class="res-tags"><span class="rtag must">Comprehensive</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The plateau breaker:</b> At ~1400 Codeforces rating, most people plateau because they avoid DP and graph problems. Force yourself to solve 50 DP problems and 30 graph problems in a row. Targeted topic grinding is what breaks plateaus. Use the CSES problem set categories to structure this grind.</div>
+      </div>
+    </div>
+
+    <!-- CP Step 3: Advanced / ICPC Level -->
+    <div class="step" id="cp2">
+      <div class="step-head" onclick="tog('cp2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Advanced &mdash; ICPC/IOI level techniques</div><div class="step-meta">Months 8+ &middot; Rating target: 2000+ (Codeforces)</div></div>
+        <div class="step-arrow" id="a-cp2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cp2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://codeforces.com/gyms" target="_blank" class="res-link">Codeforces Gym &mdash; ICPC past problems <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Practice with real ICPC regional and world finals problems. Form a team of 3, simulate the 5-hour contest format, then analyze what you solved and what you missed. ICPC problems require combining multiple algorithms in creative ways &mdash; they test depth of understanding, not just knowledge of techniques.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">ICPC practice</span><span class="rtag tool">Contests</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://oi-wiki.org/" target="_blank" class="res-link">OI Wiki &mdash; Olympiad Informatics reference (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Comprehensive Chinese-origin competitive programming wiki (with English sections) covering advanced topics: FFT/NTT, Aho-Corasick, suffix automaton, LCT, persistent data structures, matroid intersection, and more. The most complete free reference for advanced CP techniques.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to Algorithms &mdash; Cormen, Leiserson, Rivest, Stein (CLRS)</div>
+              <div class="res-desc">The comprehensive algorithms reference. 1300+ pages covering every algorithm and data structure in depth: sorting, searching, graph algorithms, DP, greedy, amortized analysis, NP-completeness, approximation algorithms. Not a first read, but the definitive reference when you need to understand an algorithm's proof of correctness or complexity analysis.</div>
+              <div class="res-tags"><span class="rtag book">Reference bible</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The 2000+ strategy:</b> At this level, raw problem count matters less than deep analysis. After each contest, write a detailed editorial for every problem you attempted. Explaining your thought process (including wrong approaches) builds the meta-cognitive skill that separates experts from advanced beginners. Quality analysis beats quantity.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

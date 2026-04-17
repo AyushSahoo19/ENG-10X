@@ -1,0 +1,145 @@
+---
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Polymath.Sys — The 48-Month Intelligence Core for AI, Mathematics & Quantum Computing.' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} // POLYMATH.SYS</title>
+  </head>
+  <body>
+    <nav class="nav-header">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand">
+          <span class="brand-mark">POLYMATH</span><span class="brand-dot">.</span><span class="brand-sys">SYS</span>
+        </a>
+        <div class="nav-links">
+          <a href="/roadmaps" class="nav-link">ROADMAPS</a>
+          <a href="/research" class="nav-link">RESEARCH</a>
+          <a href="/minds" class="nav-link">MINDS</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span class="tech-label">POLYMATH.SYS // SYSTEM MEMORY CORE</span>
+        <span class="tech-label">V4.0 — THE AUTOMATION AGE</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .nav-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .brand-dot {
+    color: var(--text-muted);
+  }
+
+  .brand-sys {
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--space-lg);
+  }
+
+  .nav-link {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-smooth);
+  }
+
+  .nav-link:hover {
+    color: var(--accent);
+  }
+
+  main {
+    padding-top: 60px;
+    min-height: 100vh;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--card-border);
+    padding: var(--space-lg);
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    .nav-links {
+      gap: var(--space-md);
+    }
+
+    .nav-link {
+      font-size: 10px;
+    }
+
+    .footer-inner {
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+  }
+</style>

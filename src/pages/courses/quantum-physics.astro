@@ -1,0 +1,135 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Physics — Polymath.Sys" activeNav="courses">
+
+    <div class="track-header">
+      <div class="track-badge badge-ml">Quantum Physics &middot; 12-18 months</div>
+      <div class="track-title">Quantum Physics &mdash; the fundamental theory of nature</div>
+      <div class="track-sub">From the Schrodinger equation to quantum field theory. This track builds your physics intuition from the ground up: wave functions, operators, Hilbert spaces, entanglement, measurement, and the path toward QFT. The math is real &mdash; linear algebra and differential equations are prerequisites.</div>
+    </div>
+
+    <!-- QP Step 1: QM Formalism -->
+    <div class="step" id="qp0">
+      <div class="step-head" onclick="tog('qp0')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info"><div class="step-title">Quantum Mechanics Formalism &mdash; states, operators, measurement</div><div class="step-meta">Months 1-4 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-qp0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to Quantum Mechanics &mdash; David J. Griffiths</div>
+              <div class="res-desc">The standard undergraduate QM textbook. Covers the wave function, time-independent and time-dependent Schrodinger equation, formalism (Hilbert spaces, operators, eigenstates), 3D problems (hydrogen atom, angular momentum), identical particles, and perturbation theory. Griffiths' conversational style makes hard physics approachable. Do every problem.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" target="_blank" class="res-link">MIT 8.04 &mdash; Quantum Physics I (Barton Zwiebach, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT quantum mechanics course with video lectures, notes, and problem sets. Zwiebach is an exceptional lecturer who balances mathematical rigor with physical intuition. Covers wave mechanics, Dirac notation, angular momentum, and the hydrogen atom. Free and complete on OCW.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL65jRfIHIOFVLqP_MdbfzKAlq8kLfUsmB" target="_blank" class="res-link">Quantum Sense &mdash; Quantum Mechanics visually explained (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A newer YouTube channel that explains QM formalism with beautiful animations. Covers Dirac notation, operators, commutators, the uncertainty principle, and spin with visual clarity that Griffiths' text alone cannot achieve. Watch alongside your textbook reading.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The Feynman Lectures on Physics &mdash; Volume III (free online)</div>
+              <div class="res-desc">Feynman's quantum mechanics lectures, free at feynmanlectures.caltech.edu. Not a replacement for Griffiths, but Feynman's physical intuition is unmatched. Read Chapter 1 (Quantum Behavior) and Chapter 3 (Probability Amplitudes) for the deepest conceptual foundation available anywhere.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag book">Classic</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The first milestone:</b> Solve the infinite square well, the harmonic oscillator, and the hydrogen atom completely by hand. When you can derive the energy eigenvalues and wave functions for all three from scratch, you have mastered the core mathematical machinery of quantum mechanics.</div>
+      </div>
+    </div>
+
+    <!-- QP Step 2: Hilbert Spaces & Advanced Formalism -->
+    <div class="step" id="qp1">
+      <div class="step-head" onclick="tog('qp1')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info"><div class="step-title">Hilbert Spaces &amp; Entanglement &mdash; the mathematical structure of QM</div><div class="step-meta">Months 4-7 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-qp1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Quantum Mechanics: The Theoretical Minimum &mdash; Susskind &amp; Friedman</div>
+              <div class="res-desc">Susskind's textbook companion to his Stanford Continuing Studies lectures. Focused on the abstract mathematical framework: state vectors, operators, eigenstates, time evolution, entanglement, and Bell's theorem. More mathematically structured than Griffiths for the formalism. The entanglement and Bell inequality chapters are superb.</div>
+              <div class="res-tags"><span class="rtag must">Essential</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLQrxduI1EmhxGiGT18r6F8mPstAXLGZIy" target="_blank" class="res-link">Leonard Susskind &mdash; Quantum Mechanics (Stanford, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Susskind's full Stanford lecture series on quantum mechanics, free on YouTube. Assumes basic physics and linear algebra. His lectures on entanglement, density matrices, and the EPR paradox are the clearest available. Pairs directly with the Theoretical Minimum textbook.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Modern Quantum Mechanics &mdash; J.J. Sakurai &amp; Jim Napolitano</div>
+              <div class="res-desc">The graduate-level standard. Starts with Stern-Gerlach and builds the full formalism: kets, operators, position/momentum representations, time evolution, symmetry, angular momentum, and perturbation theory. Read after Griffiths when you want the same material at higher mathematical maturity.</div>
+              <div class="res-tags"><span class="rtag book">Graduate text</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The bridge to quantum computing:</b> When you understand that a qubit IS a 2-dimensional Hilbert space, that quantum gates ARE unitary operators, and that measurement IS projection, quantum computing becomes physics expressed as circuit diagrams. The formalism learned here is identical to the quantum computing formalism &mdash; just different notation.</div>
+      </div>
+    </div>
+
+    <!-- QP Step 3: QFT Basics -->
+    <div class="step" id="qp2">
+      <div class="step-head" onclick="tog('qp2')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info"><div class="step-title">Quantum Field Theory Basics &mdash; particles as field excitations</div><div class="step-meta">Months 8-14 &middot; ~100 hours</div></div>
+        <div class="step-arrow" id="a-qp2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Quantum Field Theory for the Gifted Amateur &mdash; Lancaster &amp; Blundell</div>
+              <div class="res-desc">The most accessible QFT textbook. Written explicitly for self-learners who know QM and want to understand particle physics. Covers classical fields, canonical quantization, Feynman diagrams, QED, renormalization, and the Standard Model. Each chapter is short with worked examples and exercises.</div>
+              <div class="res-tags"><span class="rtag must">Best first QFT book</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDfPUNusx1EpWiBQTvaHYKIqB-kNOqelS" target="_blank" class="res-link">David Tong &mdash; QFT Lectures (Cambridge, YouTube + notes) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">David Tong's Cambridge QFT lectures with free lecture notes at damtp.cam.ac.uk/user/tong/qft.html. Widely considered the best free QFT lectures available. Covers canonical quantization, propagators, Feynman diagrams, QED, and the renormalization group. The notes are beautifully written.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best free QFT</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">An Introduction to Quantum Field Theory &mdash; Peskin &amp; Schroeder</div>
+              <div class="res-desc">The standard graduate QFT textbook. Comprehensive and rigorous: covers QED, renormalization, non-Abelian gauge theories, and the Standard Model. Extremely dense &mdash; use Lancaster as your primary and Peskin as your reference. The exercises are famously difficult but deeply instructive.</div>
+              <div class="res-tags"><span class="rtag book">Graduate reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>QFT is a marathon:</b> This is arguably the hardest subject in physics. Plan for 6+ months of consistent study. Read Lancaster chapters first for physical intuition, then read the corresponding Tong lecture notes for mathematical precision, then attempt Peskin problems for depth. One chapter per week is a sustainable pace.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

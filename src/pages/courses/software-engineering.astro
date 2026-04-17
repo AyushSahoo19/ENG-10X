@@ -1,0 +1,209 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Software Engineering — Polymath.Sys" activeNav="courses">
+    <div class="track-header">
+      <div class="track-badge badge-java">Full Program &middot; 10-14 months</div>
+      <div class="track-title">Software Engineering &mdash; building systems that survive contact with reality</div>
+      <div class="track-sub">Writing code is 20% of software engineering. The other 80% is design, testing, deployment, maintenance, and collaboration. This track covers the full lifecycle: SDLC, design patterns, testing strategies, CI/CD, Agile, DevOps, clean code, and architecture. These are the skills that make you a senior engineer.</div>
+    </div>
+
+    <!-- SE Step 1: Clean Code & Principles -->
+    <div class="step" id="se0">
+      <div class="step-head" onclick="tog('se0')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">Clean Code &amp; SOLID Principles &mdash; write code humans can read</div><div class="step-meta">Months 1-2 &middot; ~30 hours</div></div>
+        <div class="step-arrow" id="a-se0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Clean Code &mdash; Robert C. Martin</div>
+              <div class="res-desc">The foundational book on writing readable, maintainable code. Covers naming, functions, comments, formatting, error handling, boundaries, unit tests, and classes. Read the first 10 chapters and apply every principle to your own codebase immediately. The before/after refactoring examples are gold.</div>
+              <div class="res-tags"><span class="rtag must">Must-read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@ArjanCodes" target="_blank" class="res-link">ArjanCodes &mdash; Software Design in Python (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Practical SOLID principles, design patterns, and refactoring techniques demonstrated in Python. His code smell videos show you how to identify and fix bad code patterns. Watch the SOLID series first, then the design patterns playlist.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">A Philosophy of Software Design &mdash; John Ousterhout</div>
+              <div class="res-desc">A shorter, sharper alternative to Clean Code. Ousterhout's key idea: complexity is the root of all software evil, and the primary job of a software designer is to minimize it. His concepts of "deep modules" and "tactical vs strategic programming" will change how you think about API design.</div>
+              <div class="res-tags"><span class="rtag must">Essential read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://refactoring.guru/" target="_blank" class="res-link">Refactoring.Guru &mdash; Design Patterns &amp; Refactoring <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free visual resource for design patterns and refactoring techniques. Every pattern has diagrams, pseudocode, and real-world examples in multiple languages. Bookmark and use as a reference whenever you encounter a design problem. The catalog covers all 23 GoF patterns plus extras.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Bookmark this</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The refactoring exercise:</b> Take your oldest, messiest project. Apply Clean Code principles: rename variables for clarity, extract functions, remove dead code, add meaningful tests. The diff between before and after IS your learning artifact. Do this once a month with progressively larger codebases.</div>
+      </div>
+    </div>
+
+    <!-- SE Step 2: Design Patterns -->
+    <div class="step" id="se1">
+      <div class="step-head" onclick="tog('se1')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">Design Patterns &mdash; reusable solutions to recurring problems</div><div class="step-meta">Months 3-4 &middot; ~35 hours</div></div>
+        <div class="step-arrow" id="a-se1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Head First Design Patterns &mdash; Freeman &amp; Robson</div>
+              <div class="res-desc">The most accessible design patterns book. Uses visual teaching, humor, and Java examples to make patterns intuitive. Covers: Strategy, Observer, Decorator, Factory, Singleton, Command, Adapter, Facade, Template Method, Iterator, Composite, State, and Proxy. Start here before the GoF book.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc" target="_blank" class="res-link">Christopher Okhravi &mdash; Design Patterns (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Clear, methodical video explanations of every GoF design pattern. Each video is 15-30 minutes with UML diagrams and code. Watch alongside Head First to reinforce each pattern from a different angle.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Design Patterns: Elements of Reusable Object-Oriented Software &mdash; Gang of Four</div>
+              <div class="res-desc">The original GoF book. Dense but definitive. Use as a reference after Head First, not as your first read. The 23 patterns described here form the shared vocabulary of software engineering. Knowing when NOT to use a pattern is as important as knowing the pattern itself.</div>
+              <div class="res-tags"><span class="rtag book">Reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The pattern trap:</b> Do not try to use every pattern everywhere. The goal is to recognize when a problem naturally fits a pattern, not to force patterns onto simple code. Start with Strategy, Observer, and Factory &mdash; they appear in almost every production codebase. Master those three deeply before learning the rest.</div>
+      </div>
+    </div>
+
+    <!-- SE Step 3: Testing -->
+    <div class="step" id="se2">
+      <div class="step-head" onclick="tog('se2')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Testing &mdash; unit tests, integration tests, TDD, property-based testing</div><div class="step-meta">Months 4-5 &middot; ~30 hours</div></div>
+        <div class="step-arrow" id="a-se2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Test-Driven Development by Example &mdash; Kent Beck</div>
+              <div class="res-desc">The foundational TDD book by its creator. Beck walks through building real features test-first, showing the red-green-refactor cycle in practice. Short, practical, and convincing. Read in a weekend, then practice TDD on your next three features to build the muscle memory.</div>
+              <div class="res-tags"><span class="rtag must">Foundational</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=EZ05e7EMOLM" target="_blank" class="res-link">Fireship &mdash; Testing explained in 100 seconds + longer guides <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Quick overviews of unit testing, integration testing, E2E testing, mocking, and CI testing pipelines. Fireship's density is ideal for getting the big picture fast before diving into books and practice.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://martinfowler.com/testing/" target="_blank" class="res-link">Martin Fowler &mdash; Testing articles (martinfowler.com) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free articles on test pyramids, test doubles, integration testing strategies, and testing microservices. Fowler's "Test Pyramid" and "Contract Test" articles are industry-standard references. Read when you need to design a testing strategy for a real project.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Industry reference</span><span class="rtag book">Articles</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Testing practice rule:</b> Every new feature you build from now on starts with a failing test. Write the test, watch it fail, write the minimum code to pass, refactor. After 30 features built this way, TDD becomes automatic. The investment pays for itself within 3 months through fewer bugs and faster debugging.</div>
+      </div>
+    </div>
+
+    <!-- SE Step 4: CI/CD & DevOps -->
+    <div class="step" id="se3">
+      <div class="step-head" onclick="tog('se3')">
+        <div class="step-num num-java">4</div>
+        <div class="step-info"><div class="step-title">CI/CD &amp; DevOps &mdash; automated pipelines, containers, infrastructure</div><div class="step-meta">Months 6-8 &middot; ~45 hours</div></div>
+        <div class="step-arrow" id="a-se3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=3c-iBn73dDE" target="_blank" class="res-link">TechWorld with Nana &mdash; Docker Tutorial for Beginners (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">3-hour comprehensive Docker tutorial covering images, containers, volumes, networks, Docker Compose, and Dockerfile best practices. Nana's tutorials are the clearest DevOps content on YouTube. Follow with her Kubernetes tutorial next.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Start here</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://docs.github.com/en/actions" target="_blank" class="res-link">GitHub Actions &mdash; official documentation <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Build your CI/CD pipeline directly in GitHub. Free for public repos, generous free tier for private. Set up: lint on push, run tests on PR, build Docker image, deploy to staging. The workflow syntax is YAML-based and well-documented. Every project you build should have a CI pipeline from day one.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Set up immediately</span><span class="rtag tool">Tool</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The Phoenix Project &mdash; Gene Kim, Kevin Behr, George Spafford</div>
+              <div class="res-desc">A novel about DevOps transformation. Tells the story of a VP of IT trying to save a company from its own broken deployment processes. Makes the business case for CI/CD, infrastructure as code, and the three ways of DevOps. Read in a weekend &mdash; it will change how you think about deployment.</div>
+              <div class="res-tags"><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Your DevOps pipeline project:</b> Dockerize one of your existing projects. Write a Dockerfile, create a docker-compose.yml for local development, set up GitHub Actions for CI (lint + test + build), and deploy to Railway or Render on merge to main. This end-to-end pipeline is what production teams actually use.</div>
+      </div>
+    </div>
+
+    <!-- SE Step 5: Architecture -->
+    <div class="step" id="se4">
+      <div class="step-head" onclick="tog('se4')">
+        <div class="step-num num-java">5</div>
+        <div class="step-info"><div class="step-title">Software Architecture &mdash; making the big decisions that are hard to reverse</div><div class="step-meta">Months 9-12 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-se4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Clean Architecture &mdash; Robert C. Martin</div>
+              <div class="res-desc">Covers the dependency rule, SOLID at the architecture level, component principles, and the clean architecture pattern (entities, use cases, interface adapters, frameworks). The key insight: make your business logic independent of frameworks, databases, and UI. This keeps systems maintainable for years.</div>
+              <div class="res-tags"><span class="rtag must">Must-read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@markrichards5014" target="_blank" class="res-link">Mark Richards &mdash; Software Architecture Monday (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Weekly 10-minute videos on architecture topics: microservices vs monoliths, event-driven architecture, service mesh, CQRS, saga pattern. Bite-sized and practical. Co-author of "Fundamentals of Software Architecture" which is another excellent reference.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://martinfowler.com/architecture/" target="_blank" class="res-link">Martin Fowler &mdash; Architecture articles (martinfowler.com) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free articles on microservices, event sourcing, CQRS, strangler fig pattern, bounded contexts, and more. Fowler's writing is the industry standard for software architecture communication. His "Patterns of Enterprise Application Architecture" is also a canonical reference.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag book">Articles</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The architecture rule of thumb:</b> Start monolithic, split when you must. Microservices add operational complexity that kills small teams. Build a well-structured monolith with clear module boundaries. When a specific module needs independent scaling or a different deployment cadence, extract it. Premature decomposition is the #1 architecture mistake.</div>
+      </div>
+    </div>
+</PhaseLayout>

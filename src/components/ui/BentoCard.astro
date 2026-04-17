@@ -1,0 +1,74 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  span?: 'single' | 'double' | 'full';
+  href?: string;
+}
+
+const { title, subtitle, span = 'single', href } = Astro.props;
+const Tag = href ? 'a' : 'div';
+---
+
+<Tag class:list={['bento-card', `bento-${span}`]} href={href}>
+  <div class="bento-header">
+    <h3 class="bento-title">{title}</h3>
+    {subtitle && <span class="tech-label">{subtitle}</span>}
+  </div>
+  <div class="bento-body">
+    <slot />
+  </div>
+</Tag>
+
+<style>
+  .bento-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    transition: transform var(--transition-smooth),
+                box-shadow var(--transition-smooth),
+                border-color var(--transition-smooth);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .bento-card:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    border-color: var(--card-border-hover);
+  }
+
+  .bento-single { grid-column: span 1; }
+  .bento-double { grid-column: span 2; }
+  .bento-full   { grid-column: 1 / -1; }
+
+  .bento-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+  }
+
+  .bento-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .bento-body {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .bento-double,
+    .bento-full {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

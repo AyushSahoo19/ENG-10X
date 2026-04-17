@@ -1,0 +1,255 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Computer Science — Polymath.Sys" activeNav="courses">
+    <div class="track-header">
+      <div class="track-badge badge-dsa">Full Curriculum &middot; 12-18 months</div>
+      <div class="track-title">Computer Science &mdash; from first principles to systems mastery</div>
+      <div class="track-sub">A complete CS degree distilled into the topics that matter. Operating systems, networks, compilers, databases, theory of computation, and computer architecture. Every topic builds on the previous one. This is the knowledge that separates engineers who build reliable systems from those who copy-paste Stack Overflow.</div>
+    </div>
+
+    <!-- CS Step 1: Computer Architecture -->
+    <div class="step" id="cs0">
+      <div class="step-head" onclick="tog('cs0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">Computer Architecture &mdash; how machines actually execute code</div><div class="step-meta">Months 1-2 &middot; ~40 hours</div></div>
+        <div class="step-arrow" id="a-cs0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.nand2tetris.org/" target="_blank" class="res-link">Nand2Tetris (Build a Modern Computer from First Principles) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The single best course for understanding how computers work from the ground up. You build a complete computer starting from NAND gates, through an ALU, CPU, assembler, VM, compiler, and OS. Free on Coursera (audit) and nand2tetris.org. Part I covers hardware, Part II covers software. Do both.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Must-do first</span><span class="rtag vid">Coursera</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://csapp.cs.cmu.edu/" target="_blank" class="res-link">CS:APP &mdash; Computer Systems: A Programmer's Perspective (Bryant &amp; O'Hallaron) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The CMU textbook that every serious systems programmer reads. Covers data representation, machine-level programming, memory hierarchy, linking, exceptional control flow, virtual memory, and concurrency. The labs (available free online) are legendary. Do the bomb lab and attack lab at minimum.</div>
+              <div class="res-tags"><span class="rtag must">Core textbook</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Ben Eater &mdash; Building an 8-bit breadboard computer (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">44 videos where Ben Eater physically builds a working 8-bit computer on breadboards. Watching him wire up the clock, registers, ALU, RAM, and control logic makes digital circuits visceral. Best visual supplement to Nand2Tetris.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Patterson &amp; Hennessy &mdash; Computer Organization and Design (RISC-V Edition)</div>
+              <div class="res-desc">The standard textbook for computer architecture courses worldwide. Covers instruction sets, pipelining, memory hierarchies, and parallelism using RISC-V. Pair with the UC Berkeley CS61C lectures on YouTube for the full experience.</div>
+              <div class="res-tags"><span class="rtag book">Textbook</span><span class="rtag must">Reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>What you actually build:</b> Complete Nand2Tetris Part I (hardware) first. Then read CS:APP chapters 1-6 while doing the labs. By the end you should be able to explain how a C function call turns into machine instructions, how the CPU fetches/decodes/executes, and why cache locality matters for performance.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 2: Operating Systems -->
+    <div class="step" id="cs1">
+      <div class="step-head" onclick="tog('cs1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Operating Systems &mdash; processes, memory, file systems, concurrency</div><div class="step-meta">Months 3-5 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-cs1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" class="res-link">OSTEP &mdash; Operating Systems: Three Easy Pieces (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best OS textbook ever written, completely free at pages.cs.wisc.edu/~remzi/OSTEP. Covers virtualization (processes, scheduling, virtual memory), concurrency (threads, locks, semaphores, deadlock), and persistence (I/O, file systems, journaling). Written with humor and clarity that makes hard topics accessible.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Best OS textbook</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/" target="_blank" class="res-link">MIT 6.828 &mdash; Operating System Engineering (xv6) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The MIT OS course built around xv6, a teaching OS written in C that implements core Unix concepts in ~10k lines. The labs have you implement system calls, page tables, multithreading, a file system, and a network driver. This is where theory becomes real code.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Hands-on labs</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@JacobSorworker" target="_blank" class="res-link">Jacob Sorber &mdash; Systems Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short, focused videos on Unix systems programming: fork, exec, pipes, signals, sockets, threads, mutexes. Each video is 10-15 minutes and covers one concept with working C code. Perfect supplement when OSTEP chapters feel abstract.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The project checkpoint:</b> After finishing OSTEP and the xv6 labs, write a simple shell in C that supports pipes, redirection, and background processes. Then write a user-space thread library. These two projects prove you understand processes and concurrency at the system call level.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 3: Computer Networks -->
+    <div class="step" id="cs2">
+      <div class="step-head" onclick="tog('cs2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Computer Networks &mdash; TCP/IP, HTTP, sockets, protocols</div><div class="step-meta">Months 5-7 &middot; ~45 hours</div></div>
+        <div class="step-arrow" id="a-cs2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm" target="_blank" class="res-link">Computer Networking: A Top-Down Approach &mdash; Kurose &amp; Ross <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The standard networking textbook used by most universities. Starts from the application layer (HTTP, DNS, SMTP) and works down to the physical layer. The Wireshark labs let you capture and analyze real network traffic. Free lecture videos and supplementary material on the authors' website.</div>
+              <div class="res-tags"><span class="rtag must">Standard textbook</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@PowerCertAnimatedVideos" target="_blank" class="res-link">PowerCert Animated Videos &mdash; Networking Fundamentals (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Clear animated explanations of networking concepts: OSI model, TCP vs UDP, DNS, DHCP, NAT, subnetting, VLANs. Each video is 5-15 minutes. Watch before reading the corresponding Kurose chapter to build intuition first.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://beej.us/guide/bgnet/" target="_blank" class="res-link">Beej's Guide to Network Programming <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The classic free guide to socket programming in C. Covers TCP/UDP sockets, client-server architecture, multiplexing with select/poll. After reading this, you can build a chat server, an HTTP server, or a simple load balancer from scratch.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Essential for sockets</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoCMsyE1cvdWKsLVyf6cPwCLDIZnOj0NS" target="_blank" class="res-link">Hussein Nasser &mdash; Networking &amp; Backend Engineering (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Deep dives into TCP internals, HTTP/2, HTTP/3, TLS handshakes, connection pooling, and how real systems handle networking at scale. The practical perspective that textbooks miss. His "TCP is way more complicated than you think" series is exceptional.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Build to prove mastery:</b> Write an HTTP/1.1 server from scratch in C using sockets. It should handle GET requests, serve static files, support persistent connections, and return proper status codes. Then add multithreading. This single project touches networking, OS concepts, and C programming simultaneously.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 4: Databases -->
+    <div class="step" id="cs3">
+      <div class="step-head" onclick="tog('cs3')">
+        <div class="step-num num-dsa">4</div>
+        <div class="step-info"><div class="step-title">Databases &mdash; storage engines, query optimization, transactions</div><div class="step-meta">Months 7-9 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-cs3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLSE8ODhjZXjbj8BMuIrRcacnQh20hmY9g" target="_blank" class="res-link">CMU 15-445 &mdash; Database Systems (Andy Pavlo, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Andy Pavlo's legendary CMU database course, free on YouTube. Covers storage engines, buffer pool management, B+ trees, hash indexes, query processing, query optimization, concurrency control (2PL, MVCC), and crash recovery. The projects have you build a complete database storage engine in C++. Best database course available anywhere.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best DB course</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Designing Data-Intensive Applications &mdash; Martin Kleppmann</div>
+              <div class="res-desc">The "DDIA" book. Covers data models, storage engines, encoding, replication, partitioning, transactions, consistency, batch processing, and stream processing. This is the bridge between database theory and distributed systems engineering. Every senior engineer has read this book.</div>
+              <div class="res-tags"><span class="rtag must">Must-read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cstack.github.io/db_tutorial/" target="_blank" class="res-link">Let's Build a Simple Database &mdash; cstack.github.io <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A free tutorial that walks you through building a SQLite clone in C from scratch. You implement a REPL, SQL compiler, virtual machine, B-tree storage, and persistence. Understanding how a database works internally changes how you write queries forever.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Build project</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The key insight for interviews:</b> Understanding B+ trees, write-ahead logging, and MVCC at the implementation level is what separates senior database engineers from junior ones. When you can explain why PostgreSQL uses MVCC instead of 2PL, and the trade-offs involved, you demonstrate deep systems thinking.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 5: Compilers -->
+    <div class="step" id="cs4">
+      <div class="step-head" onclick="tog('cs4')">
+        <div class="step-num num-dsa">5</div>
+        <div class="step-info"><div class="step-title">Compilers &mdash; lexing, parsing, code generation, optimization</div><div class="step-meta">Months 10-12 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-cs4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://craftinginterpreters.com/" target="_blank" class="res-link">Crafting Interpreters &mdash; Robert Nystrom (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best introduction to compilers/interpreters, completely free at craftinginterpreters.com. You build two complete interpreters: jlox (tree-walking, in Java) and clox (bytecode VM, in C). Covers scanning, parsing, ASTs, closures, garbage collection, classes, and optimization. Beautifully written with hand-drawn illustrations.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Start here</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykys1AhBkOBs7gfT" target="_blank" class="res-link">Stanford CS143 &mdash; Compilers (Alex Aiken, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's compiler course, free on YouTube. Covers formal grammars, lexical analysis, LR parsing, semantic analysis, code generation, and register allocation. More theoretical than Crafting Interpreters. Watch after finishing jlox to deepen your formal understanding.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://llvm.org/docs/tutorial/" target="_blank" class="res-link">LLVM Kaleidoscope Tutorial <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Official LLVM tutorial where you build a simple programming language that compiles to native code via LLVM IR. This bridges the gap between interpreters and real compiled languages. After Crafting Interpreters, this shows you how production compilers (Clang, Rust, Swift) actually work.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Advanced project</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Your compiler project:</b> Complete both parts of Crafting Interpreters (jlox + clox). Then design your own small language: pick a niche (config language, shell scripting, math expressions), write a spec, build the compiler. Having a working language on your GitHub is one of the most impressive portfolio pieces possible.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 6: Theory of Computation -->
+    <div class="step" id="cs5">
+      <div class="step-head" onclick="tog('cs5')">
+        <div class="step-num num-dsa">6</div>
+        <div class="step-info"><div class="step-title">Theory of Computation &mdash; automata, computability, complexity</div><div class="step-meta">Months 12-14 &middot; ~40 hours</div></div>
+        <div class="step-arrow" id="a-cs5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs5">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to the Theory of Computation &mdash; Michael Sipser</div>
+              <div class="res-desc">The gold-standard textbook. Covers finite automata, regular expressions, context-free grammars, pushdown automata, Turing machines, decidability, reducibility, and complexity theory (P, NP, NP-completeness). Sipser's proof style is the clearest in the field. Focus on chapters 1-7.</div>
+              <div class="res-tags"><span class="rtag must">Gold standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz" target="_blank" class="res-link">Easy Theory &mdash; Theory of Computation (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short, clear video explanations of every concept in Sipser's book. Use as a companion when the formal proofs feel dense. His NFA-to-DFA conversion and pumping lemma videos are particularly helpful.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/" target="_blank" class="res-link">MIT 18.404J &mdash; Theory of Computation (Sipser himself, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Sipser teaching his own textbook at MIT. Free lecture videos, problem sets, and exams on OCW. Watching the author explain his own material adds layers of insight you cannot get from reading alone. The NP-completeness lectures are masterful.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Author's own lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why this matters practically:</b> Understanding P vs NP is not just theory. When you encounter a problem that is NP-hard, you know to reach for approximation algorithms or heuristics instead of wasting weeks trying to find a polynomial solution. This knowledge saves real engineering time on real systems.</div>
+      </div>
+    </div>
+</PhaseLayout>
