@@ -1,0 +1,106 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Computing Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/quantum-computing" class="cpn-back">&larr; Quantum Computing Overview</a>
+  <div class="cpn">
+    <a href="/courses/qc-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/qc-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/qc-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ai">Phase 2 &middot; Months 3-9 &middot; ~110h</div>
+    <div class="track-title">Phase 2 &mdash; Algorithms &amp; Error Correction</div>
+    <div class="track-sub">Master the landmark quantum algorithms (Grover, Shor, QFT, phase estimation) and then tackle the engineering challenge of making quantum computation reliable through error correction and the stabilizer formalism.</div>
+  </div>
+
+    <!-- QC Step 2: Quantum Algorithms -->
+    <div class="step" id="qc1">
+      <div class="step-head" onclick="tog('qc1')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Quantum Algorithms &mdash; Grover, Shor, QFT, phase estimation</div><div class="step-meta">Months 3-6 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-qc1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qc1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL1826E60FD05B44E4" target="_blank" class="res-link">Umesh Vazirani &mdash; Quantum Computation (UC Berkeley, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full Berkeley quantum computing course by one of the field's founders. Covers quantum Fourier transform, phase estimation, Shor's factoring algorithm, Grover's search, and quantum simulation. Rigorous but accessible. The best free lecture series for quantum algorithms.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best lectures</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://scottaaronson.blog/?p=3943" target="_blank" class="res-link">Scott Aaronson &mdash; Quantum Computing Since Democritus (free lecture notes) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Aaronson's lecture notes covering computational complexity, quantum computing, and their intersections. His writing is witty, deep, and connects quantum computing to the biggest questions in theoretical computer science. Free lecture notes at scottaaronson.com. The book version adds more depth.</div>
+              <div class="res-tags"><span class="rtag free">Free notes</span><span class="rtag book">Book/Notes</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://quantumalgorithmzoo.org/" target="_blank" class="res-link">Quantum Algorithm Zoo <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A comprehensive catalog of all known quantum algorithms with speedup classifications, references, and brief descriptions. Maintained by Stephen Jordan. Use as a reference to understand the landscape of quantum advantage. Bookmark this &mdash; it is the most complete list available.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The key realization:</b> Quantum computers are not faster at everything &mdash; they exploit specific mathematical structures (periodicity for Shor, amplitude amplification for Grover) to achieve speedup. Understanding WHICH problems have quantum advantage is more important than implementing every algorithm. Focus on understanding the structure of speedup, not just the circuits.</div>
+      </div>
+    </div>
+
+    <!-- QC Step 3: Quantum Error Correction -->
+    <div class="step" id="qc2">
+      <div class="step-head" onclick="tog('qc2')">
+        <div class="step-num num-ai">3</div>
+        <div class="step-info"><div class="step-title">Quantum Error Correction &mdash; making quantum computation reliable</div><div class="step-meta">Months 6-9 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-qc2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qc2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Nielsen &amp; Chuang &mdash; Chapters 10-12 (Quantum Error Correction)</div>
+              <div class="res-desc">The QEC chapters in the bible. Covers the Shor code, Steane code, CSS codes, stabilizer formalism, fault-tolerant computation, and the threshold theorem. Dense but essential. The stabilizer formalism is the language of modern QEC research.</div>
+              <div class="res-tags"><span class="rtag must">Essential theory</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/watch?v=ckVaQXEUKWo" target="_blank" class="res-link">Qiskit &mdash; Quantum Error Correction tutorials <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Hands-on tutorials implementing bit-flip codes, phase-flip codes, the Shor code, and surface codes in Qiskit. Run error correction circuits on simulators to see how syndrome measurement and correction work in practice.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Interactive</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://arxiv.org/abs/0904.2557" target="_blank" class="res-link">Surface Codes: Towards Practical Large-Scale Quantum Computation &mdash; Fowler et al. <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The key review paper on surface codes, which are the leading candidate for fault-tolerant quantum computation. Explains the toric code, planar code, and practical decoding algorithms. This is the code Google and IBM are racing to implement at scale.</div>
+              <div class="res-tags"><span class="rtag free">Free on arXiv</span><span class="rtag must">Key paper</span><span class="rtag book">Research</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The research frontier:</b> QEC is the bottleneck for practical quantum computing. If you deeply understand surface codes and stabilizer formalism, you are positioned at the exact frontier where industry and academia are investing billions. This is one of the highest-leverage topics you can master.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

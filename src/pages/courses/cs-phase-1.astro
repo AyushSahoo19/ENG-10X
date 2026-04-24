@@ -1,0 +1,114 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Computer Science Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/cs" class="cpn-back">&larr; Computer Science Overview</a>
+  <div class="cpn">
+    <a href="/courses/cs-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/cs-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/cs-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-dsa">Phase 1 &middot; Months 1-5 &middot; ~100h</div>
+    <div class="track-title">Phase 1 &mdash; Hardware Foundations &amp; Operating Systems</div>
+    <div class="track-sub">Build your mental model of the machine from the ground up. You start with logic gates, build a complete computer, then zoom out to understand how operating systems manage processes, memory, and concurrency on top of that hardware.</div>
+  </div>
+
+    <!-- CS Step 1: Computer Architecture -->
+    <div class="step" id="cs0">
+      <div class="step-head" onclick="tog('cs0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info"><div class="step-title">Computer Architecture &mdash; how machines actually execute code</div><div class="step-meta">Months 1-2 &middot; ~40 hours</div></div>
+        <div class="step-arrow" id="a-cs0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.nand2tetris.org/" target="_blank" class="res-link">Nand2Tetris (Build a Modern Computer from First Principles) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The single best course for understanding how computers work from the ground up. You build a complete computer starting from NAND gates, through an ALU, CPU, assembler, VM, compiler, and OS. Free on Coursera (audit) and nand2tetris.org. Part I covers hardware, Part II covers software. Do both.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Must-do first</span><span class="rtag vid">Coursera</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://csapp.cs.cmu.edu/" target="_blank" class="res-link">CS:APP &mdash; Computer Systems: A Programmer's Perspective (Bryant &amp; O'Hallaron) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The CMU textbook that every serious systems programmer reads. Covers data representation, machine-level programming, memory hierarchy, linking, exceptional control flow, virtual memory, and concurrency. The labs (available free online) are legendary. Do the bomb lab and attack lab at minimum.</div>
+              <div class="res-tags"><span class="rtag must">Core textbook</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Ben Eater &mdash; Building an 8-bit breadboard computer (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">44 videos where Ben Eater physically builds a working 8-bit computer on breadboards. Watching him wire up the clock, registers, ALU, RAM, and control logic makes digital circuits visceral. Best visual supplement to Nand2Tetris.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Patterson &amp; Hennessy &mdash; Computer Organization and Design (RISC-V Edition)</div>
+              <div class="res-desc">The standard textbook for computer architecture courses worldwide. Covers instruction sets, pipelining, memory hierarchies, and parallelism using RISC-V. Pair with the UC Berkeley CS61C lectures on YouTube for the full experience.</div>
+              <div class="res-tags"><span class="rtag book">Textbook</span><span class="rtag must">Reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>What you actually build:</b> Complete Nand2Tetris Part I (hardware) first. Then read CS:APP chapters 1-6 while doing the labs. By the end you should be able to explain how a C function call turns into machine instructions, how the CPU fetches/decodes/executes, and why cache locality matters for performance.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 2: Operating Systems -->
+    <div class="step" id="cs1">
+      <div class="step-head" onclick="tog('cs1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Operating Systems &mdash; processes, memory, file systems, concurrency</div><div class="step-meta">Months 3-5 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-cs1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/" target="_blank" class="res-link">OSTEP &mdash; Operating Systems: Three Easy Pieces (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best OS textbook ever written, completely free at pages.cs.wisc.edu/~remzi/OSTEP. Covers virtualization (processes, scheduling, virtual memory), concurrency (threads, locks, semaphores, deadlock), and persistence (I/O, file systems, journaling). Written with humor and clarity that makes hard topics accessible.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Best OS textbook</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/" target="_blank" class="res-link">MIT 6.828 &mdash; Operating System Engineering (xv6) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The MIT OS course built around xv6, a teaching OS written in C that implements core Unix concepts in ~10k lines. The labs have you implement system calls, page tables, multithreading, a file system, and a network driver. This is where theory becomes real code.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Hands-on labs</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@JacobSorworker" target="_blank" class="res-link">Jacob Sorber &mdash; Systems Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short, focused videos on Unix systems programming: fork, exec, pipes, signals, sockets, threads, mutexes. Each video is 10-15 minutes and covers one concept with working C code. Perfect supplement when OSTEP chapters feel abstract.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The project checkpoint:</b> After finishing OSTEP and the xv6 labs, write a simple shell in C that supports pipes, redirection, and background processes. Then write a user-space thread library. These two projects prove you understand processes and concurrency at the system call level.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

@@ -1,0 +1,353 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100 Days CS/SE — Polymath.Sys" activeNav="challenges">
+
+<style>
+  .ch-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .ch-back:hover { color:#111; }
+  .ch-sibling-nav { display:flex; gap:0; margin-bottom:2rem; border:1px solid #222; width:fit-content; flex-wrap:wrap; }
+  .csn-link { font-family:monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .csn-link:last-child { border-right:none; }
+  .csn-link.active { background:#111; color:#fff; }
+  .csn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+</style>
+
+  <a href="/challenges" class="ch-back">&larr; All Challenges</a>
+  <div class="ch-sibling-nav">
+    <a href="/challenges/cs-se" class="csn-link active">CS/SE</a>
+    <a href="/challenges/ai-ml-dl" class="csn-link">AI/ML/DL</a>
+    <a href="/challenges/polymath" class="csn-link">Polymath</a>
+    <a href="/challenges/competitive-programming" class="csn-link">Comp. Prog.</a>
+    <a href="/challenges/system-design" class="csn-link">System Design</a>
+  </div>
+
+    <div class="track-header">
+      <div class="track-badge badge-dsa">100 Days -- 50 Projects -- Full CS/SE Stack</div>
+      <div class="track-title">100 Days of Computer Science & Software Engineering</div>
+      <div class="track-sub">From programming fundamentals to capstone integration. Every concept a working CS graduate should know, compressed into 100 days of deliberate practice. 50 hands-on projects ensure nothing stays theoretical. You will write code every single day.</div>
+    </div>
+
+    <div class="do-box">
+      <b>Challenge Rules:</b> (1) Code for a minimum of 2 hours every day -- no exceptions, no zero days. (2) Push at least one commit to GitHub daily. (3) Complete all 5 projects per block before moving to the next. (4) Write a brief learning log entry each day in your repo's JOURNAL.md. (5) Every project must have a README with problem statement, architecture, and how to run it. (6) If you miss a day, do double the next day -- never skip two consecutive days.
+    </div>
+
+    <!-- Days 1-10 -->
+    <div class="step" id="ch0-s0">
+      <div class="step-head" onclick="tog('ch0-s0')">
+        <div class="step-num num-dsa">1</div>
+        <div class="step-info">
+          <div class="step-title">Days 1--10: Programming Fundamentals + Git</div>
+          <div class="step-meta">Variables, control flow, functions, recursion, file I/O, version control</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s0">
+        <p><b>Day 1:</b> Environment setup -- install your language (Python/Java/C++), editor, Git. Write Hello World, push first commit.</p>
+        <p><b>Day 2:</b> Variables, data types, type casting. Primitive vs reference types. Memory model basics.</p>
+        <p><b>Day 3:</b> Conditionals -- if/else, switch/match, ternary. Boolean logic and truth tables.</p>
+        <p><b>Day 4:</b> Loops -- for, while, do-while. Loop invariants. Nested loops and time complexity intuition.</p>
+        <p><b>Day 5:</b> Functions -- parameters, return types, scope, pure functions. DRY principle.</p>
+        <p><b>Day 6:</b> Recursion -- base cases, recursive calls, call stack visualization. Factorial, Fibonacci, power.</p>
+        <p><b>Day 7:</b> Arrays and strings -- traversal, search, slicing, common patterns (two-pointer, sliding window intro).</p>
+        <p><b>Day 8:</b> File I/O -- reading/writing files, CSV parsing, JSON handling. Error handling with try/catch.</p>
+        <p><b>Day 9:</b> Git deep dive -- branching, merging, rebasing, conflict resolution, .gitignore, commit messages.</p>
+        <p><b>Day 10:</b> Integration day -- combine everything learned into a cohesive project.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - CLI Calculator:</b> Supports +, -, *, /, %, power, sqrt. Handles edge cases (division by zero, overflow). Input history saved to file.<br>
+          <b>P2 - Password Generator & Validator:</b> Generate passwords with configurable length/complexity. Validate against rules (uppercase, digits, symbols). Entropy calculator.<br>
+          <b>P3 - File Organizer:</b> Scans a directory and sorts files into folders by extension. Handles duplicates, logs actions, supports undo via a manifest file.<br>
+          <b>P4 - Markdown to HTML Converter:</b> Parse headers, bold, italic, links, lists, code blocks. Recursion for nested lists. Output valid HTML with basic CSS.<br>
+          <b>P5 - Git Contribution Tracker:</b> Parse git log output, visualize commits per day/week as a heatmap in the terminal. Track streaks, show stats.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 11-20 -->
+    <div class="step" id="ch0-s1">
+      <div class="step-head" onclick="tog('ch0-s1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info">
+          <div class="step-title">Days 11--20: Data Structures Basics</div>
+          <div class="step-meta">Arrays, linked lists, stacks, queues, hash maps, sets</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s1">
+        <p><b>Day 11:</b> Dynamic arrays -- how ArrayList/vector works internally. Amortized O(1) append. Implement from scratch.</p>
+        <p><b>Day 12:</b> Singly linked lists -- node structure, insertion, deletion, traversal, reversal.</p>
+        <p><b>Day 13:</b> Doubly linked lists and circular linked lists. When to use each. LRU cache intro.</p>
+        <p><b>Day 14:</b> Stacks -- array-based and linked-list-based. Call stack connection. Parentheses matching.</p>
+        <p><b>Day 15:</b> Queues -- standard queue, deque, circular buffer. BFS preview.</p>
+        <p><b>Day 16:</b> Hash maps -- hashing functions, collision handling (chaining, open addressing). Load factor.</p>
+        <p><b>Day 17:</b> Hash sets, multisets. Frequency counting. Anagram detection, two-sum pattern.</p>
+        <p><b>Day 18:</b> Comparing data structures -- when to use what. Time/space complexity tables.</p>
+        <p><b>Day 19:</b> Iterator pattern -- building custom iterators. Lazy evaluation.</p>
+        <p><b>Day 20:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Linked List Library:</b> Full implementation: singly, doubly, circular. Supports insert, delete, reverse, merge sort, cycle detection (Floyd's). Published as a reusable module with tests.<br>
+          <b>P2 - Stack Calculator (Shunting Yard):</b> Infix to postfix conversion using Dijkstra's shunting-yard algorithm. Evaluate postfix expressions. Support parentheses, operator precedence, functions (sin, cos, log).<br>
+          <b>P3 - LRU Cache:</b> Implement LRU cache using doubly linked list + hash map. O(1) get/put. Configurable capacity. TTL-based expiry. Thread-safe version.<br>
+          <b>P4 - Spell Checker:</b> Hash-based dictionary lookup. Suggest corrections using edit distance (Levenshtein). Frequency-weighted suggestions. Load dictionary from file.<br>
+          <b>P5 - Task Queue System:</b> Priority queue with multiple priority levels. FIFO within same priority. Supports enqueue, dequeue, peek, reschedule. Persistent storage to disk.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 21-30 -->
+    <div class="step" id="ch0-s2">
+      <div class="step-head" onclick="tog('ch0-s2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info">
+          <div class="step-title">Days 21--30: Advanced DS + Algorithms</div>
+          <div class="step-meta">Trees, graphs, heaps, sorting, searching, dynamic programming</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s2">
+        <p><b>Day 21:</b> Binary trees -- traversals (inorder, preorder, postorder, level-order). Recursive vs iterative.</p>
+        <p><b>Day 22:</b> Binary search trees -- insert, delete, search, min/max, successor/predecessor. Balancing intro.</p>
+        <p><b>Day 23:</b> Heaps -- min-heap, max-heap. Heapify. Priority queue implementation. Heap sort.</p>
+        <p><b>Day 24:</b> Graph representation -- adjacency list, adjacency matrix. Directed vs undirected, weighted vs unweighted.</p>
+        <p><b>Day 25:</b> Graph traversal -- BFS, DFS. Connected components. Cycle detection. Topological sort.</p>
+        <p><b>Day 26:</b> Shortest paths -- Dijkstra, Bellman-Ford. Negative edges. Relaxation concept.</p>
+        <p><b>Day 27:</b> Sorting algorithms -- merge sort, quicksort, counting sort, radix sort. Stability. When to use which.</p>
+        <p><b>Day 28:</b> Binary search variations -- search in rotated array, first/last occurrence, search space problems.</p>
+        <p><b>Day 29:</b> Dynamic programming -- memoization vs tabulation. Overlapping subproblems. Optimal substructure. Classic problems: knapsack, LCS, coin change.</p>
+        <p><b>Day 30:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Graph Visualizer:</b> Interactive graph builder in the terminal or browser. Add/remove nodes and edges. Run BFS, DFS, Dijkstra with step-by-step animation. Export adjacency list.<br>
+          <b>P2 - Pathfinding Simulator:</b> Grid-based pathfinder. Implement A*, Dijkstra, BFS. Visualize explored nodes and final path. Obstacle placement. Compare algorithm performance.<br>
+          <b>P3 - Expression Tree Evaluator:</b> Parse mathematical expressions into a tree. Support variables, functions, derivatives (symbolic differentiation). Print tree structure.<br>
+          <b>P4 - Compression Tool:</b> Implement Huffman coding from scratch. Compress and decompress files. Show compression ratio. Compare with run-length encoding.<br>
+          <b>P5 - DP Problem Solver:</b> Solve and visualize 10 classic DP problems. Show the DP table being filled step by step. Trace back optimal solution. Include knapsack, LCS, edit distance, matrix chain multiplication.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 31-40 -->
+    <div class="step" id="ch0-s3">
+      <div class="step-head" onclick="tog('ch0-s3')">
+        <div class="step-num num-dsa">4</div>
+        <div class="step-info">
+          <div class="step-title">Days 31--40: OOP + Design Patterns</div>
+          <div class="step-meta">SOLID principles, creational/structural/behavioral patterns, refactoring</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s3">
+        <p><b>Day 31:</b> OOP fundamentals -- classes, objects, encapsulation, abstraction. Constructors and destructors.</p>
+        <p><b>Day 32:</b> Inheritance and polymorphism -- method overriding, abstract classes, interfaces. Liskov substitution.</p>
+        <p><b>Day 33:</b> SOLID principles deep dive -- Single Responsibility, Open/Closed, Liskov, Interface Segregation, Dependency Inversion. Code examples for each.</p>
+        <p><b>Day 34:</b> Creational patterns -- Singleton, Factory Method, Abstract Factory, Builder, Prototype.</p>
+        <p><b>Day 35:</b> Structural patterns -- Adapter, Bridge, Composite, Decorator, Facade, Proxy.</p>
+        <p><b>Day 36:</b> Behavioral patterns -- Observer, Strategy, Command, State, Template Method, Iterator.</p>
+        <p><b>Day 37:</b> Refactoring techniques -- extract method, extract class, replace conditional with polymorphism. Code smells.</p>
+        <p><b>Day 38:</b> Unit testing -- test-driven development (TDD), mocking, test doubles. Write tests for previous projects.</p>
+        <p><b>Day 39:</b> Clean code principles -- naming, functions, comments, formatting. Reading "Clean Code" key chapters.</p>
+        <p><b>Day 40:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Design Pattern Showcase:</b> Implement all 7 most-used patterns in a single codebase: Singleton (config manager), Factory (shape creator), Observer (event system), Strategy (sorting), Decorator (logging), Builder (query builder), Command (undo/redo).<br>
+          <b>P2 - Plugin Architecture:</b> Build a plugin system where features are loaded dynamically. Uses Factory + Strategy + Observer patterns. Plugin interface, plugin registry, event bus.<br>
+          <b>P3 - State Machine Engine:</b> Generic finite state machine. Define states, transitions, guards. Visualize state diagram. Use for: traffic light, vending machine, game character AI.<br>
+          <b>P4 - ORM Lite:</b> A mini object-relational mapper. Map classes to SQL tables. Support CRUD operations, simple queries, relationships (one-to-many). Uses Builder and Proxy patterns.<br>
+          <b>P5 - Test Framework:</b> Build a minimal testing framework from scratch: test discovery, assertions, setup/teardown, mocking. Run tests, report results with pass/fail counts and timing.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 41-50 -->
+    <div class="step" id="ch0-s4">
+      <div class="step-head" onclick="tog('ch0-s4')">
+        <div class="step-num num-dsa">5</div>
+        <div class="step-info">
+          <div class="step-title">Days 41--50: Databases + SQL</div>
+          <div class="step-meta">Relational modeling, SQL mastery, indexing, transactions, NoSQL</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s4">
+        <p><b>Day 41:</b> Relational model -- tables, rows, columns, primary keys, foreign keys. ER diagrams. Normalization (1NF, 2NF, 3NF, BCNF).</p>
+        <p><b>Day 42:</b> SQL fundamentals -- SELECT, WHERE, ORDER BY, GROUP BY, HAVING. Aggregate functions.</p>
+        <p><b>Day 43:</b> Joins deep dive -- INNER, LEFT, RIGHT, FULL, CROSS, SELF joins. Join algorithms (nested loop, hash, merge).</p>
+        <p><b>Day 44:</b> Subqueries, CTEs, window functions -- ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, running totals.</p>
+        <p><b>Day 45:</b> Indexing -- B-tree indexes, hash indexes, composite indexes. EXPLAIN plans. Query optimization.</p>
+        <p><b>Day 46:</b> Transactions -- ACID properties. Isolation levels. Deadlocks. Optimistic vs pessimistic locking.</p>
+        <p><b>Day 47:</b> NoSQL overview -- document stores (MongoDB), key-value (Redis), column-family (Cassandra), graph (Neo4j). When to use what.</p>
+        <p><b>Day 48:</b> Database design -- schema design for real applications. Denormalization trade-offs. Partitioning and sharding intro.</p>
+        <p><b>Day 49:</b> Stored procedures, triggers, views, materialized views. Database security basics.</p>
+        <p><b>Day 50:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - SQL Query Engine:</b> Parse a subset of SQL (SELECT, WHERE, JOIN, GROUP BY). Execute against CSV files loaded into memory. Support basic query optimization (predicate pushdown).<br>
+          <b>P2 - Mini ORM:</b> Map objects to PostgreSQL tables. Auto-generate CREATE TABLE from class definitions. Support migrations (add column, rename). Connection pooling.<br>
+          <b>P3 - Database Indexer:</b> Build a B-tree index from scratch. Support insert, search, range queries. Benchmark: indexed vs sequential scan performance on 1M rows.<br>
+          <b>P4 - E-Commerce Schema:</b> Design and implement a full e-commerce database: users, products, orders, payments, reviews, inventory. Write 30 complex queries covering every SQL concept. Seed with realistic data.<br>
+          <b>P5 - Redis Clone:</b> In-memory key-value store supporting GET, SET, DEL, EXPIRE, LPUSH, LRANGE. TCP server. Persistence via append-only file. Benchmark throughput.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 51-60 -->
+    <div class="step" id="ch0-s5">
+      <div class="step-head" onclick="tog('ch0-s5')">
+        <div class="step-num num-dsa">6</div>
+        <div class="step-info">
+          <div class="step-title">Days 51--60: Operating Systems + Networks</div>
+          <div class="step-meta">Processes, threads, memory, TCP/IP, HTTP, DNS, sockets</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s5">
+        <p><b>Day 51:</b> Process model -- process creation, states, context switching. PCB. fork/exec model.</p>
+        <p><b>Day 52:</b> Threads -- user threads vs kernel threads. Thread pools. Race conditions. Mutexes, semaphores.</p>
+        <p><b>Day 53:</b> Memory management -- virtual memory, paging, page tables, TLB. Malloc internals.</p>
+        <p><b>Day 54:</b> File systems -- inodes, directories, journaling. ext4/NTFS basics. Disk scheduling.</p>
+        <p><b>Day 55:</b> Networking fundamentals -- OSI model, TCP/IP stack. IP addressing, subnetting, routing basics.</p>
+        <p><b>Day 56:</b> TCP deep dive -- 3-way handshake, flow control, congestion control. TCP vs UDP trade-offs.</p>
+        <p><b>Day 57:</b> HTTP protocol -- request/response, methods, headers, status codes. HTTP/1.1 vs HTTP/2 vs HTTP/3.</p>
+        <p><b>Day 58:</b> DNS -- recursive vs iterative resolution. Caching. Record types (A, AAAA, CNAME, MX, TXT). CDN basics.</p>
+        <p><b>Day 59:</b> Socket programming -- TCP and UDP sockets. Client-server model. Non-blocking I/O. Select/poll/epoll.</p>
+        <p><b>Day 60:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Unix Shell:</b> Build a shell from scratch: command parsing, piping (|), redirection (>, >>), background processes (&), built-in commands (cd, pwd, history, exit). Signal handling (Ctrl+C).<br>
+          <b>P2 - HTTP Server:</b> Serve static files over HTTP/1.1. Parse requests, route to handlers. Support GET/POST. Content-Type detection. Concurrent connections via threading or async I/O.<br>
+          <b>P3 - Chat Application:</b> Real-time TCP chat. Multiple rooms, usernames, private messages. Server handles multiple clients concurrently. Message history stored to file.<br>
+          <b>P4 - Memory Allocator:</b> Implement malloc/free using sbrk. First-fit, best-fit, and buddy system strategies. Coalescing free blocks. Measure fragmentation.<br>
+          <b>P5 - Network Scanner:</b> Scan a subnet for active hosts (ICMP ping). Port scanner for common ports. Service detection. Output formatted results. Concurrent scanning for speed.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 61-70 -->
+    <div class="step" id="ch0-s6">
+      <div class="step-head" onclick="tog('ch0-s6')">
+        <div class="step-num num-dsa">7</div>
+        <div class="step-info">
+          <div class="step-title">Days 61--70: System Design + Architecture</div>
+          <div class="step-meta">Scalability, load balancing, caching, microservices, message queues</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s6">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s6">
+        <p><b>Day 61:</b> Scalability fundamentals -- vertical vs horizontal scaling. Stateless services. CAP theorem.</p>
+        <p><b>Day 62:</b> Load balancing -- round-robin, least connections, consistent hashing. Layer 4 vs Layer 7.</p>
+        <p><b>Day 63:</b> Caching -- cache strategies (write-through, write-back, write-around). Cache invalidation. CDN caching. Redis/Memcached.</p>
+        <p><b>Day 64:</b> Message queues -- pub/sub, point-to-point. Kafka, RabbitMQ concepts. Exactly-once, at-least-once delivery.</p>
+        <p><b>Day 65:</b> Microservices architecture -- decomposition strategies, API gateway, service discovery, circuit breaker.</p>
+        <p><b>Day 66:</b> Database scaling -- replication (master-slave, master-master). Sharding strategies. Read replicas.</p>
+        <p><b>Day 67:</b> API design -- REST principles, versioning, pagination, rate limiting. GraphQL overview. gRPC for internal services.</p>
+        <p><b>Day 68:</b> Authentication and security -- JWT, OAuth 2.0, session-based auth. HTTPS, CORS, XSS, CSRF, SQL injection prevention.</p>
+        <p><b>Day 69:</b> Monitoring and observability -- logging, metrics, tracing. ELK stack. Prometheus + Grafana. Alerting.</p>
+        <p><b>Day 70:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - URL Shortener:</b> Full system: shorten URLs, redirect, track clicks. Base62 encoding. Rate limiting. Analytics dashboard. Redis cache + PostgreSQL storage. REST API + simple frontend.<br>
+          <b>P2 - Real-Time Chat System:</b> WebSocket-based chat with rooms. Message persistence. Online status. Typing indicators. Horizontal scaling with Redis pub/sub. JWT authentication.<br>
+          <b>P3 - Rate Limiter:</b> Implement token bucket, sliding window, and fixed window algorithms. Middleware for HTTP servers. Distributed rate limiting via Redis. Configurable per-user limits.<br>
+          <b>P4 - Task Scheduler:</b> Distributed task queue like a mini-Celery. Submit tasks via API, workers pull and execute. Retry logic, dead letter queue, priority. Dashboard showing task status.<br>
+          <b>P5 - API Gateway:</b> Reverse proxy with routing, authentication, rate limiting, request/response transformation. Load balancing across backend services. Health checks. Configuration via YAML.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 71-80 -->
+    <div class="step" id="ch0-s7">
+      <div class="step-head" onclick="tog('ch0-s7')">
+        <div class="step-num num-dsa">8</div>
+        <div class="step-info">
+          <div class="step-title">Days 71--80: Web Development Full Stack</div>
+          <div class="step-meta">HTML/CSS, JavaScript, React/Vue, Node/Express, full-stack apps</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s7">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s7">
+        <p><b>Day 71:</b> HTML5 + CSS3 deep dive -- semantic HTML, flexbox, grid, responsive design, accessibility basics.</p>
+        <p><b>Day 72:</b> JavaScript core -- ES6+ features, closures, promises, async/await, event loop, prototypal inheritance.</p>
+        <p><b>Day 73:</b> DOM manipulation, event handling, fetch API. Build a dynamic SPA without frameworks.</p>
+        <p><b>Day 74:</b> React fundamentals -- components, JSX, props, state, hooks (useState, useEffect, useContext).</p>
+        <p><b>Day 75:</b> React advanced -- custom hooks, useReducer, React Router, context API, performance (memo, useMemo, useCallback).</p>
+        <p><b>Day 76:</b> Node.js + Express -- routing, middleware, error handling, file uploads. REST API best practices.</p>
+        <p><b>Day 77:</b> Full-stack integration -- React frontend + Express backend + PostgreSQL. Environment variables, CORS, deployment.</p>
+        <p><b>Day 78:</b> State management -- Redux Toolkit or Zustand. API caching with React Query/SWR.</p>
+        <p><b>Day 79:</b> Testing -- Jest, React Testing Library, Cypress for E2E. Test pyramid. Code coverage.</p>
+        <p><b>Day 80:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - Portfolio Site:</b> Responsive personal site with dark mode, project showcase, blog section. Built with semantic HTML, CSS Grid, vanilla JS. Deployed on Vercel/Netlify.<br>
+          <b>P2 - Kanban Board:</b> Trello-like board with drag-and-drop. React frontend, Express backend, PostgreSQL. User auth, multiple boards, real-time updates via WebSocket.<br>
+          <b>P3 - Markdown Blog Engine:</b> Write posts in Markdown, render as HTML. Tags, search, pagination. RSS feed. Admin panel for CRUD. Syntax highlighting for code blocks.<br>
+          <b>P4 - E-Commerce Store:</b> Product listing, cart, checkout flow. Stripe integration (test mode). User accounts, order history, admin dashboard. Full CRUD API.<br>
+          <b>P5 - Real-Time Dashboard:</b> Live data visualization dashboard. WebSocket data stream, Chart.js/D3.js charts, filterable tables. Responsive layout. Data from a public API or mock generator.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 81-90 -->
+    <div class="step" id="ch0-s8">
+      <div class="step-head" onclick="tog('ch0-s8')">
+        <div class="step-num num-dsa">9</div>
+        <div class="step-info">
+          <div class="step-title">Days 81--90: DevOps + Cloud</div>
+          <div class="step-meta">Docker, CI/CD, Kubernetes, AWS/GCP, IaC, monitoring</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s8">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s8">
+        <p><b>Day 81:</b> Linux command line mastery -- process management, permissions, shell scripting, cron, systemd.</p>
+        <p><b>Day 82:</b> Docker fundamentals -- images, containers, Dockerfile, docker-compose. Multi-stage builds. Volumes.</p>
+        <p><b>Day 83:</b> Docker advanced -- networking, health checks, resource limits. Dockerize all previous projects.</p>
+        <p><b>Day 84:</b> CI/CD -- GitHub Actions. Build, test, lint, deploy pipeline. Branch protection. Automated releases.</p>
+        <p><b>Day 85:</b> Cloud fundamentals -- AWS free tier: EC2, S3, RDS, Lambda, API Gateway. Or GCP equivalents.</p>
+        <p><b>Day 86:</b> Infrastructure as Code -- Terraform basics. Declare infrastructure, plan, apply. State management.</p>
+        <p><b>Day 87:</b> Kubernetes fundamentals -- pods, deployments, services, ingress. kubectl. Minikube for local dev.</p>
+        <p><b>Day 88:</b> Kubernetes advanced -- ConfigMaps, Secrets, persistent volumes, HPA, rolling updates.</p>
+        <p><b>Day 89:</b> Monitoring + logging -- Prometheus metrics, Grafana dashboards, centralized logging with ELK or Loki.</p>
+        <p><b>Day 90:</b> Integration and project completion day.</p>
+        <div class="do-box">
+          <b>5 Projects:</b><br>
+          <b>P1 - CI/CD Pipeline:</b> GitHub Actions pipeline for a full-stack app: lint, unit test, integration test, build Docker image, push to registry, deploy to staging, run E2E tests, promote to production.<br>
+          <b>P2 - Docker Compose Stack:</b> Multi-service app: React frontend + Node API + PostgreSQL + Redis + Nginx reverse proxy. All orchestrated via docker-compose. One command to spin up entire environment.<br>
+          <b>P3 - Kubernetes Deployment:</b> Deploy a microservices app to Kubernetes. 3 services, ingress controller, persistent storage, ConfigMaps for environment. Auto-scaling based on CPU. Rolling updates with zero downtime.<br>
+          <b>P4 - Infrastructure as Code:</b> Terraform project provisioning: VPC, subnets, EC2/ECS, RDS, S3, CloudFront. Modular design. Remote state in S3. Environment separation (dev/staging/prod).<br>
+          <b>P5 - Monitoring Stack:</b> Deploy Prometheus + Grafana + Alertmanager. Custom dashboards for application metrics. Alert rules for latency, error rate, resource usage. Slack/email notifications.
+        </div>
+      </div>
+    </div>
+
+    <!-- Days 91-100 -->
+    <div class="step" id="ch0-s9">
+      <div class="step-head" onclick="tog('ch0-s9')">
+        <div class="step-num num-dsa">10</div>
+        <div class="step-info">
+          <div class="step-title">Days 91--100: Capstone Integration</div>
+          <div class="step-meta">5 major projects combining everything from all 9 previous blocks</div>
+        </div>
+        <div class="step-arrow" id="a-ch0-s9">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ch0-s9">
+        <p><b>Day 91:</b> Capstone planning -- choose 5 projects that combine multiple domains. Architecture diagrams, tech stack decisions, task breakdown.</p>
+        <p><b>Day 92--93:</b> Capstone Project 1 build sprint.</p>
+        <p><b>Day 94--95:</b> Capstone Project 2 build sprint.</p>
+        <p><b>Day 96--97:</b> Capstone Project 3 build sprint.</p>
+        <p><b>Day 98:</b> Capstone Projects 4 and 5 build sprint.</p>
+        <p><b>Day 99:</b> Polish -- documentation, tests, deployment, README for all capstones.</p>
+        <p><b>Day 100:</b> Retrospective -- write a comprehensive blog post about the 100-day journey. Update portfolio. Share on LinkedIn.</p>
+        <div class="do-box">
+          <b>5 Capstone Projects:</b><br>
+          <b>P1 - Distributed Key-Value Store:</b> Multi-node KV store with replication, consistency (Raft consensus simplified), partitioning. REST API. Docker-compose cluster. Combines: DS, OS, networking, system design, DevOps.<br>
+          <b>P2 - GitHub Clone (Mini):</b> Git hosting platform: repo creation, file browser, commit history, branch management, pull requests, code review comments. Full-stack React + Node + PostgreSQL. Combines: Git, web dev, databases, auth.<br>
+          <b>P3 - Real-Time Collaborative Editor:</b> Google Docs-style editor. OT or CRDT-based conflict resolution. WebSocket sync. Cursor presence. Document versioning. Combines: DS, algorithms, networking, full-stack, system design.<br>
+          <b>P4 - Container Orchestrator (Mini):</b> Simplified container scheduler: submit jobs, assign to workers, health checks, restart on failure. REST API for management. Combines: OS, networking, system design, Docker, distributed systems.<br>
+          <b>P5 - Developer Platform:</b> Internal developer platform: service catalog, deployment triggers, environment management, logs viewer, metrics dashboard. Integrates with Docker and GitHub Actions. Combines: everything.
+        </div>
+      </div>
+    </div>
+
+</PhaseLayout>

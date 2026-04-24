@@ -1,0 +1,83 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Archimedes — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+  .pm-nav-strip { display:flex; gap:0; border:1px solid #222; width:fit-content; margin-bottom:2rem; }
+  .pmn-link { font-family:monospace; font-size:10px; letter-spacing:0.05em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .pmn-link:last-child { border-right:none; }
+  .pmn-link:hover { background:#f3f3f3; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Ancient · c. 287–212 BCE</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">AC</div>
+      <div>
+        <div class="pm-name">Archimedes</div>
+        <div class="pm-years">c. 287--212 BCE</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The greatest mathematician and engineer of antiquity. Working in Syracuse, Archimedes discovered the principles of buoyancy and the lever, approximated pi with stunning accuracy, and invented war machines that held off the Roman siege for years. He anticipated integral calculus by nearly two thousand years with his method of exhaustion.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Mathematics</span>
+      <span class="rtag must">Physics</span>
+      <span class="rtag vid">Engineering</span>
+      <span class="rtag book">Astronomy</span>
+      <span class="rtag free">Invention</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Discovered the principle of buoyancy (Archimedes' Principle) while analyzing a crown's purity</li>
+        <li>Proved the law of the lever and declared "Give me a place to stand and I will move the Earth"</li>
+        <li>Approximated pi between 3 10/71 and 3 1/7, the best estimate for centuries</li>
+        <li>Invented the Archimedes screw for raising water, still used in modern irrigation</li>
+        <li>Anticipated calculus with the "method of exhaustion" to compute areas and volumes</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." -- Archimedes understood leverage as both a physical and intellectual principle: the right tool amplifies everything.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>The Works of Archimedes</em> -- edited by T. L. Heath</li>
+        <li><em>Archimedes and the Roman Imagination</em> -- Mary Jaeger (2008)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

@@ -1,0 +1,78 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Nikola Tesla — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Modern · 1856–1943</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">NT</div>
+      <div>
+        <div class="pm-name">Nikola Tesla</div>
+        <div class="pm-years">1856--1943</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The inventor who electrified the world. Tesla's alternating current (AC) system won the "War of Currents" against Edison's direct current and became the global standard for electrical power. He held over 300 patents, invented the induction motor, the Tesla coil, radio-controlled devices, and envisioned wireless energy transmission, smartphones, and the internet decades before they existed.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Electrical Engineering</span>
+      <span class="rtag must">Physics</span>
+      <span class="rtag vid">Invention</span>
+      <span class="rtag book">Mechanical Engineering</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Designed the AC polyphase power system that electrified the modern world</li>
+        <li>Invented the induction motor, Tesla coil, and rotating magnetic field</li>
+        <li>Built the first radio-controlled boat (1898), demonstrating remote control technology</li>
+        <li>Designed the hydroelectric power system at Niagara Falls</li>
+        <li>Envisioned wireless global communication and energy transmission, anticipating Wi-Fi and the internet</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane." -- Tesla's superpower was visualization: he could simulate entire machines in his mind before building them, testing and refining mentally.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>My Inventions: The Autobiography of Nikola Tesla</em> -- Nikola Tesla</li>
+        <li><em>Wizard: The Life and Times of Nikola Tesla</em> -- Marc Seifer (1996)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

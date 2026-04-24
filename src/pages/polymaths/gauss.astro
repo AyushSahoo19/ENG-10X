@@ -1,0 +1,79 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Carl Friedrich Gauss — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Enlightenment · 1777–1855</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">CG</div>
+      <div>
+        <div class="pm-name">Carl Friedrich Gauss</div>
+        <div class="pm-years">1777--1855</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The "Prince of Mathematicians." A child prodigy who famously summed the integers 1 to 100 instantly at age seven, Gauss made fundamental contributions to number theory, algebra, statistics, analysis, differential geometry, geodesy, geophysics, electrostatics, astronomy, and optics. He proved the Fundamental Theorem of Algebra and developed the method of least squares, central to all modern statistics.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Mathematics</span>
+      <span class="rtag must">Astronomy</span>
+      <span class="rtag vid">Physics</span>
+      <span class="rtag book">Statistics</span>
+      <span class="rtag free">Geodesy</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Wrote <em>Disquisitiones Arithmeticae</em> at age 21, reshaping number theory and algebra forever</li>
+        <li>Developed the method of least squares, foundational to regression and all modern statistics</li>
+        <li>Proved the Fundamental Theorem of Algebra (every polynomial has a root in the complex numbers)</li>
+        <li>Discovered the Gaussian (normal) distribution -- the bell curve underpinning all of probability</li>
+        <li>Made breakthroughs in non-Euclidean geometry but kept them private, decades before Bolyai and Lobachevsky published</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"Few, but ripe." -- Gauss's motto. He only published work he considered perfect. His approach: go deep, polish relentlessly, and release only when the result is unassailable. Quality over quantity, though his quantity was still staggering.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>The Prince of Mathematics: Carl Friedrich Gauss</em> -- M. B. W. Tent (2006)</li>
+        <li><em>Gauss: A Biographical Study</em> -- W. K. Buhler (1981)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

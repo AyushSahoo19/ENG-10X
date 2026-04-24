@@ -1,0 +1,296 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100 Days Competitive Programming — Polymath.Sys" activeNav="challenges">
+
+<style>
+  .ch-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .ch-back:hover { color:#111; }
+  .ch-sibling-nav { display:flex; gap:0; margin-bottom:2rem; border:1px solid #222; width:fit-content; flex-wrap:wrap; }
+  .csn-link { font-family:monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .csn-link:last-child { border-right:none; }
+  .csn-link.active { background:#111; color:#fff; }
+  .csn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+</style>
+
+  <a href="/challenges" class="ch-back">&larr; All Challenges</a>
+  <div class="ch-sibling-nav">
+    <a href="/challenges/cs-se" class="csn-link">CS/SE</a>
+    <a href="/challenges/ai-ml-dl" class="csn-link">AI/ML/DL</a>
+    <a href="/challenges/polymath" class="csn-link">Polymath</a>
+    <a href="/challenges/competitive-programming" class="csn-link active">Comp. Prog.</a>
+    <a href="/challenges/system-design" class="csn-link">System Design</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-java">100 Days -- 300+ Problems -- Codeforces 800 to 2000+</div>
+    <div class="track-title">100 Days of Competitive Programming</div>
+    <div class="track-sub">Structured progression from beginner (Codeforces rating ~800) to expert level (~2000+). Each day covers one concept with 3 practice problems and 1 contest-style challenge. By day 100, you will have solved 400+ problems and internalized every major algorithmic pattern used in competitions.</div>
+  </div>
+
+  <div class="do-box">
+    <b>Challenge Rules:</b> (1) Solve all 4 problems each day -- 3 practice + 1 contest challenge. Time yourself on the contest problem (max 45 min). (2) If stuck for 30 minutes, read the editorial, then re-implement from memory without looking. (3) Participate in at least 2 live Codeforces/AtCoder contests per week. (4) Maintain a "patterns notebook" -- for each problem type, record: pattern name, when to apply, template code. (5) Upsolve every contest: solve problems you could not solve during the contest. (6) Track your rating progression weekly.
+  </div>
+
+  <div class="step" id="ch3-s0">
+    <div class="step-head" onclick="tog('ch3-s0')">
+      <div class="step-num num-java">1</div>
+      <div class="step-info">
+        <div class="step-title">Days 1--10: Implementation + Brute Force (Rating 800--1000)</div>
+        <div class="step-meta">I/O, simulation, basic math, string manipulation, brute force</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s0">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s0">
+      <p><b>Day 1:</b> Fast I/O setup, competitive programming template. Solve 800-rated problems. Pattern: read input carefully, simulate exactly what the problem says.</p>
+      <p><b>Day 2:</b> Basic math -- modular arithmetic, GCD (Euclidean), LCM, primality check. 3 problems + 1 challenge.</p>
+      <p><b>Day 3:</b> String manipulation -- reversal, palindrome check, substring operations, character frequency. 3 problems + 1 challenge.</p>
+      <p><b>Day 4:</b> Array operations -- prefix sums, difference arrays, frequency counting. 3 problems + 1 challenge.</p>
+      <p><b>Day 5:</b> Sorting + searching -- custom comparators, binary search on answer. 3 problems + 1 challenge.</p>
+      <p><b>Day 6:</b> Simulation problems -- follow the instructions literally. Matrix rotation, spiral traversal. 3 problems + 1 challenge.</p>
+      <p><b>Day 7:</b> Brute force -- enumerate all possibilities. Bitmask enumeration for small N. 3 problems + 1 challenge.</p>
+      <p><b>Day 8:</b> Constructive algorithms -- find any valid answer. Greedy construction. 3 problems + 1 challenge.</p>
+      <p><b>Day 9:</b> Two pointers -- sorted array pair sum, merging, partitioning. 3 problems + 1 challenge.</p>
+      <p><b>Day 10:</b> Sliding window -- fixed and variable window, maximum sum subarray. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (20 min each) from the day's topic at 800--1000 rating + 1 contest-style problem (45 min) at 1000--1200 rating. Use Codeforces problemset filter by rating and tag.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s1">
+    <div class="step-head" onclick="tog('ch3-s1')">
+      <div class="step-num num-java">2</div>
+      <div class="step-info">
+        <div class="step-title">Days 11--20: Greedy Algorithms (Rating 1000--1200)</div>
+        <div class="step-meta">Greedy strategies, sorting-based greedy, exchange arguments</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s1">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s1">
+      <p><b>Day 11:</b> Greedy basics -- activity selection, interval scheduling. Prove greedy choice property. 3 problems + 1 challenge.</p>
+      <p><b>Day 12:</b> Greedy with sorting -- sort by one criterion, process greedily. Job scheduling with deadlines. 3 problems + 1 challenge.</p>
+      <p><b>Day 13:</b> Exchange argument proofs -- prove greedy is optimal by showing any swap makes it worse. 3 problems + 1 challenge.</p>
+      <p><b>Day 14:</b> Huffman-style greedy -- always pick the smallest/largest. Priority queue for greedy. 3 problems + 1 challenge.</p>
+      <p><b>Day 15:</b> Greedy on strings -- lexicographically smallest, rearranging characters. 3 problems + 1 challenge.</p>
+      <p><b>Day 16:</b> Greedy on arrays -- minimize/maximize operations, making arrays equal. 3 problems + 1 challenge.</p>
+      <p><b>Day 17:</b> Binary search on answer -- when the answer space is monotonic, binary search for optimal. 3 problems + 1 challenge.</p>
+      <p><b>Day 18:</b> Ternary search -- unimodal functions. Finding minimum/maximum of convex functions. 3 problems + 1 challenge.</p>
+      <p><b>Day 19:</b> Stack-based problems -- next greater element, largest rectangle in histogram, valid parentheses. 3 problems + 1 challenge.</p>
+      <p><b>Day 20:</b> Deque problems -- sliding window maximum, monotonic deque. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (25 min each) at 1000--1200 rating + 1 contest-style problem (45 min) at 1200--1400 rating. Focus on recognizing when greedy works vs when you need DP.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s2">
+    <div class="step-head" onclick="tog('ch3-s2')">
+      <div class="step-num num-java">3</div>
+      <div class="step-info">
+        <div class="step-title">Days 21--30: Dynamic Programming I (Rating 1200--1400)</div>
+        <div class="step-meta">1D DP, 2D DP, knapsack, LCS, LIS, interval DP</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s2">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s2">
+      <p><b>Day 21:</b> DP fundamentals -- overlapping subproblems, optimal substructure. Top-down vs bottom-up. Fibonacci as DP. 3 problems + 1 challenge.</p>
+      <p><b>Day 22:</b> 1D DP -- coin change, house robber, maximum subarray (Kadane). State definition practice. 3 problems + 1 challenge.</p>
+      <p><b>Day 23:</b> 0/1 Knapsack -- item selection with weight constraint. Subset sum. Equal partition. 3 problems + 1 challenge.</p>
+      <p><b>Day 24:</b> Unbounded knapsack -- unlimited items. Coin change (minimum coins), rod cutting. 3 problems + 1 challenge.</p>
+      <p><b>Day 25:</b> LCS and variants -- longest common subsequence, edit distance, shortest common supersequence. 3 problems + 1 challenge.</p>
+      <p><b>Day 26:</b> LIS -- longest increasing subsequence (O(n log n) with patience sort). Number of LIS. 3 problems + 1 challenge.</p>
+      <p><b>Day 27:</b> 2D DP -- grid paths, minimum path sum, unique paths with obstacles. 3 problems + 1 challenge.</p>
+      <p><b>Day 28:</b> Interval DP -- matrix chain multiplication, burst balloons, palindrome partitioning. 3 problems + 1 challenge.</p>
+      <p><b>Day 29:</b> DP on strings -- wildcard matching, regex matching, interleaving strings. 3 problems + 1 challenge.</p>
+      <p><b>Day 30:</b> DP practice day -- 5 mixed DP problems from contests. Focus on state definition speed. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (30 min each) at 1200--1400 rating + 1 contest-style problem (60 min) at 1400--1600 rating. The key skill: defining the DP state correctly within 5 minutes of reading the problem.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s3">
+    <div class="step-head" onclick="tog('ch3-s3')">
+      <div class="step-num num-java">4</div>
+      <div class="step-info">
+        <div class="step-title">Days 31--40: Graph Algorithms I (Rating 1200--1400)</div>
+        <div class="step-meta">BFS, DFS, shortest paths, topological sort, connected components</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s3">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s3">
+      <p><b>Day 31:</b> Graph representation -- adjacency list, edge list. BFS and DFS templates. 3 problems + 1 challenge.</p>
+      <p><b>Day 32:</b> BFS applications -- shortest path in unweighted graph, multi-source BFS, 0-1 BFS. 3 problems + 1 challenge.</p>
+      <p><b>Day 33:</b> DFS applications -- cycle detection, connected components, bipartite check. 3 problems + 1 challenge.</p>
+      <p><b>Day 34:</b> Topological sort -- Kahn's algorithm, DFS-based. Course scheduling, dependency resolution. 3 problems + 1 challenge.</p>
+      <p><b>Day 35:</b> Dijkstra -- priority queue implementation. Shortest path with non-negative weights. Modified Dijkstra problems. 3 problems + 1 challenge.</p>
+      <p><b>Day 36:</b> Bellman-Ford -- negative edges, negative cycle detection. SPFA optimization. 3 problems + 1 challenge.</p>
+      <p><b>Day 37:</b> Floyd-Warshall -- all-pairs shortest paths. Transitive closure. Detect negative cycles. 3 problems + 1 challenge.</p>
+      <p><b>Day 38:</b> Minimum spanning tree -- Kruskal (Union-Find), Prim. Applications: network design, clustering. 3 problems + 1 challenge.</p>
+      <p><b>Day 39:</b> Union-Find (DSU) -- path compression, union by rank. Connected components dynamically. 3 problems + 1 challenge.</p>
+      <p><b>Day 40:</b> Graph practice day -- mixed graph problems from contests. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (30 min each) at 1200--1400 rating + 1 contest-style problem (60 min) at 1400--1600 rating. Build a graph algorithm template library you can copy-paste in contests.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s4">
+    <div class="step-head" onclick="tog('ch3-s4')">
+      <div class="step-num num-java">5</div>
+      <div class="step-info">
+        <div class="step-title">Days 41--50: Number Theory (Rating 1400--1600)</div>
+        <div class="step-meta">Primes, modular arithmetic, combinatorics, matrix exponentiation</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s4">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s4">
+      <p><b>Day 41:</b> Sieve of Eratosthenes -- O(n log log n) prime generation. Smallest prime factor sieve. Segmented sieve. 3 problems + 1 challenge.</p>
+      <p><b>Day 42:</b> Prime factorization -- trial division, Pollard's rho. Divisor count and sum from factorization. 3 problems + 1 challenge.</p>
+      <p><b>Day 43:</b> Modular arithmetic -- modular inverse (Fermat, extended Euclidean). Modular exponentiation. Chinese Remainder Theorem. 3 problems + 1 challenge.</p>
+      <p><b>Day 44:</b> Combinatorics for CP -- nCr mod p (precompute factorials + inverse), Lucas theorem. Catalan numbers. 3 problems + 1 challenge.</p>
+      <p><b>Day 45:</b> Inclusion-exclusion principle -- counting problems, coprime pairs, derangements. Mobius function. 3 problems + 1 challenge.</p>
+      <p><b>Day 46:</b> Matrix exponentiation -- compute n-th Fibonacci in O(log n). Linear recurrences. State transitions as matrices. 3 problems + 1 challenge.</p>
+      <p><b>Day 47:</b> Euler's totient function -- properties, computation. Multiplicative functions. Sum of GCDs. 3 problems + 1 challenge.</p>
+      <p><b>Day 48:</b> Game theory -- Sprague-Grundy theorem, Nim game, composite games. 3 problems + 1 challenge.</p>
+      <p><b>Day 49:</b> Probability in CP -- expected value linearity, random walks, geometric distribution problems. 3 problems + 1 challenge.</p>
+      <p><b>Day 50:</b> Number theory practice day -- mixed problems from Codeforces. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (35 min each) at 1400--1600 rating + 1 contest-style problem (60 min) at 1600--1800 rating. Number theory is the most common unexpected topic in contests -- master it early.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s5">
+    <div class="step-head" onclick="tog('ch3-s5')">
+      <div class="step-num num-java">6</div>
+      <div class="step-info">
+        <div class="step-title">Days 51--60: Dynamic Programming II (Rating 1400--1700)</div>
+        <div class="step-meta">Bitmask DP, digit DP, tree DP, DP optimization</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s5">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s5">
+      <p><b>Day 51:</b> Bitmask DP -- represent subsets as bitmasks. TSP, assignment problem. Iterate over subsets. 3 problems + 1 challenge.</p>
+      <p><b>Day 52:</b> Bitmask DP continued -- SOS (Sum over Subsets) DP. Profile DP (broken tiles). 3 problems + 1 challenge.</p>
+      <p><b>Day 53:</b> Digit DP -- count numbers in range [L, R] with specific properties. Tight constraint. Leading zeros. 3 problems + 1 challenge.</p>
+      <p><b>Day 54:</b> Tree DP -- subtree sizes, rerooting technique. Tree diameter, tree center. 3 problems + 1 challenge.</p>
+      <p><b>Day 55:</b> Tree DP continued -- independent set on tree, vertex cover. Rerooting for all-roots answers. 3 problems + 1 challenge.</p>
+      <p><b>Day 56:</b> DP with data structures -- DP + segment tree, DP + BIT. Speeding up transitions from O(n^2) to O(n log n). 3 problems + 1 challenge.</p>
+      <p><b>Day 57:</b> Convex hull trick -- optimize DP where transition is a linear function. Li Chao tree. 3 problems + 1 challenge.</p>
+      <p><b>Day 58:</b> Divide and conquer DP -- when transition satisfies monotonicity. SMAWK algorithm overview. 3 problems + 1 challenge.</p>
+      <p><b>Day 59:</b> Knuth optimization -- when cost function satisfies quadrilateral inequality. Optimal BST, matrix chain. 3 problems + 1 challenge.</p>
+      <p><b>Day 60:</b> Advanced DP practice day -- mixed problems from Codeforces Div 1/2 C-D level. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (40 min each) at 1400--1700 rating + 1 contest-style problem (75 min) at 1700--1900 rating. Advanced DP is where Div 2 participants separate from Div 1 contestants.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s6">
+    <div class="step-head" onclick="tog('ch3-s6')">
+      <div class="step-num num-java">7</div>
+      <div class="step-info">
+        <div class="step-title">Days 61--70: Graph Algorithms II (Rating 1600--1800)</div>
+        <div class="step-meta">Network flow, matching, strongly connected components, bridges, LCA</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s6">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s6">
+      <p><b>Day 61:</b> Strongly connected components -- Kosaraju's and Tarjan's algorithms. Condensation graph. 3 problems + 1 challenge.</p>
+      <p><b>Day 62:</b> Bridges and articulation points -- Tarjan's algorithm. Block-cut tree. 2-edge-connected components. 3 problems + 1 challenge.</p>
+      <p><b>Day 63:</b> Euler tour and LCA -- lowest common ancestor. Binary lifting. Euler tour for subtree queries. 3 problems + 1 challenge.</p>
+      <p><b>Day 64:</b> Heavy-Light Decomposition -- path queries on trees. Combine with segment tree. 3 problems + 1 challenge.</p>
+      <p><b>Day 65:</b> Centroid decomposition -- divide and conquer on trees. Path counting, distance queries. 3 problems + 1 challenge.</p>
+      <p><b>Day 66:</b> Network flow -- Ford-Fulkerson, Edmonds-Karp (BFS augmentation), Dinic's algorithm. Max-flow min-cut theorem. 3 problems + 1 challenge.</p>
+      <p><b>Day 67:</b> Flow applications -- bipartite matching, minimum vertex cover, maximum independent set (Konig's theorem). 3 problems + 1 challenge.</p>
+      <p><b>Day 68:</b> Min-cost max-flow -- SPFA-based implementation. Assignment problem. 3 problems + 1 challenge.</p>
+      <p><b>Day 69:</b> 2-SAT -- implication graph, SCC reduction. Solving satisfiability constraints. 3 problems + 1 challenge.</p>
+      <p><b>Day 70:</b> Advanced graph practice day -- mixed problems. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (40 min each) at 1600--1800 rating + 1 contest-style problem (75 min) at 1800--2000 rating. Network flow and tree decompositions are the gateway to expert level.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s7">
+    <div class="step-head" onclick="tog('ch3-s7')">
+      <div class="step-num num-java">8</div>
+      <div class="step-info">
+        <div class="step-title">Days 71--80: String Algorithms (Rating 1600--1900)</div>
+        <div class="step-meta">Hashing, KMP, Z-function, suffix array, Aho-Corasick, tries</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s7">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s7">
+      <p><b>Day 71:</b> String hashing -- polynomial hash, collision avoidance, rolling hash. Rabin-Karp pattern matching. 3 problems + 1 challenge.</p>
+      <p><b>Day 72:</b> KMP algorithm -- failure function, pattern matching in O(n + m). Counting occurrences, periods of strings. 3 problems + 1 challenge.</p>
+      <p><b>Day 73:</b> Z-function -- definition, linear construction, applications. Equivalent power to KMP with different flavor. 3 problems + 1 challenge.</p>
+      <p><b>Day 74:</b> Trie -- insert, search, prefix matching. Count distinct substrings. XOR trie for maximum XOR. 3 problems + 1 challenge.</p>
+      <p><b>Day 75:</b> Aho-Corasick -- multi-pattern matching. Failure links. Counting pattern occurrences in text. 3 problems + 1 challenge.</p>
+      <p><b>Day 76:</b> Suffix array -- O(n log n) construction. LCP array. Number of distinct substrings. Pattern searching. 3 problems + 1 challenge.</p>
+      <p><b>Day 77:</b> Manacher's algorithm -- all palindromic substrings in O(n). Palindrome partitioning optimization. 3 problems + 1 challenge.</p>
+      <p><b>Day 78:</b> Suffix automaton -- minimal automaton accepting all suffixes. Number of distinct substrings, longest common substring of multiple strings. 3 problems + 1 challenge.</p>
+      <p><b>Day 79:</b> Palindromic tree (Eertree) -- all distinct palindromic substrings. Count palindromic substrings. 3 problems + 1 challenge.</p>
+      <p><b>Day 80:</b> String practice day -- mixed problems from Codeforces. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (40 min each) at 1600--1900 rating + 1 contest-style problem (75 min) at 1900--2100 rating. String algorithms are the most template-heavy topic -- build a comprehensive library.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s8">
+    <div class="step-head" onclick="tog('ch3-s8')">
+      <div class="step-num num-java">9</div>
+      <div class="step-info">
+        <div class="step-title">Days 81--90: Data Structures + Geometry (Rating 1700--2000)</div>
+        <div class="step-meta">Segment tree, BIT, sparse table, convex hull, sweep line</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s8">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s8">
+      <p><b>Day 81:</b> Segment tree -- build, update, query. Range sum, range min/max. Point update and range query. 3 problems + 1 challenge.</p>
+      <p><b>Day 82:</b> Segment tree with lazy propagation -- range update + range query. Range add, range set. 3 problems + 1 challenge.</p>
+      <p><b>Day 83:</b> Persistent segment tree -- version history, k-th smallest in range. Merge sort tree. 3 problems + 1 challenge.</p>
+      <p><b>Day 84:</b> BIT (Fenwick tree) -- point update, prefix query. 2D BIT. Order statistics. 3 problems + 1 challenge.</p>
+      <p><b>Day 85:</b> Sparse table -- static range minimum query in O(1). Disjoint sparse table. Applications. 3 problems + 1 challenge.</p>
+      <p><b>Day 86:</b> Sqrt decomposition -- Mo's algorithm for offline range queries. Block decomposition. 3 problems + 1 challenge.</p>
+      <p><b>Day 87:</b> Computational geometry basics -- point, line, segment. Cross product, orientation test. Line intersection. 3 problems + 1 challenge.</p>
+      <p><b>Day 88:</b> Convex hull -- Graham scan, Andrew's monotone chain. Convex hull trick for DP. Rotating calipers. 3 problems + 1 challenge.</p>
+      <p><b>Day 89:</b> Sweep line -- event-based processing. Closest pair of points, rectangle union area, segment intersection. 3 problems + 1 challenge.</p>
+      <p><b>Day 90:</b> Advanced DS/geometry practice day. 3 problems + 1 challenge.</p>
+      <div class="do-box">
+        <b>Daily structure:</b> 3 practice problems (45 min each) at 1700--2000 rating + 1 contest-style problem (90 min) at 2000+ rating. These data structures are the backbone of hard competitive programming problems.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch3-s9">
+    <div class="step-head" onclick="tog('ch3-s9')">
+      <div class="step-num num-java">10</div>
+      <div class="step-info">
+        <div class="step-title">Days 91--100: Contest Simulation + Mastery (Rating 1800--2000+)</div>
+        <div class="step-meta">Virtual contests, problem-solving strategy, speed optimization</div>
+      </div>
+      <div class="step-arrow" id="a-ch3-s9">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch3-s9">
+      <p><b>Day 91:</b> Virtual contest -- Codeforces Div 2. Full 2-hour simulation. Upsolve all unsolved problems afterward.</p>
+      <p><b>Day 92:</b> Review + weakness analysis. Identify weakest topics. Drill 5 problems from weakest area.</p>
+      <p><b>Day 93:</b> Virtual contest -- Codeforces Div 1+2 combined. Focus on solving A-D within time.</p>
+      <p><b>Day 94:</b> Advanced techniques mashup -- problems combining DP + graphs, or math + data structures. 4 mixed problems.</p>
+      <p><b>Day 95:</b> Virtual contest -- AtCoder ABC. Different problem style. Focus on speed for A-E.</p>
+      <p><b>Day 96:</b> Speed training -- solve 10 problems rated 1200--1400 as fast as possible. Target: under 10 min each.</p>
+      <p><b>Day 97:</b> Virtual contest -- Codeforces Educational round. Upsolve everything.</p>
+      <p><b>Day 98:</b> Build your competitive programming library -- clean implementations of every algorithm. Tested, documented, copy-paste ready.</p>
+      <p><b>Day 99:</b> Virtual contest -- hardest one yet. Aim for Div 1 C/D level problems.</p>
+      <p><b>Day 100:</b> Retrospective -- compile statistics: problems solved, rating progression, strongest/weakest topics. Set goals for next 100 days. Publish your CP journey blog post.</p>
+      <div class="do-box">
+        <b>Final 10 days structure:</b> Alternate between virtual contests and targeted practice. The goal is not new concepts but fluency and speed. By day 100 you should be able to solve Div 2 A-D consistently within contest time and occasionally crack E.
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

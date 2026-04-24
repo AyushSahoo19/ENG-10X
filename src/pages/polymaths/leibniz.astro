@@ -1,0 +1,80 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Gottfried Leibniz — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Renaissance · 1646–1716</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">GL</div>
+      <div>
+        <div class="pm-name">Gottfried Wilhelm Leibniz</div>
+        <div class="pm-years">1646--1716</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">Perhaps the last true "universal genius." Leibniz made major contributions to mathematics, philosophy, physics, theology, law, politics, history, and engineering. He independently invented calculus (with a notation superior to Newton's that we still use today), envisioned binary arithmetic, designed mechanical calculators, and dreamed of a universal language of logic that anticipated computer science by 250 years.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Mathematics</span>
+      <span class="rtag must">Philosophy</span>
+      <span class="rtag vid">Logic</span>
+      <span class="rtag book">Physics</span>
+      <span class="rtag free">Law</span>
+      <span class="rtag must">Engineering</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Co-invented calculus with superior notation (dy/dx, integral sign) used universally today</li>
+        <li>Developed binary arithmetic -- the foundation of all modern digital computing</li>
+        <li>Created the <em>Monadology</em>, one of the most original metaphysical systems in philosophy</li>
+        <li>Built the Stepped Reckoner, one of the first mechanical calculators that could multiply and divide</li>
+        <li>Envisioned the <em>characteristica universalis</em> -- a formal language for all reasoning, anticipating mathematical logic and AI</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"Nothing is more important than to see the sources of invention, which are, in my opinion, more interesting than the inventions themselves." -- Leibniz valued the process of discovery over its products, a hallmark of the polymath mindset.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>Leibniz: An Intellectual Biography</em> -- Maria Rosa Antognazza (2009)</li>
+        <li><em>Discourse on Metaphysics and Other Essays</em> -- Gottfried Leibniz</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

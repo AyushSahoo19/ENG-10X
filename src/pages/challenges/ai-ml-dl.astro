@@ -1,0 +1,356 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100 Days AI/ML/DL — Polymath.Sys" activeNav="challenges">
+
+<style>
+  .ch-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .ch-back:hover { color:#111; }
+  .ch-sibling-nav { display:flex; gap:0; margin-bottom:2rem; border:1px solid #222; width:fit-content; flex-wrap:wrap; }
+  .csn-link { font-family:monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .csn-link:last-child { border-right:none; }
+  .csn-link.active { background:#111; color:#fff; }
+  .csn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+</style>
+
+  <a href="/challenges" class="ch-back">&larr; All Challenges</a>
+  <div class="ch-sibling-nav">
+    <a href="/challenges/cs-se" class="csn-link">CS/SE</a>
+    <a href="/challenges/ai-ml-dl" class="csn-link active">AI/ML/DL</a>
+    <a href="/challenges/polymath" class="csn-link">Polymath</a>
+    <a href="/challenges/competitive-programming" class="csn-link">Comp. Prog.</a>
+    <a href="/challenges/system-design" class="csn-link">System Design</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ai">100 Days -- 50 Projects -- Zero to Production AI</div>
+    <div class="track-title">100 Days of AI / ML / Deep Learning</div>
+    <div class="track-sub">From Python data basics to deploying production ML systems. Every major AI paradigm covered: classical ML, deep learning, computer vision, NLP, transformers, generative AI, LLMs, and MLOps. 50 projects take you from Jupyter notebooks to production pipelines.</div>
+  </div>
+
+  <div class="do-box">
+    <b>Challenge Rules:</b> (1) Write or train something every day -- no passive video days without code. (2) Every project must run end-to-end: data in, prediction out. (3) Track all experiments in a structured log (Weights &amp; Biases free tier or manual CSV). (4) Push notebooks and scripts to GitHub daily. (5) Write model cards for every trained model: what data, what metrics, what limitations. (6) By day 100 you must have at least 3 models deployed and publicly accessible.
+  </div>
+
+  <!-- Days 1-10 -->
+  <div class="step" id="ch1-s0">
+    <div class="step-head" onclick="tog('ch1-s0')">
+      <div class="step-num num-ai">1</div>
+      <div class="step-info">
+        <div class="step-title">Days 1--10: Python for Data Science + NumPy/Pandas</div>
+        <div class="step-meta">Data wrangling fluency, visualization, exploratory analysis</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s0">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s0">
+      <p><b>Day 1:</b> Environment setup -- Anaconda/miniconda, Jupyter Lab, virtual environments. Python refresher: list comprehensions, generators, decorators, context managers.</p>
+      <p><b>Day 2:</b> NumPy fundamentals -- arrays, dtypes, shape, reshape. Vectorized operations vs Python loops. Broadcasting rules.</p>
+      <p><b>Day 3:</b> NumPy advanced -- linear algebra (dot, matmul, inv, eig). Random number generation. Structured arrays. Memory layout (C vs F order).</p>
+      <p><b>Day 4:</b> Pandas Series and DataFrame -- creation, indexing (loc, iloc), boolean masking, chaining.</p>
+      <p><b>Day 5:</b> Pandas data cleaning -- handling missing values, duplicates, type coercion. String operations. apply/map/applymap.</p>
+      <p><b>Day 6:</b> Pandas groupby, pivot tables, merge/join, concat. Reshaping: melt, stack, unstack.</p>
+      <p><b>Day 7:</b> Matplotlib deep dive -- figure/axes architecture, subplots, customization. Publication-quality plots.</p>
+      <p><b>Day 8:</b> Seaborn -- statistical visualizations: distributions, relationships, categorical plots, heatmaps, pair plots.</p>
+      <p><b>Day 9:</b> Exploratory Data Analysis methodology -- profiling, outlier detection, correlation analysis, feature distributions.</p>
+      <p><b>Day 10:</b> Integration day -- end-to-end EDA on a real dataset from raw data to insights report.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - NumPy Linear Algebra Toolkit:</b> Implement matrix operations from scratch using NumPy: Gaussian elimination, LU decomposition, eigenvalue solver, SVD. Benchmark against NumPy built-ins. Visualize transformations.<br>
+        <b>P2 - COVID-19 Data Analysis:</b> Full EDA on Johns Hopkins COVID-19 dataset. Trend analysis, country comparisons, rolling averages, wave detection. Interactive plots with Plotly. Published as a Jupyter notebook.<br>
+        <b>P3 - Financial Data Dashboard:</b> Pull stock data via yfinance. Compute returns, volatility, Sharpe ratio, correlation matrix. Candlestick charts, moving averages. Exportable PDF report.<br>
+        <b>P4 - Web Scraping Pipeline:</b> Scrape a structured site (e.g., books.toscrape.com). BeautifulSoup + requests. Clean data with Pandas. Store to SQLite. Schedule with cron.<br>
+        <b>P5 - Automated EDA Report:</b> Input any CSV, output a full HTML EDA report: dtypes, missing values, distributions, outliers, correlations, sample rows. Inspired by pandas-profiling but built from scratch.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 11-20 -->
+  <div class="step" id="ch1-s1">
+    <div class="step-head" onclick="tog('ch1-s1')">
+      <div class="step-num num-ai">2</div>
+      <div class="step-info">
+        <div class="step-title">Days 11--20: Statistics + Probability for ML</div>
+        <div class="step-meta">Distributions, hypothesis testing, Bayesian thinking, A/B testing</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s1">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s1">
+      <p><b>Day 11:</b> Descriptive statistics -- mean, median, mode, variance, standard deviation, skewness, kurtosis. When each measure is appropriate.</p>
+      <p><b>Day 12:</b> Probability theory -- sample spaces, events, axioms, conditional probability, independence, Bayes' theorem.</p>
+      <p><b>Day 13:</b> Discrete distributions -- Bernoulli, Binomial, Poisson, Geometric. PMF, CDF, expectations.</p>
+      <p><b>Day 14:</b> Continuous distributions -- Uniform, Normal, Exponential, Beta, Gamma. PDF, CDF. Central Limit Theorem.</p>
+      <p><b>Day 15:</b> Sampling and estimation -- point estimates, confidence intervals, MLE, MAP. Bootstrap resampling.</p>
+      <p><b>Day 16:</b> Hypothesis testing -- null/alternative hypotheses, p-values, Type I/II errors, power. t-test, z-test, chi-square.</p>
+      <p><b>Day 17:</b> ANOVA and correlation -- one-way ANOVA, Pearson vs Spearman correlation, partial correlation.</p>
+      <p><b>Day 18:</b> Bayesian statistics -- prior, likelihood, posterior. Conjugate priors. MCMC intuition. PyMC intro.</p>
+      <p><b>Day 19:</b> Information theory -- entropy, cross-entropy, KL divergence, mutual information. Connection to ML loss functions.</p>
+      <p><b>Day 20:</b> Integration day -- combine stats into a full A/B testing analysis pipeline.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - A/B Testing Framework:</b> Full A/B testing pipeline: define hypotheses, collect data, compute sample size, run t-test/chi-square, calculate power, visualize results. Used for evaluating ML model improvements.<br>
+        <b>P2 - Distribution Visualizer:</b> Interactive tool showing all major distributions. Adjust parameters, see PDF/CDF update live. Show CLT in action: sum of n random variables approaches Normal.<br>
+        <b>P3 - Monte Carlo Simulator:</b> Estimate pi, solve integrals, simulate option prices (Black-Scholes vs MC). Convergence analysis. Variance reduction techniques (importance sampling, antithetic variates).<br>
+        <b>P4 - Statistical Hypothesis Tester:</b> CLI tool: input data, choose test, get result with interpretation. Supports t-test, ANOVA, chi-square, Mann-Whitney U, Kolmogorov-Smirnov. Effect size calculations.<br>
+        <b>P5 - Bayesian Inference Engine:</b> Implement Bayesian updating from scratch. Coin flip inference, linear regression with priors, Naive Bayes classifier. Visualize prior-to-posterior updates.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 21-30 -->
+  <div class="step" id="ch1-s2">
+    <div class="step-head" onclick="tog('ch1-s2')">
+      <div class="step-num num-ai">3</div>
+      <div class="step-info">
+        <div class="step-title">Days 21--30: Classical ML -- Regression &amp; Classification</div>
+        <div class="step-meta">Scikit-learn mastery, model evaluation, cross-validation</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s2">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s2">
+      <p><b>Day 21:</b> ML fundamentals -- supervised vs unsupervised vs reinforcement. Bias-variance tradeoff. Training, validation, test splits. Scikit-learn API overview.</p>
+      <p><b>Day 22:</b> Linear regression -- OLS derivation, gradient descent, polynomial features, normal equation. Assumptions and diagnostics.</p>
+      <p><b>Day 23:</b> Regularization -- Ridge (L2), Lasso (L1), ElasticNet. Regularization path. Feature selection via Lasso.</p>
+      <p><b>Day 24:</b> Logistic regression -- sigmoid function, log-loss, multi-class (OvR, softmax). Decision boundary visualization.</p>
+      <p><b>Day 25:</b> K-Nearest Neighbors -- distance metrics, curse of dimensionality, kd-trees, ball trees. Regression and classification variants.</p>
+      <p><b>Day 26:</b> Decision trees -- information gain, Gini impurity, tree depth, pruning. Visualization with graphviz.</p>
+      <p><b>Day 27:</b> Support Vector Machines -- maximum margin hyperplane, kernel trick (RBF, polynomial), soft margin, SVR.</p>
+      <p><b>Day 28:</b> Model evaluation -- confusion matrix, precision, recall, F1, ROC-AUC, PR curve. Cross-validation strategies.</p>
+      <p><b>Day 29:</b> Unsupervised learning -- K-means, hierarchical clustering, DBSCAN. Evaluation: silhouette score, elbow method.</p>
+      <p><b>Day 30:</b> Integration day -- build a complete ML pipeline with preprocessing, modeling, and evaluation.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - House Price Predictor:</b> End-to-end regression on Ames Housing dataset. Feature engineering, missing value imputation, log-transform target. Compare Linear, Ridge, Lasso, ElasticNet. RMSE leaderboard.<br>
+        <b>P2 - Customer Churn Classifier:</b> Binary classification on telecom churn data. Handle class imbalance (SMOTE, class weights). Full evaluation suite. Feature importance analysis. Threshold optimization.<br>
+        <b>P3 - ML from Scratch Library:</b> Implement Linear Regression, Logistic Regression, KNN, Decision Tree, K-means from scratch using only NumPy. Match scikit-learn outputs. Unit tests for each.<br>
+        <b>P4 - Credit Scoring Model:</b> Build a credit risk model on real financial data. Feature engineering, WoE encoding, Information Value. Gini coefficient and KS statistic evaluation. Model card written.<br>
+        <b>P5 - Clustering &amp; Segmentation:</b> Customer segmentation using K-means, DBSCAN, Gaussian Mixture Models. PCA for visualization. Segment profiling and business interpretation.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 31-40 -->
+  <div class="step" id="ch1-s3">
+    <div class="step-head" onclick="tog('ch1-s3')">
+      <div class="step-num num-ai">4</div>
+      <div class="step-info">
+        <div class="step-title">Days 31--40: Ensemble Methods + Feature Engineering</div>
+        <div class="step-meta">Random forests, gradient boosting, XGBoost, LightGBM, Kaggle techniques</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s3">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s3">
+      <p><b>Day 31:</b> Bagging -- Bootstrap aggregating, Random Forest internals. Out-of-bag error. Feature importance (impurity, permutation).</p>
+      <p><b>Day 32:</b> Boosting theory -- AdaBoost, Gradient Boosting Machine. Additive model, residuals, learning rate.</p>
+      <p><b>Day 33:</b> XGBoost deep dive -- regularized objective, tree pruning, handling missing values, parallel tree building. Hyperparameters.</p>
+      <p><b>Day 34:</b> LightGBM and CatBoost -- histogram-based splitting, leaf-wise growth, categorical feature handling. Speed comparisons.</p>
+      <p><b>Day 35:</b> Feature engineering -- interaction features, polynomial features, binning, target encoding, cyclical encoding for time.</p>
+      <p><b>Day 36:</b> Advanced feature engineering -- lag features for time series, aggregation features, text features (TF-IDF, count vectors).</p>
+      <p><b>Day 37:</b> Feature selection -- filter methods (variance, correlation), wrapper methods (RFE), embedded methods (Lasso, tree importance).</p>
+      <p><b>Day 38:</b> Hyperparameter optimization -- grid search, random search, Bayesian optimization (Optuna). Early stopping.</p>
+      <p><b>Day 39:</b> Model stacking and blending -- Level-0 models, Level-1 meta-learner. Out-of-fold predictions. Kaggle stacking patterns.</p>
+      <p><b>Day 40:</b> Integration day -- full Kaggle-style pipeline combining all ensemble and feature engineering techniques.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Kaggle Tabular Competition:</b> Enter a live or past Kaggle tabular competition. Full pipeline: EDA, feature engineering, XGBoost + LightGBM + CatBoost ensemble. Optuna tuning. Submit and document rank.<br>
+        <b>P2 - Fraud Detection System:</b> Imbalanced classification on credit card fraud data. Feature engineering on transaction patterns. Ensemble model. Threshold tuning for precision/recall trade-off. Real-time scoring API.<br>
+        <b>P3 - Feature Store:</b> Build a simple feature store: compute features from raw data, version them, serve for training and inference. Supports point-in-time correct joins for time series data.<br>
+        <b>P4 - AutoML Pipeline:</b> Automated pipeline: auto feature engineering, model selection (RF, XGBoost, LightGBM), Optuna hyperparameter tuning, ensemble. Takes any CSV and outputs best model.<br>
+        <b>P5 - Demand Forecasting:</b> Multi-step time series forecasting on retail data. Feature engineering: lags, rolling stats, calendar features. XGBoost + LightGBM. MAPE/SMAPE evaluation. Forecast visualization.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 41-50 -->
+  <div class="step" id="ch1-s4">
+    <div class="step-head" onclick="tog('ch1-s4')">
+      <div class="step-num num-ai">5</div>
+      <div class="step-info">
+        <div class="step-title">Days 41--50: Neural Networks from Scratch</div>
+        <div class="step-meta">Perceptrons, backpropagation, activation functions, optimization, PyTorch</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s4">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s4">
+      <p><b>Day 41:</b> Perceptron -- biological inspiration, linear threshold unit, perceptron learning rule, XOR problem and why single layers fail.</p>
+      <p><b>Day 42:</b> Multilayer Perceptron -- hidden layers, universal approximation theorem. Forward pass computation in detail.</p>
+      <p><b>Day 43:</b> Backpropagation -- chain rule derivation, computational graphs, gradient flow. Implement backprop from scratch in NumPy.</p>
+      <p><b>Day 44:</b> Loss functions -- MSE, MAE, cross-entropy, binary cross-entropy, focal loss, contrastive loss. When to use each.</p>
+      <p><b>Day 45:</b> Optimizers -- SGD, momentum, AdaGrad, RMSprop, Adam, AdamW. Adaptive learning rates. Learning rate schedules.</p>
+      <p><b>Day 46:</b> Activation functions -- sigmoid, tanh, ReLU, LeakyReLU, ELU, GELU, Swish. Vanishing gradient problem.</p>
+      <p><b>Day 47:</b> Regularization -- dropout (Bernoulli and Gaussian), batch normalization, layer normalization, weight decay. When and why.</p>
+      <p><b>Day 48:</b> PyTorch fundamentals -- tensors, autograd, computation graphs. nn.Module, optim, loss functions.</p>
+      <p><b>Day 49:</b> PyTorch training pipeline -- DataLoader, Dataset, training loop, validation loop, checkpointing, tensorboard logging.</p>
+      <p><b>Day 50:</b> Debugging neural networks -- loss curves, gradient flow, activation statistics, common failure modes and fixes.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Neural Network from Scratch:</b> Full MLP in pure NumPy. Forward pass, backprop, gradient descent. Supports arbitrary architecture. Train on MNIST. Achieve 97%+ accuracy without any ML library.<br>
+        <b>P2 - Autograd Engine:</b> Build a miniature autograd engine (inspired by micrograd). Scalar-level automatic differentiation. Support +, *, tanh. Build MLP on top. Visualize computation graph.<br>
+        <b>P3 - MNIST Classifier (PyTorch):</b> Clean PyTorch MLP and CNN implementation. Training loop with logging, LR scheduling, early stopping. Achieve 99%+ accuracy. Model card written.<br>
+        <b>P4 - Neural Network Visualizer:</b> Interactive web visualization showing a neural network forward pass in real time. Show activations, weights, gradient flow. Built with D3.js or Three.js.<br>
+        <b>P5 - Tabular DL:</b> Deep learning on tabular data using embeddings for categorical features. Compare against XGBoost. Implement TabNet from scratch. Benchmarked on multiple datasets.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 51-60 -->
+  <div class="step" id="ch1-s5">
+    <div class="step-head" onclick="tog('ch1-s5')">
+      <div class="step-num num-ai">6</div>
+      <div class="step-info">
+        <div class="step-title">Days 51--60: CNNs + Computer Vision</div>
+        <div class="step-meta">Convolutions, architectures, transfer learning, object detection, segmentation</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s5">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s5">
+      <p><b>Day 51:</b> Convolution operation -- 2D convolution, kernels, stride, padding, dilation. Receptive field. Feature map visualization.</p>
+      <p><b>Day 52:</b> CNN architecture -- conv layer, pooling (max, average, global), batch norm, dropout. Build LeNet-5 from scratch.</p>
+      <p><b>Day 53:</b> Modern architectures -- AlexNet, VGG, ResNet (skip connections), InceptionNet, EfficientNet. Architecture design principles.</p>
+      <p><b>Day 54:</b> Transfer learning -- pretrained weights, feature extraction vs fine-tuning, domain adaptation. torchvision models.</p>
+      <p><b>Day 55:</b> Data augmentation -- random crops, flips, color jitter, mixup, cutmix, cutout. Albumentations library.</p>
+      <p><b>Day 56:</b> Object detection -- sliding windows, anchor boxes, YOLO architecture, NMS, mAP metric.</p>
+      <p><b>Day 57:</b> Image segmentation -- semantic vs instance vs panoptic. FCN, U-Net architecture. IoU and Dice loss.</p>
+      <p><b>Day 58:</b> Vision Transformers -- ViT architecture, patch embeddings, self-attention in images. DeiT, Swin Transformer.</p>
+      <p><b>Day 59:</b> Advanced topics -- GradCAM visualization, knowledge distillation, model pruning for edge deployment.</p>
+      <p><b>Day 60:</b> Integration day -- end-to-end computer vision pipeline from data collection to deployed model.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Image Classifier:</b> Train ResNet-50 on a custom 10-class dataset. Full pipeline: scrape images, label, augment, train with LR warmup + cosine decay, evaluate, deploy as a Flask API. Model card written.<br>
+        <b>P2 - Object Detector:</b> Fine-tune YOLOv8 on a custom dataset. Label data with Label Studio. Train, evaluate (mAP@0.5), export to ONNX, deploy as real-time webcam inference.<br>
+        <b>P3 - Medical Image Segmentation:</b> U-Net on a medical imaging dataset (chest X-ray or skin lesion). Custom loss (Dice + BCE). Handle class imbalance. Deploy with Gradio interface.<br>
+        <b>P4 - Neural Style Transfer App:</b> Implement NST from scratch using VGG-19 feature maps. Content and style loss. Fast style transfer with a feedforward network. Web interface for user-uploaded images.<br>
+        <b>P5 - Visual Search Engine:</b> Image similarity search using CNN embeddings. Extract features with ResNet, build FAISS index. Query with an image, return top-k similar results. REST API + simple UI.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 61-70 -->
+  <div class="step" id="ch1-s6">
+    <div class="step-head" onclick="tog('ch1-s6')">
+      <div class="step-num num-ai">7</div>
+      <div class="step-info">
+        <div class="step-title">Days 61--70: RNNs + NLP + Transformers</div>
+        <div class="step-meta">Sequence models, attention, BERT, GPT, text classification, generation</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s6">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s6">
+      <p><b>Day 61:</b> Text preprocessing -- tokenization, stemming, lemmatization, stopwords. Vocabulary building. Byte-pair encoding (BPE).</p>
+      <p><b>Day 62:</b> Word embeddings -- Word2Vec (CBOW, Skip-gram), GloVe, FastText. Embedding arithmetic. Bias in embeddings.</p>
+      <p><b>Day 63:</b> RNN fundamentals -- vanilla RNN, BPTT, vanishing gradient in sequences. Character-level language model.</p>
+      <p><b>Day 64:</b> LSTM and GRU -- gates (forget, input, output), cell state, hidden state. Bidirectional RNNs. Seq2seq architecture.</p>
+      <p><b>Day 65:</b> Attention mechanism -- additive attention (Bahdanau), dot-product attention, multi-head attention. Attention visualization.</p>
+      <p><b>Day 66:</b> Transformer architecture -- "Attention is All You Need". Encoder/decoder blocks, positional encoding, layer norm, feed-forward layers.</p>
+      <p><b>Day 67:</b> BERT -- masked language modeling, next sentence prediction, fine-tuning for classification, NER, QA. HuggingFace Transformers.</p>
+      <p><b>Day 68:</b> GPT -- autoregressive language modeling, causal attention mask. GPT-2 fine-tuning for text generation.</p>
+      <p><b>Day 69:</b> Modern NLP -- sentence transformers, cross-encoders, text classification, zero-shot and few-shot with LLMs.</p>
+      <p><b>Day 70:</b> Integration day -- build a complete NLP pipeline from raw text to deployed model.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Sentiment Analyzer:</b> Multi-class sentiment on product reviews. Train from scratch (LSTM) and fine-tune BERT. Compare accuracy, latency, model size. Deploy as a REST API. Handles streaming input.<br>
+        <b>P2 - Text Generator:</b> Character-level RNN and GPT-2 fine-tuned on a custom corpus. Sampling strategies: greedy, top-k, nucleus. Temperature control. Interactive generation UI.<br>
+        <b>P3 - Named Entity Recognizer:</b> NER with BERT fine-tuning on CoNLL-2003. Custom entity types on domain data. Visualize entities with displaCy. REST API for batch processing.<br>
+        <b>P4 - Question Answering System:</b> Extractive QA fine-tuned on SQuAD. Abstractive QA with T5. Evaluate with EM and F1. Combine with a search index for document-level QA.<br>
+        <b>P5 - Transformer from Scratch:</b> Implement the full Transformer architecture in PyTorch following the original paper. Train on a translation task. Beam search decoding. Attention visualization.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 71-80 -->
+  <div class="step" id="ch1-s7">
+    <div class="step-head" onclick="tog('ch1-s7')">
+      <div class="step-num num-ai">8</div>
+      <div class="step-info">
+        <div class="step-title">Days 71--80: GANs + Diffusion + Generative AI</div>
+        <div class="step-meta">Image generation, VAEs, stable diffusion, multimodal models</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s7">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s7">
+      <p><b>Day 71:</b> Generative models overview -- explicit vs implicit density. Taxonomy: VAEs, GANs, normalizing flows, diffusion models, autoregressive models.</p>
+      <p><b>Day 72:</b> Variational Autoencoders -- encoder/decoder, reparameterization trick, ELBO loss, latent space interpolation. Conditional VAE.</p>
+      <p><b>Day 73:</b> GAN fundamentals -- generator/discriminator adversarial training, minimax game, JS divergence. Mode collapse and training instability.</p>
+      <p><b>Day 74:</b> GAN architectures -- DCGAN (deep convolutional), conditional GAN, Pix2Pix, CycleGAN (unpaired translation).</p>
+      <p><b>Day 75:</b> GAN training tricks -- progressive growing, spectral normalization, gradient penalty (WGAN-GP), two time-scale update rule.</p>
+      <p><b>Day 76:</b> Diffusion models theory -- forward and reverse process, DDPM, noise schedule, score matching. DDIM for faster sampling.</p>
+      <p><b>Day 77:</b> Stable Diffusion -- U-Net backbone, CLIP text conditioning, VAE for latent diffusion. ControlNet, LoRA fine-tuning.</p>
+      <p><b>Day 78:</b> Multimodal models -- CLIP (contrastive image-text pretraining), DALL-E concepts, image captioning, VQA.</p>
+      <p><b>Day 79:</b> Advanced generative -- flow matching, consistency models, neural radiance fields (NeRF) overview.</p>
+      <p><b>Day 80:</b> Integration day -- build a full generative AI application.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Face Generator (DCGAN):</b> Train DCGAN on CelebA dataset. Progressive training. FID score evaluation. Latent space interpolation. Generate a grid of 100 diverse faces. Training curve analysis.<br>
+        <b>P2 - Image-to-Image Translation:</b> Pix2Pix on a custom paired dataset (sketches to photos, day to night). CycleGAN for unpaired translation. Qualitative and quantitative evaluation (SSIM, FID).<br>
+        <b>P3 - VAE Latent Explorer:</b> Interactive tool to explore the latent space of a VAE trained on MNIST/CelebA. Sliders for latent dimensions. Interpolation between any two images. Attribute vectors.<br>
+        <b>P4 - AI Art Generator:</b> Stable Diffusion pipeline with custom LoRA fine-tuning on a specific art style. Prompt engineering interface. ControlNet for pose/edge conditioning. Deployed as a web app.<br>
+        <b>P5 - Multimodal Search:</b> CLIP-based image-text search engine. Index 10k images, search by text query or similar image. Fine-tune CLIP on a domain-specific dataset. REST API + gallery UI.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 81-90 -->
+  <div class="step" id="ch1-s8">
+    <div class="step-head" onclick="tog('ch1-s8')">
+      <div class="step-num num-ai">9</div>
+      <div class="step-info">
+        <div class="step-title">Days 81--90: LLMs + RAG + Agents</div>
+        <div class="step-meta">Prompt engineering, fine-tuning, RAG pipelines, autonomous agents</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s8">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s8">
+      <p><b>Day 81:</b> LLM landscape -- GPT-4, Claude, Llama, Mistral, Gemini. Scaling laws, context windows, inference cost. Open vs closed models.</p>
+      <p><b>Day 82:</b> Prompt engineering -- zero-shot, few-shot, chain-of-thought, tree-of-thought, self-consistency, role prompting. Prompt injection risks.</p>
+      <p><b>Day 83:</b> Embeddings -- text embeddings, embedding models (OpenAI, sentence-transformers). Cosine similarity, semantic search, clustering.</p>
+      <p><b>Day 84:</b> Vector databases -- FAISS, Chroma, Pinecone, Weaviate. ANN algorithms (HNSW, IVF). Indexing strategies.</p>
+      <p><b>Day 85:</b> RAG pipeline -- document loading, chunking strategies, embedding, retrieval, augmentation, generation. Evaluation with RAGAS.</p>
+      <p><b>Day 86:</b> Advanced RAG -- hybrid search (BM25 + dense), reranking (cross-encoders), contextual compression, multi-hop retrieval.</p>
+      <p><b>Day 87:</b> Fine-tuning LLMs -- instruction tuning, LoRA/QLoRA, DPO, RLHF overview. Fine-tune Llama 3 on a custom dataset.</p>
+      <p><b>Day 88:</b> AI agents -- tool use, function calling, ReAct framework, planning. LangChain and LangGraph overview.</p>
+      <p><b>Day 89:</b> Multi-agent systems -- agent communication, orchestration, debate, reflection. AutoGen patterns.</p>
+      <p><b>Day 90:</b> Integration day -- build a complete production-grade LLM application.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - RAG Knowledge Base:</b> Ingest a large document corpus (PDFs, web pages). Chunking, embedding, Chroma vector store. Hybrid search + reranking. Chat interface with citations. Evaluate with RAGAS.<br>
+        <b>P2 - Code Assistant:</b> LLM-powered coding assistant. Code generation, explanation, debugging, test writing. Context-aware via RAG over a codebase. VSCode extension or CLI tool.<br>
+        <b>P3 - Fine-Tuned Domain Expert:</b> Fine-tune Llama 3 (8B) with QLoRA on a specialized dataset. Prepare data, train, evaluate with domain benchmarks, merge adapter, deploy via Ollama. Model card written.<br>
+        <b>P4 - AI Research Agent:</b> Autonomous agent that researches a topic: web search, summarization, cross-reference, write a structured report. Tool use: search, calculator, Python REPL, Wikipedia.<br>
+        <b>P5 - Multi-Agent Workflow:</b> Multi-agent system for software development. Planner, coder, reviewer, tester agents. Orchestrated by LangGraph. Produce a working application from a natural language spec.
+      </div>
+    </div>
+  </div>
+
+  <!-- Days 91-100 -->
+  <div class="step" id="ch1-s9">
+    <div class="step-head" onclick="tog('ch1-s9')">
+      <div class="step-num num-ai">10</div>
+      <div class="step-info">
+        <div class="step-title">Days 91--100: MLOps + Production Deployment</div>
+        <div class="step-meta">Model serving, monitoring, pipelines, CI/CD for ML, experiment tracking</div>
+      </div>
+      <div class="step-arrow" id="a-ch1-s9">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch1-s9">
+      <p><b>Day 91:</b> MLOps overview -- ML lifecycle, technical debt in ML, MLOps maturity levels. Tools landscape: MLflow, DVC, Kubeflow, Metaflow, ZenML.</p>
+      <p><b>Day 92:</b> Data versioning -- DVC for dataset versioning, data pipelines, remote storage (S3, GCS). Reproducible data splits.</p>
+      <p><b>Day 93:</b> Model serving -- Flask/FastAPI for ML APIs, ONNX export, TorchServe, BentoML, Triton Inference Server. Batching.</p>
+      <p><b>Day 94:</b> Model monitoring -- data drift (PSI, KS test), concept drift, prediction drift. EvidentlyAI. Alerting on degradation.</p>
+      <p><b>Day 95:</b> ML pipelines -- Airflow for ML workflows, ZenML, MLflow Pipelines. Parametrized, reproducible, scheduled runs.</p>
+      <p><b>Day 96:</b> CI/CD for ML -- GitHub Actions for ML: data validation, model training, evaluation gates, model registration. DVC + CML.</p>
+      <p><b>Day 97:</b> Containerization for ML -- Docker for ML workloads, GPU-enabled containers, model serving containers. Docker Compose for ML stacks.</p>
+      <p><b>Day 98:</b> Cloud ML services -- SageMaker, Vertex AI, or Azure ML. Managed training, endpoints, feature stores, pipelines.</p>
+      <p><b>Day 99:</b> Scaling ML -- distributed training (DDP, FSDP), model parallelism, inference optimization (quantization, pruning, distillation).</p>
+      <p><b>Day 100:</b> Retrospective -- review all 50 projects, update model cards, write a technical blog post on the 100-day journey. Deploy at least 3 models publicly.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - ML Pipeline:</b> End-to-end MLflow pipeline: data ingestion, preprocessing, training, evaluation, model registry. Parameterized via config. Triggered by DVC data changes. Runs on GitHub Actions.<br>
+        <b>P2 - Model Monitoring Dashboard:</b> Production monitoring for a deployed model. Track data drift, prediction drift, feature statistics. EvidentlyAI reports. Automated retraining trigger when drift detected.<br>
+        <b>P3 - ML API Platform:</b> Production-grade ML API: FastAPI + BentoML. A/B testing between model versions. Canary deployments. Prometheus metrics. Auto-scaling on Kubernetes. Load testing with Locust.<br>
+        <b>P4 - Experiment Tracker:</b> Build a minimal MLflow-like experiment tracker from scratch. Log parameters, metrics, artifacts. Compare runs. REST API. Simple UI with run comparison charts.<br>
+        <b>P5 - Production ML System:</b> Capstone: deploy a full ML system end-to-end. Data pipeline (DVC), training (MLflow), serving (BentoML), monitoring (Evidently), CI/CD (GitHub Actions), cloud deployment. One README to rule them all.
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

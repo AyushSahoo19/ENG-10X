@@ -1,0 +1,114 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Mathematics Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/mathematics" class="cpn-back">&larr; Mathematics Overview</a>
+  <div class="cpn">
+    <a href="/courses/math-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/math-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/math-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-math">Phase 2 &middot; Months 4-11 &middot; ~130h</div>
+    <div class="track-title">Phase 2 &mdash; Abstract Algebra &amp; Number Theory</div>
+    <div class="track-sub">The language of symmetry and the arithmetic of the integers. Abstract algebra reveals the algebraic structure behind everything from particle physics to cryptography. Number theory connects to RSA, Diffie-Hellman, and elliptic curves. These two subjects form the mathematical backbone of modern computing.</div>
+  </div>
+
+    <!-- Math Step 2: Abstract Algebra -->
+    <div class="step" id="ma1">
+      <div class="step-head" onclick="tog('ma1')">
+        <div class="step-num num-math">2</div>
+        <div class="step-info"><div class="step-title">Abstract Algebra &mdash; groups, rings, fields, symmetry</div><div class="step-meta">Months 4-8 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ma1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://abstract.ups.edu/" target="_blank" class="res-link">Abstract Algebra: Theory and Applications &mdash; Tom Judson (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A complete, free, open-source abstract algebra textbook at abstract.ups.edu. Covers groups, subgroups, cyclic groups, permutation groups, cosets, normal subgroups, homomorphisms, rings, integral domains, fields, field extensions, and Galois theory. Includes Sage computational exercises. A genuine alternative to Dummit &amp; Foote for self-study.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Start here</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLelIK3uylPMGzHBuR3hLMHrYfMqWWsmx5" target="_blank" class="res-link">Socratica &mdash; Abstract Algebra (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short (5-10 minute), beautifully produced videos covering groups, subgroups, homomorphisms, rings, and fields. Perfect for building quick intuition before diving into textbook proofs. The group theory playlist is particularly strong.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Algebra &mdash; Dummit &amp; Foote</div>
+              <div class="res-desc">The comprehensive reference. 900+ pages covering groups, rings, modules, fields, Galois theory, and more. Not a first read, but the book you go to when Judson's treatment feels incomplete. The exercise sets are enormous and graded in difficulty. Essential for anyone going to graduate school.</div>
+              <div class="res-tags"><span class="rtag book">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@VisualMath" target="_blank" class="res-link">Visual Group Theory &mdash; Visual Math (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Uses Cayley diagrams, symmetry visualizations, and color-coded animations to make group theory visual and concrete. Watch before reading each chapter to build geometric intuition for algebraic structures.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The connection to quantum:</b> Groups are the mathematical language of symmetry, and symmetry is the deepest principle in physics. When you reach quantum mechanics, you will see that particle physics IS group representation theory (SU(2), SU(3), the Standard Model). The algebra you learn here is not abstract &mdash; it IS the structure of physical reality.</div>
+      </div>
+    </div>
+
+    <!-- Math Step 3: Number Theory -->
+    <div class="step" id="ma2">
+      <div class="step-head" onclick="tog('ma2')">
+        <div class="step-num num-math">3</div>
+        <div class="step-info"><div class="step-title">Number Theory &mdash; primes, congruences, cryptography foundations</div><div class="step-meta">Months 8-11 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-ma2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://shoup.net/ntb/" target="_blank" class="res-link">A Computational Introduction to Number Theory and Algebra &mdash; Victor Shoup (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free PDF at shoup.net/ntb. Covers divisibility, primes, congruences, Euler's theorem, quadratic reciprocity, and connects directly to RSA, Diffie-Hellman, and elliptic curve cryptography. Perfect for someone who wants number theory with computational applications.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Best for CS students</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL22w63XsKjqwAgBzVFVqZNMcVKpOOAA7c" target="_blank" class="res-link">Michael Penn &mdash; Number Theory (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Clear, proof-focused lectures on elementary number theory. Penn writes every proof on the board step by step. His style is ideal for self-study &mdash; just pause, attempt the proof yourself, then watch his approach.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">An Introduction to the Theory of Numbers &mdash; Hardy &amp; Wright</div>
+              <div class="res-desc">The classic. Dense, deep, and beautiful. Covers divisibility, primes, congruences, quadratic residues, continued fractions, and partitions. Not a first text, but the book you graduate to after Shoup. Every number theorist has this on their shelf.</div>
+              <div class="res-tags"><span class="rtag book">Classic</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The project connection:</b> Implement RSA encryption from scratch using your number theory knowledge. Then implement Diffie-Hellman key exchange. Understanding WHY these algorithms work (modular exponentiation, Euler's theorem, discrete logarithm hardness) makes cryptography transparent instead of magical.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

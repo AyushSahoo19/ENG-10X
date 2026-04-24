@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Physics Phase 3 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/quantum-physics" class="cpn-back">&larr; Quantum Physics Overview</a>
+  <div class="cpn">
+    <a href="/courses/qp-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/qp-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/qp-phase-3" class="cpn-link active">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ml">Phase 3 &middot; Months 8-14 &middot; ~100h</div>
+    <div class="track-title">Phase 3 &mdash; QFT Basics</div>
+    <div class="track-sub">The hardest subject in physics: Quantum Field Theory. Particles as field excitations, canonical quantization, Feynman diagrams, QED, and renormalization. A 6-month marathon that rewards those who persist.</div>
+  </div>
+
+    <!-- QP Step 3: QFT Basics -->
+    <div class="step" id="qp2">
+      <div class="step-head" onclick="tog('qp2')">
+        <div class="step-num num-ml">3</div>
+        <div class="step-info"><div class="step-title">Quantum Field Theory Basics &mdash; particles as field excitations</div><div class="step-meta">Months 8-14 &middot; ~100 hours</div></div>
+        <div class="step-arrow" id="a-qp2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Quantum Field Theory for the Gifted Amateur &mdash; Lancaster &amp; Blundell</div>
+              <div class="res-desc">The most accessible QFT textbook. Written explicitly for self-learners who know QM and want to understand particle physics. Covers classical fields, canonical quantization, Feynman diagrams, QED, renormalization, and the Standard Model. Each chapter is short with worked examples and exercises.</div>
+              <div class="res-tags"><span class="rtag must">Best first QFT book</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDfPUNusx1EpWiBQTvaHYKIqB-kNOqelS" target="_blank" class="res-link">David Tong &mdash; QFT Lectures (Cambridge, YouTube + notes) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">David Tong's Cambridge QFT lectures with free lecture notes at damtp.cam.ac.uk/user/tong/qft.html. Widely considered the best free QFT lectures available. Covers canonical quantization, propagators, Feynman diagrams, QED, and the renormalization group. The notes are beautifully written.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best free QFT</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">An Introduction to Quantum Field Theory &mdash; Peskin &amp; Schroeder</div>
+              <div class="res-desc">The standard graduate QFT textbook. Comprehensive and rigorous: covers QED, renormalization, non-Abelian gauge theories, and the Standard Model. Extremely dense &mdash; use Lancaster as your primary and Peskin as your reference. The exercises are famously difficult but deeply instructive.</div>
+              <div class="res-tags"><span class="rtag book">Graduate reference</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>QFT is a marathon:</b> This is arguably the hardest subject in physics. Plan for 6+ months of consistent study. Read Lancaster chapters first for physical intuition, then read the corresponding Tong lecture notes for mathematical precision, then attempt Peskin problems for depth. One chapter per week is a sustainable pace.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

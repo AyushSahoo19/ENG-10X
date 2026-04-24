@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Software Engineering Phase 3 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/software-engineering" class="cpn-back">&larr; Software Engineering Overview</a>
+  <div class="cpn">
+    <a href="/courses/se-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/se-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/se-phase-3" class="cpn-link active">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-java">Phase 3 &middot; Months 9-12 &middot; ~50h</div>
+    <div class="track-title">Phase 3 &mdash; Software Architecture</div>
+    <div class="track-sub">Learn to make the structural decisions that determine whether a system scales to millions of users or collapses under its own weight. Architecture is about the irreversible choices — and knowing which decisions actually deserve that status.</div>
+  </div>
+
+    <!-- SE Step 5: Architecture -->
+    <div class="step" id="se4">
+      <div class="step-head" onclick="tog('se4')">
+        <div class="step-num num-java">5</div>
+        <div class="step-info"><div class="step-title">Software Architecture &mdash; making the big decisions that are hard to reverse</div><div class="step-meta">Months 9-12 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-se4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-se4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Clean Architecture &mdash; Robert C. Martin</div>
+              <div class="res-desc">Covers the dependency rule, SOLID at the architecture level, component principles, and the clean architecture pattern (entities, use cases, interface adapters, frameworks). The key insight: make your business logic independent of frameworks, databases, and UI. This keeps systems maintainable for years.</div>
+              <div class="res-tags"><span class="rtag must">Must-read</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@markrichards5014" target="_blank" class="res-link">Mark Richards &mdash; Software Architecture Monday (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Weekly 10-minute videos on architecture topics: microservices vs monoliths, event-driven architecture, service mesh, CQRS, saga pattern. Bite-sized and practical. Co-author of "Fundamentals of Software Architecture" which is another excellent reference.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://martinfowler.com/architecture/" target="_blank" class="res-link">Martin Fowler &mdash; Architecture articles (martinfowler.com) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free articles on microservices, event sourcing, CQRS, strangler fig pattern, bounded contexts, and more. Fowler's writing is the industry standard for software architecture communication. His "Patterns of Enterprise Application Architecture" is also a canonical reference.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag book">Articles</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The architecture rule of thumb:</b> Start monolithic, split when you must. Microservices add operational complexity that kills small teams. Build a well-structured monolith with clear module boundaries. When a specific module needs independent scaling or a different deployment cadence, extract it. Premature decomposition is the #1 architecture mistake.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

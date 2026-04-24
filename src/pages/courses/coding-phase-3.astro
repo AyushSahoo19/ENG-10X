@@ -1,0 +1,106 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Coding Mastery Phase 3 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/coding" class="cpn-back">&larr; Coding Mastery Overview</a>
+  <div class="cpn">
+    <a href="/courses/coding-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/coding-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/coding-phase-3" class="cpn-link active">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-java">Phase 3 &middot; Months 6-12+ &middot; ~130h</div>
+    <div class="track-title">Phase 3 &mdash; Rust, Go, Python &amp; Assembly</div>
+    <div class="track-sub">Complete the polyglot spectrum. Rust teaches memory safety without a garbage collector. Go teaches elegant concurrency. Advanced Python teaches metaprogramming and language internals. Assembly closes the loop back to silicon. Each language rewires how you think about computation.</div>
+  </div>
+
+    <!-- Coding Step 3: Rust -->
+    <div class="step" id="cd2">
+      <div class="step-head" onclick="tog('cd2')">
+        <div class="step-num num-java">3</div>
+        <div class="step-info"><div class="step-title">Rust &mdash; memory safety without garbage collection</div><div class="step-meta">Months 6-9 &middot; ~70 hours</div></div>
+        <div class="step-arrow" id="a-cd2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://doc.rust-lang.org/book/" target="_blank" class="res-link">The Rust Programming Language (free online, "The Book") <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The official Rust book, free at doc.rust-lang.org/book. Covers ownership, borrowing, lifetimes, structs, enums, pattern matching, traits, generics, closures, iterators, smart pointers, concurrency, and async. Beautifully written with progressive examples. Read every chapter and do the exercises.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Start here</span><span class="rtag book">Official book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://github.com/rust-lang/rustlings" target="_blank" class="res-link">Rustlings &mdash; small exercises to learn Rust (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Interactive exercises that run in your terminal. Fix compiler errors, fill in implementations, and pass tests. The exercises follow The Book chapter by chapter. Complete all 95+ exercises after reading each corresponding chapter.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Hands-on practice</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@jonhoo" target="_blank" class="res-link">Jon Gjengset &mdash; Crust of Rust (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Deep, intermediate Rust content: iterators, smart pointers, lifetime annotations, async/await internals, and building real projects. His streams where he builds production-quality Rust code are the best way to learn idiomatic Rust after The Book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Rust project path:</b> Build a CLI tool (file search, JSON processor), then a web server with Actix or Axum, then a concurrent data structure. Rust's compiler is your teacher &mdash; fight the borrow checker until the ownership model clicks. Once it does, you will never think about memory the same way again.</div>
+      </div>
+    </div>
+
+    <!-- Coding Step 4: Go & Python & Assembly -->
+    <div class="step" id="cd3">
+      <div class="step-head" onclick="tog('cd3')">
+        <div class="step-num num-java">4</div>
+        <div class="step-info"><div class="step-title">Go, Python (advanced), Assembly &mdash; completing the spectrum</div><div class="step-meta">Months 9-12+ &middot; ~60 hours each</div></div>
+        <div class="step-arrow" id="a-cd3">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd3">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://go.dev/tour/" target="_blank" class="res-link">A Tour of Go + "Go by Example" (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Go's official interactive tour at go.dev/tour and gobyexample.com together teach Go in a weekend. Go's goroutines and channels make concurrent programming natural. Build a concurrent web scraper, then a CLI tool, then a microservice. Go is the language of Kubernetes, Docker, and cloud infrastructure.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Weekend to start</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Fluent Python &mdash; Luciano Ramalho</div>
+              <div class="res-desc">The advanced Python book for programmers who already know Python. Covers data model, sequences, functions as objects, decorators, closures, iterators, generators, context managers, metaprogramming, and concurrency. Reading this transforms Python from "the language I use" to "a language I deeply understand."</div>
+              <div class="res-tags"><span class="rtag must">Advanced Python</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLhMnuBfGeCDM8pXLpqib90mDFJI-e1lpk" target="_blank" class="res-link">Ben Eater &mdash; 6502 Assembly (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Build a computer and program it in assembly. Ben Eater's 6502 series shows you how assembly code maps to hardware operations. After watching, you understand what every high-level language compiles TO. Pair with the NASM x86-64 tutorial at asmtutor.com for modern assembly.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The polyglot advantage:</b> Each language teaches a paradigm. C teaches memory. C++ teaches abstraction over memory. Rust teaches ownership. Go teaches simplicity and concurrency. Python teaches expressiveness. Assembly teaches what actually happens. Together they give you a complete mental model of computation from silicon to application.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

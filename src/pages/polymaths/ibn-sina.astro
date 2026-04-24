@@ -1,0 +1,80 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Ibn Sina (Avicenna) — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Ancient · c. 980–1037 CE</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">IS</div>
+      <div>
+        <div class="pm-name">Ibn Sina (Avicenna)</div>
+        <div class="pm-years">c. 980--1037 CE</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The most influential physician and philosopher of the Islamic Golden Age. Ibn Sina wrote over 450 works, of which around 240 survive. His <em>Canon of Medicine</em> was the standard medical textbook in Europe and the Islamic world for over 600 years. He also made major contributions to Aristotelian philosophy, psychology, astronomy, and chemistry.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Medicine</span>
+      <span class="rtag must">Philosophy</span>
+      <span class="rtag vid">Psychology</span>
+      <span class="rtag book">Chemistry</span>
+      <span class="rtag free">Astronomy</span>
+      <span class="rtag must">Mathematics</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Wrote <em>The Canon of Medicine</em>, a 5-volume medical encyclopedia used as a textbook until the 1700s</li>
+        <li>Introduced systematic experimentation and clinical trials to medicine</li>
+        <li>Developed the concept of "momentum" (mail) in physics, anticipating Newton's first law</li>
+        <li>Advanced Aristotelian philosophy with his distinction between essence and existence</li>
+        <li>Described contagion and quarantine methods centuries before germ theory</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes." -- Ibn Sina's relentless pursuit of root causes across every domain is the polymath's core method: never settle for surface understanding.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>Avicenna's Medicine</em> -- Mones Abu-Asab et al. (2013)</li>
+        <li><em>Avicenna</em> -- Lenn E. Goodman (2006)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

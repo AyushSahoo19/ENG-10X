@@ -1,0 +1,106 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Computer Science Phase 3 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/cs" class="cpn-back">&larr; Computer Science Overview</a>
+  <div class="cpn">
+    <a href="/courses/cs-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/cs-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/cs-phase-3" class="cpn-link active">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-dsa">Phase 3 &middot; Months 10-14 &middot; ~90h</div>
+    <div class="track-title">Phase 3 &mdash; Compilers &amp; Theory of Computation</div>
+    <div class="track-sub">Reach the deepest layers of computer science: build a complete language from scratch, then study the mathematical limits of what computers can and cannot compute. This is where systems programming meets formal theory.</div>
+  </div>
+
+    <!-- CS Step 5: Compilers -->
+    <div class="step" id="cs4">
+      <div class="step-head" onclick="tog('cs4')">
+        <div class="step-num num-dsa">5</div>
+        <div class="step-info"><div class="step-title">Compilers &mdash; lexing, parsing, code generation, optimization</div><div class="step-meta">Months 10-12 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-cs4">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs4">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://craftinginterpreters.com/" target="_blank" class="res-link">Crafting Interpreters &mdash; Robert Nystrom (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best introduction to compilers/interpreters, completely free at craftinginterpreters.com. You build two complete interpreters: jlox (tree-walking, in Java) and clox (bytecode VM, in C). Covers scanning, parsing, ASTs, closures, garbage collection, classes, and optimization. Beautifully written with hand-drawn illustrations.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag must">Start here</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLDcmCgguL9rxPoVn2ykys1AhBkOBs7gfT" target="_blank" class="res-link">Stanford CS143 &mdash; Compilers (Alex Aiken, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Stanford's compiler course, free on YouTube. Covers formal grammars, lexical analysis, LR parsing, semantic analysis, code generation, and register allocation. More theoretical than Crafting Interpreters. Watch after finishing jlox to deepen your formal understanding.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://llvm.org/docs/tutorial/" target="_blank" class="res-link">LLVM Kaleidoscope Tutorial <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Official LLVM tutorial where you build a simple programming language that compiles to native code via LLVM IR. This bridges the gap between interpreters and real compiled languages. After Crafting Interpreters, this shows you how production compilers (Clang, Rust, Swift) actually work.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Advanced project</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Your compiler project:</b> Complete both parts of Crafting Interpreters (jlox + clox). Then design your own small language: pick a niche (config language, shell scripting, math expressions), write a spec, build the compiler. Having a working language on your GitHub is one of the most impressive portfolio pieces possible.</div>
+      </div>
+    </div>
+
+    <!-- CS Step 6: Theory of Computation -->
+    <div class="step" id="cs5">
+      <div class="step-head" onclick="tog('cs5')">
+        <div class="step-num num-dsa">6</div>
+        <div class="step-info"><div class="step-title">Theory of Computation &mdash; automata, computability, complexity</div><div class="step-meta">Months 12-14 &middot; ~40 hours</div></div>
+        <div class="step-arrow" id="a-cs5">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cs5">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to the Theory of Computation &mdash; Michael Sipser</div>
+              <div class="res-desc">The gold-standard textbook. Covers finite automata, regular expressions, context-free grammars, pushdown automata, Turing machines, decidability, reducibility, and complexity theory (P, NP, NP-completeness). Sipser's proof style is the clearest in the field. Focus on chapters 1-7.</div>
+              <div class="res-tags"><span class="rtag must">Gold standard</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLbtzT1TYeoMjNOGEiaRmm_vMIwUAidnQz" target="_blank" class="res-link">Easy Theory &mdash; Theory of Computation (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Short, clear video explanations of every concept in Sipser's book. Use as a companion when the formal proofs feel dense. His NFA-to-DFA conversion and pumping lemma videos are particularly helpful.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/" target="_blank" class="res-link">MIT 18.404J &mdash; Theory of Computation (Sipser himself, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Sipser teaching his own textbook at MIT. Free lecture videos, problem sets, and exams on OCW. Watching the author explain his own material adds layers of insight you cannot get from reading alone. The NP-completeness lectures are masterful.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Author's own lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>Why this matters practically:</b> Understanding P vs NP is not just theory. When you encounter a problem that is NP-hard, you know to reach for approximation algorithms or heuristics instead of wasting weeks trying to find a polynomial solution. This knowledge saves real engineering time on real systems.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

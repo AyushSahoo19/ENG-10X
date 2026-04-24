@@ -1,0 +1,79 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Alan Turing — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Modern · 1912–1954</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">AT</div>
+      <div>
+        <div class="pm-name">Alan Turing</div>
+        <div class="pm-years">1912--1954</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The father of computer science and artificial intelligence. Turing formalized the concept of computation itself with the Turing machine, cracked the Enigma code at Bletchley Park (arguably shortening WWII by two years), proposed the Turing Test for machine intelligence, and pioneered mathematical biology with his work on morphogenesis. His life was tragically cut short after prosecution for homosexuality.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Computer Science</span>
+      <span class="rtag must">Mathematics</span>
+      <span class="rtag vid">Cryptography</span>
+      <span class="rtag book">AI</span>
+      <span class="rtag free">Biology</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Defined the Turing machine (1936), formalizing the concept of "algorithm" and proving the limits of computation</li>
+        <li>Led the effort to crack the Enigma cipher at Bletchley Park, helping shorten WWII significantly</li>
+        <li>Proposed the Turing Test (1950), the foundational concept for artificial intelligence</li>
+        <li>Developed mathematical models of morphogenesis, explaining how patterns form in biology</li>
+        <li>Designed the ACE computer, one of the first stored-program electronic computers</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"We can only see a short distance ahead, but we can see plenty there that needs to be done." -- Turing's genius was asking the right questions: What is computation? Can machines think? Why do leopards have spots? Each question opened an entire field.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>Alan Turing: The Enigma</em> -- Andrew Hodges (1983)</li>
+        <li><em>Computing Machinery and Intelligence</em> -- Alan Turing (1950 paper)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

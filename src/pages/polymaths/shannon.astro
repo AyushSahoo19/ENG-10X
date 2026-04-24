@@ -1,0 +1,79 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Claude Shannon — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Modern · 1916–2001</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">CS</div>
+      <div>
+        <div class="pm-name">Claude Shannon</div>
+        <div class="pm-years">1916--2001</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">The father of information theory. Shannon's 1948 paper "A Mathematical Theory of Communication" is one of the most important scientific papers of the 20th century, founding the entire field of digital communications. He also proved that Boolean algebra could implement any logical operation in circuits (his master's thesis, called "possibly the most important master's thesis of the century"), built chess-playing machines, and juggled unicycles at MIT.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Information Theory</span>
+      <span class="rtag must">Mathematics</span>
+      <span class="rtag vid">Electrical Engineering</span>
+      <span class="rtag book">Cryptography</span>
+      <span class="rtag free">AI</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Founded information theory with his 1948 paper, defining the bit as the fundamental unit of information</li>
+        <li>Proved Boolean algebra underlies digital circuit design (1937 master's thesis), enabling all modern computing</li>
+        <li>Established the theoretical limits of data compression and error-correcting codes</li>
+        <li>Built one of the first chess-playing computers and maze-solving robots</li>
+        <li>Proved that a one-time pad provides perfect secrecy in cryptography</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>Shannon's colleague described his method: "He would pick a problem, work on it in isolation, and come back with the entire solution." Shannon's approach was playful curiosity: he juggled, built gadgets, and rode unicycles because play and problem-solving use the same cognitive muscles.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>A Mind at Play: How Claude Shannon Invented the Information Age</em> -- Jimmy Soni and Rob Goodman (2017)</li>
+        <li><em>A Mathematical Theory of Communication</em> -- Claude Shannon (1948 paper)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

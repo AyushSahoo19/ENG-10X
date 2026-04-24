@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Competitive Programming Phase 3 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/competitive-programming" class="cpn-back">&larr; Competitive Programming Overview</a>
+  <div class="cpn">
+    <a href="/courses/cp-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/cp-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/cp-phase-3" class="cpn-link active">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-dsa">Phase 3 &middot; Months 8+ &middot; CF Target: 2000+</div>
+    <div class="track-title">Phase 3 &mdash; ICPC/IOI Level Techniques</div>
+    <div class="track-sub">FFT, matroid intersection, persistent data structures, suffix automata. At this level, raw problem count matters less than deep analysis. After each contest, write a detailed editorial for every problem you attempted. Explaining your wrong approaches builds the meta-cognitive skill that separates experts from advanced beginners.</div>
+  </div>
+
+    <!-- CP Step 3: Advanced / ICPC Level -->
+    <div class="step" id="cp2">
+      <div class="step-head" onclick="tog('cp2')">
+        <div class="step-num num-dsa">3</div>
+        <div class="step-info"><div class="step-title">Advanced &mdash; ICPC/IOI level techniques</div><div class="step-meta">Months 8+ &middot; Rating target: 2000+ (Codeforces)</div></div>
+        <div class="step-arrow" id="a-cp2">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cp2">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://codeforces.com/gyms" target="_blank" class="res-link">Codeforces Gym &mdash; ICPC past problems <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Practice with real ICPC regional and world finals problems. Form a team of 3, simulate the 5-hour contest format, then analyze what you solved and what you missed. ICPC problems require combining multiple algorithms in creative ways &mdash; they test depth of understanding, not just knowledge of techniques.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">ICPC practice</span><span class="rtag tool">Contests</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://oi-wiki.org/" target="_blank" class="res-link">OI Wiki &mdash; Olympiad Informatics reference (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Comprehensive competitive programming wiki covering advanced topics: FFT/NTT, Aho-Corasick, suffix automaton, LCT, persistent data structures, matroid intersection, and more. The most complete free reference for advanced CP techniques.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to Algorithms &mdash; Cormen, Leiserson, Rivest, Stein (CLRS)</div>
+              <div class="res-desc">The comprehensive algorithms reference. 1300+ pages covering every algorithm and data structure in depth: sorting, searching, graph algorithms, DP, greedy, amortized analysis, NP-completeness, approximation algorithms. Not a first read, but the definitive reference when you need to understand an algorithm's proof of correctness or complexity analysis.</div>
+              <div class="res-tags"><span class="rtag book">Reference bible</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The 2000+ strategy:</b> At this level, raw problem count matters less than deep analysis. After each contest, write a detailed editorial for every problem you attempted. Explaining your thought process (including wrong approaches) builds the meta-cognitive skill that separates experts from advanced beginners. Quality analysis beats quantity.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

@@ -3,6 +3,49 @@ import PhaseLayout from '../../layouts/PhaseLayout.astro';
 ---
 
 <PhaseLayout title="Software Engineering — Polymath.Sys" activeNav="courses">
+
+<style>
+  .phase-overview { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:2.5rem; }
+  .ph-card { display:flex; align-items:center; gap:1rem; padding:1.2rem 1.4rem; border:1px solid #222; text-decoration:none; color:inherit; transition:background 0.15s; }
+  .ph-card:hover { background:#f7f7f7; }
+  .ph-num { font-family:monospace; font-size:22px; color:#ddd; font-weight:700; min-width:2ch; }
+  .ph-body { flex:1; }
+  .ph-title { font-size:13px; font-weight:600; color:#111; margin-bottom:2px; }
+  .ph-desc { font-size:11px; color:#888; }
+  .ph-meta { font-size:10px; color:#bbb; margin-top:4px; font-family:monospace; }
+  .ph-arrow { color:#ccc; font-size:16px; margin-left:auto; }
+</style>
+
+<div class="phase-overview">
+  <a href="/courses/se-phase-1" class="ph-card">
+    <div class="ph-num">01</div>
+    <div class="ph-body">
+      <div class="ph-title">Phase 1 &mdash; Clean Code &amp; Patterns</div>
+      <div class="ph-desc">SOLID principles, design patterns, writing code humans can maintain.</div>
+      <div class="ph-meta">Months 1-4 &middot; ~60h</div>
+    </div>
+    <div class="ph-arrow">&#8250;</div>
+  </a>
+  <a href="/courses/se-phase-2" class="ph-card">
+    <div class="ph-num">02</div>
+    <div class="ph-body">
+      <div class="ph-title">Phase 2 &mdash; Testing &amp; CI/CD</div>
+      <div class="ph-desc">TDD, test pyramids, GitHub Actions, Docker, DevOps pipelines.</div>
+      <div class="ph-meta">Months 4-8 &middot; ~70h</div>
+    </div>
+    <div class="ph-arrow">&#8250;</div>
+  </a>
+  <a href="/courses/se-phase-3" class="ph-card">
+    <div class="ph-num">03</div>
+    <div class="ph-body">
+      <div class="ph-title">Phase 3 &mdash; System Architecture</div>
+      <div class="ph-desc">Microservices, distributed systems, Agile, technical leadership.</div>
+      <div class="ph-meta">Months 8-14 &middot; ~60h</div>
+    </div>
+    <div class="ph-arrow">&#8250;</div>
+  </a>
+</div>
+
     <div class="track-header">
       <div class="track-badge badge-java">Full Program &middot; 10-14 months</div>
       <div class="track-title">Software Engineering &mdash; building systems that survive contact with reality</div>

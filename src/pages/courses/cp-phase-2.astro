@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Competitive Programming Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/competitive-programming" class="cpn-back">&larr; Competitive Programming Overview</a>
+  <div class="cpn">
+    <a href="/courses/cp-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/cp-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/cp-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-dsa">Phase 2 &middot; Months 3-8 &middot; CF Target: 1600</div>
+    <div class="track-title">Phase 2 &mdash; Intermediate Topics</div>
+    <div class="track-sub">DP, graphs, number theory, segment trees. This is where most people plateau. Breaking through requires targeted grinding: 50 DP problems, 30 graph problems, mastering each topic before moving to the next. cp-algorithms.com becomes your daily reference.</div>
+  </div>
+
+    <!-- CP Step 2: Intermediate -->
+    <div class="step" id="cp1">
+      <div class="step-head" onclick="tog('cp1')">
+        <div class="step-num num-dsa">2</div>
+        <div class="step-info"><div class="step-title">Intermediate Topics &mdash; DP, graphs, number theory, segment trees</div><div class="step-meta">Months 3-8 &middot; Rating target: 1600 (Codeforces)</div></div>
+        <div class="step-arrow" id="a-cp1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cp1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://cp-algorithms.com/" target="_blank" class="res-link">cp-algorithms.com (e-maxx eng) &mdash; algorithm encyclopedia <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The definitive free reference for competitive programming algorithms. Covers: number theory, algebra, data structures (segment trees, BIT, DSU), string algorithms (KMP, Z-function, suffix array), graph algorithms, geometry, and more. Each article has theory + C++ implementation + practice problems. Bookmark and reference constantly.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Bookmark this</span><span class="rtag tool">Reference</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@SecondThread" target="_blank" class="res-link">SecondThread &mdash; Advanced CP Topics (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Deep dives into segment trees, heavy-light decomposition, centroid decomposition, flows, and contest strategy. SecondThread consistently breaks down hard problems into understandable steps. His segment tree series is the best on YouTube.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Competitive Programming 4 &mdash; Steven Halim &amp; Felix Halim</div>
+              <div class="res-desc">The most comprehensive CP book (2 volumes, 1900+ pages). Covers every topic with hundreds of UVa/Kattis problem references. The problem classification system is invaluable &mdash; for each topic, you get 20-50 practice problems sorted by difficulty. Worth the investment if you are serious about competitive programming.</div>
+              <div class="res-tags"><span class="rtag must">Comprehensive</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The plateau breaker:</b> At ~1400 Codeforces rating, most people plateau because they avoid DP and graph problems. Force yourself to solve 50 DP problems and 30 graph problems in a row. Targeted topic grinding is what breaks plateaus. Use the CSES problem set categories to structure this grind.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

@@ -1,0 +1,79 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Demis Hassabis — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Contemporary · 1976–present</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">DH</div>
+      <div>
+        <div class="pm-name">Demis Hassabis</div>
+        <div class="pm-years">1976--present</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">Co-founder of DeepMind and a 2024 Nobel Prize laureate in Chemistry. Hassabis was a chess prodigy at age four, designed the classic video game <em>Theme Park</em> at 17, earned a PhD in cognitive neuroscience from UCL, and then built the AI lab that created AlphaGo, AlphaFold, and AlphaZero. AlphaFold solved the 50-year-old protein folding problem, potentially the most impactful scientific breakthrough of the 2020s.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">AI</span>
+      <span class="rtag must">Neuroscience</span>
+      <span class="rtag vid">Game Design</span>
+      <span class="rtag book">Biology</span>
+      <span class="rtag free">Computer Science</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Co-founded DeepMind, the world's leading AI research lab (acquired by Google for ~$500M)</li>
+        <li>Led development of AlphaGo, which defeated the world Go champion, a landmark in AI history</li>
+        <li>Created AlphaFold, which predicted the 3D structure of virtually all known proteins</li>
+        <li>Developed AlphaZero, which mastered chess, shogi, and Go from scratch through self-play</li>
+        <li>Bridged neuroscience and AI, using insights about the brain to design better learning algorithms</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"The key to AI is understanding intelligence itself, and the key to understanding intelligence is studying the brain." -- Hassabis's career is a masterclass in strategic polymathy: each domain (games, neuroscience, AI, biology) feeds into and amplifies the others.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>Genius Makers</em> -- Cade Metz (2021)</li>
+        <li>DeepMind's published papers on AlphaFold and AlphaGo (freely available)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Coding Mastery Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/coding" class="cpn-back">&larr; Coding Mastery Overview</a>
+  <div class="cpn">
+    <a href="/courses/coding-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/coding-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/coding-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-java">Phase 2 &middot; Months 3-6 &middot; ~80h</div>
+    <div class="track-title">Phase 2 &mdash; C++: Systems Programming with Abstraction Power</div>
+    <div class="track-sub">C++ takes everything you learned in C and adds templates, RAII, move semantics, and the full power of zero-cost abstractions. Game engines, browsers, databases, and ML frameworks all use C++. This is where performance engineering begins.</div>
+  </div>
+
+    <!-- Coding Step 2: C++ -->
+    <div class="step" id="cd1">
+      <div class="step-head" onclick="tog('cd1')">
+        <div class="step-num num-java">2</div>
+        <div class="step-info"><div class="step-title">C++ &mdash; systems programming with abstraction power</div><div class="step-meta">Months 3-6 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-cd1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">A Tour of C++ &mdash; Bjarne Stroustrup</div>
+              <div class="res-desc">The best concise C++ introduction by the language's creator. Covers modern C++ (C++17/20): RAII, move semantics, templates, concepts, containers, algorithms, concurrency, and modules. Only 256 pages. Read if you already know C and want to learn C++ fast.</div>
+              <div class="res-tags"><span class="rtag must">Best quick start</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.learncpp.com/" target="_blank" class="res-link">learncpp.com &mdash; comprehensive free C++ tutorial <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The most comprehensive free C++ tutorial online. Covers everything from basics to templates, move semantics, smart pointers, and STL. Updated regularly with modern C++ standards. Use as reference alongside Stroustrup's book.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best free resource</span><span class="rtag tool">Tutorial</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@TheCherno" target="_blank" class="res-link">The Cherno &mdash; C++ Series (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">100+ C++ videos from basics to advanced: virtual functions, templates, move semantics, smart pointers, multithreading, and game engine architecture. The Cherno's practical, game-dev perspective makes abstract C++ features concrete. The game engine series is particularly instructive.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>C++ is where performance meets abstraction.</b> Game engines (Unreal), browsers (Chrome), databases (MySQL, MongoDB), and ML frameworks (PyTorch's C++ backend, TensorFlow) are all C++. If you want to work on systems that process millions of operations per second, C++ mastery is non-negotiable.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

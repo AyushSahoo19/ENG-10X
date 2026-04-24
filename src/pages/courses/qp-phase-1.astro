@@ -1,0 +1,76 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Physics Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/quantum-physics" class="cpn-back">&larr; Quantum Physics Overview</a>
+  <div class="cpn">
+    <a href="/courses/qp-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/qp-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/qp-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ml">Phase 1 &middot; Months 1-4 &middot; ~80h</div>
+    <div class="track-title">Phase 1 &mdash; QM Formalism</div>
+    <div class="track-sub">Master the mathematical language of quantum mechanics: wave functions, operators, measurement, and the Schrodinger equation. Solve the canonical systems — infinite square well, harmonic oscillator, hydrogen atom — from scratch.</div>
+  </div>
+
+    <!-- QP Step 1: QM Formalism -->
+    <div class="step" id="qp0">
+      <div class="step-head" onclick="tog('qp0')">
+        <div class="step-num num-ml">1</div>
+        <div class="step-info"><div class="step-title">Quantum Mechanics Formalism &mdash; states, operators, measurement</div><div class="step-meta">Months 1-4 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-qp0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Introduction to Quantum Mechanics &mdash; David J. Griffiths</div>
+              <div class="res-desc">The standard undergraduate QM textbook. Covers the wave function, time-independent and time-dependent Schrodinger equation, formalism (Hilbert spaces, operators, eigenstates), 3D problems (hydrogen atom, angular momentum), identical particles, and perturbation theory. Griffiths' conversational style makes hard physics approachable. Do every problem.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/" target="_blank" class="res-link">MIT 8.04 &mdash; Quantum Physics I (Barton Zwiebach, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT quantum mechanics course with video lectures, notes, and problem sets. Zwiebach is an exceptional lecturer who balances mathematical rigor with physical intuition. Covers wave mechanics, Dirac notation, angular momentum, and the hydrogen atom. Free and complete on OCW.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PL65jRfIHIOFVLqP_MdbfzKAlq8kLfUsmB" target="_blank" class="res-link">Quantum Sense &mdash; Quantum Mechanics visually explained (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">A newer YouTube channel that explains QM formalism with beautiful animations. Covers Dirac notation, operators, commutators, the uncertainty principle, and spin with visual clarity that Griffiths' text alone cannot achieve. Watch alongside your textbook reading.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The Feynman Lectures on Physics &mdash; Volume III (free online)</div>
+              <div class="res-desc">Feynman's quantum mechanics lectures, free at feynmanlectures.caltech.edu. Not a replacement for Griffiths, but Feynman's physical intuition is unmatched. Read Chapter 1 (Quantum Behavior) and Chapter 3 (Probability Amplitudes) for the deepest conceptual foundation available anywhere.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag book">Classic</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The first milestone:</b> Solve the infinite square well, the harmonic oscillator, and the hydrogen atom completely by hand. When you can derive the energy eigenvalues and wave functions for all three from scratch, you have mastered the core mathematical machinery of quantum mechanics.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

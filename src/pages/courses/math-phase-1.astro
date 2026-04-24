@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Mathematics Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/mathematics" class="cpn-back">&larr; Mathematics Overview</a>
+  <div class="cpn">
+    <a href="/courses/math-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/math-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/math-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-math">Phase 1 &middot; Months 1-4 &middot; ~80h</div>
+    <div class="track-title">Phase 1 &mdash; Real Analysis</div>
+    <div class="track-sub">The rigorous foundation of all higher mathematics. Before algebra, topology, or number theory, you need epsilon-delta proofs and a true understanding of limits, continuity, and the real number line. This phase builds the proof-writing discipline that makes every subsequent topic tractable.</div>
+  </div>
+
+    <!-- Math Step 1: Real Analysis -->
+    <div class="step" id="ma0">
+      <div class="step-head" onclick="tog('ma0')">
+        <div class="step-num num-math">1</div>
+        <div class="step-info"><div class="step-title">Real Analysis &mdash; the rigorous foundations of calculus</div><div class="step-meta">Months 1-4 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ma0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ma0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Understanding Analysis &mdash; Stephen Abbott</div>
+              <div class="res-desc">The best first real analysis textbook. Abbott writes with motivation and clarity that Rudin lacks. Covers: the real numbers, sequences, series, continuity, differentiation, integration, and sequences of functions. Every theorem is preceded by motivation explaining WHY you should care. Do every exercise &mdash; proof-writing only develops through practice.</div>
+              <div class="res-tags"><span class="rtag must">Start here</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP61O7HkcF7UImpM0cR_L2gSw" target="_blank" class="res-link">MIT 18.100A &mdash; Real Analysis (Casey Rodriguez, MIT OCW) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Full MIT real analysis lectures free on YouTube. Rodriguez is an exceptional lecturer who makes epsilon-delta proofs intuitive. Watch alongside Abbott's book. The problem sets (available on OCW) are the real learning tool.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best lectures</span><span class="rtag vid">MIT OCW</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Principles of Mathematical Analysis &mdash; Walter Rudin ("Baby Rudin")</div>
+              <div class="res-desc">The classic. Terse, elegant, unforgiving. Read AFTER Abbott when you want to see the same material presented with maximum rigor and minimum hand-holding. Every serious mathematician has worked through Rudin. The exercises range from routine to research-level. Do at least the first 8 chapters.</div>
+              <div class="res-tags"><span class="rtag book">Classic textbook</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>Proof-writing bootcamp:</b> For every theorem you study, close the book and try to prove it yourself before reading the proof. Then compare. This single habit builds proof-writing ability faster than any other method. Keep a "proof journal" where you write one clean proof per day.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

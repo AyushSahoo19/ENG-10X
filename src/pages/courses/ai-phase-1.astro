@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="AI/ML/DL Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/ai-ml-dl" class="cpn-back">&larr; AI/ML/DL Overview</a>
+  <div class="cpn">
+    <a href="/courses/ai-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/ai-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/ai-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ai">Phase 1 &middot; Months 1-4 &middot; ~60h</div>
+    <div class="track-title">Phase 1 &mdash; Classical Machine Learning</div>
+    <div class="track-sub">The foundation that still runs 80% of production ML. Regression, classification, tree methods, SVMs, gradient boosting. Before deep learning, you need to understand the statistical foundations that make machine learning principled rather than magical. XGBoost wins most tabular competitions &mdash; understand why.</div>
+  </div>
+
+    <!-- AI Step 1: Classical ML -->
+    <div class="step" id="ai0">
+      <div class="step-head" onclick="tog('ai0')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Classical ML &mdash; the foundation that still runs 80% of production</div><div class="step-meta">Months 1-4 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-ai0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" class="res-link">Andrew Ng &mdash; ML Specialization (Coursera, audit free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The gold standard introduction. 3 courses: supervised learning (regression, classification), advanced algorithms (trees, ensembles, neural nets), unsupervised + recommenders. Ng's gradient descent and cost function explanations are unmatched. Audit free &mdash; all videos and quizzes available without payment.</div>
+              <div class="res-tags"><span class="rtag free">Free to audit</span><span class="rtag must">Gold standard</span><span class="rtag vid">Coursera</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.statlearning.com/" target="_blank" class="res-link">An Introduction to Statistical Learning (ISLR, free PDF) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free at statlearning.com. The best stats-grounded ML textbook. Covers regression, classification, resampling, regularization, tree methods, SVMs, unsupervised learning, and deep learning. Each chapter has R and Python labs. The bias-variance tradeoff chapter alone is worth reading three times.</div>
+              <div class="res-tags"><span class="rtag free">Free PDF</span><span class="rtag must">Stats foundation</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.kaggle.com/competitions" target="_blank" class="res-link">Kaggle &mdash; Competitions + Learn tracks <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free micro-courses for Python, Pandas, ML intro, intermediate ML, and feature engineering. Then compete: Titanic (beginner), House Prices (regression), Tabular Playground (ongoing). Kaggle forces end-to-end practice: EDA, feature engineering, model selection, cross-validation, and submission.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Practice here</span><span class="rtag tool">Platform</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>The model you must understand deeply:</b> XGBoost/LightGBM. These gradient-boosted tree models win most tabular data competitions and run in most production ML systems. Understand how they work mathematically (gradient boosting on custom loss functions), how to tune them (learning rate, max depth, regularization), and when they beat deep learning (hint: almost always on tabular data).</div>
+      </div>
+    </div>
+
+</PhaseLayout>

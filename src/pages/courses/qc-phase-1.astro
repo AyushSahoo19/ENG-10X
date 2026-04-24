@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Computing Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/quantum-computing" class="cpn-back">&larr; Quantum Computing Overview</a>
+  <div class="cpn">
+    <a href="/courses/qc-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/qc-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/qc-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ai">Phase 1 &middot; Months 1-3 &middot; ~50h</div>
+    <div class="track-title">Phase 1 &mdash; Quantum Foundations</div>
+    <div class="track-sub">Build the bedrock: qubits, quantum gates, circuits, and measurement. You will run your first quantum programs in Qiskit and develop the physical intuition needed for everything that follows.</div>
+  </div>
+
+    <!-- QC Step 1: Foundations -->
+    <div class="step" id="qc0">
+      <div class="step-head" onclick="tog('qc0')">
+        <div class="step-num num-ai">1</div>
+        <div class="step-info"><div class="step-title">Quantum Foundations &mdash; qubits, gates, circuits, measurement</div><div class="step-meta">Months 1-3 &middot; ~50 hours</div></div>
+        <div class="step-arrow" id="a-qc0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qc0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://learning.quantum.ibm.com/" target="_blank" class="res-link">IBM Qiskit Textbook (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The best free introduction to quantum computing with hands-on code. Covers qubits, single-qubit gates, multi-qubit gates, entanglement, quantum circuits, and measurement. Every concept has a Qiskit code cell you can run in a Jupyter notebook. Start here before any textbook.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Start here</span><span class="rtag tool">Interactive</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Quantum Computation and Quantum Information &mdash; Nielsen &amp; Chuang</div>
+              <div class="res-desc">The "bible" of quantum computing. Covers quantum mechanics postulates, quantum circuits, quantum algorithms, quantum error correction, quantum information theory, and quantum entanglement. Dense but definitive. Read chapters 1-4 alongside the Qiskit textbook for theory + practice pairing.</div>
+              <div class="res-tags"><span class="rtag must">The bible</span><span class="rtag book">Textbook</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLOFEBzvs-VvqKKMXX4vbi4EB1uaErFMSO" target="_blank" class="res-link">Qiskit &mdash; Introduction to Quantum Computing (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">IBM's official video series covering quantum computing fundamentals. Each video is 10-20 minutes and pairs with a Qiskit notebook. Covers superposition, entanglement, Deutsch-Jozsa, Bernstein-Vazirani, Simon's problem, and quantum teleportation.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>First quantum program:</b> Install Qiskit, create a Bell state (entangled pair), measure it 1000 times, and verify the correlations. Then implement quantum teleportation. These two circuits teach superposition, entanglement, and measurement &mdash; the three pillars of quantum computing &mdash; through direct experience.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

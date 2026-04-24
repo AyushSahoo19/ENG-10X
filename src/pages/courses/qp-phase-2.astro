@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Quantum Physics Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/quantum-physics" class="cpn-back">&larr; Quantum Physics Overview</a>
+  <div class="cpn">
+    <a href="/courses/qp-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/qp-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/qp-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ml">Phase 2 &middot; Months 4-7 &middot; ~60h</div>
+    <div class="track-title">Phase 2 &mdash; Hilbert Spaces &amp; Entanglement</div>
+    <div class="track-sub">Deepen into the abstract mathematical structure of QM: Hilbert spaces, density matrices, entanglement, Bell's theorem, and the EPR paradox. This is where physics and quantum information theory converge.</div>
+  </div>
+
+    <!-- QP Step 2: Hilbert Spaces & Advanced Formalism -->
+    <div class="step" id="qp1">
+      <div class="step-head" onclick="tog('qp1')">
+        <div class="step-num num-ml">2</div>
+        <div class="step-info"><div class="step-title">Hilbert Spaces &amp; Entanglement &mdash; the mathematical structure of QM</div><div class="step-meta">Months 4-7 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-qp1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-qp1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Quantum Mechanics: The Theoretical Minimum &mdash; Susskind &amp; Friedman</div>
+              <div class="res-desc">Susskind's textbook companion to his Stanford Continuing Studies lectures. Focused on the abstract mathematical framework: state vectors, operators, eigenstates, time evolution, entanglement, and Bell's theorem. More mathematically structured than Griffiths for the formalism. The entanglement and Bell inequality chapters are superb.</div>
+              <div class="res-tags"><span class="rtag must">Essential</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLQrxduI1EmhxGiGT18r6F8mPstAXLGZIy" target="_blank" class="res-link">Leonard Susskind &mdash; Quantum Mechanics (Stanford, YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Susskind's full Stanford lecture series on quantum mechanics, free on YouTube. Assumes basic physics and linear algebra. His lectures on entanglement, density matrices, and the EPR paradox are the clearest available. Pairs directly with the Theoretical Minimum textbook.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">Modern Quantum Mechanics &mdash; J.J. Sakurai &amp; Jim Napolitano</div>
+              <div class="res-desc">The graduate-level standard. Starts with Stern-Gerlach and builds the full formalism: kets, operators, position/momentum representations, time evolution, symmetry, angular momentum, and perturbation theory. Read after Griffiths when you want the same material at higher mathematical maturity.</div>
+              <div class="res-tags"><span class="rtag book">Graduate text</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The bridge to quantum computing:</b> When you understand that a qubit IS a 2-dimensional Hilbert space, that quantum gates ARE unitary operators, and that measurement IS projection, quantum computing becomes physics expressed as circuit diagrams. The formalism learned here is identical to the quantum computing formalism &mdash; just different notation.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

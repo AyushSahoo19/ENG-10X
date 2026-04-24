@@ -1,0 +1,343 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100 Days Polymath — Polymath.Sys" activeNav="challenges">
+
+<style>
+  .ch-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .ch-back:hover { color:#111; }
+  .ch-sibling-nav { display:flex; gap:0; margin-bottom:2rem; border:1px solid #222; width:fit-content; flex-wrap:wrap; }
+  .csn-link { font-family:monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .csn-link:last-child { border-right:none; }
+  .csn-link.active { background:#111; color:#fff; }
+  .csn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+</style>
+
+  <a href="/challenges" class="ch-back">&larr; All Challenges</a>
+  <div class="ch-sibling-nav">
+    <a href="/challenges/cs-se" class="csn-link">CS/SE</a>
+    <a href="/challenges/ai-ml-dl" class="csn-link">AI/ML/DL</a>
+    <a href="/challenges/polymath" class="csn-link active">Polymath</a>
+    <a href="/challenges/competitive-programming" class="csn-link">Comp. Prog.</a>
+    <a href="/challenges/system-design" class="csn-link">System Design</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-math">100 Days -- 50 Projects -- Cross-Domain Mastery</div>
+    <div class="track-title">100 Days of the Polymath</div>
+    <div class="track-sub">Mathematics, physics, CS theory, electronics, quantum computing, biology, robotics, finance, philosophy -- all connected through computation and first principles. This challenge builds the interdisciplinary foundation that separates specialists from polymaths. Every project bridges at least two domains.</div>
+  </div>
+
+  <div class="do-box">
+    <b>Challenge Rules:</b> (1) Each day starts with 30 minutes of theory reading, followed by hands-on implementation. (2) Every project must include a written explanation connecting the current domain to at least one previous domain. (3) Maintain a "connections journal" -- document every cross-domain insight. (4) No domain stays isolated: by day 100, your concept graph must have links between all 10 blocks. (5) Publish weekly essays synthesizing what you learned. (6) The goal is depth through breadth -- understanding how everything connects.
+  </div>
+
+  <div class="step" id="ch2-s0">
+    <div class="step-head" onclick="tog('ch2-s0')">
+      <div class="step-num num-math">1</div>
+      <div class="step-info">
+        <div class="step-title">Days 1--10: Mathematics Foundations</div>
+        <div class="step-meta">Number theory, set theory, logic, proof techniques, abstract algebra intro</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s0">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s0">
+      <p><b>Day 1:</b> Set theory -- sets, operations (union, intersection, complement), power sets, Cartesian products. Russell's paradox.</p>
+      <p><b>Day 2:</b> Logic -- propositional logic, truth tables, quantifiers, logical equivalences. Proof by contradiction.</p>
+      <p><b>Day 3:</b> Proof techniques -- direct proof, contrapositive, contradiction, induction (weak and strong). Proof writing style.</p>
+      <p><b>Day 4:</b> Number theory -- divisibility, primes, GCD/LCM, Euclidean algorithm, modular arithmetic.</p>
+      <p><b>Day 5:</b> Number theory advanced -- Fermat's little theorem, Euler's totient, Chinese Remainder Theorem. RSA connection.</p>
+      <p><b>Day 6:</b> Combinatorics -- counting principles, permutations, combinations, pigeonhole principle, inclusion-exclusion.</p>
+      <p><b>Day 7:</b> Graph theory -- definitions, isomorphism, Euler/Hamilton paths, planar graphs, coloring, trees.</p>
+      <p><b>Day 8:</b> Abstract algebra intro -- groups, rings, fields. Symmetry groups. Integers mod n as a group.</p>
+      <p><b>Day 9:</b> Functions and relations -- injective, surjective, bijective. Equivalence relations, partial orders.</p>
+      <p><b>Day 10:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Proof Verifier:</b> Build a simple proof checker for propositional logic. Parse logical statements, verify inference rules (modus ponens, etc.), check proof validity step by step.<br>
+        <b>P2 - RSA Cryptosystem:</b> Implement RSA from scratch using number theory: key generation (large primes, totient), encryption, decryption. Miller-Rabin primality test. Extended Euclidean algorithm.<br>
+        <b>P3 - Combinatorics Solver:</b> Tool that solves counting problems: permutations, combinations, derangements, Stirling numbers, Catalan numbers. Visualize Pascal's triangle and its hidden patterns.<br>
+        <b>P4 - Graph Theory Explorer:</b> Interactive graph creation and analysis. Compute: chromatic number, planarity test, Euler/Hamilton path detection, minimum spanning tree, shortest path. Visualize results.<br>
+        <b>P5 - Group Theory Visualizer:</b> Visualize symmetry groups (dihedral groups, permutation groups). Cayley tables, subgroup lattice, group action on geometric objects. Show why groups matter for physics symmetries.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s1">
+    <div class="step-head" onclick="tog('ch2-s1')">
+      <div class="step-num num-math">2</div>
+      <div class="step-info">
+        <div class="step-title">Days 11--20: Physics Simulations</div>
+        <div class="step-meta">Classical mechanics, electromagnetism, thermodynamics, waves</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s1">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s1">
+      <p><b>Day 11:</b> Newtonian mechanics -- forces, Newton's laws, free body diagrams. Numerical integration (Euler method).</p>
+      <p><b>Day 12:</b> Energy and momentum -- conservation laws, collisions (elastic, inelastic), work-energy theorem.</p>
+      <p><b>Day 13:</b> Rotational mechanics -- torque, angular momentum, moment of inertia. Rigid body simulation.</p>
+      <p><b>Day 14:</b> Gravity -- orbital mechanics, Kepler's laws, two-body problem, n-body simulation.</p>
+      <p><b>Day 15:</b> Waves -- wave equation, superposition, interference, standing waves, Fourier analysis connection.</p>
+      <p><b>Day 16:</b> Electrostatics -- Coulomb's law, electric field, potential, Gauss's law. Field visualization.</p>
+      <p><b>Day 17:</b> Electromagnetism -- magnetic fields, Lorentz force, Faraday's law, Maxwell's equations overview.</p>
+      <p><b>Day 18:</b> Thermodynamics -- laws of thermodynamics, entropy, heat engines, statistical mechanics intro.</p>
+      <p><b>Day 19:</b> Fluid dynamics basics -- Navier-Stokes intuition, Bernoulli's principle, laminar vs turbulent flow.</p>
+      <p><b>Day 20:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - N-Body Gravity Simulator:</b> Simulate gravitational interactions between N bodies. Verlet integration for stability. Visualize orbits in 2D/3D. Preset: solar system, binary stars, galaxy collision.<br>
+        <b>P2 - Wave Interference Simulator:</b> 2D wave propagation with multiple sources. Visualize interference patterns, diffraction through slits. Fourier analysis of composite waves. Connect to quantum double-slit.<br>
+        <b>P3 - Electromagnetic Field Visualizer:</b> Place charges and current-carrying wires. Compute and visualize electric and magnetic field lines. Equipotential surfaces. Interactive charge manipulation.<br>
+        <b>P4 - Thermodynamic Engine Simulator:</b> Simulate Carnot, Otto, Diesel cycles. PV diagrams, efficiency calculations. Boltzmann distribution visualization. Entropy calculation at each step.<br>
+        <b>P5 - Particle Collision Simulator:</b> 2D particle system with elastic and inelastic collisions. Momentum and energy conservation verified. Maxwell-Boltzmann distribution emergent from random initial conditions.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s2">
+    <div class="step-head" onclick="tog('ch2-s2')">
+      <div class="step-num num-math">3</div>
+      <div class="step-info">
+        <div class="step-title">Days 21--30: CS Theory + Algorithms</div>
+        <div class="step-meta">Automata, computability, complexity, information theory</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s2">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s2">
+      <p><b>Day 21:</b> Finite automata -- DFA, NFA, regular expressions. Equivalence of DFA and NFA. Pumping lemma for regular languages.</p>
+      <p><b>Day 22:</b> Context-free grammars -- production rules, parse trees, ambiguity. Pushdown automata. Pumping lemma for CFLs.</p>
+      <p><b>Day 23:</b> Turing machines -- definition, computation, Church-Turing thesis. Universal Turing machine.</p>
+      <p><b>Day 24:</b> Computability -- halting problem, undecidability, reducibility. What computers fundamentally cannot do.</p>
+      <p><b>Day 25:</b> Complexity theory -- P, NP, NP-complete, NP-hard. Cook's theorem. Common NP-complete problems.</p>
+      <p><b>Day 26:</b> Approximation algorithms -- when exact solutions are infeasible. Greedy approximations, LP relaxation.</p>
+      <p><b>Day 27:</b> Randomized algorithms -- Las Vegas vs Monte Carlo. Random pivot quicksort. Miller-Rabin. Bloom filters.</p>
+      <p><b>Day 28:</b> Information theory -- entropy, mutual information, channel capacity, data compression limits (Shannon's theorem).</p>
+      <p><b>Day 29:</b> Lambda calculus -- syntax, reduction, Church numerals. Functional programming foundations. Connection to Turing machines.</p>
+      <p><b>Day 30:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Automata Simulator:</b> Build DFA, NFA, and PDA simulators. Parse regex into NFA (Thompson's construction). Visualize state transitions. Test string acceptance. Convert NFA to DFA.<br>
+        <b>P2 - Turing Machine Emulator:</b> Implement a universal Turing machine. Define machines via tape alphabet, states, transition function. Run and visualize tape head movement. Implement: binary addition, palindrome checker.<br>
+        <b>P3 - NP Problem Visualizer:</b> Implement brute-force and heuristic solutions for: TSP, graph coloring, SAT, knapsack. Visualize solution space. Compare exact vs approximate. Show exponential blowup.<br>
+        <b>P4 - Compression Toolkit:</b> Implement Shannon-Fano, Huffman, LZ77, LZW. Compare compression ratios on different data types (text, images, random). Calculate theoretical entropy limit.<br>
+        <b>P5 - Lambda Calculus Interpreter:</b> Parse and evaluate lambda expressions. Implement Church numerals, booleans, pairs. Beta reduction with normal and applicative order. Show computation as reduction sequence.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s3">
+    <div class="step-head" onclick="tog('ch2-s3')">
+      <div class="step-num num-math">4</div>
+      <div class="step-info">
+        <div class="step-title">Days 31--40: Electronics + Signals</div>
+        <div class="step-meta">Digital logic, circuits, signals, Fourier transforms, DSP</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s3">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s3">
+      <p><b>Day 31:</b> Boolean algebra -- logic gates (AND, OR, NOT, XOR, NAND, NOR). Truth tables. De Morgan's laws. Karnaugh maps.</p>
+      <p><b>Day 32:</b> Combinational circuits -- multiplexers, decoders, encoders, adders (half, full, ripple-carry).</p>
+      <p><b>Day 33:</b> Sequential circuits -- flip-flops (SR, D, JK), registers, counters. Clock and timing.</p>
+      <p><b>Day 34:</b> CPU architecture -- fetch-decode-execute cycle. ALU, control unit, registers, memory hierarchy. Von Neumann model.</p>
+      <p><b>Day 35:</b> Analog signals -- continuous vs discrete, sampling, Nyquist theorem, aliasing. ADC/DAC concepts.</p>
+      <p><b>Day 36:</b> Fourier series -- decomposing periodic signals. Frequency domain intuition. Visualize time vs frequency.</p>
+      <p><b>Day 37:</b> Fourier transform -- DFT, FFT algorithm. Spectral analysis. Applications: audio, images, communication.</p>
+      <p><b>Day 38:</b> Filters -- low-pass, high-pass, band-pass. FIR vs IIR. Convolution theorem. Filter design.</p>
+      <p><b>Day 39:</b> Digital signal processing -- audio processing, noise removal, compression. Image as 2D signal. 2D convolution for image processing.</p>
+      <p><b>Day 40:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Logic Circuit Simulator:</b> Build and simulate digital circuits. Gate library, wire connections, propagation delay. Build: 4-bit adder, 4-bit counter, simple ALU. Visualize signal propagation.<br>
+        <b>P2 - CPU Emulator:</b> Emulate a simple 8-bit CPU: fetch-decode-execute, registers, ALU, memory. Custom instruction set (load, store, add, jump, halt). Assemble and run programs. Step-through debugger.<br>
+        <b>P3 - FFT Spectrum Analyzer:</b> Record audio, compute FFT in real time. Display frequency spectrum. Identify musical notes. Spectrogram (time-frequency) visualization. Built-in tuner for instruments.<br>
+        <b>P4 - Audio Effects Processor:</b> Apply DSP effects to audio files: reverb, echo, chorus, pitch shift, equalization. Implement as filter chains. Real-time processing from microphone input.<br>
+        <b>P5 - Image Filter Engine:</b> Apply frequency-domain operations to images: blur (low-pass), edge detection (high-pass), noise removal, compression (DCT like JPEG). Before/after comparison. Show frequency domain representation.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s4">
+    <div class="step-head" onclick="tog('ch2-s4')">
+      <div class="step-num num-math">5</div>
+      <div class="step-info">
+        <div class="step-title">Days 41--50: Quantum Computing Basics</div>
+        <div class="step-meta">Qubits, quantum gates, entanglement, quantum algorithms, Qiskit</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s4">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s4">
+      <p><b>Day 41:</b> Quantum mechanics prerequisites -- complex numbers, Dirac notation, state vectors. Hilbert space intuition.</p>
+      <p><b>Day 42:</b> Qubits -- superposition, measurement, probability amplitudes. Bloch sphere. Comparison with classical bits.</p>
+      <p><b>Day 43:</b> Single-qubit gates -- Pauli gates (X, Y, Z), Hadamard, phase gates, rotation gates. Unitary matrices.</p>
+      <p><b>Day 44:</b> Multi-qubit systems -- tensor products, entanglement, Bell states. CNOT gate. No-cloning theorem.</p>
+      <p><b>Day 45:</b> Quantum circuits -- circuit model of computation. Universality. Circuit depth and width. Qiskit basics.</p>
+      <p><b>Day 46:</b> Deutsch-Jozsa algorithm -- quantum parallelism, oracle model. First quantum advantage proof.</p>
+      <p><b>Day 47:</b> Grover's search -- amplitude amplification, quadratic speedup. Oracle construction. Application to NP problems.</p>
+      <p><b>Day 48:</b> Shor's algorithm overview -- period finding, quantum Fourier transform, threat to RSA.</p>
+      <p><b>Day 49:</b> Quantum error correction basics -- noise in quantum systems, bit-flip and phase-flip codes. Surface code overview.</p>
+      <p><b>Day 50:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Quantum Circuit Simulator:</b> Simulate quantum circuits on a classical computer. Matrix representation of gates. Apply gates to state vectors. Measure with probability. Visualize Bloch sphere evolution.<br>
+        <b>P2 - Quantum Teleportation:</b> Implement quantum teleportation protocol in Qiskit. Create Bell pairs, apply corrections. Run on IBM quantum hardware (free tier). Verify with state tomography.<br>
+        <b>P3 - Grover Search Implementation:</b> Implement Grover's algorithm for searching unsorted databases. Custom oracles for: satisfiability, graph coloring, Sudoku. Show quadratic speedup empirically.<br>
+        <b>P4 - Quantum Key Distribution:</b> Implement BB84 protocol. Simulate quantum channel with noise. Key generation, sifting, error estimation, privacy amplification. Compare security with classical Diffie-Hellman.<br>
+        <b>P5 - Variational Quantum Eigensolver:</b> VQE for finding ground state energy of simple molecules (H2, LiH). Parameterized quantum circuit + classical optimizer. Run on Qiskit simulator. Compare with exact diagonalization.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s5">
+    <div class="step-head" onclick="tog('ch2-s5')">
+      <div class="step-num num-math">6</div>
+      <div class="step-info">
+        <div class="step-title">Days 51--60: Biology + Computational Science</div>
+        <div class="step-meta">Genetics, bioinformatics, molecular simulation, evolutionary algorithms</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s5">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s5">
+      <p><b>Day 51:</b> Molecular biology basics -- DNA, RNA, proteins. Central dogma. Codons and amino acids. Genetic code.</p>
+      <p><b>Day 52:</b> Sequence alignment -- dynamic programming for alignment. Needleman-Wunsch (global), Smith-Waterman (local). BLOSUM matrices.</p>
+      <p><b>Day 53:</b> Genomics -- genome assembly, sequencing technologies. BLAST algorithm overview. GenBank and FASTA formats.</p>
+      <p><b>Day 54:</b> Phylogenetics -- evolutionary trees, distance methods (UPGMA, neighbor-joining). Maximum parsimony. Molecular clocks.</p>
+      <p><b>Day 55:</b> Protein structure -- primary, secondary, tertiary, quaternary structure. Folding problem. AlphaFold overview.</p>
+      <p><b>Day 56:</b> Population genetics -- Hardy-Weinberg, genetic drift, natural selection simulation. Fitness landscapes.</p>
+      <p><b>Day 57:</b> Evolutionary algorithms -- genetic algorithms, fitness function, selection, crossover, mutation. Neuroevolution intro.</p>
+      <p><b>Day 58:</b> Systems biology -- gene regulatory networks, metabolic pathways, ODE models. Boolean network models.</p>
+      <p><b>Day 59:</b> Computational neuroscience -- neuron models (Hodgkin-Huxley, integrate-and-fire), synaptic plasticity, neural coding.</p>
+      <p><b>Day 60:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - DNA Sequence Aligner:</b> Implement Needleman-Wunsch and Smith-Waterman from scratch. Score alignments with substitution matrices. Visualize alignment with color-coded matches/mismatches. Parse FASTA files.<br>
+        <b>P2 - Phylogenetic Tree Builder:</b> Compute distance matrices from sequences. Build trees with UPGMA and neighbor-joining. Visualize trees. Compare different sequences (e.g., cytochrome c across species).<br>
+        <b>P3 - Evolution Simulator:</b> Agent-based simulation: organisms with genomes, fitness function, selection, reproduction, mutation. Visualize population evolution over generations. Observe speciation, drift, adaptation.<br>
+        <b>P4 - Genetic Algorithm Optimizer:</b> Solve optimization problems with GA: traveling salesman, function optimization, neural network architecture search. Configurable: population size, mutation rate, crossover type.<br>
+        <b>P5 - Neuron Simulator:</b> Implement Hodgkin-Huxley and Leaky Integrate-and-Fire models. Simulate action potentials. Network of neurons with synaptic connections. Visualize voltage traces and spike trains.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s6">
+    <div class="step-head" onclick="tog('ch2-s6')">
+      <div class="step-num num-math">7</div>
+      <div class="step-info">
+        <div class="step-title">Days 61--70: Robotics + Control Systems</div>
+        <div class="step-meta">Kinematics, PID control, path planning, SLAM, reinforcement learning</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s6">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s6">
+      <p><b>Day 61:</b> Robotics fundamentals -- degrees of freedom, coordinate frames, homogeneous transformations. Forward kinematics.</p>
+      <p><b>Day 62:</b> Inverse kinematics -- analytical and numerical methods. Jacobian matrix. Singularities.</p>
+      <p><b>Day 63:</b> Control theory basics -- open-loop vs closed-loop. Transfer functions. Poles and zeros. Stability.</p>
+      <p><b>Day 64:</b> PID control -- proportional, integral, derivative. Tuning methods (Ziegler-Nichols). Overshoot, settling time, steady-state error.</p>
+      <p><b>Day 65:</b> State-space control -- state variables, state equations. Observability, controllability. LQR controller.</p>
+      <p><b>Day 66:</b> Path planning -- A*, RRT (Rapidly-exploring Random Trees), potential fields. Configuration space.</p>
+      <p><b>Day 67:</b> Localization -- odometry, particle filters, Kalman filter. Sensor fusion (IMU + GPS).</p>
+      <p><b>Day 68:</b> SLAM overview -- Simultaneous Localization and Mapping. Feature-based and grid-based SLAM. Loop closure.</p>
+      <p><b>Day 69:</b> Reinforcement learning for robotics -- policy gradient, PPO, sim-to-real transfer. OpenAI Gym environments.</p>
+      <p><b>Day 70:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Robot Arm Simulator:</b> 2D/3D robotic arm with configurable joints. Forward and inverse kinematics. Interactive control: drag end-effector, joints follow. Trajectory planning.<br>
+        <b>P2 - PID Controller Tuner:</b> Simulate a plant (pendulum, temperature, motor speed). PID controller with interactive gain tuning. Real-time plots: setpoint, response, error. Auto-tuning mode.<br>
+        <b>P3 - Path Planner:</b> Grid-based environment with obstacles. Implement A*, Dijkstra, RRT, and potential field. Visualize exploration and final path. Dynamic obstacle avoidance. Comparison metrics.<br>
+        <b>P4 - Kalman Filter Tracker:</b> Track a moving object with noisy sensor data. 1D and 2D Kalman filter. Extended Kalman Filter for nonlinear systems. Visualize true state, measurement, and estimate.<br>
+        <b>P5 - RL Robot Navigator:</b> Train an agent to navigate a maze using Q-learning and PPO. Custom Gym environment. Reward shaping. Transfer learning between environments. Visualize learned policy.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s7">
+    <div class="step-head" onclick="tog('ch2-s7')">
+      <div class="step-num num-math">8</div>
+      <div class="step-info">
+        <div class="step-title">Days 71--80: Finance + Economics Modeling</div>
+        <div class="step-meta">Quantitative finance, portfolio theory, risk, game theory, agent-based models</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s7">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s7">
+      <p><b>Day 71:</b> Financial mathematics -- time value of money, compound interest, present value, bond pricing.</p>
+      <p><b>Day 72:</b> Portfolio theory -- Markowitz mean-variance, efficient frontier, Sharpe ratio. Capital Asset Pricing Model (CAPM).</p>
+      <p><b>Day 73:</b> Options pricing -- Black-Scholes model, Greeks (delta, gamma, theta, vega). Binomial tree model.</p>
+      <p><b>Day 74:</b> Risk management -- Value at Risk (VaR), Expected Shortfall (CVaR). Monte Carlo simulation for risk.</p>
+      <p><b>Day 75:</b> Time series for finance -- ARIMA, GARCH for volatility modeling. Cointegration. Pairs trading.</p>
+      <p><b>Day 76:</b> Algorithmic trading -- backtesting framework, moving average crossover, momentum, mean reversion strategies.</p>
+      <p><b>Day 77:</b> Game theory -- Nash equilibrium, dominant strategies, prisoner's dilemma, auctions. Mechanism design.</p>
+      <p><b>Day 78:</b> Microeconomics modeling -- supply/demand, market equilibrium, elasticity. Agent-based market simulation.</p>
+      <p><b>Day 79:</b> Network economics -- network effects, power laws, scale-free networks. Social network analysis. Influence propagation.</p>
+      <p><b>Day 80:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Portfolio Optimizer:</b> Download historical stock data. Compute efficient frontier. Optimize for max Sharpe ratio. Monte Carlo simulation of portfolio returns. Compare with equal-weight and S&amp;P 500 benchmark.<br>
+        <b>P2 - Options Pricer:</b> Black-Scholes and binomial tree option pricing. Compute Greeks. Implied volatility surface. Interactive: change strike/expiry/vol, see price change. Compare model vs market prices.<br>
+        <b>P3 - Backtesting Engine:</b> Build a trading strategy backtester. Support: moving average, RSI, Bollinger Bands strategies. Track: returns, Sharpe, max drawdown, win rate. Walk-forward optimization.<br>
+        <b>P4 - Market Simulator:</b> Agent-based stock market. Agents with different strategies (fundamentalist, momentum, random). Order book, bid-ask spread emerges. Observe: crashes, bubbles, fat-tailed returns.<br>
+        <b>P5 - Game Theory Solver:</b> Solve 2-player games: find Nash equilibria, dominant strategies. Iterated prisoner's dilemma tournament with evolved strategies. Evolutionary stability analysis. Auction simulator.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s8">
+    <div class="step-head" onclick="tog('ch2-s8')">
+      <div class="step-num num-math">9</div>
+      <div class="step-info">
+        <div class="step-title">Days 81--90: Philosophy of Science + Writing</div>
+        <div class="step-meta">Epistemology, scientific method, technical writing, essay craft</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s8">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s8">
+      <p><b>Day 81:</b> Epistemology -- what is knowledge? Justified true belief. Gettier problems. Sources of knowledge.</p>
+      <p><b>Day 82:</b> Philosophy of science -- falsifiability (Popper), paradigm shifts (Kuhn), research programs (Lakatos). Demarcation problem.</p>
+      <p><b>Day 83:</b> Scientific method -- hypothesis formation, experimental design, statistical testing, peer review. Replication crisis.</p>
+      <p><b>Day 84:</b> Philosophy of mathematics -- Platonism, formalism, constructivism. Are mathematical objects real? Godel's incompleteness theorems.</p>
+      <p><b>Day 85:</b> Philosophy of mind and AI -- Chinese Room argument, consciousness, Turing test, hard problem of consciousness. AI alignment.</p>
+      <p><b>Day 86:</b> Ethics of technology -- privacy, bias in AI, autonomous weapons, surveillance capitalism. Ethical frameworks: consequentialism, deontology, virtue ethics.</p>
+      <p><b>Day 87:</b> Technical writing -- structure (intro, methods, results, discussion), clarity, precision, audience awareness. LaTeX basics.</p>
+      <p><b>Day 88:</b> Essay craft -- thesis development, argument structure, evidence integration, counterarguments. Writing as thinking.</p>
+      <p><b>Day 89:</b> Research skills -- literature review, citation management, reading papers efficiently. Systematic review methodology.</p>
+      <p><b>Day 90:</b> Integration and project completion day.</p>
+      <div class="do-box">
+        <b>5 Projects:</b><br>
+        <b>P1 - Research Paper Analysis:</b> Read 5 landmark papers (Turing 1950, Shannon 1948, Feynman 1982, Attention Is All You Need, AlphaFold). Write a structured critique of each: contribution, methodology, limitations, impact.<br>
+        <b>P2 - AI Ethics Case Study:</b> Deep analysis of a real AI bias case (COMPAS, Amazon hiring, facial recognition). Stakeholder analysis, ethical framework application, proposed solutions. 3000-word essay.<br>
+        <b>P3 - Knowledge Synthesis Essay:</b> Write a 5000-word essay connecting 3+ domains from this challenge. Example: "How information theory connects thermodynamics, computation, and biology." Original thesis, evidence from your projects.<br>
+        <b>P4 - Technical Blog Series:</b> Write 5 tutorial blog posts teaching concepts from your strongest domains. Clear explanations, code examples, diagrams. Publish on personal blog or Medium. Aim for clarity that teaches others.<br>
+        <b>P5 - Research Proposal:</b> Write a formal research proposal for an interdisciplinary project combining at least 3 domains. Background, methodology, expected results, timeline, references. Format as if submitting to a conference.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch2-s9">
+    <div class="step-head" onclick="tog('ch2-s9')">
+      <div class="step-num num-math">10</div>
+      <div class="step-info">
+        <div class="step-title">Days 91--100: Grand Synthesis</div>
+        <div class="step-meta">5 interdisciplinary capstone projects bridging all domains</div>
+      </div>
+      <div class="step-arrow" id="a-ch2-s9">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch2-s9">
+      <p><b>Day 91:</b> Capstone planning -- identify the 5 projects that best demonstrate your polymath capability. Architecture and research for each.</p>
+      <p><b>Day 92--93:</b> Capstone Project 1 build sprint.</p>
+      <p><b>Day 94--95:</b> Capstone Project 2 build sprint.</p>
+      <p><b>Day 96--97:</b> Capstone Project 3 build sprint.</p>
+      <p><b>Day 98:</b> Capstone Projects 4 and 5 build sprint.</p>
+      <p><b>Day 99:</b> Polish -- documentation, visualization, deployment for all capstones.</p>
+      <p><b>Day 100:</b> Grand retrospective -- create a concept map linking all 10 domains. Write the definitive essay on your polymath journey. Update all profiles.</p>
+      <div class="do-box">
+        <b>5 Capstone Projects:</b><br>
+        <b>P1 - Quantum ML Hybrid:</b> Use a variational quantum circuit as a layer in a classical neural network. Train on a real dataset. Compare quantum-classical hybrid vs pure classical. Bridges: quantum computing + ML + linear algebra.<br>
+        <b>P2 - Evolutionary Neural Architecture Search:</b> Use genetic algorithms to evolve neural network architectures. Fitness = accuracy on validation set. Observe: architectures converge toward known good designs. Bridges: biology + CS theory + ML.<br>
+        <b>P3 - Physics-Informed Neural Network:</b> Solve differential equations (heat equation, wave equation, Navier-Stokes) using PINNs. Embed physics constraints into loss function. Compare with traditional numerical methods. Bridges: physics + ML + calculus.<br>
+        <b>P4 - Algorithmic Trading with RL:</b> Train an RL agent to trade stocks. State: technical indicators + order book features. Action: buy/sell/hold. Reward: risk-adjusted returns. Backtest against traditional strategies. Bridges: finance + RL + statistics.<br>
+        <b>P5 - Computational Biology Pipeline:</b> End-to-end: sequence alignment, phylogenetic tree, protein structure prediction (simplified). ML model for gene function prediction. Visualization dashboard. Bridges: biology + algorithms + ML + data visualization.
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

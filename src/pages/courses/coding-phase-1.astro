@@ -1,0 +1,68 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Coding Mastery Phase 1 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/coding" class="cpn-back">&larr; Coding Mastery Overview</a>
+  <div class="cpn">
+    <a href="/courses/coding-phase-1" class="cpn-link active">Phase 1</a>
+    <a href="/courses/coding-phase-2" class="cpn-link">Phase 2</a>
+    <a href="/courses/coding-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-java">Phase 1 &middot; Months 1-3 &middot; ~60h</div>
+    <div class="track-title">Phase 1 &mdash; C: The Language Closest to the Machine</div>
+    <div class="track-sub">Start with the language that strips all abstraction away. C forces you to confront memory, pointers, and the machine directly. Once you can write correct C, every other language becomes easier because you understand what they're hiding from you.</div>
+  </div>
+
+    <!-- Coding Step 1: C -->
+    <div class="step" id="cd0">
+      <div class="step-head" onclick="tog('cd0')">
+        <div class="step-num num-java">1</div>
+        <div class="step-info"><div class="step-title">C &mdash; the language closest to the machine</div><div class="step-meta">Months 1-3 &middot; ~60 hours</div></div>
+        <div class="step-arrow" id="a-cd0">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-cd0">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name">The C Programming Language &mdash; Kernighan &amp; Ritchie (K&amp;R)</div>
+              <div class="res-desc">The original C book by the language's creators. 272 pages of dense, perfect prose. Every exercise builds mastery. Read cover to cover and do every exercise. There is no substitute for this book. After K&amp;R, you understand pointers, memory management, and the Unix philosophy at a visceral level.</div>
+              <div class="res-tags"><span class="rtag must">The definitive book</span><span class="rtag book">Book</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/@JacobSorworker" target="_blank" class="res-link">Jacob Sorber &mdash; C and Systems Programming (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Focused, practical C tutorials: pointers, arrays, structs, memory allocation, file I/O, sockets, threads. Each video is 10-15 min with working code. Use alongside K&amp;R when you need to see concepts in action.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://exercism.org/tracks/c" target="_blank" class="res-link">Exercism &mdash; C Track (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Free guided exercises in C with mentoring. 95+ exercises covering strings, pointers, structs, memory management, and algorithms in C. The difficulty ramp is well-calibrated. After K&amp;R, grind Exercism to build fluency.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag tool">Practice</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="do-box"><b>C mastery project:</b> Build a memory allocator (malloc/free) from scratch using sbrk. Then build a simple shell. Then build an HTTP server. These three projects &mdash; in that order &mdash; prove you understand memory, processes, and I/O at the systems level. C is the language of operating systems, databases, and compilers.</div>
+      </div>
+    </div>
+
+</PhaseLayout>

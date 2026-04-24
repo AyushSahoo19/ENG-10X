@@ -1,0 +1,78 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="Omar Khayyam — Polymath.Sys" activeNav="polymaths">
+
+<style>
+  .pm-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:2rem; letter-spacing:0.05em; }
+  .pm-back:hover { color:#111; }
+  .polymath-single { max-width:860px; }
+  .pm-header { display:flex; align-items:center; gap:1.5rem; margin-bottom:1.5rem; }
+  .pm-initials { width:64px; height:64px; border-radius:50%; background:#111; color:#fff; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:18px; font-weight:700; letter-spacing:0.1em; flex-shrink:0; }
+  .pm-name { font-size:22px; font-weight:700; color:#111; letter-spacing:-0.02em; }
+  .pm-years { font-family:monospace; font-size:12px; color:#888; margin-top:4px; }
+  .pm-bio { font-size:14px; line-height:1.8; color:#444; margin-bottom:1.5rem; padding:1.2rem 1.5rem; border-left:3px solid #222; background:#fafafa; }
+  .pm-domains { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.5rem; }
+  .pm-contributions { margin-bottom:1.5rem; }
+  .pm-section-title { font-family:monospace; font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:#888; margin-bottom:0.8rem; }
+  .pm-contributions ul { padding-left:1.5rem; }
+  .pm-contributions li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-quote { margin-bottom:1.5rem; }
+  .pm-quote blockquote { font-size:13px; color:#555; line-height:1.8; border-left:2px solid #ccc; padding-left:1rem; margin:0; font-style:italic; }
+  .pm-reading { margin-bottom:2rem; }
+  .pm-reading ul { padding-left:1.5rem; }
+  .pm-reading li { font-size:13px; color:#444; line-height:1.7; margin-bottom:0.4rem; }
+  .pm-era { display:inline-block; font-family:monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; padding:0.3rem 0.8rem; border:1px solid #ccc; color:#888; margin-bottom:1.5rem; }
+</style>
+
+  <a href="/polymaths" class="pm-back">&larr; Hall of Legends</a>
+
+  <div class="polymath-single">
+
+    <div class="pm-era">Ancient · 1048–1131 CE</div>
+
+    <div class="pm-header">
+      <div class="pm-initials">OK</div>
+      <div>
+        <div class="pm-name">Omar Khayyam</div>
+        <div class="pm-years">1048--1131 CE</div>
+      </div>
+    </div>
+
+    <div class="pm-bio">A Persian mathematician, astronomer, philosopher, and poet who achieved breakthroughs in every field he touched. Khayyam classified and solved cubic equations geometrically, reformed the Persian calendar to be more accurate than the Gregorian calendar, and wrote the <em>Rubaiyat</em> -- one of the most translated works of poetry in history.</div>
+
+    <div class="pm-domains">
+      <span class="rtag free">Mathematics</span>
+      <span class="rtag must">Astronomy</span>
+      <span class="rtag vid">Poetry</span>
+      <span class="rtag book">Philosophy</span>
+    </div>
+
+    <div class="pm-contributions">
+      <div class="pm-section-title">Greatest Contributions</div>
+      <ul>
+        <li>Classified and geometrically solved all types of cubic equations, five centuries before Cardano</li>
+        <li>Discovered what is now called Pascal's triangle and the binomial theorem</li>
+        <li>Created the Jalali calendar (1079), accurate to within one day in 5,000 years</li>
+        <li>Contributed to non-Euclidean geometry by examining Euclid's parallel postulate</li>
+        <li>Wrote the <em>Rubaiyat</em>, later translated by Edward FitzGerald into a Victorian sensation</li>
+      </ul>
+    </div>
+
+    <div class="pm-quote">
+      <div class="pm-section-title">Key Insight</div>
+      <blockquote>"A loaf of bread, a jug of wine, and thou." -- Khayyam's poetry reveals a mind that balanced rigorous mathematical work with deep philosophical reflection on impermanence. He understood that the polymath life requires both discipline and wonder.</blockquote>
+    </div>
+
+    <div class="pm-reading">
+      <div class="pm-section-title">Recommended Reading</div>
+      <ul>
+        <li><em>The Rubaiyat of Omar Khayyam</em> -- translated by Edward FitzGerald</li>
+        <li><em>Omar Khayyam: Poet, Rebel, Astronomer</em> -- Hazhir Teimourian (2007)</li>
+      </ul>
+    </div>
+
+  </div>
+
+</PhaseLayout>

@@ -1,0 +1,200 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="100 Days System Design — Polymath.Sys" activeNav="challenges">
+
+<style>
+  .ch-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .ch-back:hover { color:#111; }
+  .ch-sibling-nav { display:flex; gap:0; margin-bottom:2rem; border:1px solid #222; width:fit-content; flex-wrap:wrap; }
+  .csn-link { font-family:monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; padding:0.4rem 0.9rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .csn-link:last-child { border-right:none; }
+  .csn-link.active { background:#111; color:#fff; }
+  .csn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+</style>
+
+  <a href="/challenges" class="ch-back">&larr; All Challenges</a>
+  <div class="ch-sibling-nav">
+    <a href="/challenges/cs-se" class="csn-link">CS/SE</a>
+    <a href="/challenges/ai-ml-dl" class="csn-link">AI/ML/DL</a>
+    <a href="/challenges/polymath" class="csn-link">Polymath</a>
+    <a href="/challenges/competitive-programming" class="csn-link">Comp. Prog.</a>
+    <a href="/challenges/system-design" class="csn-link active">System Design</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ml">100 Days -- 100 Systems -- Architecture Mastery</div>
+    <div class="track-title">100 Days of System Design</div>
+    <div class="track-sub">One system per day. From fundamental building blocks to novel architectures. Each day you design a complete system: requirements, capacity estimation, API design, data model, high-level architecture, deep dives into critical components. By day 100, you will have designed every major system that appears in interviews and real engineering.</div>
+  </div>
+
+  <div class="do-box">
+    <b>Challenge Rules:</b> (1) For each system, spend 45 minutes designing before looking at any reference. (2) Document every design: requirements, APIs, data model, architecture diagram, trade-offs. (3) Use excalidraw or draw.io for diagrams -- visual thinking is mandatory. (4) After your attempt, study 2 reference designs and note what you missed. (5) Maintain a "building blocks" reference -- reusable patterns across designs. (6) Every design must address: scalability, reliability, latency, cost, and security.
+  </div>
+
+  <div class="step" id="ch4-s0">
+    <div class="step-head" onclick="tog('ch4-s0')">
+      <div class="step-num num-ml">1</div>
+      <div class="step-info">
+        <div class="step-title">Days 1--30: Building Blocks</div>
+        <div class="step-meta">Fundamental components that compose into larger systems</div>
+      </div>
+      <div class="step-arrow" id="a-ch4-s0">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch4-s0">
+      <p><b>Day 1:</b> Load Balancer -- L4 vs L7, algorithms (round-robin, least connections, consistent hashing), health checks, session affinity.</p>
+      <p><b>Day 2:</b> Reverse Proxy -- request routing, SSL termination, compression, caching at the edge.</p>
+      <p><b>Day 3:</b> CDN -- content distribution, cache invalidation, edge computing, pull vs push CDN.</p>
+      <p><b>Day 4:</b> DNS -- resolution flow, DNS-based load balancing, GeoDNS, TTL strategies.</p>
+      <p><b>Day 5:</b> Cache -- write policies, eviction strategies, cache stampede, distributed cache (Redis cluster).</p>
+      <p><b>Day 6:</b> Message Queue -- pub/sub, point-to-point, ordering guarantees, dead letter queues. Kafka vs RabbitMQ vs SQS.</p>
+      <p><b>Day 7:</b> Database Replication -- master-slave, master-master, synchronous vs async, failover.</p>
+      <p><b>Day 8:</b> Database Sharding -- horizontal partitioning, shard keys, resharding, cross-shard queries.</p>
+      <p><b>Day 9:</b> SQL Database -- ACID, indexing, query optimization, connection pooling, read replicas.</p>
+      <p><b>Day 10:</b> NoSQL Database -- document (MongoDB), column (Cassandra), key-value (DynamoDB), graph (Neo4j). Data modeling for each.</p>
+      <p><b>Day 11:</b> Object Storage -- S3-like storage, metadata, versioning, lifecycle policies, pre-signed URLs.</p>
+      <p><b>Day 12:</b> Block and File Storage -- EBS, EFS equivalents. IOPS, throughput, durability.</p>
+      <p><b>Day 13:</b> Search Engine -- inverted index, tokenization, ranking (TF-IDF, BM25), Elasticsearch architecture.</p>
+      <p><b>Day 14:</b> API Gateway -- routing, authentication, rate limiting, request transformation, circuit breaking.</p>
+      <p><b>Day 15:</b> Service Discovery -- client-side vs server-side, registry (Consul, etcd), health checking.</p>
+      <p><b>Day 16:</b> Rate Limiter -- token bucket, sliding window, distributed rate limiting, per-user vs global.</p>
+      <p><b>Day 17:</b> Distributed Lock -- Redis-based (Redlock), ZooKeeper, etcd. Fencing tokens, lock renewal.</p>
+      <p><b>Day 18:</b> Consistent Hashing -- virtual nodes, rebalancing, jump consistent hashing. Applications: cache, DB sharding.</p>
+      <p><b>Day 19:</b> Bloom Filter -- probabilistic data structure, false positive rate, counting bloom filter. Applications: cache, DB.</p>
+      <p><b>Day 20:</b> Leader Election -- Bully algorithm, Raft leader election, ZooKeeper ephemeral nodes.</p>
+      <p><b>Day 21:</b> Consensus -- Paxos, Raft. Log replication, safety, liveness. When you need consensus.</p>
+      <p><b>Day 22:</b> Event Sourcing -- events as source of truth, projections, snapshots. CQRS pattern.</p>
+      <p><b>Day 23:</b> Saga Pattern -- distributed transactions, choreography vs orchestration, compensation.</p>
+      <p><b>Day 24:</b> Circuit Breaker -- states (closed, open, half-open), fallback strategies, bulkhead pattern.</p>
+      <p><b>Day 25:</b> Monitoring -- metrics (counters, gauges, histograms), logging, tracing. Prometheus, Grafana, Jaeger.</p>
+      <p><b>Day 26:</b> Autoscaling -- horizontal pod autoscaler, predictive scaling, custom metrics. Scaling policies.</p>
+      <p><b>Day 27:</b> Data Pipeline -- batch (MapReduce, Spark), stream (Kafka Streams, Flink), lambda architecture.</p>
+      <p><b>Day 28:</b> Task Queue -- async job processing, retries, priority, idempotency. Celery, Sidekiq architecture.</p>
+      <p><b>Day 29:</b> WebSocket -- persistent connections, scaling WebSocket servers, pub/sub for real-time.</p>
+      <p><b>Day 30:</b> Building blocks review -- create your personal reference sheet of all 30 building blocks with when-to-use guidance.</p>
+      <div class="do-box">
+        <b>Output for each day:</b> One-page reference document with: what it is, when to use it, key trade-offs, common configurations, failure modes, and which systems use it. By day 30, you have a 30-page system design reference manual.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch4-s1">
+    <div class="step-head" onclick="tog('ch4-s1')">
+      <div class="step-num num-ml">2</div>
+      <div class="step-info">
+        <div class="step-title">Days 31--60: Classic Systems</div>
+        <div class="step-meta">Design the systems that power the internet</div>
+      </div>
+      <div class="step-arrow" id="a-ch4-s1">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch4-s1">
+      <p><b>Day 31:</b> URL Shortener (TinyURL) -- base62 encoding, collision handling, analytics, read-heavy optimization.</p>
+      <p><b>Day 32:</b> Pastebin -- text storage, expiration, syntax highlighting, abuse prevention.</p>
+      <p><b>Day 33:</b> Rate Limiter Service -- multi-tenant, distributed, sliding window with Redis.</p>
+      <p><b>Day 34:</b> Twitter / X -- tweet feed, fanout-on-write vs fanout-on-read, celebrity problem, trending topics.</p>
+      <p><b>Day 35:</b> Instagram -- photo upload, feed generation, stories, explore page.</p>
+      <p><b>Day 36:</b> Facebook Newsfeed -- ranking algorithm, real-time updates, content diversity.</p>
+      <p><b>Day 37:</b> YouTube -- video upload/transcode pipeline, CDN, recommendation engine, live streaming.</p>
+      <p><b>Day 38:</b> Netflix -- video streaming, adaptive bitrate, content delivery, recommendation system.</p>
+      <p><b>Day 39:</b> WhatsApp -- end-to-end messaging, presence, group chats, media sharing, delivery receipts.</p>
+      <p><b>Day 40:</b> Slack -- channels, real-time messaging, search, file sharing, workspace management.</p>
+      <p><b>Day 41:</b> Uber -- ride matching, real-time location, ETA computation, surge pricing, driver dispatching.</p>
+      <p><b>Day 42:</b> Google Maps -- routing, map tile serving, real-time traffic, place search, offline maps.</p>
+      <p><b>Day 43:</b> Yelp / Nearby Search -- geospatial indexing (quadtree, geohash), reviews, ranking, real-time updates.</p>
+      <p><b>Day 44:</b> Amazon E-Commerce -- product catalog, search, cart, order processing, inventory management.</p>
+      <p><b>Day 45:</b> Booking.com / Airbnb -- search with availability, reservation system, double-booking prevention, pricing.</p>
+      <p><b>Day 46:</b> Dropbox / Google Drive -- file sync, chunking, deduplication, conflict resolution, sharing.</p>
+      <p><b>Day 47:</b> Google Docs -- real-time collaboration, OT/CRDT, presence, version history.</p>
+      <p><b>Day 48:</b> Google Search -- web crawler, indexer, PageRank, query processing, spelling correction.</p>
+      <p><b>Day 49:</b> Typeahead / Autocomplete -- trie-based, prefix matching, ranking by frequency, personalization.</p>
+      <p><b>Day 50:</b> Web Crawler -- BFS crawling, politeness, deduplication, distributed crawling, URL frontier.</p>
+      <p><b>Day 51:</b> Notification System -- push (APNs, FCM), email, SMS, in-app. Priority, templating, delivery tracking.</p>
+      <p><b>Day 52:</b> Chat System (Detailed) -- 1:1, group, read receipts, push notifications, message search, encryption.</p>
+      <p><b>Day 53:</b> Payment System -- payment processing, idempotency, reconciliation, fraud detection, PCI compliance.</p>
+      <p><b>Day 54:</b> Ticketmaster -- event ticketing, seat selection, high-concurrency checkout, waitlist, anti-bot.</p>
+      <p><b>Day 55:</b> Reddit -- posts, comments (tree structure), voting, subreddits, hot/top/new ranking.</p>
+      <p><b>Day 56:</b> Spotify -- music streaming, playlist management, recommendation, offline sync.</p>
+      <p><b>Day 57:</b> LinkedIn -- professional profiles, connections, job search, feed, InMail.</p>
+      <p><b>Day 58:</b> Tinder -- matching algorithm, geolocation, swipe queue, photo serving.</p>
+      <p><b>Day 59:</b> DoorDash / Food Delivery -- restaurant catalog, order management, driver assignment, real-time tracking, ETA.</p>
+      <p><b>Day 60:</b> Classic systems review -- identify common patterns across all 30 systems. Build a pattern catalog.</p>
+      <div class="do-box">
+        <b>Output for each day:</b> Complete design document with: functional/non-functional requirements, capacity estimation, API design, data model, high-level architecture diagram, deep dive on 2-3 critical components, trade-offs discussed.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch4-s2">
+    <div class="step-head" onclick="tog('ch4-s2')">
+      <div class="step-num num-ml">3</div>
+      <div class="step-info">
+        <div class="step-title">Days 61--80: Advanced Systems</div>
+        <div class="step-meta">Distributed databases, consensus, stream processing, observability</div>
+      </div>
+      <div class="step-arrow" id="a-ch4-s2">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch4-s2">
+      <p><b>Day 61:</b> Distributed Key-Value Store (DynamoDB) -- partitioning, replication, consistency (eventual, strong), vector clocks.</p>
+      <p><b>Day 62:</b> Distributed File System (HDFS/GFS) -- name node, data nodes, block replication, fault tolerance.</p>
+      <p><b>Day 63:</b> Distributed Cache (Memcached cluster) -- consistent hashing, hot keys, cache warming, thundering herd.</p>
+      <p><b>Day 64:</b> Time-Series Database (InfluxDB) -- time-partitioned storage, downsampling, retention policies, compression.</p>
+      <p><b>Day 65:</b> Graph Database (Neo4j) -- graph storage, traversal optimization, index-free adjacency, Cypher queries.</p>
+      <p><b>Day 66:</b> Consensus System (etcd/ZooKeeper) -- Raft implementation, leader election, configuration management, service coordination.</p>
+      <p><b>Day 67:</b> Distributed Transaction Coordinator -- 2PC, 3PC, Sagas, TCC pattern. Handling partial failures.</p>
+      <p><b>Day 68:</b> Stream Processing (Kafka + Flink) -- event time vs processing time, windowing, exactly-once semantics, state management.</p>
+      <p><b>Day 69:</b> Log Aggregation (ELK) -- log collection, structured logging, indexing, search, alerting, retention.</p>
+      <p><b>Day 70:</b> Distributed Tracing (Jaeger) -- trace propagation, span collection, sampling strategies, performance analysis.</p>
+      <p><b>Day 71:</b> Feature Flag System -- flag storage, targeting rules, gradual rollout, A/B testing integration, kill switch.</p>
+      <p><b>Day 72:</b> A/B Testing Platform -- experiment design, traffic splitting, statistical analysis, guardrail metrics.</p>
+      <p><b>Day 73:</b> Workflow Engine (Temporal/Airflow) -- DAG execution, retries, timeouts, state persistence, observability.</p>
+      <p><b>Day 74:</b> Job Scheduler (Cron at Scale) -- distributed scheduling, exactly-once execution, priority, resource management.</p>
+      <p><b>Day 75:</b> Configuration Management -- centralized config, hot reload, environment separation, secrets management, audit trail.</p>
+      <p><b>Day 76:</b> Pub/Sub System (Kafka Deep Dive) -- partitions, consumer groups, offset management, compaction, exactly-once.</p>
+      <p><b>Day 77:</b> Object Storage (S3) -- erasure coding, metadata service, multi-part upload, versioning, lifecycle.</p>
+      <p><b>Day 78:</b> Container Orchestration (Kubernetes internals) -- scheduler, controller manager, etcd, API server, kubelet.</p>
+      <p><b>Day 79:</b> CI/CD Platform (GitHub Actions) -- runner management, workflow execution, artifact storage, secrets, matrix builds.</p>
+      <p><b>Day 80:</b> Advanced systems review -- catalog the distributed systems patterns you've learned.</p>
+      <div class="do-box">
+        <b>Output for each day:</b> Design document emphasizing distributed systems challenges: consistency model, partition tolerance, failure scenarios and recovery, data flow diagrams, operational runbook outline.
+      </div>
+    </div>
+  </div>
+
+  <div class="step" id="ch4-s3">
+    <div class="step-head" onclick="tog('ch4-s3')">
+      <div class="step-num num-ml">4</div>
+      <div class="step-info">
+        <div class="step-title">Days 81--100: Novel &amp; Emerging Systems</div>
+        <div class="step-meta">ML platforms, real-time recommendation, autonomous systems, frontier architectures</div>
+      </div>
+      <div class="step-arrow" id="a-ch4-s3">&#9660;</div>
+    </div>
+    <div class="step-body" id="b-ch4-s3">
+      <p><b>Day 81:</b> ML Training Platform -- distributed training, GPU scheduling, experiment tracking, model registry, data versioning.</p>
+      <p><b>Day 82:</b> ML Inference Platform -- model serving, batching, auto-scaling, A/B testing models, shadow mode.</p>
+      <p><b>Day 83:</b> Feature Store -- online + offline features, point-in-time correctness, feature sharing, monitoring.</p>
+      <p><b>Day 84:</b> Real-Time Recommendation -- candidate generation, ranking, re-ranking, diversity, cold start, feedback loop.</p>
+      <p><b>Day 85:</b> Ad Serving System -- real-time bidding (RTB), ad selection, click prediction, budget pacing, attribution.</p>
+      <p><b>Day 86:</b> Fraud Detection Platform -- real-time scoring, rule engine + ML, feedback loop, investigation tools.</p>
+      <p><b>Day 87:</b> IoT Data Platform -- device management, data ingestion (millions of devices), edge computing, alerts.</p>
+      <p><b>Day 88:</b> Autonomous Vehicle Data Pipeline -- sensor data (lidar, camera), real-time processing, map updates, simulation platform.</p>
+      <p><b>Day 89:</b> Multiplayer Game Server -- state synchronization, lag compensation, matchmaking, anti-cheat, session management.</p>
+      <p><b>Day 90:</b> Video Conferencing (Zoom) -- media streaming (WebRTC), SFU architecture, recording, screen sharing, breakout rooms.</p>
+      <p><b>Day 91:</b> Social Media Content Moderation -- automated detection (text, image, video), human review queue, appeals, policy enforcement.</p>
+      <p><b>Day 92:</b> Digital Wallet / Fintech -- balance management, transactions, KYC, regulatory compliance, fraud prevention.</p>
+      <p><b>Day 93:</b> Healthcare Records System -- HIPAA compliance, interoperability (HL7/FHIR), access control, audit logging.</p>
+      <p><b>Day 94:</b> Smart Home Platform -- device protocols, automation rules, voice integration, edge gateway, privacy.</p>
+      <p><b>Day 95:</b> Code Deployment Platform -- build system, artifact management, progressive rollout, canary analysis, rollback.</p>
+      <p><b>Day 96:</b> LLM Application Platform -- prompt management, token tracking, caching, rate limiting, multi-model routing, guardrails.</p>
+      <p><b>Day 97:</b> RAG-as-a-Service -- document ingestion, chunking, embedding pipeline, retrieval optimization, multi-tenant isolation.</p>
+      <p><b>Day 98:</b> AI Agent Platform -- tool registry, execution sandbox, memory management, multi-agent orchestration, safety guardrails.</p>
+      <p><b>Day 99:</b> Global-Scale DNS (like Cloudflare) -- anycast routing, DNSSEC, DDoS protection, edge caching, zero-trust networking.</p>
+      <p><b>Day 100:</b> Grand synthesis -- create your "System Design Bible": a comprehensive reference with all 100 systems, common patterns, building block catalog, and your personal design methodology.</p>
+      <div class="do-box">
+        <b>Final output:</b> By day 100 you have 100 system design documents. Compile them into a searchable knowledge base. This is your permanent reference for interviews, architecture decisions, and mentoring others. No one who completes this challenge will ever struggle in a system design interview again.
+      </div>
+    </div>
+  </div>
+
+</PhaseLayout>

@@ -1,0 +1,76 @@
+---
+import PhaseLayout from '../../layouts/PhaseLayout.astro';
+---
+
+<PhaseLayout title="AI/ML/DL Phase 2 — Polymath.Sys" activeNav="courses">
+
+<style>
+  .cpn { display:flex; gap:0; margin-bottom:2.5rem; border:1px solid #222; width:fit-content; }
+  .cpn-link { font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:0.45rem 1.1rem; color:#555; text-decoration:none; border-right:1px solid #222; }
+  .cpn-link:last-child { border-right:none; }
+  .cpn-link.active { background:#111; color:#fff; }
+  .cpn-link:hover:not(.active) { background:#f3f3f3; color:#111; }
+  .cpn-back { display:inline-block; font-family:monospace; font-size:11px; color:#888; text-decoration:none; margin-bottom:1.2rem; letter-spacing:0.05em; }
+  .cpn-back:hover { color:#111; }
+</style>
+
+  <a href="/courses/ai-ml-dl" class="cpn-back">&larr; AI/ML/DL Overview</a>
+  <div class="cpn">
+    <a href="/courses/ai-phase-1" class="cpn-link">Phase 1</a>
+    <a href="/courses/ai-phase-2" class="cpn-link active">Phase 2</a>
+    <a href="/courses/ai-phase-3" class="cpn-link">Phase 3</a>
+  </div>
+
+  <div class="track-header">
+    <div class="track-badge badge-ai">Phase 2 &middot; Months 4-8 &middot; ~80h</div>
+    <div class="track-title">Phase 2 &mdash; Deep Learning</div>
+    <div class="track-sub">Neural networks to transformers. Three concepts underpin all of deep learning: gradient descent (how models learn), backpropagation (how gradients flow), and the universal approximation theorem (why neural networks can learn anything). Everything else — CNNs, RNNs, attention — is architecture built on these. fast.ai for practical skills, Karpathy for foundational understanding.</div>
+  </div>
+
+    <!-- AI Step 2: Deep Learning -->
+    <div class="step" id="ai1">
+      <div class="step-head" onclick="tog('ai1')">
+        <div class="step-num num-ai">2</div>
+        <div class="step-info"><div class="step-title">Deep Learning &mdash; neural networks to transformers</div><div class="step-meta">Months 4-8 &middot; ~80 hours</div></div>
+        <div class="step-arrow" id="a-ai1">&#9660;</div>
+      </div>
+      <div class="step-body" id="b-ai1">
+        <div class="res-list">
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://course.fast.ai/" target="_blank" class="res-link">fast.ai &mdash; Practical Deep Learning for Coders (free) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Top-down deep learning: build a working image classifier in lesson 1, then learn the theory underneath. Covers vision, NLP, tabular, and recommendation systems. Every lesson has a Jupyter notebook. Jeremy Howard's teaching builds confidence fast by starting with working code.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Best practical DL</span><span class="rtag vid">fast.ai</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" class="res-link">Andrej Karpathy &mdash; Neural Networks: Zero to Hero (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">Builds neural networks, backprop, and GPT from scratch in pure Python/NumPy. The most valuable free deep learning content on the internet. After fast.ai gives practical skills, Karpathy gives foundational understanding. The "makemore" and "nanoGPT" videos are essential viewing.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag must">Watch all episodes</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4" target="_blank" class="res-link">Stanford CS231n &mdash; CNNs for Visual Recognition (YouTube) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The Stanford deep learning course that launched a generation of AI researchers. Covers image classification, CNNs, backpropagation, batch norm, dropout, transfer learning, object detection, segmentation, and generative models. Free on YouTube with lecture notes and assignments.</div>
+              <div class="res-tags"><span class="rtag free">Free</span><span class="rtag vid">YouTube</span></div>
+            </div>
+          </div>
+          <div class="res-item">
+            <div class="res-icon"><svg class="res-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+            <div class="res-content">
+              <div class="res-name"><a href="https://www.deeplearningbook.org/" target="_blank" class="res-link">Deep Learning &mdash; Goodfellow, Bengio, Courville (free online) <span class="res-link-arrow">&nearr;</span></a></div>
+              <div class="res-desc">The deep learning bible, free at deeplearningbook.org. Part I (applied math), Part II (deep networks), Part III (research). Dense but comprehensive. Use as reference when you need mathematical rigor on regularization, optimization, CNNs, RNNs, autoencoders, or generative models.</div>
+              <div class="res-tags"><span class="rtag free">Free online</span><span class="rtag book">Reference bible</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="insight"><b>The three concepts that are deep learning:</b> (1) Gradient descent &mdash; how models learn. (2) Backpropagation &mdash; how gradients flow through layers. (3) The universal approximation theorem &mdash; why neural networks can learn anything. Everything else (CNNs, RNNs, transformers, attention) is architecture design built on these three ideas. Master these three and every new architecture becomes just a variation on a theme.</div>
+      </div>
+    </div>
+
+</PhaseLayout>
